@@ -12,9 +12,7 @@
   prefix=".openarena"
   basegame="baseoa"
   basegamename="OpenArena"
-<!--  knowngame="missionpack"
-  knowngamename="OpenArena Missionpack"
-  unknowngamename="OpenArena modification"-->
+  unknowngamename="OpenArena modification"
   shaderpath="scripts"
   archivetypes="pk3"
   texturetypes="tga jpg png"
@@ -27,3 +25,7 @@
   brushtypes="quake3"
   patchtypes="quake3"
 />
+<!--
+  knowngame="missionpack"
+  knowngamename="OpenArena Missionpack"
+-->
