@@ -285,7 +285,7 @@ The "wait" value of a "teamed" item will determine the respawn time of the follo
 Using "random" key will make the respawn time variable, to the maximum limits given by "random" added or subtracted to "wait" seconds. Example: "wait 10" with "random 2" will make the item respawn between 8 and 12 seconds of delay.
 </point>
 
-<point name="slugs" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/shotgunam.md3">
+<point name="ammo_slugs" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/shotgunam.md3">
 Ammo box for the Railgun weapon. Default: 10 ammo.
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">Seconds before the item respawns. Default: 40. Set to -1 for never respawn.</real>
