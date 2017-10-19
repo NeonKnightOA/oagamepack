@@ -477,13 +477,14 @@ OA isn't that good at rendering curved shadows or angled shadows. You can end up
 </group>
 
 <group name="func_plat" color="0 .5 .8">
-[entity_description]
+User-operated lift: goes up as soon as a player steps on it, up to its raised position, and then goes down, if the player has left it. Plats spawn in lowered position in-game, but have to be drawn in raised position in-editor.
+To avoid problems with bots, see Notes.
 -------- KEYS --------
-<real key="speed" name="Move Speed">[key_description]</real>
-<real key="lip" name="Lip">[key_description]</real>
-<real key="height" name="Vertical Travel">[key_description]</real>
-<integer key="dmg" name="Damage Inflicted">[key_description]</integer>
-<targetname key="targetname" name="Target Name">[key_description]</targetname>
+<real key="speed" name="Move Speed">Platform movement speed, in units per second. Default: 150.</real>
+<real key="lip" name="Lip">Residual lip after movement. Ignored in case "height" is used. Default: 16.</real>
+<real key="height" name="Vertical Travel">Optional, allows to manually set the total amount of movement of the lift.</real>
+<integer key="dmg" name="Damage Inflicted">Damage caused to players blocking the lift. After being blocked, the elevator changes movement direction.</integer>
+<targetname key="targetname" name="Target Name">Alternatively, the elevator can be raised by a trigger pointing to this. The lift goes up and then returns down after a second, unless there is someone on board.</targetname>
 <real key="light" name="Model Light Intensity">[key_description]</real>
 <color key="color" name="Model Light Color">[key_description]</color>
 <model key="model2" name="Model File">[key_description]</model>
@@ -502,7 +503,15 @@ OA isn't that good at rendering curved shadows or angled shadows. You can end up
 <integer key="_layers;layers" name="Terrain Layers">[key_description]</integer>
 <texture key="_shader;shader" name="Terrain MetaShader">[key_description]</texture>
 -------- NOTES --------
-[additional_notes]
+Rising platforms may be problematic for bots, as they may go under them, unable to get on them and acting stupidly. To avoid this problem, lifts should be designed in a pillar-like way, fully filling the gap between their top position and the ground. This may be done by extending the brushes to actually look like a pillar, but also by making an invisible pillar through the use of clip brushes ("botclip" may be the best one, as it only affects bots).
+Also pay attention in case you have something ''under'' the platform (e.g. a lower floor room), as the pillar may affect it when the lift is lowered.
+
+Unless you set the "height" key, the total movement of the rising platform is given by subtracting the "lip" value to the total vertical height of the brushes which compose it. In case "height" is set, then "lip" value and brush size will be ignored, and the plat will go up for the specified amount of units: this also allows the platform to go up many times more than its own height (however it's advisable to make the lift pillar-like, for bots!).
+It is optionally possible to set "origin" key instead of having an origin brush. If using "model2" key, the origin brush or the "origin" key will be used as the origin of the model.
+
+It is possible to attach a misc_model to this entity (setting the same value to "target" key there and "targetname" key here), to have a model moving with the plat.
+
+WARNING: older documentation may tell you to create and include your own pt1_strt.wav and pt1_end.wav files. Do NOT do it for OpenArena maps, as OpenArena has already got those sounds. That note was just a leftover from documentation designed for Q3A.
 </group>
 
 <group name="func_rotating" color="0 .5 .8">
