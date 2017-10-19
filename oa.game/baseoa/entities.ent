@@ -818,11 +818,9 @@ ITEM_* ENTITIES
 -->
 
 <point name="item_ammoregen" color="0.3 0.3 1" box="16 -16 -16 16 16 16" model="models/powerups/ammo.md3">
-Ammo Regen rune.
+Ammo Regen Rune. It slowly regenerates ammo for user's weapons.
+User picking it up keeps it until his death, and the item will not respawn before that happens.
 
-The standard use of the Runes is to place them in the two bases, and use the "spawnflags" to allow the players of a team to get only those in their base. But it's also possible to place them in the middle of the map, without team limits: this would make the two teams battle to get them.
-
-The Runes are also used to counteract the effect of overpowered weapons, as without them one has to consider the Nailgun, the Chaingun and the Prox Launcher as superweapons on par with the BFG. 
 -------- KEYS --------
 <string key="gametype" name="Game Type">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 <real key="wait" name="Respawn Delay">[key_description]</real>
@@ -831,7 +829,7 @@ The Runes are also used to counteract the effect of overpowered weapons, as with
 <target key="target" name="Target">[key_description]</target>
 <targetname key="targetname" name="Target Name">[key_description]</targetname>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, the entity won't attract bots.</boolean>
-<boolean key="notfree" name="Don't Spawn In FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notfree" name="Don't Spawn In FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.). Useful in case of team-dedicated runes.</boolean>
 <boolean key="notteam" name="Don't Spawn In Teamgames">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
 <boolean key="notsingle" name="Don't Spawn In SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
 <string key="gametype" name="Game Type">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
@@ -843,7 +841,11 @@ The Runes are also used to counteract the effect of overpowered weapons, as with
 -------- NOTES --------
 Runes are not supported by most old mods for Q3A and will spawn in baseoa only if g_runes CVAR is set to 1 (default is 0). 
 
-It is NOT advisable to change the respawn time of an item, or the amount of ammo given by a weapon/box, because you are messing with the player's natural timing of the items. You're doing well with the default values. That said...
+The standard use of the Runes is to place them in the two bases, and use the "spawnflags" to allow the players of a team to get only those in their base. But it's also possible to place them in the middle of the map, without team limits: this would make the two teams battle to get them. It may be a good idea to set "notfree" key on team-dedicated runes.
+
+The Runes are also used to counteract the effect of overpowered weapons, as without them one has to consider the Nailgun, the Chaingun and the Prox Launcher as superweapons on par with the BFG.
+
+Runes respawn immediately after previous user's death.
 
 The "wait" value of a "teamed" item will determine the respawn time of the following one. Setting one of the items to -1 (no respawn) will prevent further items from spawning, after that one.
 
@@ -938,11 +940,9 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="item_doubler" color="0.3 0.3 1" box="16 -16 -16 16 16 16" model="models/powerups/doubler.md3">
-Doubler rune.
+Doubler Rune. Doubles the damage caused by user's weapons.
+User picking it up keeps it until his death, and the item will not respawn before that happens.
 
-The standard use of the Runes is to place them in the two bases, and use the "spawnflags" to allow the players of a team to get only those in their base. But it's also possible to place them in the middle of the map, without team limits: this would make the two teams battle to get them.
-
-The Runes are also used to counteract the effect of overpowered weapons, as without them one has to consider the Nailgun, the Chaingun and the Prox Launcher as superweapons on par with the BFG. 
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
@@ -951,7 +951,7 @@ The Runes are also used to counteract the effect of overpowered weapons, as with
 <target key="target" name="Target">[key_description]</target>
 <targetname key="targetname" name="Target Name">[key_description]</targetname>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, the entity won't attract bots.</boolean>
-<boolean key="notfree" name="Don't Spawn In FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notfree" name="Don't Spawn In FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.). Useful in case of team-dedicated runes.</boolean>
 <boolean key="notteam" name="Don't Spawn In Teamgames">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
 <boolean key="notsingle" name="Don't Spawn In SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
 <string key="gametype" name="Game Type">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
@@ -963,7 +963,11 @@ The Runes are also used to counteract the effect of overpowered weapons, as with
 -------- NOTES --------
 Runes are not supported by most old mods for Q3A and will spawn in baseoa only if g_runes CVAR is set to 1 (default is 0). 
 
-It is NOT advisable to change the respawn time of an item, or the amount of ammo given by a weapon/box, because you are messing with the player's natural timing of the items. You're doing well with the default values. That said...
+The standard use of the Runes is to place them in the two bases, and use the "spawnflags" to allow the players of a team to get only those in their base. But it's also possible to place them in the middle of the map, without team limits: this would make the two teams battle to get them. It may be a good idea to set "notfree" key on team-dedicated runes.
+
+The Runes are also used to counteract the effect of overpowered weapons, as without them one has to consider the Nailgun, the Chaingun and the Prox Launcher as superweapons on par with the BFG.
+
+Runes respawn immediately after previous user's death.
 
 The "wait" value of a "teamed" item will determine the respawn time of the following one. Setting one of the items to -1 (no respawn) will prevent further items from spawning, after that one.
 
@@ -1021,11 +1025,9 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="item_guard" color="0.3 0.3 1" box="16 -16 -16 16 16 16" model="models/powerups/guard.md3">
-Guard rune.
+Guard Rune. Instantly gives user full health and armor, and then continously regenerates his health.
+User picking it up keeps it until his death, and the item will not respawn before that happens.
 
-The standard use of the Runes is to place them in the two bases, and use the "spawnflags" to allow the players of a team to get only those in their base. But it's also possible to place them in the middle of the map, without team limits: this would make the two teams battle to get them.
-
-The Runes are also used to counteract the effect of overpowered weapons, as without them one has to consider the Nailgun, the Chaingun and the Prox Launcher as superweapons on par with the BFG. 
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
@@ -1046,7 +1048,11 @@ The Runes are also used to counteract the effect of overpowered weapons, as with
 -------- NOTES --------
 Runes are not supported by most old mods for Q3A and will spawn in baseoa only if g_runes CVAR is set to 1 (default is 0). 
 
-It is NOT advisable to change the respawn time of an item, or the amount of ammo given by a weapon/box, because you are messing with the player's natural timing of the items. You're doing well with the default values. That said...
+The standard use of the Runes is to place them in the two bases, and use the "spawnflags" to allow the players of a team to get only those in their base. But it's also possible to place them in the middle of the map, without team limits: this would make the two teams battle to get them. It may be a good idea to set "notfree" key on team-dedicated runes.
+
+The Runes are also used to counteract the effect of overpowered weapons, as without them one has to consider the Nailgun, the Chaingun and the Prox Launcher as superweapons on par with the BFG.
+
+Runes respawn immediately after previous user's death.
 
 The "wait" value of a "teamed" item will determine the respawn time of the following one. Setting one of the items to -1 (no respawn) will prevent further items from spawning, after that one.
 
@@ -1252,11 +1258,9 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="item_scout" color="0.3 0.3 1" box="16 -16 -16 16 16 16" model="models/powerups/scout.md3">
-Scout Rune
+Scout Rune. Noticeably accelerates user's movements, but prevents him from wearing any armor.
+User picking it up keeps it until his death, and the item will not respawn before that happens.
 
-The standard use of the Runes is to place them in the two bases, and use the "spawnflags" to allow the players of a team to get only those in their base. But it's also possible to place them in the middle of the map, without team limits: this would make the two teams battle to get them.
-
-The Runes are also used to counteract the effect of overpowered weapons, as without them one has to consider the Nailgun, the Chaingun and the Prox Launcher as superweapons on par with the BFG. 
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
@@ -1265,7 +1269,7 @@ The Runes are also used to counteract the effect of overpowered weapons, as with
 <target key="target" name="Target">[key_description]</target>
 <targetname key="targetname" name="Target Name">[key_description]</targetname>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, the entity won't attract bots.</boolean>
-<boolean key="notfree" name="Don't Spawn In FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notfree" name="Don't Spawn In FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.). Useful in case of team-dedicated runes.</boolean>
 <boolean key="notteam" name="Don't Spawn In Teamgames">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
 <boolean key="notsingle" name="Don't Spawn In SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
 <boolean key="notfree" name="Don't Spawn In FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
@@ -1280,7 +1284,11 @@ The Runes are also used to counteract the effect of overpowered weapons, as with
 -------- NOTES --------
 Runes are not supported by most old mods for Q3A and will spawn in baseoa only if g_runes CVAR is set to 1 (default is 0). 
 
-It is NOT advisable to change the respawn time of an item, or the amount of ammo given by a weapon/box, because you are messing with the player's natural timing of the items. You're doing well with the default values. That said...
+The standard use of the Runes is to place them in the two bases, and use the "spawnflags" to allow the players of a team to get only those in their base. But it's also possible to place them in the middle of the map, without team limits: this would make the two teams battle to get them. It may be a good idea to set "notfree" key on team-dedicated runes.
+
+The Runes are also used to counteract the effect of overpowered weapons, as without them one has to consider the Nailgun, the Chaingun and the Prox Launcher as superweapons on par with the BFG.
+
+Runes respawn immediately after previous user's death.
 
 The "wait" value of a "teamed" item will determine the respawn time of the following one. Setting one of the items to -1 (no respawn) will prevent further items from spawning, after that one.
 
@@ -1790,14 +1798,14 @@ WEAPON_* ENTITIES
 -->
 
 <point name="weapon_bfg" color="1 0 .5" box="-16 -16 -16 16 16 16" model="models/weapons2/bfg/bfg.md3">
-BFG weapon.
+BFG weapon. Projectile weapon shooting explosive ammo at high rate, it works like a sort of rapid rocket launcher.
 -------- KEYS --------
-<real key="wait" name="Respawn Delay">[key_description]</real>
+<real key="wait" name="Respawn Delay">Seconds before the item respawns. Set to -1 for never respawn. If the key is not set, the weapon will respawn after 40 seconds in Team Deathmatch mode and after 5 seconds in other modes.</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
-<integer key="count" name="Ammo Amount">[key_description]</integer>
+<integer key="count" name="Ammo Amount">Quantity of ammo preloaded in the weapon. If the player already has that amount or more, he will get only one more, except in TDM mode, where he will still get the full amount. Default: 20</integer>
 <string key="team" name="Team Name">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
-<target key="target" name="Target">[key_description]</target>
-<targetname key="targetname" name="Target Name">[key_description]</targetname>
+<target key="target" name="Target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <boolean key="notfree" name="Don't Spawn In FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
 <boolean key="notteam" name="Don't Spawn In Teamgames">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
 <boolean key="notsingle" name="Don't Spawn In SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
@@ -1809,13 +1817,15 @@ BFG weapon.
 -------- NOTES --------
 First and foremost: It is NOT advisable to change the respawn time of an item, or the amount of ammo given by a weapon/box, because you are messing with the player's natural timing of the items. You're doing well with the default values. That said...
 
+BFG is considered a superweapon, so it is usually placed in difficult or dangerous areas, or not included at all.
+
 The "wait" value of a "teamed" item will determine the respawn time of the following one. Setting one of the items to -1 (no respawn) will prevent further items from spawning, after that one.
 
 Using "random" key will make the respawn time variable, to the maximum limits given by "random" added or subtracted to "wait" seconds. Example: "wait 10" with "random 2" will make the item respawn between 8 and 12 seconds of delay.
 </point>
 
 <point name="weapon_chaingun" color="0 0 1" box="16 -16 -16 16 16 16" model="models/weapons/vulcan/vulcan.md3">
-Chaingun weapon.
+Chaingun weapon. Hitscan weapon similar to machinegun, with a much higher fire rate and lower accuracy.
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
@@ -1844,7 +1854,7 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="weapon_gauntlet" color="1 0 .5" box="-16 -16 -16 16 16 16" model="models/weapons2/gauntlet/gauntlet.md3">
-Gauntlet weapon.
+Gauntlet weapon. Melee, close combat only weapon, which does not need ammo and is given to all players by default.
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
@@ -1860,7 +1870,7 @@ Gauntlet weapon.
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't Drop To Floor" bit="0">If set to 1, the item will remain floating instead of appearing on the ground. Bots do not look for "suspended" items, unless they are reachable by jumppads or in water.</flag>
 -------- NOTES --------
-Usually you don't need to include the gauntlet, as it's a "stock" weapon. 
+Usually you don't need to include the gauntlet in the map, as it's a "stock" weapon. 
 
 It is NOT advisable to change the respawn time of an item, because you are messing with the player's natural timing of the items. You're doing well with the default values. That said...
 
@@ -1870,7 +1880,7 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="weapon_grapplinghook" color="1 0 .5" box="-16 -16 -16 16 16 16" model="models/weapons2/grapple/grapple.md3">
-Grappling Hook weapon.
+Grappling Hook weapon. Offhand grapple is not a proper weapon, but a device which allows the user to reach and stay attached to a surface.
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
@@ -1894,7 +1904,7 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="weapon_grenadelauncher" color="1 0 .5" box="-16 -16 -16 16 16 16" model="models/weapons2/grenadel/grenadel.md3">
-Grenade Launcher weapon.
+Grenade Launcher weapon. Projectile weapon which fires explosive grenades that bounce on walls.
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
@@ -1919,7 +1929,7 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="weapon_lightning" color="1 0 .5" box="-16 -16 -16 16 16 16" model="models\weapons2\lightning\lightning.md3">
-Lightning Gun weapon.
+Lightning Gun weapon. Hitscan weapon which fires a continuos, deadly ray, with limited range.
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
@@ -1944,7 +1954,7 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="weapon_machinegun" color="1 0 .5" box="-16 -16 -16 16 16 16" model="models\weapons2\machinegun\machinegun.md3">
-Machinegun Weapon
+Machinegun weapon. Hitscan weapon, it fires bullets which immediately reach the target, with long range and small spread. All players start with it by default.
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
@@ -1971,7 +1981,7 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="weapon_nailgun" color="0 0 1" box="16 -16 -16 16 16 16" model="models/weapons/nailgun/nailgun.md3">
-Nailgun weapon.
+Nailgun weapon. Projectile weapon which fires a wave of nails, very deadly especially at close range.
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
@@ -1998,7 +2008,7 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="weapon_plasmagun" color="1 0 .5" box="-16 -16 -16 16 16 16" model="models/weapons2/plasma/plasma.md3">
-Plasma Gun weapon.
+Plasma Gun weapon. Projectile weapon which rapidly fires plasma pulses.
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
@@ -2023,7 +2033,7 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="weapon_prox_launcher" color="0 0 1" box="16 -16 -16 16 16 16" model="models/weapons/proxmine/proxmine.md3">
-Prox Launcher weapon.
+Prox Launcher weapon. Projectile weapon which launches adhesive mines that explode when an enemy is in their proximity.
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
@@ -2052,7 +2062,7 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="weapon_railgun" color="1 0 .5" box="-16 -16 -16 16 16 16" model="models/weapons2/railgun/railgun.md3">
-Railgun weapon.
+Railgun weapon. Hitscan weapon which fires powerful long rage shots at slow rate.
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
@@ -2079,7 +2089,7 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="weapon_rocketlauncher" color="1 0 .5" box="-16 -16 -16 16 16 16" model="models/weapons2/rocketl/rocketl.md3">
-Rocket Launcher weapon.
+Rocket Launcher weapon. Projectile weapon which shoots explosive missiles in straight line.
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
@@ -2104,7 +2114,7 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="weapon_shotgun" color="1 0 .5" box="-16 -16 -16 16 16 16" model="models/weapons2/shotgun/shotgun.md3">
-Shotgun weapon.
+Shotgun weapon. Hitscan weapon mostly used for short range combat, due to its large spread.
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
