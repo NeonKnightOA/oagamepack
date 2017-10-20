@@ -2071,7 +2071,7 @@ Using "random" key will make the respawn time variable, to the maximum limits gi
 </point>
 
 <point name="weapon_railgun" color="1 0 .5" box="-16 -16 -16 16 16 16" model="models/weapons2/railgun/railgun.md3">
-Railgun weapon. Hitscan weapon which fires powerful long rage shots at slow rate.
+Railgun weapon. Hitscan weapon which fires powerful long range shots at slow rate.
 -------- KEYS --------
 <real key="wait" name="Respawn Delay">[key_description]</real>
 <real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</real>
