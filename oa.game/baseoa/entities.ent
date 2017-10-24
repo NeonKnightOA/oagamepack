@@ -488,7 +488,7 @@ To avoid problems with bots, see Notes.
 <real key="light" name="Model Light Intensity">[key_description]</real>
 <color key="color" name="Model Light Color">[key_description]</color>
 <model key="model2" name="Model File">A model can optionally be included, by specifying its path/name.</model>
-<real3 key="origin" name="World Origin">[key_description] See Notes.</real3>
+<real3 key="origin" name="World Origin">It's possible to specify XYZ as a different way to set the Origin. See Notes.</real3>
 <boolean key="notfree" name="Don't Spawn In FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
 <boolean key="notteam" name="Don't Spawn In Teamgames">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
 <boolean key="notsingle" name="Don't Spawn In SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
