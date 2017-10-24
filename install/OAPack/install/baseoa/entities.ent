@@ -487,8 +487,8 @@ To avoid problems with bots, see Notes.
 <targetname key="targetname" name="Target Name">Alternatively, the elevator can be raised by a trigger pointing to this. The lift goes up and then returns down after a second, unless there is someone on board.</targetname>
 <real key="light" name="Model Light Intensity">[key_description]</real>
 <color key="color" name="Model Light Color">[key_description]</color>
-<model key="model2" name="Model File">[key_description]</model>
-<real3 key="origin" name="World Origin">[key_description]</real3>
+<model key="model2" name="Model File">A model can optionally be included, by specifying its path/name.</model>
+<real3 key="origin" name="World Origin">It's possible to specify XYZ as a different way to set the Origin. See Notes.</real3>
 <boolean key="notfree" name="Don't Spawn In FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
 <boolean key="notteam" name="Don't Spawn In Teamgames">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
 <boolean key="notsingle" name="Don't Spawn In SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
@@ -507,11 +507,12 @@ Rising platforms may be problematic for bots, as they may go under them, unable 
 Also pay attention in case you have something ''under'' the platform (e.g. a lower floor room), as the pillar may affect it when the lift is lowered.
 
 Unless you set the "height" key, the total movement of the rising platform is given by subtracting the "lip" value to the total vertical height of the brushes which compose it. In case "height" is set, then "lip" value and brush size will be ignored, and the plat will go up for the specified amount of units: this also allows the platform to go up many times more than its own height (however it's advisable to make the lift pillar-like, for bots!).
-It is optionally possible to set "origin" key instead of having an origin brush. If using "model2" key, the origin brush or the "origin" key will be used as the origin of the model.
-
-It is possible to attach a misc_model to this entity (setting the same value to "target" key there and "targetname" key here), to have a model moving with the plat.
 
 WARNING: older documentation may tell you to create and include your own pt1_strt.wav and pt1_end.wav files. Do NOT do it for OpenArena maps, as OpenArena has already got those sounds. That note was just a leftover from documentation designed for Q3A.
+
+It is optionally possible to set "origin" key instead of having an origin brush. If using "model2" key, the origin brush or the "origin" key will be used as the origin of the model.
+
+It is possible to attach a misc_model to this entity by setting the same value to "target" key there and "targetname" key here.
 </group>
 
 <group name="func_rotating" color="0 .5 .8">
@@ -584,12 +585,12 @@ WARNING: older documentation may tell you to create and include your own pt1_str
 </point>
 
 <group name="func_train" color="0 .5 .8">
-[entity_description]
+Trains are brushes that move along a path defined by path_corner entities. They need an "Origin" brush and their features are quite limited. Their behavior has been modified AFTER OA 0.8.8 (see Notes).
 -------- KEYS --------
-<real key="speed" name="Move Speed">[key_description]</real>
-<target key="target" name="Target">[key_description]</target>
-<model key="model2" name="Model File">[key_description]</model>
-<real3 key="origin" name="World Origin">[key_description]</real3>
+<real key="speed" name="Move Speed">Movement speed. Can be overridden by path_corner speed. Default: 100..</real>
+<target key="target" name="Target">This must point to the first path_corner of the series, where the Origin of the train will be placed.</target>
+<model key="model2" name="Model File">A model can optionally be included, by specifying its path/name.</model>
+<real3 key="origin" name="World Origin">It's possible to specify XYZ as a different way to set the Origin. See Notes.</real3>
 <real key="light" name="Model Light Intensity">[key_description]</real>
 <color key="color" name="Model Light Color">[key_description]</color>
 <boolean key="notfree" name="Don't Spawn In FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
@@ -606,7 +607,15 @@ WARNING: older documentation may tell you to create and include your own pt1_str
 <integer key="_layers;layers" name="Terrain Layers">[key_description]</integer>
 <texture key="_shader;shader" name="Terrain MetaShader">[key_description]</texture>
 -------- NOTES --------
-[additional_notes]
+Trains need a "closed" circuit of path_corner entities, do not emit sounds, cannot be rotated and are always on (they cannot be trigger-controlled). They pass through other solid brushes.
+
+Up to OpenArena 0.8.8, they can push a player in front of their path, but GET STUCK with an ugly "shake" effect in case said player gets blocked by something else, like another player or a wall. They also GET STUCK in case they encounter a dropped weapon in front of their path.
+With gamecode changes introduced AFTER OA 0.8.8 (which DO NOT affect previous mods!), trains do NOT get stuck anymore, but DESTROY players which would have blocked them and PASS THROUGH items which would have blocked them.
+As your map may be played with older gamecode (e.g. Q3A mods), it's still advisable to place "common/nodrop" all along the path of the train, or to make it "fly" above players' height, trying to minimize the chances of the train becoming blocked.
+
+It is optionally possible to set "origin" key instead of having an origin brush. If using "model2" key, the origin brush or the "origin" key will be used as the origin of the model.
+
+It is possible to attach a misc_model to this entity by setting the same value to "target" key there and "targetname" key here.
 </group>
 
 <!--
@@ -1419,17 +1428,18 @@ PATH_* ENTITIES
 -->
 
 <point name="path_corner" color=".5 .3 0" box="-8 -8 -8 8 8 8">
-[entity_description]
+These are used to define the path followed by a func_train.
 -------- KEYS --------
-<target key="target" name="Target">[key_description]</target>
-<targetname key="targetname" name="Target Name">[key_description]</targetname>
-<real key="speed" name="Move Speed">[key_description]</real>
-<real key="wait" name="Corner Delay">[key_description]</real>
+<target key="target" name="Target">The name of the path_corner entity the train will have to reach after this one.</target>
+<targetname key="targetname" name="Target Name">The name of this path_corner. Previous path_corner or the func_train itself (in case this one is the first corner) have to point to this.</targetname>
+<real key="speed" name="Move Speed">The speed of the train from this path_corner to the next one. Optional value, expressed in units per seconds, overrides general func_train speed.</real>
+<real key="wait" name="Corner Delay">Optional, allows to set how many seconds the train will have to wait here before going to the next func_corner. Default: 0. See Notes.</real>
 <boolean key="notfree" name="Don't Spawn In FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
 <boolean key="notteam" name="Don't Spawn In Teamgames">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
 <boolean key="notsingle" name="Don't Spawn In SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
 -------- NOTES --------
-[additional_notes]
+Setting "wait" to -1 has no effect, it cannot be used to completely stop the func_train.
+The train needs a "closed" circuit.
 </point>
 
 <!--
