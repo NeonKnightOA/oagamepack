@@ -1,0 +1,24 @@
+key,text,type,fullname,basekey
+wait,Seconds before the item respawns. Set to -1 for never respawn.,integer,Wait time,
+random,How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.,integer,,
+count,Quantity of ammo given by the item.,integer,,
+team,"Makes the item spawn randomly with other items with the same ""team"" value. See Notes.",string,,
+target,"When this item is picked up, it triggers the entity specified here, if set.",target,,
+targetname,"If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).",targetname,,
+notbot,"If set to 1, the entity won't attract bots.",boolean,,
+notfree,"If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).",boolean,,
+notteam,"If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).",boolean,,
+notsingle,"If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.",boolean,,
+gametype,"If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.",string,,
+!gametype,"Usage is similar to Game Type key, with opposite effect. If set, causes the entity to NOT spawn in the specified gametypes. Not supported in gamecode older than OA 0.8.8: entity will always spawn in old mods for Q3A!",string,,
+wait_path_corner,Some special text for wait when applied to path_corner,integer,,wait
+model2,.md3 model to also draw,string,,
+angle,determines the opening direction,real,,
+targetname_func_door,"if set, no touch field will be spawned and a remote button or trigger field activates the door.",targetname,,targetname
+speed,Movement speed,integer,,
+wait_func_door,wait before returning (-1 = never return),integer,,wait
+lip,lip remaining at end of move,integer,,
+dmg_mover,damage to inflict when blocked,integer,,dmg
+color,Light color,color,,
+light,Light radius,real,,
+health_mover,"if set, the door must be shot open",boolean,Shoot to open,health
