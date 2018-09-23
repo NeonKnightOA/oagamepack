@@ -1,2 +1,6 @@
-name,nvq3
-weapon_nailgun,true
+name,nvq3,team_spawn
+weapon_nailgun,true,
+team_CTF_redplayer,,true
+team_CTF_redspawn,,true
+team_CTF_blueplayer,,true
+team_CTF_bluespawn,,true

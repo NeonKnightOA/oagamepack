@@ -1,2 +1,4 @@
 key,text
-nvq3,"This may not work with mods designed for the original Q3A"
+nvq3,This may not work with mods designed for the original Q3A
+team_spawn,"Make sure to have at least 6 of each of team_CTF_redspawn, team_CTF_redplayer, team_CTF_bluespawn and team_CTF_blueplayer.
+If this is completely omitted then deathmatch spawn point will be used"

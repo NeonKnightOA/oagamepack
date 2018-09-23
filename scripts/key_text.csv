@@ -22,3 +22,4 @@ dmg_mover,damage to inflict when blocked,integer,,dmg
 color,Light color,color,,
 light,Light radius,real,,
 health_mover,"if set, the door must be shot open",boolean,Shoot to open,health
+message,Set the name of the domination point. Length limit: 19,string,Location name,
