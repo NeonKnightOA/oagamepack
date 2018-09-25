@@ -1,6 +1,7 @@
 /*QUAKED _skybox (.7 .8 1) (-4 -4 -4) (4 4 4)
 */
 /*QUAKED ammo_belt (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/ammo/chaingunam.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -15,6 +16,7 @@ model="models/powerups/ammo/chaingunam.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED ammo_bfg (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/ammo/bfgam.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -29,6 +31,7 @@ model="models/powerups/ammo/bfgam.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED ammo_bullets (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/ammo/machinegunam.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -43,6 +46,7 @@ model="models/powerups/ammo/machinegunam.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED ammo_cells (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/ammo/plasmaam.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -57,6 +61,7 @@ model="models/powerups/ammo/plasmaam.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED ammo_grenades (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/ammo/grenadeam.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -71,6 +76,7 @@ model="models/powerups/ammo/grenadeam.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED ammo_lightning (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/ammo/lightningam.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -85,6 +91,7 @@ model="models/powerups/ammo/lightningam.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED ammo_mines (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/ammo/proxmineam.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -99,6 +106,7 @@ model="models/powerups/ammo/proxmineam.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED ammo_nails (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/ammo/nailgunam.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -113,6 +121,7 @@ model="models/powerups/ammo/nailgunam.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED ammo_rockets (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/ammo/rocketam.md3"
 "count" Quantity of ammo given by the item. Default: 10
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -127,6 +136,7 @@ model="models/powerups/ammo/rocketam.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED ammo_shells (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/ammo/shotgunam.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -141,6 +151,7 @@ model="models/powerups/ammo/shotgunam.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED ammo_slugs (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/ammo/railgunam.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -158,6 +169,7 @@ model="models/powerups/ammo/railgunam.md3"
 Place to spawn domination points in Standard domination.
 The message-key gives the point a name that is showed while playing (MAX length: 19 chars)
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
+"message" Set the name of the domination point. Length limit: 19
 */
 /*QUAKED func_bobbing (0 .5 .8) ? X_AXIS Y_AXIS
 Normally bobs on the Z axis
@@ -262,22 +274,27 @@ The train spawns at the first target it is pointing at.
 "light"		constantLight radius
 */
 /*QUAKED holdable_invulnerability (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/holdable/invulnerability.md3"
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
 */
 /*QUAKED holdable_kamikaze (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/kamikazi.md3"
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
 */
 /*QUAKED holdable_medkit (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/holdable/teleporter.md3"
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
 */
 /*QUAKED holdable_portal (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/holdable/porter.md3"
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
 */
 /*QUAKED holdable_teleporter (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/holdable/teleporter.md3"
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
 */
@@ -316,51 +333,67 @@ The intermission will be viewed from this point.  Target an info_notnull for the
 equivelant to info_player_deathmatch
 */
 /*QUAKED item_armor_body (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/armor/armor_red.md3"
 */
 /*QUAKED item_armor_combat (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/armor/armor_yel.md3"
 */
 /*QUAKED item_armor_shard (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/armor/shard.md3"
 */
 /*QUAKED item_doubler (.3 .3 1) (-16 -16 -16) (16 16 16) suspended redTeam blueTeam
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/ammo.md3"
 */
 /*QUAKED item_enviro (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/instant/enviro.md3"
 */
 /*QUAKED item_flight (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/instant/flight.md3"
 */
 /*QUAKED item_guard (.3 .3 1) (-16 -16 -16) (16 16 16) suspended redTeam blueTeam
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/guard.md3"
 */
 /*QUAKED item_haste (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/instant/haste.md3"
 */
 /*QUAKED item_health (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/health/medium_cross.md3"
 */
 /*QUAKED item_health_large (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/health/large_cross.md3"
 */
 /*QUAKED item_health_mega (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/health/mega_cross.md3"
 */
 /*QUAKED item_health_small (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/health/small_cross.md3"
 */
 /*QUAKED item_invis (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/instant/invis.md3"
 */
 /*QUAKED item_quad (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/instant/quad.md3"
 */
 /*QUAKED item_regen (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/instant/regen.md3"
 */
 /*QUAKED item_scout (.3 .3 1) (-16 -16 -16) (16 16 16) suspended redTeam blueTeam
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/scout.md3"
 */
 /*QUAKED light (0 1 0) (-8 -8 -8) (8 8 8) linear
@@ -468,6 +501,7 @@ Multiple identical looping sounds will just increase volume without any speed co
 The activator will be teleported away.
 */
 /*QUAKED team_CTF_blueflag (0 0 1) (-16 -16 -16) (16 16 16)
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/flags/b_flag.md3"
 Only in CTF games
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -479,16 +513,22 @@ Only in CTF games
 */
 /*QUAKED team_CTF_blueplayer (0 0 1) (-16 -16 -24) (16 16 32)
 Only in CTF games.  Blue players spawn here at game start.
+Make sure to have at least 6 of each of team_CTF_redspawn, team_CTF_redplayer, team_CTF_bluespawn and team_CTF_blueplayer.
+If this is completely omitted then deathmatch spawn point will be used
 */
 /*QUAKED team_CTF_bluespawn (0 0 1) (-16 -16 -24) (16 16 32)
 potential spawning position for blue team in CTF games.
 Targets will be fired when someone spawns in on them.
+Make sure to have at least 6 of each of team_CTF_redspawn, team_CTF_redplayer, team_CTF_bluespawn and team_CTF_blueplayer.
+If this is completely omitted then deathmatch spawn point will be used
 */
 /*QUAKED team_CTF_neutralflag (0 0 1) (-16 -16 -16) (16 16 16)
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/orb/b_orb.md3"
 Only in One Flag CTF games
 */
 /*QUAKED team_CTF_redflag (1 0 0) (-16 -16 -16) (16 16 16)
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/flags/r_flag.md3"
 Only in CTF games
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -500,10 +540,14 @@ Only in CTF games
 */
 /*QUAKED team_CTF_redplayer (1 0 0) (-16 -16 -24) (16 16 32)
 Only in CTF games.  Red players spawn here at game start.
+Make sure to have at least 6 of each of team_CTF_redspawn, team_CTF_redplayer, team_CTF_bluespawn and team_CTF_blueplayer.
+If this is completely omitted then deathmatch spawn point will be used
 */
 /*QUAKED team_CTF_redspawn (1 0 0) (-16 -16 -24) (16 16 32)
 potential spawning position for red team in CTF games.
 Targets will be fired when someone spawns in on them.
+Make sure to have at least 6 of each of team_CTF_redspawn, team_CTF_redplayer, team_CTF_bluespawn and team_CTF_blueplayer.
+If this is completely omitted then deathmatch spawn point will be used
 */
 /*QUAKED team_blueobelisk (0 0 1) (-16 -16 0) (16 16 88)
 */
@@ -545,6 +589,7 @@ Spectator teleporters are not normally placed in the editor, but are created
 automatically near doors to allow spectators to move through them
 */
 /*QUAKED weapon_bfg (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/weapons2/bfg/bfg.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -559,6 +604,7 @@ model="models/weapons2/bfg/bfg.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED weapon_chaingun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/flags/b_flag.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -573,6 +619,7 @@ model="models/flags/b_flag.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED weapon_gauntlet (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/weapons2/gauntlet/gauntlet.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -587,6 +634,7 @@ model="models/weapons2/gauntlet/gauntlet.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED weapon_grapplinghook (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/weapons2/grapple/grapple.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -601,6 +649,7 @@ model="models/weapons2/grapple/grapple.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED weapon_grenadelauncher (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/weapons2/grenadel/grenadel.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -615,6 +664,7 @@ model="models/weapons2/grenadel/grenadel.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED weapon_lightning (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/weapons2/lightning/lightning.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -629,6 +679,7 @@ model="models/weapons2/lightning/lightning.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED weapon_machinegun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/weapons2/machinegun/machinegun.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -643,6 +694,7 @@ model="models/weapons2/machinegun/machinegun.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED weapon_nailgun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/weapons/nailgun/nailgun.md3"
 This may not work with mods designed for the original Q3A
 "count" Quantity of ammo given by the item.
@@ -658,6 +710,7 @@ This may not work with mods designed for the original Q3A
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED weapon_plasmagun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/weapons2/plasma/plasma.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -672,6 +725,7 @@ model="models/weapons2/plasma/plasma.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED weapon_prox_launcher (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/weapons/proxmine/proxmine.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -686,6 +740,7 @@ model="models/weapons/proxmine/proxmine.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED weapon_railgun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/weapons2/railgun/railgun.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -700,6 +755,7 @@ model="models/weapons2/railgun/railgun.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED weapon_rocketlauncher (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/weapons2/rocketl/rocketl.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
@@ -714,6 +770,7 @@ model="models/weapons2/rocketl/rocketl.md3"
 "wait" Seconds before the item respawns. Set to -1 for never respawn.
 */
 /*QUAKED weapon_shotgun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended
+--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/weapons2/shotgun/shotgun.md3"
 "count" Quantity of ammo given by the item.
 "gametype" If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.
