@@ -129,7 +129,10 @@ for item in entities:
         box2 = parans[2]
     if isinstance(row["model"],str):
         model = row["model"]
-    print("  <point name=\"" + item + "\" color=\""+color+"\"", end ="")
+    xmlType = "point"
+    if (item == "worldspawn"):
+        xmlType = "group"
+    print("  <"+xmlType+" name=\"" + item + "\" color=\""+color+"\"", end ="")
     if (box1 and box2):
         print(" box=\""+box1+" "+box2+"\"", end = "")
     print(" model=\""+model+"\">")
@@ -141,5 +144,5 @@ for item in entities:
     printSpawnflags(item)
     print("-------- NOTES --------")
     printNotes(item)
-    print("  </point>")
+    print("  </"+xmlType+">")
 print("</classes>")

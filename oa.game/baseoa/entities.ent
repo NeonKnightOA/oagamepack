@@ -756,7 +756,7 @@ Pendulum frequency is a physical constant based on the length of the beam and gr
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </point>
-  <point name="worldspawn" color="0 0 0" box="-8 -8 -8 8 8 8" model="">
+  <group name="worldspawn" color="0 0 0" box="-8 -8 -8 8 8 8" model="">
 Every map should have exactly one worldspawn.
 "music"		music wav file
 "gravity"	800 is default gravity
@@ -764,7 +764,7 @@ Every map should have exactly one worldspawn.
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
+  </group>
   <point name="target_give" color="1 0 0" box="-8 -8 -8 8 8 8" model="">
 Gives the activator all the items pointed to.
 -------- KEYS --------

@@ -696,23 +696,17 @@ The message-key gives the point a name that is showed while playing (MAX length:
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </point>
-  <point name="target_relay" color=".5 .5 .5" box="-8 -8 -8 8 8 8" model="">
-This doesn't perform any actions except fire its targets.
-The activator can be forced to be from a certain team.
-if RANDOM is checked, only one of the targets will be fired, not all of them
+  <group name="worldspawn" color="0 0 0" box="-8 -8 -8 8 8 8" model="">
+Every map should have exactly one worldspawn.
+"music"		music wav file
+"gravity"	800 is default gravity
+"message"	Text to print during connection process
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
-  <point name="func_timer" color="0.3 0.1 0.6" box="-8 -8 -8 8 8 8" model="">
-This should be renamed trigger_timer...
-Repeatedly fires its targets.
-Can be turned on or off by using.
-
-"wait"			base time between triggering all targets, default is 1
-"random"		wait variance, default is 0
-so, the basic time between firing is a random time between
-(wait - random) and (wait + random)
+  </group>
+  <point name="target_give" color="1 0 0" box="-8 -8 -8 8 8 8" model="">
+Gives the activator all the items pointed to.
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
