@@ -83,7 +83,10 @@ def printKeys(item_name):
                             defaultText = ". Default: "+str(defaultTextActual)+"."
                     except:
                         defaultText = ""
-                    print("<"+str(key_texts[item]["type"])+" key=\""+str(basename)+"\" name=\""+str(name)+"\">"+str(key_texts[item]["text"])+str(defaultText)+"</"+str(key_texts[item]["type"])+">")
+                    text = key_texts[item]["text"]
+                    if not (text and text == text):
+                        text = "No text"
+                    print("<"+str(key_texts[item]["type"])+" key=\""+str(basename)+"\" name=\""+str(name)+"\">"+text+str(defaultText)+"</"+str(key_texts[item]["type"])+">")
                     
 def printNotes(item_name):
     for item in note_texts:

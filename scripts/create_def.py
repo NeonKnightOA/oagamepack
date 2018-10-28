@@ -22,11 +22,11 @@
 
 import pandas as pd
 import sys
-import re
 import os.path
 
+
 def readCsvToDictsAppend(result,filename,keyname):
-    reader = pd.read_csv(filename, encoding = "ISO-8859-1")
+    reader = pd.read_csv(filename)
     for row in reader.itertuples():
         rowDict = row._asdict()
         key = rowDict[keyname]
@@ -54,6 +54,8 @@ note_texts = readCsvToDicts("note_text.csv", "key")
 spawnflags = readCsvToDicts("spawnflags.csv","item")
 spawnflag_texts = readCsvToDicts("spawnflag_text.csv","key")
 
+
+
 def printKeys(item_name):
     for item in sorted(key_texts):
         if (item_name in keys.keys()):
@@ -79,8 +81,11 @@ def printKeys(item_name):
                             defaultText = ". Default: "+str(defaultTextActual)+"."
                     except:
                         defaultText = ""
-					# To-Do: Replace the NaN strings. At least it now runs.
-                    print("\""+str(basename)+"\" : "+str(key_texts[item]["text"])+str(defaultText))
+                    text = key_texts[item]["text"]
+                    if (text and text == text):
+                        print("\""+basename+"\" : "+str(key_texts[item]["text"])+defaultText)
+                    else:
+                        print("\""+basename+"\" : No text"+defaultText)
 
 
 def printNotes(item_name):
