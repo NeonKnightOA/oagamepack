@@ -13,8 +13,8 @@ FAST_ROTATE,FAST_ROTATE,1,Rotate faster,The portal camera rotates faster along t
 GLOBAL,GLOBAL,2,Distance doesn't attenuate,"If set, the sound will play full volume throughout the level. Can't be combined with looping."
 INITIAL,INITIAL,0,Initial spawnpoint,"Tags the spawnpoint as initial, players will spawn here when the game starts."
 LINEAR,LINEAR,0,Linear falloff,Uses a linear falloff instead of a more realistic one based on inverse square.
-LOOPED_OFF,LOOPED_OFF,1,Starts not looped,The sound loops and starts turned off in the level. Multiple identical looping sounds will just increase volume without any speed cost. It’s toggled by use functions.
-LOOPED_ON,LOOPED_ON,0,Starts looped,The sound loops and starts turned on in the level. Multiple identical looping sounds will just increase volume without any speed cost. It’s toggled by use functions.
+LOOPED_OFF,LOOPED_OFF,1,Starts not looped,The sound loops and starts turned off in the level. Multiple identical looping sounds will just increase volume without any speed cost. It's toggled by use functions.
+LOOPED_ON,LOOPED_ON,0,Starts looped,The sound loops and starts turned on in the level. Multiple identical looping sounds will just increase volume without any speed cost. It's toggled by use functions.
 NO_ANGLE,NO_ANGLE,1,No angle attenuation,Ignores angle attenuation.
 NO_GRID_LIGHT,NO_GRID_LIGHT,4,Not dynamic,Doesn't count as a dynamic light.
 NO_GRID_LIGHTJUNIOR,NO_GRID_LIGHT,4,Not dynamic,"Doesn't count as a dynamic light, disabling it entirely."
