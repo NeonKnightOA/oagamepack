@@ -27,5 +27,5 @@ def convertFileToUnixLineEndings(filename):
     f.write(fileContents)
     f.close()
     
-for arg in sys.args:
+for arg in sys.argv:
     convertFileToUnixLineEndings(arg)
