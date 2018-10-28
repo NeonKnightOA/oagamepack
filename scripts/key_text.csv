@@ -43,7 +43,7 @@ _lightmapscale,real,Lightmap Scale,_lightmapscale,Q3MAP2_KEYS,
 lip,real,Lip,lip,KEYS,Protrusion above rest position.
 message,string,Message to Display,message,KEYS,Text to display.
 message_domination_point,string,Point Name,message,KEYS,Gives the point a name which is displayed in-game. (MAX length: 19 chars)
-message_target_location,,,,,Name of the location.
+message_target_location,string,Location Name,message,KEYS,Name of the location.
 message_worldspawn,string,Logon Message,message,KEYS,
 _mingridlight,real,Min Dynamic Intensity,_mingridlight,Q3MAP2_KEYS,
 _minlight,real,Min Lightmap Intensity,_minlight,Q3MAP2_KEYS,
