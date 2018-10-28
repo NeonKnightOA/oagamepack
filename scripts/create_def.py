@@ -26,7 +26,7 @@ import re
 import os.path
 
 def readCsvToDictsAppend(result,filename,keyname):
-    reader = pd.read_csv(filename)
+    reader = pd.read_csv(filename, encoding = "ISO-8859-1")
     for row in reader.itertuples():
         rowDict = row._asdict()
         key = rowDict[keyname]
@@ -74,12 +74,13 @@ def printKeys(item_name):
                     try:
                         defaultTextActual = keyLine[item+"_default"]
                         if key_texts[item]["type"] == "integer":
-                            defaultText = " Default: "+str(int(defaultTextActual))
+                            defaultText = ". Default: "+str(int(defaultTextActual))+"."
                         else:
-                            defaultText = " Default: "+str(defaultTextActual)
+                            defaultText = ". Default: "+str(defaultTextActual)+"."
                     except:
                         defaultText = ""
-                    print("\""+basename+"\" "+key_texts[item]["text"]+defaultText)
+					# To-Do: Replace the NaN strings. At least it now runs.
+                    print("\""+str(basename)+"\" : "+str(key_texts[item]["text"])+str(defaultText))
 
 
 def printNotes(item_name):
@@ -89,7 +90,7 @@ def printNotes(item_name):
             if (item in keyLine.keys()):
                 hasKey = keyLine[item]
                 if (hasKey and hasKey == hasKey):
-                    print(note_texts[item]["text"])
+                    print(str(note_texts[item]["text"]))
                     
 
 def isTrue(some_value):

@@ -2,4 +2,10 @@ key,text
 nvq3,This may not work with mods designed for the game OA is inspired from.
 team_spawn,"Make sure to have at least 6 of each of team_CTF_redspawn, team_CTF_redplayer, team_CTF_bluespawn and team_CTF_blueplayer.
 If this is completely omitted then deathmatch spawn point will be used"
-broken,This item is broken in some older versions of OA and the game it’s inspired from. May not work.
+broken,This item is broken in some older versions of OA and the game it's inspired from. May not work.
+func_button_note,"When a button is touched, it moves some distance in the direction of it's angle, triggers all of it's targets, waits some time, then returns to it's original position where it can be triggered again."
+origin_brush,You need to have an origin brush as part of this entity.
+angles_note,Add an angles field to the model to allow rotation in other directions.
+light_note,Lights pointed at a target will be spotlights.
+target_note,Targeting the trigger will toggle its on / off state.
+_decal_note,Decals are built with one or more patches and target an info_null entity. Axis and distance of projection are determined by the distance between the center of the entity and the target.

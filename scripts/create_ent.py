@@ -26,7 +26,7 @@ import re
 import os.path
 
 def readCsvToDictsAppend(result,filename,keyname):
-    reader = pd.read_csv(filename)
+    reader = pd.read_csv(filename, encoding = "ISO-8859-1")
     for row in reader.itertuples():
         rowDict = row._asdict()
         key = rowDict[keyname]
@@ -78,12 +78,12 @@ def printKeys(item_name):
                     try:
                         defaultTextActual = keyLine[item+"_default"]
                         if key_texts[item]["type"] == "integer":
-                            defaultText = " Default: "+str(int(defaultTextActual))
+                            defaultText = ". Default: "+str(int(defaultTextActual))+"."
                         else:
-                            defaultText = " Default: "+str(defaultTextActual)
+                            defaultText = ". Default: "+str(defaultTextActual)+"."
                     except:
                         defaultText = ""
-                    print("<"+key_texts[item]["type"]+" key=\""+basename+"\" name=\""+name+"\">"+key_texts[item]["text"]+defaultText+"</"+key_texts[item]["type"]+">")
+                    print("<"+str(key_texts[item]["type"])+" key=\""+str(basename)+"\" name=\""+str(name)+"\">"+str(key_texts[item]["text"])+str(defaultText)+"</"+str(key_texts[item]["type"])+">")
                     
 def printNotes(item_name):
     for item in note_texts:
@@ -102,13 +102,13 @@ def printNonSuspendedSpawnflags(item_name):
                 hasKey = keyLine[item]
                 flagRow = spawnflag_texts[item]
                 if (hasKey and hasKey == hasKey):
-                    print("<flag key=\""+flagRow["key"]+"\" name=\""+flagRow["fullname"]+"\" bit=\""+str(flagRow["bit"])+"\">"+flagRow["text"]+"</flag>")
+                    print("<flag key=\""+str(flagRow["key"])+"\" name=\""+str(flagRow["fullname"])+"\" bit=\""+str(flagRow["bit"])+"\">"+str(flagRow["text"])+"</flag>")
                     
                     
 def printSpawnflags(item_name):
     if (item == "SUSPENDED" and "suspended" in entities[item_name]["quaked"]):
         flagRow = spawnflag_texts["SUSPENDED"]
-        print("<flag key=\""+flagRow["key"]+"\" name=\""+flagRow["fullname"]+"\" bit=\""+str(flagRow["bit"])+"\">"+flagRow["text"]+"</flag>")    
+        print("<flag key=\""+str(flagRow["key"])+"\" name=\""+str(flagRow["fullname"])+"\" bit=\""+str(flagRow["bit"])+"\">"+str(flagRow["text"])+"</flag>")    
     printNonSuspendedSpawnflags(item_name)
             
 
@@ -117,6 +117,8 @@ for item in entities:
     row = entities[item]
     quaked = row["quaked"]
     model = ""
+    box1= ""
+    box2= ""
     p = re.compile('\((.+?)\)')
     parans = p.findall(quaked)
     try:
