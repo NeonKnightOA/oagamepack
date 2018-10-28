@@ -1,3 +1,40 @@
-key,text,bit,fullname
-SUSPENDED,"If set, the item will not drop to the ground. Bots will ignore it.",0,"Do not drop to ground"
-START_OPEN,"Start in the open position",1,"Start open"
+key,basekey,bit,fullname,text
+ACTIVATOR,ACTIVATOR,3,Only activator hears,Sound plays only for the activator of the trigger.
+AUTOCLIP,AUTOCLIP,1,Autoclipping,Assigns q3map_clipmodel to any shaders used by the model. Use ONLY on large models with relatively few triangles in their mesh.
+AUTOLIGHTMAP,AUTOLIGHTMAP,2,Lightmapped model,Adds q3map_forcemeta to any shaders used by the model.
+BLOCK_STOPS,BLOCK_STOPS,2,Block stops,
+BLUE_ONLY,BLUE_ONLY,1,Blue Team Only,Only Blue Team players can activate the trigger.
+BLUE_TEAM_ITEM,BLUE_TEAM,2,Blue Team Only,Only Blue Team members can pick up this rune.
+BLUE_TEAM_TARGET,BLUE_TEAM,1,Blue Team Only,Only Blue team players can see the message.
+BOUNCE_PAD,BOUNCE_PAD,0,Bounce sound,"On pushing, the entity plays a bouncing sound."
+CASTSHADOWS,CASTSHADOWS,0,Casts Shadows,Model casts shadows on the map surfaces.
+CRUSHER,CRUSHER,2,Crusher,Door crushes player upon closing instead of reversing direction.
+FAST_ROTATE,FAST_ROTATE,1,Rotate faster,The portal camera rotates faster along the roll axis.
+GLOBAL,GLOBAL,2,Distance doesn’t attenuate,Sound plays at full volume throughout the level.
+INITIAL,INITIAL,0,Initial spawnpoint,"Tags the spawnpoint as initial, players will spawn here when the game starts."
+LINEAR,LINEAR,0,Linear falloff,Uses a linear falloff instead of a more realistic invsqrt-based one.
+LOOPED_OFF,LOOPED_OFF,1,Starts not looped,The sound loops and starts turned off in the level.
+LOOPED_ON,LOOPED_ON,0,Starts looped,The sound loops and starts turned on in the level.
+NO_ANGLE,NO_ANGLE,1,No angle attenuation,Ignores angle attenuation.
+NO_GRID_LIGHT,NO_GRID_LIGHT,4,Not dynamic,Doesn’t count as a dynamic light.
+NO_GRID_LIGHTJUNIOR,NO_GRID_LIGHT,4,Not dynamic,"Doesn’t count as a dynamic light, disabling it entirely."
+NO_PROTECTION,NO_PROTECTION,2,Ignore powerup protection,Player is hurt regardless of protection.
+NO_SWING,NO_SWING,2,No swing,
+PRIVATE,PRIVATE,2,Activator Only,Only the player who activated the entity can see the message.
+RANDOM,RANDOM,2,Random Target,Picks a targetted entity at random and triggers it.
+RED_ONLY,RED_ONLY,0,Red Team Only,Only Red Team players can activate the trigger.
+RED_TEAM_ITEM,RED_TEAM,1,Red Team Only,Only Red Team members can pick up this rune.
+RED_TEAM_TARGET,RED_TEAM,0,Red Team Only,Only Red team players can see the message.
+SILENT,SILENT,1,Silent trigger,Doesn’t play sizzling sound while player is being hurt.
+SLOW,SLOW,3,Damage per second,Damage rate changes to once per second instead of server frame.
+SLOW_ROTATE,SLOW_ROTATE,0,Rotate slowly,The portal camera rotates slowly along the roll axis.
+SPECTATOR,SPECTATOR,0,Spectator,
+START_OFF,START_OFF,0,Starts off,Requires toggling for damage infliction.
+START_ON,START_ON,0,Start on,Timer starts with the game and fires its targets continuously.
+START_OPEN,START_OPEN,0,Start open,Door spawns opened and works in reverse direction.
+SUSPENDED,SUSPENDED,0,Don’t drop to ground,"If set, the item will not drop to the ground. Bots will ignore it."
+TOGGLE,TOGGLE,1,Toggle,
+X_AXIS_FUNC_BOBBING,X_AXIS,0,X Axis,Entity bobs alongside the X axis.
+X_AXIS_FUNC_ROTATING,X_AXIS,2,X Axis,Entity rotates alongside the X axis.
+Y_AXIS_FUNC_BOBBING,Y_AXIS,1,Y Axis,Entity bobs alongside the Y axis.
+Y_AXIS_FUNC_ROTATING,Y_AXIS,3,Y Axis,Entity rotates alongside the Y axis.
