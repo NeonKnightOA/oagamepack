@@ -1,4 +1,4 @@
-/*QUAKED _decal (0 1.0 0) (-8 -8 -8) (8 8 8)
+/*QUAKED _decal (0 1.0 0) ?
 Compiler-only entity. Specifies a decal for projection.
 "target" : The entity which is targetted at for projection.
 */
@@ -198,7 +198,7 @@ This may not work with mods designed for the game OA is inspired from.
 "notteam" : No text
 "target" : All entities with a matching targetname will be used.
 */
-/*QUAKED func_bobbing (0 .5 .8) (-8 -8 -8) (8 8 8) X_AXIS Y_AXIS
+/*QUAKED func_bobbing (0 .5 .8) ? X_AXIS Y_AXIS
 Brush entity which bobs on the Z axis.
 "height" : Total height of movement, defaults to model height.. Default: 32.0.
 "light" : constantLight radius. Default: 0.0.
@@ -211,7 +211,7 @@ Brush entity which bobs on the Z axis.
 "phase" : The 0.0 to 1.0 offset in the cycle to start at.. Default: 0.0.
 "speed" : Seconds to complete a bob cycle.. Default: 4.0.
 */
-/*QUAKED func_button (0 .5 .8) (-8 -8 -8) (8 8 8)
+/*QUAKED func_button (0 .5 .8) ?
 Pushable button, usually used to trigger other entities or just open doors.
 When a button is touched, it moves some distance in the direction of it's angle, triggers all of it's targets, waits some time, then returns to it's original position where it can be triggered again.
 "angle" : Determines the opening direction.
@@ -228,7 +228,7 @@ When a button is touched, it moves some distance in the direction of it's angle,
 "target" : All entities with a matching targetname will be used.
 "wait" : Seconds between triggerings (-1 = never return).. Default: 1.0.
 */
-/*QUAKED func_door (0 .5 .8) (-8 -8 -8) (8 8 8) START_OPEN x CRUSHER
+/*QUAKED func_door (0 .5 .8) ? START_OPEN x CRUSHER
 Movable brush usually used as a door, hence the name.
 "angle" : Determines the opening direction.
 "color" : constantLight color. Default: 1 1 1.
@@ -246,10 +246,10 @@ Movable brush usually used as a door, hence the name.
 "team" : No text
 "wait" : Seconds between triggerings (-1 = never return).. Default: 2.0.
 */
-/*QUAKED func_group (0 0 0) (-8 -8 -8) (8 8 8)
+/*QUAKED func_group (0 0 0) ?
 Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.
 */
-/*QUAKED func_pendulum (0 .5 .8) (-8 -8 -8) (8 8 8)
+/*QUAKED func_pendulum (0 .5 .8) ?
 A swinging pendulum. Pendulums always swing north / south on unrotated models.  Pendulum frequency is a physical constant based on the length of the beam and gravity.
 Add an angles field to the model to allow rotation in other directions.
 You need to have an origin brush as part of this entity.
@@ -265,7 +265,7 @@ You need to have an origin brush as part of this entity.
 "phase" : The 0.0 to 1.0 offset in the cycle to start at.. Default: 0.0.
 "speed" : Number of degrees each way the pendulum swings.. Default: 30.0.
 */
-/*QUAKED func_plat (0 .5 .8) (-8 -8 -8) (8 8 8)
+/*QUAKED func_plat (0 .5 .8) ?
 Activable platforms. Plats are always drawn in the extended position so they will light correctly.
 "color" : constantLight color. Default: 1 1 1.
 "dmg" : Damage to inflict when blocked.. Default: 4.
@@ -279,7 +279,7 @@ Activable platforms. Plats are always drawn in the extended position so they wil
 "origin" : No text. Default: nan.
 "speed" : No text. Default: 150.0.
 */
-/*QUAKED func_rotating (0 .5 .8) (-8 -8 -8) (8 8 8) START_ON - X_AXIS Y_AXIS
+/*QUAKED func_rotating (0 .5 .8) ? START_ON - X_AXIS Y_AXIS
 A rotating entity, used for decorations or moving platforms. The center of that brush will be
 the point around which it is rotated. It will rotate around the Z axis by default.  You can
 check either the X_AXIS or Y_AXIS box to change that.
@@ -291,7 +291,7 @@ You need to have an origin brush as part of this entity.
 "origin" : No text. Default: 0 0 0.
 "speed" : Determines how fast it moves.. Default: 100.0.
 */
-/*QUAKED func_static (0 .5 .8) (-8 -8 -8) (8 8 8)
+/*QUAKED func_static (0 .5 .8) ?
 A bmodel that just sits there, doing nothing.  Can be used for conditional walls and models.
 "color" : constantLight color. Default: 1 1 1.
 "gametype" : No text
@@ -312,7 +312,7 @@ Repeatedly fires its targets. Can be turned on or off by using another func or t
 "targetname" : No text
 "wait" : Base time between triggering all targets.. Default: 1.0.
 */
-/*QUAKED func_train (0 .5 .8) (-8 -8 -8) (8 8 8) START_ON TOGGLE BLOCK_STOPS
+/*QUAKED func_train (0 .5 .8) ? START_ON TOGGLE BLOCK_STOPS
 A train is a mover that moves between path_corner target points. The train spawns at the first target it is pointing at.
 You need to have an origin brush as part of this entity.
 "color" : constantLight color. Default: 1 1 1.
@@ -1038,7 +1038,7 @@ This trigger will always fire.  It is activated by the world.
 "notteam" : No text
 "target" : All entities with a matching targetname will be used.
 */
-/*QUAKED trigger_hurt (.5 .5 .5) (-8 -8 -8) (8 8 8) START_OFF - SILENT NO_PROTECTION SLOW
+/*QUAKED trigger_hurt (.5 .5 .5) ? START_OFF - SILENT NO_PROTECTION SLOW
 Any entity that touches this will be hurt. It does dmg points of damage each server frame.
 Targeting the trigger will toggle its on / off state.
 "dmg" : Damage to inflict when blocked.. Default: 5.
@@ -1046,7 +1046,7 @@ Targeting the trigger will toggle its on / off state.
 "notsingle" : No text
 "notteam" : No text
 */
-/*QUAKED trigger_multiple (.5 .5 .5) (-8 -8 -8) (8 8 8)
+/*QUAKED trigger_multiple (.5 .5 .5) ?
 Variable sized repeatable trigger.  Must be targeted at one or more entities.
 "notfree" : No text
 "notsingle" : No text
@@ -1055,14 +1055,14 @@ Variable sized repeatable trigger.  Must be targeted at one or more entities.
 "target" : All entities with a matching targetname will be used.
 "wait" : Base time between triggering all targets.. Default: 0.2.
 */
-/*QUAKED trigger_push (.5 .5 .5) (-8 -8 -8) (8 8 8)
+/*QUAKED trigger_push (.5 .5 .5) ?
 Must point at a target_position, which will be the apex of the leap. This will be client side predicted, unlike target_push.
 "notfree" : No text
 "notsingle" : No text
 "notteam" : No text
 "target" : All entities with a matching targetname will be used.
 */
-/*QUAKED trigger_teleport (.5 .5 .5) (-8 -8 -8) (8 8 8) SPECTATOR
+/*QUAKED trigger_teleport (.5 .5 .5) ? SPECTATOR
 Allows client side prediction of teleportation events. Must point at a target_position, which will be the teleport destination.
 "notfree" : No text
 "notsingle" : No text

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <classes>
-  <group name="_decal" color="0 1.0 0" box="-8 -8 -8 8 8 8" model="">
+  <group name="_decal" color="0 1.0 0" model="">
 Compiler-only entity. Specifies a decal for projection.
 -------- KEYS --------
 <target key="target" name="Target">The entity which is targetted at for projection.</target>
@@ -231,7 +231,7 @@ Domination Control Point.
 -------- NOTES --------
 This may not work with mods designed for the game OA is inspired from.
   </point>
-  <point name="func_bobbing" color="0 .5 .8" box="-8 -8 -8 8 8 8" model="">
+  <group name="func_bobbing" color="0 .5 .8" model="">
 Brush entity which bobs on the Z axis.
 -------- KEYS --------
 <real key="height" name="Vertical Travel">Total height of movement, defaults to model height.. Default: 32.0.</real>
@@ -248,8 +248,8 @@ Brush entity which bobs on the Z axis.
 <flag key="X_AXIS_FUNC_BOBBING" name="X Axis" bit="0">Entity bobs alongside the X axis.</flag>
 <flag key="Y_AXIS_FUNC_BOBBING" name="Y Axis" bit="1">Entity bobs alongside the Y axis.</flag>
 -------- NOTES --------
-  </point>
-  <point name="func_button" color="0 .5 .8" box="-8 -8 -8 8 8 8" model="">
+  </group>
+  <group name="func_button" color="0 .5 .8" model="">
 Pushable button, usually used to trigger other entities or just open doors.
 -------- KEYS --------
 <direction key="angle" name="Direction">Determines the opening direction.</direction>
@@ -268,8 +268,8 @@ Pushable button, usually used to trigger other entities or just open doors.
 -------- SPAWNFLAGS --------
 -------- NOTES --------
 When a button is touched, it moves some distance in the direction of it's angle, triggers all of it's targets, waits some time, then returns to it's original position where it can be triggered again.
-  </point>
-  <point name="func_door" color="0 .5 .8" box="-8 -8 -8 8 8 8" model="">
+  </group>
+  <group name="func_door" color="0 .5 .8" model="">
 Movable brush usually used as a door, hence the name.
 -------- KEYS --------
 <direction key="angle" name="Direction">Determines the opening direction.</direction>
@@ -291,14 +291,14 @@ Movable brush usually used as a door, hence the name.
 <flag key="CRUSHER" name="Crusher" bit="2">Door crushes player upon closing instead of reversing direction.</flag>
 <flag key="START_OPEN" name="Start open" bit="0">The door to moves to its destination when spawned, and operate in reverse.  It is used to temporarily or permanently close off an area when triggered (not useful for touch or takedamage doors).</flag>
 -------- NOTES --------
-  </point>
-  <point name="func_group" color="0 0 0" box="-8 -8 -8 8 8 8" model="">
+  </group>
+  <group name="func_group" color="0 0 0" model="">
 Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
-  <point name="func_pendulum" color="0 .5 .8" box="-8 -8 -8 8 8 8" model="">
+  </group>
+  <group name="func_pendulum" color="0 .5 .8" model="">
 A swinging pendulum. Pendulums always swing north / south on unrotated models.  Pendulum frequency is a physical constant based on the length of the beam and gravity.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: 0.0.</angle>
@@ -316,8 +316,8 @@ A swinging pendulum. Pendulums always swing north / south on unrotated models.  
 -------- NOTES --------
 You need to have an origin brush as part of this entity.
 Add an angles field to the model to allow rotation in other directions.
-  </point>
-  <point name="func_plat" color="0 .5 .8" box="-8 -8 -8 8 8 8" model="">
+  </group>
+  <group name="func_plat" color="0 .5 .8" model="">
 Activable platforms. Plats are always drawn in the extended position so they will light correctly.
 -------- KEYS --------
 <color key="color" name="Model Light Color">constantLight color. Default: 1 1 1.</color>
@@ -333,8 +333,8 @@ Activable platforms. Plats are always drawn in the extended position so they wil
 <real key="speed" name="Move Speed">No text. Default: 150.0.</real>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
-  <point name="func_rotating" color="0 .5 .8" box="-8 -8 -8 8 8 8" model="">
+  </group>
+  <group name="func_rotating" color="0 .5 .8" model="">
 A rotating entity, used for decorations or moving platforms. The center of that brush will be
 the point around which it is rotated. It will rotate around the Z axis by default.  You can
 check either the X_AXIS or Y_AXIS box to change that.
@@ -351,8 +351,8 @@ check either the X_AXIS or Y_AXIS box to change that.
 <flag key="Y_AXIS_FUNC_ROTATING" name="Y Axis" bit="3">Entity rotates alongside the Y axis.</flag>
 -------- NOTES --------
 You need to have an origin brush as part of this entity.
-  </point>
-  <point name="func_static" color="0 .5 .8" box="-8 -8 -8 8 8 8" model="">
+  </group>
+  <group name="func_static" color="0 .5 .8" model="">
 A bmodel that just sits there, doing nothing.  Can be used for conditional walls and models.
 -------- KEYS --------
 <color key="color" name="Model Light Color">constantLight color. Default: 1 1 1.</color>
@@ -365,7 +365,7 @@ A bmodel that just sits there, doing nothing.  Can be used for conditional walls
 <real3 key="origin" name="World Origin">No text. Default: nan.</real3>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
+  </group>
   <point name="func_timer" color="0.3 0.1 0.6" box="-8 -8 -8 8 8 8" model="">
 Repeatedly fires its targets. Can be turned on or off by using another func or trigger.
 -------- KEYS --------
@@ -380,7 +380,7 @@ Repeatedly fires its targets. Can be turned on or off by using another func or t
 <flag key="START_ON" name="Start on" bit="0">Timer starts with the game and fires its targets continuously.</flag>
 -------- NOTES --------
   </point>
-  <point name="func_train" color="0 .5 .8" box="-8 -8 -8 8 8 8" model="">
+  <group name="func_train" color="0 .5 .8" model="">
 A train is a mover that moves between path_corner target points. The train spawns at the first target it is pointing at.
 -------- KEYS --------
 <color key="color" name="Model Light Color">constantLight color. Default: 1 1 1.</color>
@@ -398,7 +398,7 @@ A train is a mover that moves between path_corner target points. The train spawn
 <flag key="TOGGLE" name="Toggle" bit="1">Wait in both the start and end states for a trigger event.</flag>
 -------- NOTES --------
 You need to have an origin brush as part of this entity.
-  </point>
+  </group>
   <point name="holdable_invulnerability" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/invulnerability.md3">
 Invulnerability holdable.
 -------- KEYS --------
@@ -1321,7 +1321,7 @@ This trigger will always fire.  It is activated by the world.
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </point>
-  <point name="trigger_hurt" color=".5 .5 .5" box="-8 -8 -8 8 8 8" model="">
+  <group name="trigger_hurt" color=".5 .5 .5" model="">
 Any entity that touches this will be hurt. It does dmg points of damage each server frame.
 -------- KEYS --------
 <integer key="dmg" name="Damage Inflicted">Damage to inflict when blocked.. Default: 5.</integer>
@@ -1335,8 +1335,8 @@ Any entity that touches this will be hurt. It does dmg points of damage each ser
 <flag key="START_OFF" name="Starts off" bit="0">Requires toggling for damage infliction.</flag>
 -------- NOTES --------
 Targeting the trigger will toggle its on / off state.
-  </point>
-  <point name="trigger_multiple" color=".5 .5 .5" box="-8 -8 -8 8 8 8" model="">
+  </group>
+  <group name="trigger_multiple" color=".5 .5 .5" model="">
 Variable sized repeatable trigger.  Must be targeted at one or more entities.
 -------- KEYS --------
 <boolean key="notfree" name="Hidden for FFA">No text</boolean>
@@ -1347,8 +1347,8 @@ Variable sized repeatable trigger.  Must be targeted at one or more entities.
 <real key="wait" name="Time Period">Base time between triggering all targets.. Default: 0.2.</real>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
-  <point name="trigger_push" color=".5 .5 .5" box="-8 -8 -8 8 8 8" model="">
+  </group>
+  <group name="trigger_push" color=".5 .5 .5" model="">
 Must point at a target_position, which will be the apex of the leap. This will be client side predicted, unlike target_push.
 -------- KEYS --------
 <boolean key="notfree" name="Hidden for FFA">No text</boolean>
@@ -1357,8 +1357,8 @@ Must point at a target_position, which will be the apex of the leap. This will b
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
-  <point name="trigger_teleport" color=".5 .5 .5" box="-8 -8 -8 8 8 8" model="">
+  </group>
+  <group name="trigger_teleport" color=".5 .5 .5" model="">
 Allows client side prediction of teleportation events. Must point at a target_position, which will be the teleport destination.
 -------- KEYS --------
 <boolean key="notfree" name="Hidden for FFA">No text</boolean>
@@ -1369,7 +1369,7 @@ Allows client side prediction of teleportation events. Must point at a target_po
 -------- SPAWNFLAGS --------
 <flag key="SPECTATOR" name="Spectator" bit="0">If set, only spectators can use this teleport. Spectator teleporters are not normally placed in the editor, but are created automatically near doors to allow spectators to move through them.</flag>
 -------- NOTES --------
-  </point>
+  </group>
   <point name="weapon_bfg" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/bfg/bfg.md3">
 BFG.
 -------- KEYS --------

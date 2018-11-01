@@ -135,7 +135,7 @@ for item in entities:
     if isinstance(row["model"],str):
         model = row["model"]
     xmlType = "point"
-    if (item == "worldspawn" or item == "_decal"):
+    if not (box1 or box2):
         xmlType = "group"
     print("  <"+xmlType+" name=\"" + item + "\" color=\""+color+"\"", end ="")
     if (box1 and box2):
