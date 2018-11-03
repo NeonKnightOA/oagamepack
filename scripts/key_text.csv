@@ -1,12 +1,12 @@
 key,type,fullname,basekey,group,text
-_ambient; ambient,real,Ambient Intensity,_ambient; ambient,KEYS,
+_ambient, ambient,real,Ambient Intensity,KEYS, ambient
 angle,angle,Yaw Angle,angle,KEYS,Determines a facing angle.
 angle_func,direction,Direction,angle,KEYS,Determines the opening direction.
 angles,angles,Pitch Yaw Roll,angles,KEYS,"Individual control of pitch, yaw and roll."
 angles_two,angles,Pitch Yaw,angles,KEYS,Individual control of pitch and yaw.
 angles_q3map2,angles,Pitch Yaw Roll,angles,Q3MAP2_KEYS,
 _blocksize,integer,Block Size,_blocksize,KEYS,
-_castshadows; _cs,integer,Shadow Caster Level,_castshadows; _cs,Q3MAP2_KEYS,
+_castshadows, _cs,integer,Shadow Caster Level,Q3MAP2_KEYS, _cs
 _celshader,texture,Cel Shader,_celshader,Q3MAP2_KEYS,
 _color,color,Light Color,_color,KEYS,
 _color_worldspawn,color,Ambient Color,_color,KEYS,
@@ -34,11 +34,10 @@ gravity,real,Gravity,gravity,KEYS,
 gridsize,integer3,Grid Size,gridsize,KEYS,
 health,real,Activate on Damage,health,KEYS,"If set, the entity must be hit instead of touched."
 height,real,Vertical Travel,height,KEYS,"Total height of movement, defaults to model height."
-_indexmap; alphamap,texture,Terrain Blending Map,_indexmap; alphamap,Q3MAP2_TERRAIN_KEYS,
+_indexmap, alphamap,texture,Terrain Blending Map,Q3MAP2_TERRAIN_KEYS, alphamap
 _keeplights,boolean,Keep Light Entities,_keeplights,Q3MAP2_KEYS,
-_layers; layers,integer,Terrain Layers,_layers; layers,Q3MAP2_TERRAIN_KEYS,
+_layers, layers,integer,Terrain Layers,Q3MAP2_TERRAIN_KEYS, layers
 light,real,Model Light Intensity,light,KEYS,constantLight radius
-light; _light,real,Light Intensity,light; _light,KEYS,
 _lightmapscale,real,Lightmap Scale,_lightmapscale,Q3MAP2_KEYS,
 lip,real,Lip,lip,KEYS,Protrusion above rest position.
 message,string,Message to Display,message,KEYS,Text to display.
@@ -70,12 +69,12 @@ random_shooter,real,Angle Variance,random,KEYS,Number of degrees of deviance fro
 random_target_delay,real,Delay Variance,random,KEYS,"Delay variance, total delay = delay +/- random seconds."
 random_target_speaker,real,Repeat Time Variance,random,KEYS,Wait variance. The basic time between firing is a random time between (wait-random) and (wait+random).
 range,real,Range,range,KEYS,
-_receiveshadows; _rs,integer,Shadow Reception Level,_receiveshadows; _rs,Q3MAP2_KEYS,
+_receiveshadows, _rs,integer,Shadow Reception Level,Q3MAP2_KEYS, _rs
 _remap,array,Shader Remaps,_remap,Q3MAP2_KEYS,
 roll,real,Roll,roll,KEYS,Angle modifier to orient the camera around the target vector.
 scale,real,Scale,scale,KEYS,Scaling factor. Recommended values sit between 50 and 300.
 scale_q3map2,real,Intensity Scale,scale,Q3MAP2_KEYS,
-_shader; shader,texture,Terrain MetaShader,_shader; shader,Q3MAP2_TERRAIN_KEYS,
+_shader, shader,texture,Terrain MetaShader,Q3MAP2_TERRAIN_KEYS, shader
 speed,real,Move Speed,speed,KEYS,
 speed_func_bobbing,real,Bob Cycle Time,speed,KEYS,Seconds to complete a bob cycle.
 speed_func_pendulum,real,Max Swing Angle,speed,KEYS,Number of degrees each way the pendulum swings.
