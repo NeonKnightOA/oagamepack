@@ -10,7 +10,7 @@ Compiler-only entity. Specifies a decal for projection.
   <point name="_skybox" color="0.77 0.88 1.0" box="-4 -4 -4 4 4 4" model="">
 Compiler-only entity. Specifies the origin of a skybox in a contained area of the map, far from the actual level.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -24,7 +24,7 @@ Chaingun ammo.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -43,7 +43,7 @@ BFG ammo.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -61,7 +61,7 @@ Machinegun ammo.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -81,7 +81,7 @@ Plasma Gun ammo.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -99,7 +99,7 @@ Grenade Launcher ammo.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -119,7 +119,7 @@ Lightning Gun ammo.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -137,7 +137,7 @@ Prox Launcher ammo.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -156,7 +156,7 @@ Nailgun ammo.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -175,7 +175,7 @@ Rocket Launcher ammo.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -193,7 +193,7 @@ Shotgun ammo.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -211,7 +211,7 @@ Railgun ammo.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -223,7 +223,7 @@ Railgun ammo.
   <point name="domination_point" color="1 0 .5" box="-16 -16 -16 16 16 16" model="">
 Domination Control Point.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <string key="gametype" name="Supported Game Types">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 <string key="message" name="Point Name">Gives the point a name which is displayed in-game. (MAX length: 19 chars)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, the entity won't attract bots</boolean>
@@ -239,14 +239,14 @@ This may not work with mods designed for the game OA is inspired from.
 Brush entity which bobs on the Z axis.
 -------- KEYS --------
 <real key="height" name="Vertical Travel">Total height of movement, defaults to model height. Default: 32.0.</real>
-<real key="light" name="Model Light Intensity">constantLight radius. Default: 0.0.</real>
+<real key="light" name="Model Light Intensity">constantLight radius</real>
 <model key="model2" name="Model File">.md3 model to draw.</model>
 <sound key="noise" name="Sound File">Wav file to play.</sound>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real3 key="origin" name="World Origin">No text. Default: nan.</real3>
-<real key="phase" name="Bob Cycle Phase">The 0.0 to 1.0 offset in the cycle to start at. Default: 0.0.</real>
+<real3 key="origin" name="World Origin">No text</real3>
+<real key="phase" name="Bob Cycle Phase">The 0.0 to 1.0 offset in the cycle to start at</real>
 <real key="speed" name="Bob Cycle Time">Seconds to complete a bob cycle.. Default: 4.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="X_AXIS_FUNC_BOBBING" name="X Axis" bit="0">Entity bobs alongside the X axis.</flag>
@@ -258,14 +258,14 @@ Pushable button, usually used to trigger other entities or just open doors.
 -------- KEYS --------
 <direction key="angle" name="Direction">Determines the opening direction</direction>
 <color key="color" name="Model Light Color">constantLight color. Default: 1 1 1.</color>
-<real key="health" name="Activate on Damage">If set, the entity must be hit instead of touched. Default: 0.0.</real>
-<real key="light" name="Model Light Intensity">constantLight radius. Default: 0.0.</real>
+<real key="health" name="Activate on Damage">If set, the entity must be hit instead of touched</real>
+<real key="light" name="Model Light Intensity">constantLight radius</real>
 <real key="lip" name="Lip">Protrusion above rest position.. Default: 4.0.</real>
 <model key="model2" name="Model File">.md3 model to draw.</model>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real3 key="origin" name="World Origin">No text. Default: nan.</real3>
+<real3 key="origin" name="World Origin">No text</real3>
 <real key="speed" name="Move Speed">Movement speed. Default: 40.0.</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <real key="wait" name="Return Delay">Seconds between triggerings (-1 = never return).. Default: 1.0.</real>
@@ -279,14 +279,14 @@ Movable brush usually used as a door, hence the name.
 <direction key="angle" name="Direction">Determines the opening direction</direction>
 <color key="color" name="Model Light Color">constantLight color. Default: 1 1 1.</color>
 <integer key="dmg" name="Damage Inflicted">Damage to inflict when blocked.. Default: 4.</integer>
-<real key="health" name="Activate on Damage">If set, the entity must be hit instead of touched. Default: 0.0.</real>
-<real key="light" name="Model Light Intensity">constantLight radius. Default: 0.0.</real>
+<real key="health" name="Activate on Damage">If set, the entity must be hit instead of touched</real>
+<real key="light" name="Model Light Intensity">constantLight radius</real>
 <real key="lip" name="Lip">Protrusion above rest position.. Default: 8.0.</real>
 <model key="model2" name="Model File">.md3 model to draw.</model>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real3 key="origin" name="World Origin">No text. Default: nan.</real3>
+<real3 key="origin" name="World Origin">No text</real3>
 <real key="speed" name="Move Speed">Movement speed. Default: 100.0.</real>
 <targetname key="targetname" name="Target Name">if set, no touch field will be spawned and a remote button or trigger field activates the door.</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -305,16 +305,16 @@ Used to group brushes together just for editor convenience.  They are turned int
   <group name="func_pendulum" color="0 .5 .8" model="">
 A swinging pendulum. Pendulums always swing north / south on unrotated models.  Pendulum frequency is a physical constant based on the length of the beam and gravity.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: 0.0.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <color key="color" name="Model Light Color">constantLight color. Default: 1 1 1.</color>
-<real key="light" name="Model Light Intensity">constantLight radius. Default: 0.0.</real>
+<real key="light" name="Model Light Intensity">constantLight radius</real>
 <model key="model2" name="Model File">.md3 model to draw.</model>
 <sound key="noise" name="Sound File">Wav file to play.</sound>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
 <real3 key="origin" name="World Origin">No text. Default: 0 0 0.</real3>
-<real key="phase" name="Swing Phase">The 0.0 to 1.0 offset in the cycle to start at. Default: 0.0.</real>
+<real key="phase" name="Swing Phase">The 0.0 to 1.0 offset in the cycle to start at</real>
 <real key="speed" name="Max Swing Angle">Number of degrees each way the pendulum swings.. Default: 30.0.</real>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -326,14 +326,14 @@ Activable platforms. Plats are always drawn in the extended position so they wil
 -------- KEYS --------
 <color key="color" name="Model Light Color">constantLight color. Default: 1 1 1.</color>
 <integer key="dmg" name="Damage Inflicted">Damage to inflict when blocked.. Default: 4.</integer>
-<real key="height" name="Vertical Travel">Total height of movement, defaults to model height. Default: nan.</real>
-<real key="light" name="Model Light Intensity">constantLight radius. Default: 0.0.</real>
+<real key="height" name="Vertical Travel">Total height of movement, defaults to model height</real>
+<real key="light" name="Model Light Intensity">constantLight radius</real>
 <real key="lip" name="Lip">Protrusion above rest position.. Default: 16.0.</real>
 <model key="model2" name="Model File">.md3 model to draw.</model>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real3 key="origin" name="World Origin">No text. Default: nan.</real3>
+<real3 key="origin" name="World Origin">No text</real3>
 <real key="speed" name="Move Speed">Movement speed. Default: 150.0.</real>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -344,7 +344,7 @@ the point around which it is rotated. It will rotate around the Z axis by defaul
 check either the X_AXIS or Y_AXIS box to change that.
 -------- KEYS --------
 <color key="color" name="Model Light Color">constantLight color. Default: 1 1 1.</color>
-<real key="light" name="Model Light Intensity">constantLight radius. Default: 0.0.</real>
+<real key="light" name="Model Light Intensity">constantLight radius</real>
 <model key="model2" name="Model File">.md3 model to draw.</model>
 <sound key="noise" name="Sound File">Wav file to play.</sound>
 <real3 key="origin" name="World Origin">No text. Default: 0 0 0.</real3>
@@ -361,12 +361,12 @@ A bmodel that just sits there, doing nothing.  Can be used for conditional walls
 -------- KEYS --------
 <color key="color" name="Model Light Color">constantLight color. Default: 1 1 1.</color>
 <string key="gametype" name="Supported Game Types">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
-<real key="light" name="Model Light Intensity">constantLight radius. Default: 0.0.</real>
+<real key="light" name="Model Light Intensity">constantLight radius</real>
 <model key="model2" name="Model File">.md3 model to draw.</model>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real3 key="origin" name="World Origin">No text. Default: nan.</real3>
+<real3 key="origin" name="World Origin">No text</real3>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </group>
@@ -376,7 +376,7 @@ Repeatedly fires its targets. Can be turned on or off by using another func or t
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Time Period Variance">Wait variance. The basic time between firing is a random time between (wait-random) and (wait+random). Default: 0.0.</real>
+<real key="random" name="Time Period Variance">Wait variance. The basic time between firing is a random time between (wait-random) and (wait+random)</real>
 <target key="target" name="Target">No text</target>
 <targetname key="targetname" name="Target Name">No text</targetname>
 <real key="wait" name="Time Period">Base time between triggering all targets.. Default: 1.0.</real>
@@ -388,12 +388,12 @@ Repeatedly fires its targets. Can be turned on or off by using another func or t
 A train is a mover that moves between path_corner target points. The train spawns at the first target it is pointing at.
 -------- KEYS --------
 <color key="color" name="Model Light Color">constantLight color. Default: 1 1 1.</color>
-<real key="light" name="Model Light Intensity">constantLight radius. Default: 0.0.</real>
+<real key="light" name="Model Light Intensity">constantLight radius</real>
 <model key="model2" name="Model File">.md3 model to draw.</model>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real3 key="origin" name="World Origin">No text. Default: nan.</real3>
+<real3 key="origin" name="World Origin">No text</real3>
 <real key="speed" name="Move Speed">Movement speed. Default: 100.0.</real>
 <target key="target" name="Target">Next path corner.</target>
 -------- SPAWNFLAGS --------
@@ -411,7 +411,7 @@ Invulnerability holdable.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -429,7 +429,7 @@ Kamikaze holdable.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -447,7 +447,7 @@ Personal Medkit holdable.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -464,7 +464,7 @@ Portal holdable.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -483,7 +483,7 @@ Teleporter holdable.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -524,7 +524,7 @@ Used as a positional target for calculations in the utilities (spotlights, etc),
   <point name="info_player_dd" color="1 1 0" box="-16 -16 -24 16 16 32" model="">
 Spawn point used in Double Domination if no team specific spawn points exists. Usually placed in the middle of CTF maps. See info_player_dd_red and info_player_dd_blue for team specific versions.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
@@ -536,7 +536,7 @@ This may not work with mods designed for the game OA is inspired from.
   <point name="info_player_dd_blue" color="1 1 0" box="-16 -16 -24 16 16 32" model="">
 Spawn point used in Double Domination by the blue team. If your map has dedicated spawn rooms, use this.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
@@ -548,7 +548,7 @@ This may not work with mods designed for the game OA is inspired from.
   <point name="info_player_dd_red" color="1 1 0" box="-16 -16 -24 16 16 32" model="">
 Spawn point used in Double Domination by the red team. If your map has dedicated spawn rooms, use this.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
@@ -560,7 +560,7 @@ This may not work with mods designed for the game OA is inspired from.
   <point name="info_player_dom" color="1 1 0" box="-16 -16 -24 16 16 32" model="">
 Spawn point used in Domination if no team specific spawn points exists. Usually placed in the middle of CTF maps. See info_player_dom_red and info_player_dom_blue for team specific versions.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
@@ -572,7 +572,7 @@ This may not work with mods designed for the game OA is inspired from.
   <point name="info_player_dom_blue" color="1 1 0" box="-16 -16 -24 16 16 32" model="">
 Spawn point used in Domination by the blue team
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
@@ -584,7 +584,7 @@ This may not work with mods designed for the game OA is inspired from.
   <point name="info_player_dom_red" color="1 1 0" box="-16 -16 -24 16 16 32" model="">
 Spawn point used in Domination by the red team
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
@@ -596,7 +596,7 @@ This may not work with mods designed for the game OA is inspired from.
   <point name="info_player_deathmatch" color="1 0 1" box="-16 -16 -24 16 16 32" model="">
 Potential spawning position for Deathmatch games. The first time a player enters the game, they will be at an 'initial' spot. Targets will be fired when someone spawns in on them.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
@@ -617,7 +617,7 @@ The intermission will be viewed from this point.  Target an info_notnull for the
   <point name="info_player_start" color="1 0 0" box="-16 -16 -24 16 16 32" model="">
 Limited equivelant to info_player_deathmatch. Use that one instead.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
@@ -634,11 +634,11 @@ Ammo Regen rune.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns. Set to -1 for never respawn. Default: 0.0.</real>
+<real key="wait" name="Respawn Delay">Seconds before the item respawns. Set to -1 for never respawn</real>
 -------- SPAWNFLAGS --------
 <flag key="BLUE_TEAM_ITEM" name="Blue Team Only" bit="2">Only Blue Team members can pick up this rune.</flag>
 <flag key="RED_TEAM_ITEM" name="Red Team Only" bit="1">Only Red Team members can pick up this rune.</flag>
@@ -654,7 +654,7 @@ Body Armor.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -671,7 +671,7 @@ Combat Armor.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -688,7 +688,7 @@ Armor Shard.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -705,11 +705,11 @@ Doubler rune.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns. Set to -1 for never respawn. Default: 0.0.</real>
+<real key="wait" name="Respawn Delay">Seconds before the item respawns. Set to -1 for never respawn</real>
 -------- SPAWNFLAGS --------
 <flag key="BLUE_TEAM_ITEM" name="Blue Team Only" bit="2">Only Blue Team members can pick up this rune.</flag>
 <flag key="RED_TEAM_ITEM" name="Red Team Only" bit="1">Only Red Team members can pick up this rune.</flag>
@@ -726,7 +726,7 @@ Battle Suit powerup.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -744,7 +744,7 @@ Flight powerup.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -761,11 +761,11 @@ Guard rune.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns. Set to -1 for never respawn. Default: 0.0.</real>
+<real key="wait" name="Respawn Delay">Seconds before the item respawns. Set to -1 for never respawn</real>
 -------- SPAWNFLAGS --------
 <flag key="BLUE_TEAM_ITEM" name="Blue Team Only" bit="2">Only Blue Team members can pick up this rune.</flag>
 <flag key="RED_TEAM_ITEM" name="Red Team Only" bit="1">Only Red Team members can pick up this rune.</flag>
@@ -782,7 +782,7 @@ Haste powerup.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -799,7 +799,7 @@ Medium Health.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -816,7 +816,7 @@ Large Health.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -833,7 +833,7 @@ Megahealth.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -850,7 +850,7 @@ Small Health.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -868,7 +868,7 @@ Invisibility powerup.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -886,7 +886,7 @@ Quad Damage powerup.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -904,7 +904,7 @@ Regeneration powerup.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -921,11 +921,11 @@ Scout rune.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns. Set to -1 for never respawn. Default: 0.0.</real>
+<real key="wait" name="Respawn Delay">Seconds before the item respawns. Set to -1 for never respawn</real>
 -------- SPAWNFLAGS --------
 <flag key="BLUE_TEAM_ITEM" name="Blue Team Only" bit="2">Only Blue Team members can pick up this rune.</flag>
 <flag key="RED_TEAM_ITEM" name="Red Team Only" bit="1">Only Red Team members can pick up this rune.</flag>
@@ -964,7 +964,7 @@ Lights pointed at a target will be spotlights.
   <point name="misc_model" color="1 0 0" box="-16 -16 -16 16 16 16" model="">
 Displays a static model in the map.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <angles key="angles" name="Pitch Yaw Roll">No text. Default: 0 0 0.</angles>
 <real key="modelscale" name="Uniform Scale">No text. Default: 1.0.</real>
 <real3 key="modelscale_vec" name="Scale X Y Z">No text. Default: 1.0 1.0 1.0.</real3>
@@ -1002,7 +1002,7 @@ The target for a misc_portal_director.  You can set either angles or target anot
   <point name="misc_teleporter_dest" color="1 0 0" box="-32 -32 -24 32 32 -16" model="">
 Point teleporters at these.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
@@ -1016,10 +1016,10 @@ Train path corners.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="speed" name="Move Speed">Speed to move to the next corner.. Default: nan.</real>
+<real key="speed" name="Move Speed">Speed to move to the next corner.</real>
 <target key="target" name="Target">Next path corner and other targets to fire.</target>
 <targetname key="targetname" name="Target Name">No text</targetname>
-<real key="wait" name="Corner Delay">Seconds to wait before behining move to next corner.. Default: 0.0.</real>
+<real key="wait" name="Corner Delay">Seconds to wait before behining move to next corner.</real>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </point>
@@ -1030,7 +1030,7 @@ Fires at either the target or the current direction.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Angle Variance">Number of degrees of deviance from the target. Default: 0.0.</real>
+<real key="random" name="Angle Variance">Number of degrees of deviance from the target</real>
 <target key="target" name="Target">No text</target>
 <targetname key="targetname" name="Target Name">No text</targetname>
 -------- SPAWNFLAGS --------
@@ -1043,7 +1043,7 @@ Fires at either the target or the current direction.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Angle Variance">Number of degrees of deviance from the target. Default: 0.0.</real>
+<real key="random" name="Angle Variance">Number of degrees of deviance from the target</real>
 <target key="target" name="Target">No text</target>
 <targetname key="targetname" name="Target Name">No text</targetname>
 -------- SPAWNFLAGS --------
@@ -1056,7 +1056,7 @@ Fires at either the target or the current direction.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Angle Variance">Number of degrees of deviance from the target. Default: 0.0.</real>
+<real key="random" name="Angle Variance">Number of degrees of deviance from the target</real>
 <target key="target" name="Target">No text</target>
 <targetname key="targetname" name="Target Name">No text</targetname>
 -------- SPAWNFLAGS --------
@@ -1069,7 +1069,7 @@ This may not work with mods designed for the original Q3A
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Delay Variance">Delay variance, total delay = delay +/- random seconds. Default: 0.0.</real>
+<real key="random" name="Delay Variance">Delay variance, total delay = delay +/- random seconds</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">No text</targetname>
 <real key="wait" name="Delay">Seconds to pause before firing targets.. Default: ~1.</real>
@@ -1115,7 +1115,7 @@ Closest target_location in sight used for the location, if none in site, closest
 - 4: blue
 - 5: cyan
 - 6: magenta
-- 7: white. Default: 0.</integer>
+- 7: white</integer>
 <string key="gametype" name="Supported Game Types">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 <string key="message" name="Location Name">Name of the location.</string>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
@@ -1224,7 +1224,7 @@ The activator will be teleported away.
   <point name="team_blueobelisk" color="0 0 1" box="-16 -16 0 16 16 88" model="">
 Blue Team Obelisk. Used as a key entity for Harvester and Overload games.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <string key="gametype" name="Supported Game Types">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -1233,7 +1233,7 @@ This may not work with mods designed for the game OA is inspired from.
   <point name="team_CTF_blueflag" color="0 0 1" box="-16 -16 -16 16 16 16" model="models/flags/b_flag.md3">
 Blue Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the B point in Double Domination games.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <string key="gametype" name="Supported Game Types">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -1261,7 +1261,7 @@ If this is completely omitted then deathmatch spawn point will be used
   <point name="team_CTF_neutralflag" color="0 0 1" box="-16 -16 -16 16 16 16" model="models/powerups/orb/b_orb.md3">
 Neutral Flag. Used as a key entity in One Flag CTF and Possession games.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <string key="gametype" name="Supported Game Types">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -1271,7 +1271,7 @@ If this is completely omitted then deathmatch spawn point will be used
   <point name="team_CTF_redflag" color="1 0 0" box="-16 -16 -16 16 16 16" model="models/flags/r_flag.md3">
 Red Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the A point in Double Domination games.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <string key="gametype" name="Supported Game Types">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1302,7 +1302,7 @@ If this is completely omitted then deathmatch spawn point will be used
   <point name="team_neutralobelisk" color="0 0 1" box="-16 -16 0 16 16 88" model="">
 Neutral Obelisk. Used as a key entity for Harvester games.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <string key="gametype" name="Supported Game Types">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -1311,7 +1311,7 @@ This may not work with mods designed for the game OA is inspired from.
   <point name="team_redobelisk" color="1 0 0" box="-16 -16 0 16 16 8" model="">
 Red Team Obelisk. Used as a key entity for Harvester and Overload games.
 -------- KEYS --------
-<angle key="angle" name="Yaw Angle">Determines a facing angle.. Default: nan.</angle>
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <string key="gametype" name="Supported Game Types">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -1348,7 +1348,7 @@ Variable sized repeatable trigger.  Must be targeted at one or more entities.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <real key="wait" name="Time Period">Base time between triggering all targets.. Default: 0.2.</real>
 -------- SPAWNFLAGS --------
@@ -1385,7 +1385,7 @@ BFG.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -1403,7 +1403,7 @@ Chaingun.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -1421,7 +1421,7 @@ Gauntlet.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -1438,7 +1438,7 @@ Grappling Hook.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -1456,7 +1456,7 @@ Grenade Launcher.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -1474,7 +1474,7 @@ Lightning Gun.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -1492,7 +1492,7 @@ Machinegun.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -1510,7 +1510,7 @@ Nailgun.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -1529,7 +1529,7 @@ Plasma Gun.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -1547,7 +1547,7 @@ Prox Launcher.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -1566,7 +1566,7 @@ Railgun.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -1584,7 +1584,7 @@ Rocket Launcher.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>
@@ -1602,7 +1602,7 @@ Shotgun.
 <boolean key="notfree" name="Hidden for FFA">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)</boolean>
-<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes. Default: 0.0.</real>
+<real key="random" name="Respawn Delay Variance">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes</real>
 <target key="target" name="Target">Activates all entities with a matching targetname upon pickup.</target>
 <targetname key="targetname" name="Target Name">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
 <string key="team" name="Team Name">No text</string>

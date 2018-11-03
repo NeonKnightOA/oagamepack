@@ -81,6 +81,8 @@ def printKeys(item_name):
                             defaultText = ". Default: "+str(int(defaultTextActual))+"."
                         else:
                             defaultText = ". Default: "+str(defaultTextActual)+"."
+                        if not (defaultTextActual and defaultTextActual == defaultTextActual):
+                            defaultText = ""
                     except:
                         defaultText = ""
                     text = key_texts[item]["text"]
