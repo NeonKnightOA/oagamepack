@@ -48,13 +48,15 @@ if (os.path.isfile("entities_extra.csv")):
     entities = readCsvToDictsAppend(entities, "entities_extra.csv", "item")
 keys = readCsvToDicts("keys.csv","name")
 key_texts = readCsvToDicts("key_text.csv","key")
+q3map2keys = readCsvToDicts("q3map2keys.csv","name")
+q3map2key_texts = readCsvToDicts("q3map2key_text.csv","key")
+q3map2terrainkeys = readCsvToDicts("q3map2terrainkeys.csv","name")
+q3map2terrainkey_texts = readCsvToDicts("q3map2terrainkey_text.csv","key")
 notes = readCsvToDicts("note.csv","name")
 note_texts = readCsvToDicts("note_text.csv", "key")
 # There are no spawnflags.csv at the moment. We only have suspended and it is part if the QUAKED line
 spawnflags = readCsvToDicts("spawnflags.csv","item")
 spawnflag_texts = readCsvToDicts("spawnflag_text.csv","key")
-
-
 
 def printKeys(item_name):
     for item in sorted(key_texts):
@@ -76,9 +78,9 @@ def printKeys(item_name):
                     try:
                         defaultTextActual = keyLine[item+"_default"]
                         if key_texts[item]["type"] == "integer":
-                            defaultText = ". Default: "+str(int(defaultTextActual))+"."
+                            defaultText = " Default: "+str(int(defaultTextActual))+"."
                         else:
-                            defaultText = ". Default: "+str(defaultTextActual)+"."
+                            defaultText = " Default: "+str(defaultTextActual)+"."
                     except:
                         defaultText = ""
                     text = key_texts[item]["text"]
@@ -86,7 +88,6 @@ def printKeys(item_name):
                         print("\""+basename+"\" : "+str(key_texts[item]["text"])+defaultText)
                     else:
                         print("\""+basename+"\" : No text"+defaultText)
-
 
 def printNotes(item_name):
     for item in sorted(note_texts):
@@ -113,7 +114,15 @@ for item in sorted(entities):
         print("model=\""+model+"\"")
     if isinstance(row["description"],str):
         print(row["description"])
-    printNotes(item)
+    print("--------- KEYS --------")
     printKeys(item)
+    # print("--------- Q3MAP2 KEYS --------")
+    # printQ3Map2Keys(item)
+    # print("--------- Q3MAP2 TERRAIN KEYS --------")
+    # printQ3Map2TerrainKeys(item)
+    # print("--------- SPAWNFLAGS --------")
+    # printSpawnflags(item)
+    print("--------- NOTES --------")
+    printNotes(item)
     print("*/")
     

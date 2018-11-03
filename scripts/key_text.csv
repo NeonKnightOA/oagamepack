@@ -1,19 +1,19 @@
-key,type,fullname,basekey,group,text
-_ambient, ambient,real,Ambient Intensity,KEYS, ambient
-angle,angle,Yaw Angle,angle,KEYS,Determines a facing angle.
-angle_func,direction,Direction,angle,KEYS,Determines the opening direction
-angles,angles,Pitch Yaw Roll,angles,KEYS,"Individual control of pitch, yaw and roll"
-angles_two,angles,Pitch Yaw,angles,KEYS,Individual control of pitch and yaw
-angles_q3map2,angles,Pitch Yaw Roll,angles,Q3MAP2_KEYS,
-_blocksize,integer,Block Size,_blocksize,KEYS,
-_castshadows, _cs,integer,Shadow Caster Level,Q3MAP2_KEYS, _cs
-_celshader,texture,Cel Shader,_celshader,Q3MAP2_KEYS,
-_color,color,Light Color,_color,KEYS,
-_color_worldspawn,color,Ambient Color,_color,KEYS,
-color,color,Model Light Color,color,KEYS,constantLight color
-count,integer,Ammo Given,count,KEYS,Quantity of ammo given by the item
-count_item_powerup,real,Powerup Duration,count,KEYS,
-count_target_location,integer,Text Color,count,KEYS,"If set between 0-7, the location will be displayed with one of eight colors:
+key,type,fullname,basekey,text
+"_ambient;ambient",real,Ambient Intensity,"_ambient;ambient",
+_blocksize,integer,Block Size,_blocksize,
+_color,color,Light Color,_color,
+_color_worldspawn,color,Ambient Color,_color,
+!gametype,string,Forbidden Game Types,!gametype,"If set, the entity will NOT appear in these gametypes. (See Notes)"
+angle,angle,Yaw Angle,angle,Determines a facing angle.
+angle_func,direction,Direction,angle,"Determines the movement direction. Among the values it can take:
+* -1: the entity moves up.
+* -2: the entity moves down."
+angles,angles,Pitch Yaw Roll,angles,"Individual control of pitch, yaw and roll."
+angles_two,angles,Pitch Yaw,angles,Individual control of pitch and yaw.. Allows rotation in directions different from roll.
+color,color,Model Light Color,color,constantLight color of the md3 model included with the entity. It doesn't affect entity brushes.
+count,integer,Ammo Given,count,Amount of ammo given to the player on pickup.
+count_item_powerup,real,Powerup Duration,count,Amount of game seconds of duration of this powerup.
+count_target_location,integer,Text Color,count,"If set between 0-7, the location will be displayed with one of eight colors:
 - 0: white
 - 1: red
 - 2: green
@@ -22,88 +22,75 @@ count_target_location,integer,Text Color,count,KEYS,"If set between 0-7, the loc
 - 5: cyan
 - 6: magenta
 - 7: white"
-count_target_score,integer,Frags Given,count,KEYS,Number of points to add.
-delay,real,Delay,delay,KEYS,
-dmg,integer,Damage Inflicted,dmg,KEYS,Damage to inflict when blocked.
-fade,real,Linear Fade,fade,Q3MAP2_KEYS,
-_farplanedist,real,Far Clip Distance,_farplanedist,Q3MAP2_KEYS,
-_foghull,texture,Fog Hull Shader,_foghull,Q3MAP2_KEYS,
-gametype,string,Supported Game Types,gametype,KEYS,"If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos."
-!gametype,string,Forbidden Game Types,!gametype,KEYS,"Usage is similar to Game Type key, with opposite effect. If set, causes the entity to NOT spawn in the specified gametypes. Not supported in gamecode older than OA 0.8.8: entity will always spawn in old mods for Q3A!"
-gravity,real,Gravity,gravity,KEYS,
-gridsize,integer3,Grid Size,gridsize,KEYS,
-health,real,Activate on Damage,health,KEYS,"If set, the entity must be hit instead of touched"
-height,real,Vertical Travel,height,KEYS,"Total height of movement, defaults to model height"
-_indexmap, alphamap,texture,Terrain Blending Map,Q3MAP2_TERRAIN_KEYS, alphamap
-_keeplights,boolean,Keep Light Entities,_keeplights,Q3MAP2_KEYS,
-_layers, layers,integer,Terrain Layers,Q3MAP2_TERRAIN_KEYS, layers
-light,real,Model Light Intensity,light,KEYS,constantLight radius
-_lightmapscale,real,Lightmap Scale,_lightmapscale,Q3MAP2_KEYS,
-lip,real,Lip,lip,KEYS,Protrusion above rest position.
-message,string,Message to Display,message,KEYS,Text to display.
-message_domination_point,string,Point Name,message,KEYS,Gives the point a name which is displayed in-game. (MAX length: 19 chars)
-message_target_location,string,Location Name,message,KEYS,Name of the location.
-message_worldspawn,string,Logon Message,message,KEYS,
-_mingridlight,real,Min Dynamic Intensity,_mingridlight,Q3MAP2_KEYS,
-_minlight,real,Min Lightmap Intensity,_minlight,Q3MAP2_KEYS,
-_minvertexlight,real,Min Vertex Intensity,_minvertexlight,Q3MAP2_KEYS,
-model2,model,Model File,model2,KEYS,.md3 model to draw.
-modelscale,real,Uniform Scale,modelscale,Q3MAP2_KEYS,
-modelscale_vec,real3,Scale X Y Z,modelscale_vec,Q3MAP2_KEYS,
-music,sound,Music File,music,KEYS,
-noise,sound,Sound File,noise,KEYS,Wav file to play.
-_noshadersun,boolean,Ignore Shader Sun,_noshadersun,Q3MAP2_KEYS,
-notbot,boolean,Invisible To Bots,notbot,KEYS,"If set to 1, the entity won't attract bots"
-notbot_info_player,boolean,No Bots,notbot,KEYS,Prevents bots from using this spot as a spawnpoint
-notfree,boolean,Hidden for FFA,notfree,KEYS,"If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.)"
-nothumans,boolean,Not Humans,nothumans,KEYS,Prevents humans from using this spot as a spawnpoint.
-notsingle,boolean,Hidden for SP,notsingle,KEYS,"If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only"
-notteam,boolean,Hidden for Teamplay,notteam,KEYS,"If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.)"
-origin,real3,World Origin,origin,KEYS,
-phase_func_bobbing,real,Bob Cycle Phase,phase,KEYS,The 0.0 to 1.0 offset in the cycle to start at
-phase_func_pendulum,real,Swing Phase,phase,KEYS,The 0.0 to 1.0 offset in the cycle to start at
-radius,real,Spotlight Radius,radius,KEYS,Radius of a spotlight at the target point
-random,real,Respawn Delay Variance,random,KEYS,How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes
-random_func_timer,real,Time Period Variance,random,KEYS,Wait variance. The basic time between firing is a random time between (wait-random) and (wait+random)
-random_shooter,real,Angle Variance,random,KEYS,Number of degrees of deviance from the target
-random_target_delay,real,Delay Variance,random,KEYS,"Delay variance, total delay = delay +/- random seconds"
-random_target_speaker,real,Repeat Time Variance,random,KEYS,Wait variance. The basic time between firing is a random time between (wait-random) and (wait+random)
-range,real,Range,range,KEYS,
-_receiveshadows, _rs,integer,Shadow Reception Level,Q3MAP2_KEYS, _rs
-_remap,array,Shader Remaps,_remap,Q3MAP2_KEYS,
-roll,real,Roll,roll,KEYS,Angle modifier to orient the camera around the target vector.
-scale,real,Scale,scale,KEYS,Scaling factor. Recommended values sit between 50 and 300.
-scale_q3map2,real,Intensity Scale,scale,Q3MAP2_KEYS,
-_shader, shader,texture,Terrain MetaShader,Q3MAP2_TERRAIN_KEYS, shader
-speed,real,Move Speed,speed,KEYS,Movement speed
-speed_func_bobbing,real,Bob Cycle Time,speed,KEYS,Seconds to complete a bob cycle.
-speed_func_pendulum,real,Max Swing Angle,speed,KEYS,Number of degrees each way the pendulum swings.
-speed_func_rotating,real,Rotation Speed,speed,KEYS,Determines how fast it moves.
-speed_path_corner,real,Move Speed,speed,KEYS,Speed to move to the next corner.
-speed_target_push,real,Push Speed,speed,KEYS,
-_sun,boolean,Directional,_sun,Q3MAP2_KEYS,
-target,target,Target,target,KEYS,Activates all entities with a matching targetname upon pickup.
-target__decal,target,Target,target,KEYS,The entity which is targetted at for projection.
-target_func_timer,target,Target,target,KEYS,
-target_func_train,target,Target,target,KEYS,Next path corner.
-target_misc_portal_camera,target,Target,target,KEYS,
-target_misc_portal_surface,target,Target,target,KEYS,
-target_path_corner,target,Target,target,KEYS,Next path corner and other targets to fire.
-target_q3map2,target,Target,target,Q3MAP2_KEYS,
-target_shooter,target,Target,target,KEYS,
-_targetname,targetname,Target Name,_targetname,Q3MAP2_KEYS,
-targetname,targetname,Target Name,targetname,KEYS,"If used as destination for a target_give, the item can be given to players (e.g. at player spawn time)."
-targetname_func_door,targetname,Target Name,targetname,KEYS,"if set, no touch field will be spawned and a remote button or trigger field activates the door."
-targetname_func_plat,targetname,Target Name,targetname,KEYS,
-targetname_func_timer,targetname,Target Name,targetname,KEYS,
-targetname_info_notnull,targetname,Target Name,targetname,KEYS,
-team,string,Team Name,team,KEYS,
-team_func_door,string,Team Name,team,KEYS,
-wait,real,Respawn Delay,wait,KEYS,Seconds before the item respawns. Set to -1 for never respawn
-wait_func,real,Return Delay,wait,KEYS,Seconds between triggerings (-1 = never return).
-wait_func_door,real,Return Delay,wait,KEYS,Wait before returning (-1 = never return)
-wait_func_timer,real,Time Period,wait,KEYS,Base time between triggering all targets.
-wait_path_corner,real,Corner Delay,wait,KEYS,Seconds to wait before behining move to next corner.
-wait_target_delay,real,Delay,wait,KEYS,Seconds to pause before firing targets.
-wait_target_speaker,real,Repeat Time,wait,KEYS,"Seconds between auto triggerings, 0 = don't auto trigger."
-weight,real,Weight,weight,KEYS,
+count_target_score,integer,Frags Given,count,Number of points to add.
+delay,real,Delay,delay,
+dmg,integer,Damage Inflicted,dmg,Damage to inflict when blocking the operation of the entity.
+gametype,string,Supported Game Types,gametype,"If set, the entity will ONLY appear in these gametypes. (See Notes)"
+gravity,real,Gravity,gravity,
+gridsize,integer3,Grid Size,gridsize,
+health,real,Activate on Damage,health,"If set, in order to activate, the entity must take damage instead of being touched."
+height,real,Vertical Travel,height,"Total height of movement, defaults to model height."
+height_func_bobbing,real,Vertical Travel,height,Amount of travel of the oscillation movement.
+light,real,Model Light Intensity,light,constantLight radius of the model included with the entity. It doesn't affect entity brushes.
+"light;_light",real,Light Intensity,"light;_light",
+lip,real,Lip,lip,Protrusion above rest position after the end of the movement.
+message,string,Message to Display,message,Text to display.
+message_domination_point,string,Point Name,message,Gives the point a name which is displayed in-game. (MAX length: 19 chars)
+message_target_location,string,Location Name,message,Name of the location.
+message_worldspawn,string,Logon Message,message,
+model2,model,Model File,model2,.md3 model to draw.
+music,sound,Music File,music,
+noise,sound,Sound File,noise,Wav file to play. Recommended use is for looping sounds.
+notbot,boolean,Invisible To Bots,notbot,"If set to 1, a bot will never attempt to pick up this item."
+notbot_info_player,boolean,No Bots,notbot,Prevents bots from using this spot as a spawnpoint.
+notfree,boolean,Hidden for FFA,notfree,"If set to 1, this entity won't spawn in free-for-all gamemodes."
+nothumans,boolean,Not Humans,nothumans,Prevents humans from using this spot as a spawnpoint.
+notsingle,boolean,Hidden for SP,notsingle,"If set to 1, this entity won't spawn in single-player mode."
+notteam,boolean,Hidden for Teamplay,notteam,"If set to 1, this entity won't spawn in team-based gamemodes."
+origin,real3,World Origin,origin,Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes)
+phase_func_bobbing,real,Bob Cycle Phase,phase,"Start offset of the oscillation cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset."
+phase_func_pendulum,real,Swing Phase,phase,"Start offset of the swinging cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset."
+radius,real,Spotlight Radius,radius,Radius of a spotlight at the target point.
+random,real,Respawn Delay Variance,random,"Variation of time between respawns. The value is both added and subtracted from \""wait\""."
+random_func_timer,real,Time Period Variance,random,"Wait variance. The time between firing is located in the range [wait - random,wait + random]."
+random_shooter,real,Angle Variance,random,Number of degrees of deviance from the target.
+random_target_delay,real,Delay Variance,random,"Delay variance, total delay = delay +/- random seconds."
+random_target_speaker,real,Repeat Time Variance,random,"Wait variance. The time between firing is located in the range [wait - random,wait + random]."
+range,real,Range,range,
+roll,real,Roll,roll,Angle modifier to orient the camera around the target vector.
+scale,real,Scale,scale,Scaling factor. Recommended values sit between 50 and 300.
+speed,real,Move Speed,speed,Speed of entity movement.
+speed_func_bobbing,real,Bob Cycle Time,speed,Seconds to complete a bob cycle.
+speed_func_pendulum,real,Max Swing Angle,speed,Number of degrees each way the pendulum swings.
+speed_func_rotating,real,Rotation Speed,speed,Determines how fast it moves.
+speed_path_corner,real,Move Speed,speed,Speed to move to the next corner.
+speed_target_push,real,Push Speed,speed,
+target,target,Target,target,All entities with a matching targetname will be used.
+target__decal,target,Target,target,The entity which is targetted at for projection.
+target_func_timer,target,Target,target,
+target_func_train,target,Target,target,Next path corner.
+target_item,target,Target,target,Picking up the item will trigger these targets.
+target_misc_portal_camera,target,Target,target,
+target_misc_portal_surface,target,Target,target,
+target_path_corner,target,Target,target,Next path corner and other targets to fire.
+target_shooter,target,Target,target,
+targetname,targetname,Target Name,targetname,
+targetname_func_door,targetname,Target Name,targetname,"If set, the door needs to be operated by a func_button or trigger."
+targetname_func_plat,targetname,Target Name,targetname,
+targetname_func_timer,targetname,Target Name,targetname,
+targetname_info_notnull,targetname,Target Name,targetname,
+targetname_item,targetname,Target Name,targetname,A target_give entity can point at this item so its given to the player.
+team,string,Team Name,team,"If set, the entity is teamed up with items in this team. (See Notes)"
+team_func_door,string,Team Name,team,Separate func_door entities within this team will operate together.
+wait,real,Respawn Delay,wait,"Seconds before the item respawns again.
+-1 = never respawns again."
+wait_func,real,Return Delay,wait,"Seconds between triggerings.
+* -1 = never returns."
+wait_func_door,real,Return Delay,wait,"Seconds before the door returns to its default state.
+* -1 = returns immediately."
+wait_func_timer,real,Time Period,wait,Base time between triggering all targets.
+wait_path_corner,real,Corner Delay,wait,Seconds to wait before behining move to next corner.
+wait_target_delay,real,Delay,wait,Seconds to pause before firing targets.
+wait_target_speaker,real,Repeat Time,wait,"Seconds between auto triggerings.
+* 0 = doesn't auto trigger."
+weight,real,Weight,weight,
