@@ -5,3 +5,4 @@ This repo hosts the GPLv2 gamepack for OpenArena. The intention is to create a f
 The sources for these packs can be found in the following locations:
 - http://openarena.ws/svn (Shaders and most textures except.)
 - https://github.com/NeonKnightOA/oaassets/sources
+- https://github.com/NeonKnightOA/oashaders/sources
