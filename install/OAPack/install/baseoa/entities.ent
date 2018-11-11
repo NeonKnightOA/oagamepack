@@ -18,6 +18,7 @@ Compiler-only entity. Specifies the origin of a skybox in a contained area of th
   <point name="ammo_belt" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/chaingunam.md3">
 Chaingun ammo.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 100.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -52,6 +53,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="ammo_bfg" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/bfgam.md3">
 BFG ammo.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 15.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -85,6 +87,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="ammo_bullets" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/machinegunam.md3">
 Machinegun ammo.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 50.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -118,6 +121,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="ammo_cells" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/plasmaam.md3">
 Plasma Gun ammo.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 30.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -151,6 +155,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="ammo_grenades" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/grenadeam.md3">
 Grenade Launcher ammo.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 5.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -184,6 +189,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="ammo_lightning" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/lightningam.md3">
 Lightning Gun ammo.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 60.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -217,6 +223,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="ammo_mines" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/proxmineam.md3">
 Prox Launcher ammo.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -251,6 +258,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="ammo_nails" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/nailgunam.md3">
 Nailgun ammo.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -285,6 +293,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="ammo_rockets" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/rocketam.md3">
 Rocket Launcher ammo.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 5.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -318,6 +327,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="ammo_shells" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/shotgunam.md3">
 Shotgun ammo.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -351,6 +361,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="ammo_slugs" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/railgunam.md3">
 Railgun ammo.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -381,9 +392,10 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
   </point>
-  <point name="domination_point" color="1 0 .5" box="-16 -16 -16 16 16 16" model="">
+  <point name="domination_point" color="1 0 .5" box="-16 -16 -16 16 16 16" model="models/dpoints/a_white.md3">
 Domination Control Point.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="message" name="Point Name">Gives the point a name which is displayed in-game. (MAX length: 19 chars)</string>
@@ -558,6 +570,7 @@ This entity can have a model attached to it. For this, the entity must have a 't
   <group name="func_static" color="0 .5 .8" model="">
 A bmodel that just sits there, doing nothing.  Can be used for conditional walls and models.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <color key="color" name="Model Light Color">constantLight color of the md3 model included with the entity. It doesn't affect entity brushes.. Default: 1 1 1.</color>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <real key="light" name="Model Light Intensity">constantLight radius of the model included with the entity. It doesn't affect entity brushes.</real>
@@ -626,6 +639,7 @@ This entity can have a model attached to it. For this, the entity must have a 't
   <point name="holdable_invulnerability" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/invulnerability.md3">
 Invulnerability holdable.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -659,6 +673,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="holdable_kamikaze" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/kamikazi.md3">
 Kamikaze holdable.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -692,6 +707,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="holdable_medkit" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/teleporter.md3">
 Personal Medkit holdable.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -724,6 +740,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="holdable_portal" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/porter.md3">
 Portal holdable.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -758,6 +775,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="holdable_teleporter" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/teleporter.md3">
 Teleporter holdable.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -790,6 +808,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="info_camp" color="0 0.5 0" box="-4 -4 -4 4 4 4" model="">
 Used as a positional target for calculations in the utilities (spotlights, etc), but removed during gameplay.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <real key="range" name="Range">No text</real>
 <real key="weight" name="Weight">No text</real>
@@ -928,9 +947,16 @@ Limited equivelant to info_player_deathmatch. Use that one instead.
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </point>
-  <point name="item_ammoregen" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="">
+  <point name="info_spectator_start" color="1 0 0" box="-16 -16 -24 16 16 32" model="">
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+This item is broken in some older versions of OA and the game it's inspired from. It may not work.
+  </point>
+  <point name="item_ammoregen" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo.md3">
 Ammo Regen rune.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -965,6 +991,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
   <point name="item_armor_body" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/armor/armor_red.md3">
 Body Armor.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -997,6 +1024,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="item_armor_combat" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/armor/armor_yel.md3">
 Combat Armor.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -1029,6 +1057,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="item_armor_shard" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/armor/shard.md3">
 Armor Shard.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -1058,9 +1087,10 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
   </point>
-  <point name="item_doubler" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo.md3">
+  <point name="item_doubler" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/doubler.md3">
 Doubler rune.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -1095,6 +1125,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
   <point name="item_enviro" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/instant/enviro.md3">
 Battle Suit powerup.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <real key="count" name="Powerup Duration">Amount of game seconds of duration of this powerup.. Default: 30.0.</real>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1128,6 +1159,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="item_flight" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/instant/flight.md3">
 Flight powerup.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <real key="count" name="Powerup Duration">Amount of game seconds of duration of this powerup.. Default: 60.0.</real>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1161,6 +1193,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="item_guard" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/guard.md3">
 Guard rune.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -1195,6 +1228,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
   <point name="item_haste" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/instant/haste.md3">
 Haste powerup.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <real key="count" name="Powerup Duration">Amount of game seconds of duration of this powerup.. Default: 30.0.</real>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1228,6 +1262,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="item_health" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/health/medium_cross.md3">
 Medium Health.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -1260,6 +1295,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="item_health_large" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/health/large_cross.md3">
 Large Health.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -1292,6 +1328,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="item_health_mega" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/health/mega_cross.md3">
 Megahealth.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -1324,6 +1361,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="item_health_small" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/health/small_cross.md3">
 Small Health.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -1356,6 +1394,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="item_invis" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/instant/invis.md3">
 Invisibility powerup.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <real key="count" name="Powerup Duration">Amount of game seconds of duration of this powerup.. Default: 30.0.</real>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1389,6 +1428,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="item_quad" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/instant/quad.md3">
 Quad Damage powerup.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <real key="count" name="Powerup Duration">Amount of game seconds of duration of this powerup.. Default: 30.0.</real>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1422,6 +1462,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="item_regen" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/instant/regen.md3">
 Regeneration powerup.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <real key="count" name="Powerup Duration">Amount of game seconds of duration of this powerup.. Default: 30.0.</real>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1455,6 +1496,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="item_scout" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/scout.md3">
 Scout rune.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -1489,6 +1531,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
   <point name="light" color="0 1 0" box="-8 -8 -8 8 8 8" model="">
 Non-displayed light.
 -------- KEYS --------
+<color key="_color" name="Light Color">No text. Default: 1.0 1.0 1.0.</color>
 <real key="radius" name="Spotlight Radius">Radius of a spotlight at the target point.. Default: 64.0.</real>
 <target key="target" name="Target">The entity which is targetted at for projection.</target>
 -------- SPAWNFLAGS --------
@@ -1501,6 +1544,7 @@ Lights pointed at a target will be spotlights.
   <point name="lightJunior" color="0 0.7 0.3" box="-6 -6 -6 6 6 6" model="">
 Non-displayed light. Only affects entities.
 -------- KEYS --------
+<color key="_color" name="Light Color">No text. Default: 1.0 1.0 1.0.</color>
 <real key="radius" name="Spotlight Radius">Radius of a spotlight at the target point.. Default: 64.0.</real>
 <target key="target" name="Target">The entity which is targetted at for projection.</target>
 -------- SPAWNFLAGS --------
@@ -1535,7 +1579,9 @@ The target for a misc_portal_director.  You can set either angles or target anot
 <flag key="SLOW_ROTATE" name="Rotate slowly" bit="0">The portal camera rotates slowly along the roll axis.</flag>
 -------- NOTES --------
   </point>
-  <point name="weapon_gauntlet" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/gauntlet/gauntlet.md3">
+  <point name="misc_portal_surface" color="0 0 1" box="-8 -8 -8 8 8 8" model="">
+The portal surface nearest this entity will show a view from the targeted misc_portal_camera, or a mirror view if untargeted.
+This must be within 64 world units of the surface!
 -------- KEYS --------
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
@@ -1606,7 +1652,6 @@ Fires at either the target or the current direction.
 <targetname key="targetname" name="Target Name">No text</targetname>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-This may not work with mods designed for the original Q3A
   </point>
   <point name="target_delay" color="1 0 0" box="-8 -8 -8 8 8 8" model="">
 -------- KEYS --------
@@ -1652,6 +1697,7 @@ This item is broken in some older versions of OA and the game it's inspired from
   <point name="target_location" color="0 0.5 0" box="-8 -8 -8 8 8 8" model="">
 Closest target_location in sight used for the location, if none in site, closest in distance.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Text Color">If set between 0-7, the location will be displayed with one of eight colors:
 - 0: white
 - 1: red
@@ -1678,8 +1724,6 @@ Used as a positional target for in-game calculation, like jumppad targets.
 <targetname key="targetname" name="Target Name">No text</targetname>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-Make sure to have at least 6 of each of team_CTF_redspawn, team_CTF_redplayer, team_CTF_bluespawn and team_CTF_blueplayer.
-If this is completely omitted then deathmatch spawn point will be used
   </point>
   <point name="target_print" color="1 0 0" box="-8 -8 -8 8 8 8" model="">
 On activation, prints a message on the screen.
@@ -1766,9 +1810,10 @@ The activator will be teleported away.
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </point>
-  <point name="team_blueobelisk" color="0 0 1" box="-16 -16 0 16 16 88" model="">
+  <point name="team_blueobelisk" color="0 0 1" box="-16 -16 0 16 16 88" model="models/powerups/overload_base.md3">
 Blue Team Obelisk. Used as a key entity for Harvester and Overload games.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 -------- SPAWNFLAGS --------
@@ -1792,6 +1837,7 @@ Be aware that key game objectives usually don't need the 'gametype' or '!gametyp
   <point name="team_CTF_blueflag" color="0 0 1" box="-16 -16 -16 16 16 16" model="models/flags/b_flag.md3">
 Blue Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the B point in Double Domination games.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
@@ -1815,6 +1861,7 @@ Be aware that key game objectives usually don't need the 'gametype' or '!gametyp
   <point name="team_CTF_blueplayer" color="0 0 1" box="-16 -16 -24 16 16 32" model="">
 Initial spawnpoint for Blue Team players.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
 -------- SPAWNFLAGS --------
@@ -1837,6 +1884,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
   <point name="team_CTF_bluespawn" color="0 0 1" box="-16 -16 -24 16 16 32" model="">
 Potential, post-initial spawnpoint for Blue Team players.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
 -------- SPAWNFLAGS --------
@@ -1856,9 +1904,10 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
   </point>
-  <point name="team_CTF_neutralflag" color="0 0 1" box="-16 -16 -16 16 16 16" model="models/powerups/orb/b_orb.md3">
+  <point name="team_CTF_neutralflag" color="0 0 1" box="-16 -16 -16 16 16 16" model="models/flags/n_flag.md3">
 Neutral Flag. Used as a key entity in One Flag CTF and Possession games.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
@@ -1882,6 +1931,7 @@ Be aware that key game objectives usually don't need the 'gametype' or '!gametyp
   <point name="team_CTF_redflag" color="1 0 0" box="-16 -16 -16 16 16 16" model="models/flags/r_flag.md3">
 Red Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the A point in Double Domination games.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
@@ -1905,6 +1955,7 @@ Be aware that key game objectives usually don't need the 'gametype' or '!gametyp
   <point name="team_CTF_redplayer" color="1 0 0" box="-16 -16 -24 16 16 32" model="">
 Initial spawnpoint for Red Team players.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
 -------- SPAWNFLAGS --------
@@ -1927,6 +1978,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
   <point name="team_CTF_redspawn" color="1 0 0" box="-16 -16 -24 16 16 32" model="">
 Potential, post-initial spawnpoint for Red Team players.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
 -------- SPAWNFLAGS --------
@@ -1946,9 +1998,10 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
   </point>
-  <point name="team_neutralobelisk" color="0 0 1" box="-16 -16 0 16 16 88" model="">
+  <point name="team_neutralobelisk" color="0 0 1" box="-16 -16 0 16 16 88" model="models/powerups/obelisk/obelisk.md3">
 Neutral Obelisk. Used as a key entity for Harvester games.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 -------- SPAWNFLAGS --------
@@ -1969,9 +2022,10 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
   </point>
-  <point name="team_redobelisk" color="1 0 0" box="-16 -16 0 16 16 8" model="">
+  <point name="team_redobelisk" color="1 0 0" box="-16 -16 0 16 16 8" model="models/powerups/overload_base.md3">
 Red Team Obelisk. Used as a key entity for Harvester and Overload games.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 -------- SPAWNFLAGS --------
@@ -2054,6 +2108,7 @@ Allows client side prediction of teleportation events. Must point at a target_po
   <point name="weapon_bfg" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/bfg/bfg.md3">
 BFG.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 20.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -2084,9 +2139,10 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
   </point>
-  <point name="weapon_chaingun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/flags/b_flag.md3">
+  <point name="weapon_chaingun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons/vulcan/vulcan.md3">
 Chaingun.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 5.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -2121,6 +2177,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="weapon_gauntlet" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/gauntlet/gauntlet.md3">
 Gauntlet.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -2152,6 +2209,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
   <point name="weapon_grapplinghook" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/grapple/grapple.md3">
 Grappling Hook.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -2183,6 +2241,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
   <point name="weapon_grenadelauncher" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/grenadel/grenadel.md3">
 Grenade Launcher.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -2216,6 +2275,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="weapon_lightning" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/lightning/lightning.md3">
 Lightning Gun.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 100.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -2249,6 +2309,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="weapon_machinegun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/machinegun/machinegun.md3">
 Machinegun.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 100.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -2281,6 +2342,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
   <point name="weapon_nailgun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons/nailgun/nailgun.md3">
 Nailgun.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -2315,6 +2377,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="weapon_plasmagun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/plasma/plasma.md3">
 Plasma Gun.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 50.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -2348,6 +2411,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="weapon_prox_launcher" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons/proxmine/proxmine.md3">
 Prox Launcher.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -2382,6 +2446,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="weapon_railgun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/railgun/railgun.md3">
 Railgun.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -2415,6 +2480,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="weapon_rocketlauncher" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/rocketl/rocketl.md3">
 Rocket Launcher.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -2448,6 +2514,7 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <point name="weapon_shotgun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/shotgun/shotgun.md3">
 Shotgun.
 -------- KEYS --------
+<string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup.. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -2468,6 +2535,8 @@ Unless a specific kind of gameplay requires it or you plan to team up items, DON
   <group name="worldspawn" color="0 0 0" model="">
 The main entity of the map. Every map should have exactly one worldspawn.
 -------- KEYS --------
+<integer key="_blocksize" name="Block Size">No text. Default: 1024.</integer>
+<color key="_color" name="Ambient Color">No text. Default: 0 0 0.</color>
 <real key="gravity" name="Gravity">No text. Default: 800.0.</real>
 <integer3 key="gridsize" name="Grid Size">No text. Default: 128 128 256.</integer3>
 <string key="message" name="Logon Message">No text</string>
