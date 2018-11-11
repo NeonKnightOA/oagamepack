@@ -22,13 +22,12 @@
 
 import pandas as pd
 import sys
-import re
 import os.path
 
 def readCsvToDictsAppend(result,filename,keyname):
     reader = pd.read_csv(filename, encoding = "ISO-8859-1")
-    for row in reader.itertuples():
-        rowDict = row._asdict()
+    readerDict = reader.to_dict('records')
+    for rowDict in readerDict:
         key = rowDict[keyname]
         if key in result:
             sys.exit("fatal error, the file: "+filename+" has double key: "+key)

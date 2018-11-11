@@ -27,8 +27,8 @@ import os.path
 
 def readCsvToDictsAppend(result,filename,keyname):
     reader = pd.read_csv(filename, encoding = "ISO-8859-1")
-    for row in reader.itertuples():
-        rowDict = row._asdict()
+    readerDict = reader.to_dict('records')
+    for rowDict in readerDict:
         key = rowDict[keyname]
         if key in result:
             sys.exit("fatal error, the file: "+filename+" has double key: "+key)
@@ -42,7 +42,7 @@ def readCsvToDicts(filename,keyname):
 def fatal(errorMsg):
     print(errorMsg)
     exit(1)
-    
+
 
 print("<?xml version=\"1.0\"?>")
 
@@ -102,7 +102,7 @@ def printNotes(item_name):
                 hasKey = keyLine[item]
                 if (hasKey and hasKey == hasKey):
                     print(note_texts[item]["text"])
-                    
+
 def printNonSuspendedSpawnflags(item_name):
     for item in spawnflag_texts:
         if (item_name in spawnflags.keys()):
@@ -112,14 +112,14 @@ def printNonSuspendedSpawnflags(item_name):
                 flagRow = spawnflag_texts[item]
                 if (hasKey and hasKey == hasKey):
                     print("<flag key=\""+str(flagRow["key"])+"\" name=\""+str(flagRow["fullname"])+"\" bit=\""+str(flagRow["bit"])+"\">"+str(flagRow["text"])+"</flag>")
-                    
-                    
+
+
 def printSpawnflags(item_name):
     if (item == "SUSPENDED" and "suspended" in entities[item_name]["quaked"]):
         flagRow = spawnflag_texts["SUSPENDED"]
-        print("<flag key=\""+str(flagRow["key"])+"\" name=\""+str(flagRow["fullname"])+"\" bit=\""+str(flagRow["bit"])+"\">"+str(flagRow["text"])+"</flag>")    
+        print("<flag key=\""+str(flagRow["key"])+"\" name=\""+str(flagRow["fullname"])+"\" bit=\""+str(flagRow["bit"])+"\">"+str(flagRow["text"])+"</flag>")
     printNonSuspendedSpawnflags(item_name)
-            
+
 
 print("<classes>")
 for item in entities:
