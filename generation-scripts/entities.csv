@@ -1,0 +1,115 @@
+item,quaked,model,description
+_decal,/*QUAKED _decal (0 1.0 0) ?,,Compiler-only entity. Specifies a decal for projection.
+_skybox,/*QUAKED _skybox (0.77 0.88 1.0) (-4 -4 -4) (4 4 4),,"Compiler-only entity. Specifies the origin of a skybox in a contained area of the map, far from the actual level."
+ammo_belt,/*QUAKED ammo_belt (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/chaingunam.md3,Chaingun ammo.
+ammo_bfg,/*QUAKED ammo_bfg (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/bfgam.md3,BFG ammo.
+ammo_bullets,/*QUAKED ammo_bullets (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/machinegunam.md3,Machinegun ammo.
+ammo_cells,/*QUAKED ammo_cells (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/plasmaam.md3,Plasma Gun ammo.
+ammo_grenades,/*QUAKED ammo_grenades (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/grenadeam.md3,Grenade Launcher ammo.
+ammo_lightning,/*QUAKED ammo_lightning (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/lightningam.md3,Lightning Gun ammo.
+ammo_mines,/*QUAKED ammo_mines (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/proxmineam.md3,Prox Launcher ammo.
+ammo_nails,/*QUAKED ammo_nails (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/nailgunam.md3,Nailgun ammo.
+ammo_rockets,/*QUAKED ammo_rockets (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/rocketam.md3,Rocket Launcher ammo.
+ammo_shells,/*QUAKED ammo_shells (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/shotgunam.md3,Shotgun ammo.
+ammo_slugs,/*QUAKED ammo_slugs (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/railgunam.md3,Railgun ammo.
+domination_point,/*QUAKED domination_point (1 0 .5) (-16 -16 -16) (16 16 16),models/dpoints/a_white.md3,Domination Control Point.
+func_bobbing,/*QUAKED func_bobbing (0 .5 .8) ? X_AXIS Y_AXIS,,Brush entity which bobs on the Z axis.
+func_button,/*QUAKED func_button (0 .5 .8) ?,,"Pushable button, usually used to trigger other entities or just open doors."
+func_door,/*QUAKED func_door (0 .5 .8) ? START_OPEN x CRUSHER,,"Movable brush usually used as a door, hence the name."
+func_group,/*QUAKED func_group (0 0 0) ?,,Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.
+func_pendulum,/*QUAKED func_pendulum (0 .5 .8) ?,,A swinging pendulum. Pendulums always swing north / south on unrotated models.  Pendulum frequency is a physical constant based on the length of the beam and gravity.
+func_plat,/*QUAKED func_plat (0 .5 .8) ?,,Activable platforms. Plats are always drawn in the extended position so they will light correctly.
+func_rotating,/*QUAKED func_rotating (0 .5 .8) ? START_ON - X_AXIS Y_AXIS,,"A rotating entity, used for decorations or moving platforms. The center of that brush will be
+the point around which it is rotated. It will rotate around the Z axis by default.  You can
+check either the X_AXIS or Y_AXIS box to change that."
+func_static,/*QUAKED func_static (0 .5 .8) ?,,"A bmodel that just sits there, doing nothing.  Can be used for conditional walls and models."
+func_timer,/*QUAKED func_timer (0.3 0.1 0.6) (-8 -8 -8) (8 8 8) START_ON,,Repeatedly fires its targets. Can be turned on or off by using another func or trigger.
+func_train,/*QUAKED func_train (0 .5 .8) ? START_ON TOGGLE BLOCK_STOPS,,A train is a mover that moves between path_corner target points. The train spawns at the first target it is pointing at.
+holdable_invulnerability,/*QUAKED holdable_invulnerability (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/holdable/invulnerability.md3,Invulnerability holdable.
+holdable_kamikaze,/*QUAKED holdable_kamikaze (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/kamikazi.md3,Kamikaze holdable.
+holdable_medkit,/*QUAKED holdable_medkit (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/holdable/teleporter.md3,Personal Medkit holdable.
+holdable_portal,/*QUAKED holdable_portal (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/holdable/porter.md3,Portal holdable.
+holdable_teleporter,/*QUAKED holdable_teleporter (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/holdable/teleporter.md3,Teleporter holdable.
+info_camp,/*QUAKED info_camp (0 0.5 0) (-4 -4 -4) (4 4 4),,"Used as a positional target for calculations in the utilities (spotlights, etc), but removed during gameplay."
+info_notnull,/*QUAKED info_notnull (0 0.5 0) (-4 -4 -4) (4 4 4),,"Used as a positional target for in-game calculation, like jumppad targets."
+info_null,/*QUAKED info_null (0 0.5 0) (-4 -4 -4) (4 4 4),,"Used as a positional target for calculations in the utilities (spotlights, etc), but removed during gameplay."
+info_player_dd,/*QUAKED info_player_dd (1 1 0) (-16 -16 -24) (16 16 32) INITIAL,,Spawn point used in Double Domination if no team specific spawn points exists. Usually placed in the middle of CTF maps. See info_player_dd_red and info_player_dd_blue for team specific versions.
+info_player_dd_blue,/*QUAKED info_player_dd_blue (1 1 0) (-16 -16 -24) (16 16 32) INITIAL,,"Spawn point used in Double Domination by the blue team. If your map has dedicated spawn rooms, use this."
+info_player_dd_red,/*QUAKED info_player_dd_red (1 1 0) (-16 -16 -24) (16 16 32) INITIAL,,"Spawn point used in Double Domination by the red team. If your map has dedicated spawn rooms, use this."
+info_player_dom,/*QUAKED info_player_dom (1 1 0) (-16 -16 -24) (16 16 32),,Spawn point used in Domination if no team specific spawn points exists. Usually placed in the middle of CTF maps. See info_player_dom_red and info_player_dom_blue for team specific versions.
+info_player_dom_blue,/*QUAKED info_player_dom_blue (1 1 0) (-16 -16 -24) (16 16 32),,Spawn point used in Domination by the blue team
+info_player_dom_red,/*QUAKED info_player_dom_red (1 1 0) (-16 -16 -24) (16 16 32),,Spawn point used in Domination by the red team
+info_player_deathmatch,/*QUAKED info_player_deathmatch (1 0 1) (-16 -16 -24) (16 16 32) INITIAL,,"Potential spawning position for Deathmatch games. The first time a player enters the game, they will be at an 'initial' spot. Targets will be fired when someone spawns in on them."
+info_player_intermission,/*QUAKED info_player_intermission (1 0 1) (-16 -16 -24) (16 16 32),,The intermission will be viewed from this point.  Target an info_notnull for the view direction.
+info_player_start,/*QUAKED info_player_start (1 0 0) (-16 -16 -24) (16 16 32),,Limited equivelant to info_player_deathmatch. Use that one instead.
+info_spectator_start,/*QUAKED info_spectator_start (1 0 0) (-16 -16 -24) (16 16 32),,
+item_ammoregen,/*QUAKED item_ammoregen (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM,models/powerups/ammo.md3,Ammo Regen rune.
+item_armor_body,/*QUAKED item_armor_body (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/armor/armor_red.md3,Body Armor.
+item_armor_combat,/*QUAKED item_armor_combat (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/armor/armor_yel.md3,Combat Armor.
+item_armor_shard,/*QUAKED item_armor_shard (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/armor/shard.md3,Armor Shard.
+item_doubler,/*QUAKED item_doubler (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM,models/powerups/doubler.md3,Doubler rune.
+item_enviro,/*QUAKED item_enviro (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/instant/enviro.md3,Battle Suit powerup.
+item_flight,/*QUAKED item_flight (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/instant/flight.md3,Flight powerup.
+item_guard,/*QUAKED item_guard (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM,models/powerups/guard.md3,Guard rune.
+item_haste,/*QUAKED item_haste (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/instant/haste.md3,Haste powerup.
+item_health,/*QUAKED item_health (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/health/medium_cross.md3,Medium Health.
+item_health_large,/*QUAKED item_health_large (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/health/large_cross.md3,Large Health.
+item_health_mega,/*QUAKED item_health_mega (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/health/mega_cross.md3,Megahealth.
+item_health_small,/*QUAKED item_health_small (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/health/small_cross.md3,Small Health.
+item_invis,/*QUAKED item_invis (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/instant/invis.md3,Invisibility powerup.
+item_quad,/*QUAKED item_quad (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/instant/quad.md3,Quad Damage powerup.
+item_regen,/*QUAKED item_regen (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/instant/regen.md3,Regeneration powerup.
+item_scout,/*QUAKED item_scout (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM,models/powerups/scout.md3,Scout rune.
+light,/*QUAKED light (0 1 0) (-8 -8 -8) (8 8 8) LINEAR NOANGLE x x NOGRIDLIGHT,,Non-displayed light.
+lightJunior,/*QUAKED lightJunior (0 0.7 0.3) (-6 -6 -6) (6 6 6) LINEAR NO_ANGLE x x NO_GRID_LIGHT,,Non-displayed light. Only affects entities.
+misc_model,/*QUAKED misc_model (1 0 0) (-16 -16 -16) (16 16 16),,Displays a static model in the map.
+misc_portal_camera,/*QUAKED misc_portal_camera (0 0 1) (-8 -8 -8) (8 8 8) SLOW_ROTATE FAST_ROTATE NO_SWING,,The target for a misc_portal_director.  You can set either angles or target another entity to determine the direction of view.
+misc_portal_surface,/*QUAKED misc_portal_surface (0 0 1) (-8 -8 -8) (8 8 8),,"The portal surface nearest this entity will show a view from the targeted misc_portal_camera, or a mirror view if untargeted.
+This must be within 64 world units of the surface!"
+misc_teleporter_dest,/*QUAKED misc_teleporter_dest (1 0 0) (-32 -32 -24) (32 32 -16),,Point teleporters at these.
+path_corner,/*QUAKED path_corner (.5 .3 0) (-8 -8 -8) (8 8 8),,Train path corners.
+shooter_grenade,/*QUAKED shooter_grenade (1 0 0) (-16 -16 -16) (16 16 16),,Fires at either the target or the current direction.
+shooter_plasma,/*QUAKED shooter_plasma (1 0 0) (-16 -16 -16) (16 16 16),,Fires at either the target or the current direction.
+shooter_rocket,/*QUAKED shooter_rocket (1 0 0) (-16 -16 -16) (16 16 16),,Fires at either the target or the current direction.
+target_delay,/*QUAKED target_delay (1 0 0) (-8 -8 -8) (8 8 8),,
+target_give,/*QUAKED target_give (1 0 0) (-8 -8 -8) (8 8 8),,Gives the activator all the items pointed to.
+target_kill,/*QUAKED target_kill (.5 .5 .5) (-8 -8 -8) (8 8 8),,Kills the activator.
+target_laser,/*QUAKED target_laser (0 .5 .8) (-8 -8 -8) (8 8 8) START_ON,,"When triggered, fires a laser.  You can either set a target or a direction."
+target_location,/*QUAKED target_location (0 0.5 0) (-8 -8 -8) (8 8 8),,"Closest target_location in sight used for the location, if none in site, closest in distance."
+target_position,/*QUAKED target_position (0 0.5 0) (-4 -4 -4) (4 4 4),,"Used as a positional target for in-game calculation, like jumppad targets."
+target_print,/*QUAKED target_print (1 0 0) (-8 -8 -8) (8 8 8) RED_TEAM BLUE_TEAM PRIVATE,,"On activation, prints a message on the screen."
+target_push,/*QUAKED target_push (.5 .5 .5) (-8 -8 -8) (8 8 8) BOUNCE_PAD,,"Pushes the activator in the direction.of angle, or towards a target apex."
+target_relay,/*QUAKED target_relay (.5 .5 .5) (-8 -8 -8) (8 8 8) RED_ONLY BLUE_ONLY RANDOM,,This doesn't perform any actions except fire its targets. The activator can be forced to be from a certain team.
+target_remove_powerups,/*QUAKED target_remove_powerups (1 0 0) (-8 -8 -8) (8 8 8),,Takes away all the activators powerups. Used to drop powerups into death pits.
+target_score,/*QUAKED target_score (1 0 0) (-8 -8 -8) (8 8 8),,The activator is given this many points.
+target_speaker,/*QUAKED target_speaker (1 0 0) (-8 -8 -8) (8 8 8) LOOPED_ON LOOPED_OFF GLOBAL ACTIVATOR,,Plays a sound. Do we really have to explain this? LOL!
+target_teleporter,/*QUAKED target_teleporter (1 0 0) (-8 -8 -8) (8 8 8),,The activator will be teleported away.
+team_blueobelisk,/*QUAKED team_blueobelisk (0 0 1) (-16 -16 0) (16 16 88),models/powerups/overload_base.md3,Blue Team Obelisk. Used as a key entity for Harvester and Overload games.
+team_CTF_blueflag,/*QUAKED team_CTF_blueflag (0 0 1) (-16 -16 -16) (16 16 16),models/flags/b_flag.md3,"Blue Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the B point in Double Domination games."
+team_CTF_blueplayer,/*QUAKED team_CTF_blueplayer (0 0 1) (-16 -16 -24) (16 16 32),,Initial spawnpoint for Blue Team players.
+team_CTF_bluespawn,/*QUAKED team_CTF_bluespawn (0 0 1) (-16 -16 -24) (16 16 32),,"Potential, post-initial spawnpoint for Blue Team players."
+team_CTF_neutralflag,/*QUAKED team_CTF_neutralflag (0 0 1) (-16 -16 -16) (16 16 16),models/flags/n_flag.md3,Neutral Flag. Used as a key entity in One Flag CTF and Possession games.
+team_CTF_redflag,/*QUAKED team_CTF_redflag (1 0 0) (-16 -16 -16) (16 16 16),models/flags/r_flag.md3,"Red Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the A point in Double Domination games."
+team_CTF_redplayer,/*QUAKED team_CTF_redplayer (1 0 0) (-16 -16 -24) (16 16 32),,Initial spawnpoint for Red Team players.
+team_CTF_redspawn,/*QUAKED team_CTF_redspawn (1 0 0) (-16 -16 -24) (16 16 32),,"Potential, post-initial spawnpoint for Red Team players."
+team_neutralobelisk,/*QUAKED team_neutralobelisk (0 0 1) (-16 -16 0) (16 16 88),models/powerups/obelisk/obelisk.md3,Neutral Obelisk. Used as a key entity for Harvester games.
+team_redobelisk,/*QUAKED team_redobelisk (1 0 0) (-16 -16 0) (16 16 8),models/powerups/overload_base.md3,Red Team Obelisk. Used as a key entity for Harvester and Overload games.
+trigger_always,/*QUAKED trigger_always (.5 .5 .5) (-8 -8 -8) (8 8 8),,This trigger will always fire.  It is activated by the world.
+trigger_hurt,/*QUAKED trigger_hurt (.5 .5 .5) ? START_OFF x SILENT NO_PROTECTION SLOW,,Any entity that touches this will be hurt. It does dmg points of damage each server frame.
+trigger_multiple,/*QUAKED trigger_multiple (.5 .5 .5) ?,,Variable sized repeatable trigger.  Must be targeted at one or more entities.
+trigger_push,/*QUAKED trigger_push (.5 .5 .5) ?,,"Must point at a target_position, which will be the apex of the leap. This will be client side predicted, unlike target_push."
+trigger_teleport,/*QUAKED trigger_teleport (.5 .5 .5) ? SPECTATOR,,"Allows client side prediction of teleportation events. Must point at a target_position, which will be the teleport destination."
+weapon_bfg,/*QUAKED weapon_bfg (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/weapons2/bfg/bfg.md3,BFG.
+weapon_chaingun,/*QUAKED weapon_chaingun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/weapons/vulcan/vulcan.md3,Chaingun.
+weapon_gauntlet,/*QUAKED weapon_gauntlet (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/weapons2/gauntlet/gauntlet.md3,Gauntlet.
+weapon_grapplinghook,/*QUAKED weapon_grapplinghook (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/weapons2/grapple/grapple.md3,Grappling Hook.
+weapon_grenadelauncher,/*QUAKED weapon_grenadelauncher (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/weapons2/grenadel/grenadel.md3,Grenade Launcher.
+weapon_lightning,/*QUAKED weapon_lightning (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/weapons2/lightning/lightning.md3,Lightning Gun.
+weapon_machinegun,/*QUAKED weapon_machinegun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/weapons2/machinegun/machinegun.md3,Machinegun.
+weapon_nailgun,/*QUAKED weapon_nailgun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/weapons/nailgun/nailgun.md3,Nailgun.
+weapon_plasmagun,/*QUAKED weapon_plasmagun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/weapons2/plasma/plasma.md3,Plasma Gun.
+weapon_prox_launcher,/*QUAKED weapon_prox_launcher (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/weapons/proxmine/proxmine.md3,Prox Launcher.
+weapon_railgun,/*QUAKED weapon_railgun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/weapons2/railgun/railgun.md3,Railgun.
+weapon_rocketlauncher,/*QUAKED weapon_rocketlauncher (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/weapons2/rocketl/rocketl.md3,Rocket Launcher.
+weapon_shotgun,/*QUAKED weapon_shotgun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/weapons2/shotgun/shotgun.md3,Shotgun.
+worldspawn,/*QUAKED worldspawn (0 0 0) ?,,The main entity of the map. Every map should have exactly one worldspawn.

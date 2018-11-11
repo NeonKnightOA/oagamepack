@@ -22,11 +22,11 @@
 
 import pandas as pd
 import sys
+import re
 import os.path
 
-
 def readCsvToDictsAppend(result,filename,keyname):
-    reader = pd.read_csv(filename)
+    reader = pd.read_csv(filename, encoding = "ISO-8859-1")
     for row in reader.itertuples():
         rowDict = row._asdict()
         key = rowDict[keyname]
@@ -43,23 +43,27 @@ def fatal(errorMsg):
     print(errorMsg)
     exit(1)
     
+
+print("<?xml version=\"1.0\"?>")
+
 entities = readCsvToDicts("entities.csv","item")
 if (os.path.isfile("entities_extra.csv")):
     entities = readCsvToDictsAppend(entities, "entities_extra.csv", "item")
 keys = readCsvToDicts("keys.csv","name")
 key_texts = readCsvToDicts("key_text.csv","key")
-q3map2keys = readCsvToDicts("q3map2keys.csv","name")
-q3map2key_texts = readCsvToDicts("q3map2key_text.csv","key")
-q3map2terrainkeys = readCsvToDicts("q3map2terrainkeys.csv","name")
-q3map2terrainkey_texts = readCsvToDicts("q3map2terrainkey_text.csv","key")
+# q3map2keys = readCsvToDicts("q3map2keys.csv","name")
+# q3map2key_texts = readCsvToDicts("q3map2key_text.csv","key")
+# q3map2terrainkeys = readCsvToDicts("q3map2terrainkeys.csv","name")
+# q3map2terrainkey_texts = readCsvToDicts("q3map2terrainkey_text.csv","key")
 notes = readCsvToDicts("note.csv","name")
 note_texts = readCsvToDicts("note_text.csv", "key")
 # There are no spawnflags.csv at the moment. We only have suspended and it is part if the QUAKED line
 spawnflags = readCsvToDicts("spawnflags.csv","item")
 spawnflag_texts = readCsvToDicts("spawnflag_text.csv","key")
 
+
 def printKeys(item_name):
-    for item in sorted(key_texts):
+    for item in key_texts:
         if (item_name in keys.keys()):
             keyLine = keys[item_name]
             if (item in keyLine.keys()):
@@ -69,7 +73,7 @@ def printKeys(item_name):
                     defaultText = ""
                     basename = item
                     basekey = key_texts[item]["basekey"]
-                    if (isTrue(basekey)):
+                    if (isinstance(basekey, str) and len(basekey)>0):
                         basename = basekey
                     name = basename
                     fullname = key_texts[item]["fullname"]
@@ -78,51 +82,82 @@ def printKeys(item_name):
                     try:
                         defaultTextActual = keyLine[item+"_default"]
                         if key_texts[item]["type"] == "integer":
-                            defaultText = " Default: "+str(int(defaultTextActual))+"."
+                            defaultText = ". Default: "+str(int(defaultTextActual))+"."
                         else:
-                            defaultText = " Default: "+str(defaultTextActual)+"."
+                            defaultText = ". Default: "+str(defaultTextActual)+"."
+                        if not (defaultTextActual and defaultTextActual == defaultTextActual):
+                            defaultText = ""
                     except:
                         defaultText = ""
                     text = key_texts[item]["text"]
-                    if (text and text == text):
-                        print("\""+basename+"\" : "+str(key_texts[item]["text"])+defaultText)
-                    else:
-                        print("\""+basename+"\" : No text"+defaultText)
+                    if not (text and text == text):
+                        text = "No text"
+                    print("<"+str(key_texts[item]["type"])+" key=\""+str(basename)+"\" name=\""+str(name)+"\">"+text+str(defaultText)+"</"+str(key_texts[item]["type"])+">")
 
 def printNotes(item_name):
-    for item in sorted(note_texts):
+    for item in note_texts:
         if (item_name in notes.keys()):
             keyLine = notes[item_name]
             if (item in keyLine.keys()):
                 hasKey = keyLine[item]
                 if (hasKey and hasKey == hasKey):
-                    print(str(note_texts[item]["text"]))
+                    print(note_texts[item]["text"])
                     
+def printNonSuspendedSpawnflags(item_name):
+    for item in spawnflag_texts:
+        if (item_name in spawnflags.keys()):
+            keyLine = spawnflags[item_name]
+            if (item in keyLine.keys()):
+                hasKey = keyLine[item]
+                flagRow = spawnflag_texts[item]
+                if (hasKey and hasKey == hasKey):
+                    print("<flag key=\""+str(flagRow["key"])+"\" name=\""+str(flagRow["fullname"])+"\" bit=\""+str(flagRow["bit"])+"\">"+str(flagRow["text"])+"</flag>")
+                    
+                    
+def printSpawnflags(item_name):
+    if (item == "SUSPENDED" and "suspended" in entities[item_name]["quaked"]):
+        flagRow = spawnflag_texts["SUSPENDED"]
+        print("<flag key=\""+str(flagRow["key"])+"\" name=\""+str(flagRow["fullname"])+"\" bit=\""+str(flagRow["bit"])+"\">"+str(flagRow["text"])+"</flag>")    
+    printNonSuspendedSpawnflags(item_name)
+            
 
-def isTrue(some_value):
-    # True is represented by the string "true". Note that pandas uses NaN for blank strings
-    if (isinstance(some_value, str) and len(some_value)>0):
-        return True
-    return False
-    
-for item in sorted(entities):
+print("<classes>")
+for item in entities:
     row = entities[item]
-    print(row["quaked"])
+    quaked = row["quaked"]
+    model = ""
+    box1= ""
+    box2= ""
+    p = re.compile('\((.+?)\)')
+    parans = p.findall(quaked)
+    try:
+        color = parans[0]
+    except AttributeError:
+        fatal("Failed it find color in: "+quaked)
+    if (len(parans) > 1):
+        box1 = parans[1]
+    if (len(parans) > 2):
+        box2 = parans[2]
     if isinstance(row["model"],str):
         model = row["model"]
-        print("--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------")
-        print("model=\""+model+"\"")
+    xmlType = "point"
+    if not (box1 or box2):
+        xmlType = "group"
+    print("  <"+xmlType+" name=\"" + item + "\" color=\""+color+"\"", end ="")
+    if (box1 and box2):
+        print(" box=\""+box1+" "+box2+"\"", end = "")
+    print(" model=\""+model+"\">")
     if isinstance(row["description"],str):
         print(row["description"])
-    print("--------- KEYS --------")
+    print("-------- KEYS --------")
     printKeys(item)
-    # print("--------- Q3MAP2 KEYS --------")
+    # print("-------- Q3MAP2 KEYS --------")
     # printQ3Map2Keys(item)
-    # print("--------- Q3MAP2 TERRAIN KEYS --------")
-    # printQ3Map2TerrainKeys(item)
-    # print("--------- SPAWNFLAGS --------")
-    # printSpawnflags(item)
-    print("--------- NOTES --------")
+    # print("-------- Q3MAP2 TERRAIN KEYS --------")
+    # printQ3Map2Terrain(item)
+    print("-------- SPAWNFLAGS --------")
+    printSpawnflags(item)
+    print("-------- NOTES --------")
     printNotes(item)
-    print("*/")
-    
+    print("  </"+xmlType+">")
+print("</classes>")
