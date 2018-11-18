@@ -1,198 +1,199 @@
 key,type,fullname,basekey,text
-_ambient;ambient,real,Ambient Intensity,_ambient;ambient,
-_blocksize,integer,Block Size,_blocksize,
-_color,color,Light Color,_color,
-_color_worldspawn,color,Ambient Color,_color,
-angle,angle,Yaw Angle,angle,Determines a facing angle.
-angle_func,direction,Direction,angle,"Determines the movement direction. Among the values it can take:
+key__ambient,real,Ambient Intensity,_ambient;ambient,"Constant value added to the overall lighting. Use not recommended, since ambient light has a tendency to flatten out variations in light and shade."
+key__blocksize,integer,Block Size,_blocksize,Size of the blocks q3map2 vis uses in order to calculate what's drawn in the screen. Higher values than the default are recommended for very large maps with low structural brush count. The calculation is based on the formulas X=_blocksize*n; Y=_blocksize*n.
+key__color,color,Light Color,_color,Color of the light entity.
+key__color_worldspawn,color,Ambient Color,_color,Color of the ambient light.
+key_angle,angle,Yaw Angle,angle,Determines a facing angle.
+key_angle_func,direction,Direction,angle,"Determines the movement direction. Among the values it can take:
 * -1: the entity moves up.
 * -2: the entity moves down."
-angles,angles,Pitch Yaw Roll,angles,"Individual control of pitch, yaw and roll."
-angles_two,angles,Pitch Yaw,angles,Individual control of pitch and yaw.. Allows rotation in directions different from roll.
-color,color,Model Light Color,color,constantLight color of the md3 model included with the entity. It doesn't affect entity brushes.
-count,integer,Ammo Given,count,Amount of ammo given to the player on pickup.
-count_item_powerup,real,Powerup Duration,count,Amount of game seconds of duration of this powerup.
-count_target_location,integer,Text Color,count,"If set between 0-7, the location will be displayed with one of eight colors:
-- 0: white
-- 1: red
-- 2: green
-- 3: yellow
-- 4: blue
-- 5: cyan
-- 6: magenta
-- 7: white"
-count_target_score,integer,Frags Given,count,Number of points to add.
-delay,real,Delay,delay,
-dmg,integer,Damage Inflicted,dmg,Damage to inflict when blocking the operation of the entity.
-gametype1,string,Supported Game Types,gametype,"If set, the entity will ONLY appear in these gametypes. (See Notes)"
-gametype2,string,Forbidden Game Types,!gametype,"If set, the entity will NOT appear in these gametypes. (See Notes)"
-gravity,real,Gravity,gravity,
-gridsize,integer3,Grid Size,gridsize,
-health,real,Activate on Damage,health,"If set, in order to activate, the entity must take damage instead of being touched."
-height,real,Vertical Travel,height,"Total height of movement, defaults to model height."
-height_func_bobbing,real,Vertical Travel,height,Amount of travel of the oscillation movement.
-light,real,Model Light Intensity,light,constantLight radius of the model included with the entity. It doesn't affect entity brushes.
-light;_light,real,Light Intensity,light;_light,
-lip,real,Lip,lip,Protrusion above rest position after the end of the movement.
-message,string,Message to Display,message,Text to display.
-message_domination_point,string,Point Name,message,Gives the point a name which is displayed in-game. (MAX length: 19 chars)
-message_target_location,string,Location Name,message,Name of the location.
-message_worldspawn,string,Logon Message,message,
-model2,model,Model File,model2,.md3 model to draw.
-music,sound,Music File,music,
-noise,sound,Sound File,noise,Wav file to play. Recommended use is for looping sounds.
-notbot,boolean,Invisible To Bots,notbot,"If set to 1, a bot will never attempt to pick up this item."
-notbot_info_player,boolean,No Bots,notbot,Prevents bots from using this spot as a spawnpoint.
-notfree,boolean,Hidden for FFA,notfree,"If set to 1, this entity won't spawn in free-for-all gamemodes."
-nothumans,boolean,Not Humans,nothumans,Prevents humans from using this spot as a spawnpoint.
-notsingle,boolean,Hidden for SP,notsingle,"If set to 1, this entity won't spawn in single-player mode."
-notteam,boolean,Hidden for Teamplay,notteam,"If set to 1, this entity won't spawn in team-based gamemodes."
-origin,real3,World Origin,origin,Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes)
-phase_func_bobbing,real,Bob Cycle Phase,phase,"Start offset of the oscillation cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset."
-phase_func_pendulum,real,Swing Phase,phase,"Start offset of the swinging cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset."
-radius,real,Spotlight Radius,radius,Radius of a spotlight at the target point.
-random,real,Respawn Delay Variance,random,"Variation of time between respawns. The value is both added and subtracted from \""wait\""."
-random_func_timer,real,Time Period Variance,random,"Wait variance. The time between firing is located in the range [wait - random,wait + random]."
-random_shooter,real,Angle Variance,random,Number of degrees of deviance from the target.
-random_target_delay,real,Delay Variance,random,"Delay variance, total delay = delay +/- random seconds."
-random_target_speaker,real,Repeat Time Variance,random,"Wait variance. The time between firing is located in the range [wait - random,wait + random]."
-range,real,Range,range,
-roll,real,Roll,roll,Angle modifier to orient the camera around the target vector.
-scale,real,Scale,scale,Scaling factor. Recommended values sit between 50 and 300.
-speed,real,Move Speed,speed,Speed of entity movement.
-speed_func_bobbing,real,Bob Cycle Time,speed,Seconds to complete a bob cycle.
-speed_func_pendulum,real,Max Swing Angle,speed,Number of degrees each way the pendulum swings.
-speed_func_rotating,real,Rotation Speed,speed,Determines how fast it moves.
-speed_path_corner,real,Move Speed,speed,Speed to move to the next corner.
-speed_target_push,real,Push Speed,speed,
-target,target,Target,target,All entities with a matching targetname will be used.
-target__decal,target,Target,target,The entity which is targetted at for projection.
-target_func_timer,target,Target,target,
-target_func_train,target,Target,target,Next path corner.
-target_item,target,Target,target,Picking up the item will trigger these targets.
-target_misc_portal_camera,target,Target,target,
-target_misc_portal_surface,target,Target,target,
-target_path_corner,target,Target,target,Next path corner and other targets to fire.
-target_shooter,target,Target,target,
-targetname,targetname,Target Name,targetname,
-targetname_func_door,targetname,Target Name,targetname,"If set, the door needs to be operated by a func_button or trigger."
-targetname_func_plat,targetname,Target Name,targetname,
-targetname_func_timer,targetname,Target Name,targetname,
-targetname_info_notnull,targetname,Target Name,targetname,
-targetname_item,targetname,Target Name,targetname,A target_give entity can point at this item so its given to the player.
-targetShaderName,string,Target Shader Name,targetShaderName,Shader to be swapped out for triggerable shader entities. (See Notes)
-targetShaderNewName,string,Target Shader New Name,targetShaderNewName,Shader to be swapped in for triggerable shader entities. (See Notes)
-team,string,Team Name,team,"If set, the entity is teamed up with items in this team. (See Notes)"
-team_func_door,string,Team Name,team,Separate func_door entities within this team will operate together.
-wait,real,Respawn Delay,wait,"Seconds before the item respawns again.
--1 = never respawns again."
-wait_func,real,Return Delay,wait,"Seconds between triggerings.
+key_angles,angles,Pitch Yaw Roll,angles,"Individual control of pitch, yaw and roll."
+key_angles_two,angles,Pitch Yaw,angles,Individual control of pitch and yaw. Allows rotation in directions different from roll.
+key_color,color,Model Light Color,color,constantLight color of the md3 model included with the entity. It doesn't affect entity brushes.
+key_count,integer,Ammo Given,count,Amount of ammo given to the player on pickup.
+key_count_item_powerup,real,Powerup Duration,count,Amount of game seconds of duration of this powerup.
+key_count_target_location,integer,Text Color,count,"If set between 0-7, the location will be displayed with one of eight colors:
+* 0: white
+* 1: red
+* 2: green
+* 3: yellow
+* 4: blue
+* 5: cyan
+* 6: magenta
+* 7: white"
+key_count_target_score,integer,Points Given,count,Number of points to add to the player's score.
+key_delay,real,Delay,delay,"Similar to \""wait\"". Not even the devs know why this key exists lol!"
+key_dmg,integer,Damage Inflicted,dmg,Damage to inflict when blocking the operation of the entity.
+key_gametype1,string,Supported Game Types,gametype,"If set, the entity will ONLY appear in these gametypes. (See Notes)"
+key_gametype2,string,Forbidden Game Types,!gametype,"If set, the entity will NOT appear in these gametypes. (See Notes)"
+key_gravity,real,Gravity,gravity,"Gravity of the level. Overrides the default value, is overriden by the game's set gravity value."
+key_gridsize,integer3,Grid Size,gridsize,Size of the lightgrid created by q3map2. The values represent the units in the X Y Z points. Large powers of 2 help reduce the BSP size and compile time on very large maps.
+key_health,real,Activate on Damage,health,"If set, in order to activate, the entity must take damage instead of being touched."
+key_height,real,Vertical Travel,height,"Total height of movement, defaults to model height."
+key_height_func_bobbing,real,Vertical Travel,height,Amount of travel of the oscillation movement.
+key_light,real,Model Light Intensity,light,constantLight radius of the model included with the entity. It doesn't affect entity brushes.
+key_light_light,real,Light Intensity,light;_light,"Intensity of the light. Lower values equals to a dimmer light, higher values equal to an intenser light."
+key_lip,real,Lip,lip,Protrusion above rest position after the end of the movement.
+key_message,string,Message to Display,message,Text to display.
+key_message_domination_point,string,Point Name,message,Gives the point a name which is displayed in-game. (MAX length: 19 chars)
+key_message_target_location,string,Location Name,message,Name of the location.
+key_message_worldspawn,string,Logon Message,message,Name of the map. Displayed on the loading screen.
+key_model2,model,Model File,model2,.md3 model to draw.
+key_music,sound,Music File,music,Route of the music to play in background.
+key_noise,sound,Sound File,noise,Wav file to play. Recommended use is for looping sounds.
+key_notbot,boolean,Invisible To Bots,notbot,"If set to 1, a bot will never attempt to pick up this item."
+key_notbot_info_player,boolean,No Bots,notbot,Prevents bots from using this spot as a spawnpoint.
+key_notfree,boolean,Hidden for FFA,notfree,"If set to 1, this entity won't spawn in free-for-all gamemodes."
+key_nothumans,boolean,Not Humans,nothumans,Prevents humans from using this spot as a spawnpoint.
+key_notsingle,boolean,Hidden for SP,notsingle,"If set to 1, this entity won't spawn in single-player mode."
+key_notteam,boolean,Hidden for Teamplay,notteam,"If set to 1, this entity won't spawn in team-based gamemodes."
+key_origin,real3,World Origin,origin,Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes)
+key_phase_func_bobbing,real,Bob Cycle Phase,phase,"Start offset of the oscillation cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset."
+key_phase_func_pendulum,real,Swing Phase,phase,"Start offset of the swinging cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset."
+key_radius,real,Spotlight Radius,radius,Radius of a spotlight at the target point.
+key_random,real,Respawn Delay Variance,random,"Variation of time between respawns. The value is both added and subtracted from \""wait\""."
+key_random_func_timer,real,Time Period Variance,random,"Wait variance. The time between firing is located in the range [wait - random,wait + random]."
+key_random_shooter,real,Angle Variance,random,Number of degrees of deviance from the target.
+key_random_target_delay,real,Delay Variance,random,"Delay variance, total delay = delay +/- random seconds."
+key_random_target_speaker,real,Repeat Time Variance,random,"Wait variance. The time between firing is located in the range [wait - random,wait + random]."
+key_range,real,Range,range,Game units the camping bot can move from its camping location.
+key_roll,real,Roll,roll,Angle modifier to orient the camera around the target vector.
+key_scale,real,Scale,scale,Scaling factor. Recommended values sit between 50 and 300.
+key_speed,real,Move Speed,speed,Speed of entity movement.
+key_speed_func_bobbing,real,Bob Cycle Time,speed,Seconds to complete a bob cycle.
+key_speed_func_pendulum,real,Max Swing Angle,speed,Number of degrees each way the pendulum swings.
+key_speed_func_rotating,real,Rotation Speed,speed,Determines how fast it moves.
+key_speed_path_corner,real,Move Speed,speed,Speed to move to the next corner.
+key_speed_target_push,real,Propulsion Speed,speed,Vertical speed. Doesn't have effect if the target_push already targets another entity.
+key_target,target,Target,target,All entities with a matching targetname will be used.
+key_target__decal,target,Target,target,The entity which is targetted at for projection.
+key_target_func_timer,target,Target,target,Name of the entities to be triggered.
+key_target_func_train,target,Target,target,Next path_corner.
+key_target_item,target,Target,target,Picking up the item will trigger these targets.
+key_target_misc_portal_camera,target,Target,target,Points to a target_position setting the camera's pointing direction.
+key_target_misc_portal_surface,target,Target,target,Points to a target_position that displays what the portal renders.
+key_target_path_corner,target,Target,target,Next path corner and other targets to fire.
+key_target_shooter,target,Target,target,Points to a target_position to where the shooter aims.
+key_targetname_func_door,targetname,Target Name,targetname,"If set, the door needs to be operated by a func_button or trigger."
+key_targetname_func_plat,targetname,Target Name,targetname,Name of the trigger that activates the platform.
+key_targetname_func_timer,targetname,Target Name,targetname,Name of the trigger that (de)activates the timer.
+key_targetname_info_notnull,targetname,Target Name,targetname,Name of the entity that points to this entity.
+key_targetname_item,targetname,Target Name,targetname,A target_give entity can point at this item so its given to the player.
+key_targetShaderName,string,Target Shader Name,targetShaderName,Shader to be swapped out for triggerable shader entities. (See Notes)
+key_targetShaderNewName,string,Target Shader New Name,targetShaderNewName,Shader to be swapped in for triggerable shader entities. (See Notes)
+key_team,string,Team Name,team,"If set, the entity is teamed up with items in this team. (See Notes)"
+key_team_func_door,string,Team Name,team,Separate func_door entities within this team will operate together.
+key_wait,real,Respawn Delay,wait,"Seconds before the item respawns again.
+* -1 = never respawns again."
+key_wait_func,real,Return Delay,wait,"Seconds between triggerings.
 * -1 = never returns."
-wait_func_door,real,Return Delay,wait,"Seconds before the door returns to its default state.
+key_wait_func_door,real,Return Delay,wait,"Seconds before the door returns to its default state.
 * -1 = returns immediately."
-wait_func_timer,real,Time Period,wait,Base time between triggering all targets.
-wait_path_corner,real,Corner Delay,wait,Seconds to wait before behining move to next corner.
-wait_target_delay,real,Delay,wait,Seconds to pause before firing targets.
-wait_target_speaker,real,Repeat Time,wait,"Seconds between auto triggerings.
+key_wait_func_timer,real,Time Period,wait,Base time between triggering all targets.
+key_wait_path_corner,real,Corner Delay,wait,Seconds to wait before behining move to next corner.
+key_wait_target_delay,real,Delay,wait,Seconds to pause before firing targets.
+key_wait_target_speaker,real,Repeat Time,wait,"Seconds between auto triggerings.
 * 0 = doesn't auto trigger."
-weight,real,Weight,weight,
-_indexmap;alphamap,texture,Terrain Blending Map,_indexmap;alphamap,Path of the art file used to guide the mapping of textures on the terrain surface.
-_layers;layers,integer,Terrain Layers,_layers;layers,Number of unique root shaders that will be used on the terrain surface.
-_shader;shader,texture,Terrain MetaShader,_shader;shader,Metashader used to assign textures to the terrain entity.
-_anglescale,real,Lightmap Angle Scale,_anglescale,"Light attenuation scaling. Lower values lessens angle attenuation, while higher values give sharper, more faceted lighting."
-_castshadows;_cs,integer,Shadow Caster Level,_castshadows;_cs,"Per-entity control over shadow casting. The values it can take are:
+key_weight_info_camp,real,Weight,weight,Priority level the camping bot uses to determine if they want to camp there.
+key_weight_item_botroam,real,Weight,weight,Priority level the nearby bot uses to determine if they want to go to that location.
+q3map2key2__indexmap,texture,Terrain Blending Map,_indexmap;alphamap,Path of the art file used to guide the mapping of textures on the terrain surface.
+q3map2key2__layers,integer,Terrain Layers,_layers;layers,Number of unique root shaders that will be used on the terrain surface.
+q3map2key2__shader,texture,Terrain MetaShader,_shader;shader,Metashader used to assign textures to the terrain entity.
+q3map2key1__anglescale,real,Lightmap Angle Scale,_anglescale,"Light attenuation scaling. Lower values lessens angle attenuation, while higher values give sharper, more faceted lighting."
+q3map2key1__castshadows,integer,Shadow Caster Level,_castshadows;_cs,"Per-entity control over shadow casting. The values it can take are:
 * < -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
 * 0: Casts shadows on entities. (Default)
 * 1: Casts shadows on the world. (Also default)
 * > 1: Casts shadows on entities with _rs or _receiveshadows AND in the world."
-_celshader,texture,Cel Shader,_celshader,Cel shader used for this geometry.
-_deviance,real,Light Deviation,_deviance,Distance in world units for spotlights and targetted lights. Also the degree for sunlights. (Recommended values between 0.5 and 3)
-_farplanedist,real,Far Clip Distance,_farplanedist,
-_filter,integer,Lightmap Filtering,_filter,"If set to 1, toggles on lightmap filtering."
-_filterradius,integer,Lightmap Filtering Radius,_filterradius,Lightmaps within this amount of world units will be filtered.
-_foghull,texture,Fog Hull Shader,_foghull,
-_keeplights,boolean,Keep Light Entities,_keeplights,
-_lightmapscale,real,Lightmap Scale,_lightmapscale,Scales the resolution of lightmaps on brushes and patches in the entity.
-_mingridlight,real,Min Dynamic Intensity,_mingridlight,
-_minlight,real,Min Lightmap Intensity,_minlight,
-_minvertexlight,real,Min Vertex Intensity,_minvertexlight,
-_noshadersun,boolean,Ignore Shader Sun,_noshadersun,
-_receiveshadows;_rs,integer,Shadow Reception Level,_receiveshadows;_rs,"Per-entity control over shadow reception. The values it can take are:
+q3map2key1__celshader,texture,Cel Shader,_celshader,Cel shader used for this geometry.
+q3map2key1__deviance,real,Light Deviation,_deviance,Distance in world units for spotlights and targetted lights. Also the degree for sunlights. (Recommended values between 0.5 and 3)
+q3map2key1__farplanedist,real,Far Clip Distance,_farplanedist,"Amount of units the vis phase can see during compilation. In combination with level-wide fog, it can help reduce tris count on large, open maps."
+q3map2key1__filter,integer,Lightmap Filtering,_filter,"If set to 1, toggles on lightmap filtering."
+q3map2key1__filterradius,integer,Lightmap Filtering Radius,_filterradius,Lightmaps within this amount of world units will be filtered.
+q3map2key1__foghull,texture,Fog Hull Shader,_foghull,"If set, the level will use the fog properties of this shader in order to render a level-wide fog."
+q3map2key1__keeplights,boolean,Keep Light Entities,_keeplights,"Keeps lights in the BSP, preventing q3map2 from stripping them in the light phase."
+q3map2key1__lightmapscale,real,Lightmap Scale,_lightmapscale,Scales the resolution of lightmaps on brushes and patches in the entity.
+q3map2key1__lightmapscale_worldspawn,real,Lightmap Scale,_lightmapscale,Scales the resolution of lightmaps on brushes and patches in the world. Func_ entities can override this value.
+q3map2key1__mingridlight,real,Min Dynamic Intensity,_mingridlight,"Minimum value of dynamic entity lighting, level-wide."
+q3map2key1__minlight,real,Min Lightmap Intensity,_minlight,"Minimum value of world-wide lighting, level-wide, which uses \""_color\"" to add a color to the ambience. Unlike _ambient and ambient, it does not add values to the other light entities."
+q3map2key1__minvertexlight,real,Min Vertex Intensity,_minvertexlight,"Minimum value of vertex lighting, level-wide."
+q3map2key1__noshadersun,boolean,Ignore Shader Sun,_noshadersun,"Ignores the sky properties of the sky shaders, and ONLY uses entity sun lights."
+q3map2key1__receiveshadows,integer,Shadow Reception Level,_receiveshadows;_rs,"Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
 * > 1: Receive shadows ONLY from entities with _cs or _castshadows."
-_remap,array,Shader Remaps,_remap,
-_samples,integer,Light Samples,_samples,Random jitters distributed over the solid arc. (~16)
-_sun,boolean,Directional,_sun,
-_targetname,targetname,Target Name,_targetname,The model attached to the entity.
-angles_q3map2,angles,Pitch Yaw Roll,angles,
-fade,real,Linear Fade,fade,
-modelscale,real,Uniform Scale,modelscale,
-modelscale_vec,real3,Scale X Y Z,modelscale_vec,
-scale_q3map2,real,Intensity Scale,scale,
-style,integer,Lightmap Style,style,Worldspawn light style. Values are set in the range [1;31].
-target_q3map2,target,Target,target,
-_style1alphaGen,real,AlphaGen for Style 1,_style1alphaGen,AlphaGen value for the light style index 1. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style1rgbGen,real,rgbGen for Style 1,_style1rgbGen,rgbGen value for the light style index 1. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style2alphaGen,real,AlphaGen for Style 2,_style2alphaGen,AlphaGen value for the light style index 2. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style2rgbGen,real,rgbGen for Style 2,_style2rgbGen,rgbGen value for the light style index 2. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style3alphaGen,real,AlphaGen for Style 3,_style3alphaGen,AlphaGen value for the light style index 3. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style3rgbGen,real,rgbGen for Style 3,_style3rgbGen,rgbGen value for the light style index 3. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style4alphaGen,real,AlphaGen for Style 4,_style4alphaGen,AlphaGen value for the light style index 4. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style4rgbGen,real,rgbGen for Style 4,_style4rgbGen,rgbGen value for the light style index 4. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style5alphaGen,real,AlphaGen for Style 5,_style5alphaGen,AlphaGen value for the light style index 5. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style5rgbGen,real,rgbGen for Style 5,_style5rgbGen,rgbGen value for the light style index 5. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style6alphaGen,real,AlphaGen for Style 6,_style6alphaGen,AlphaGen value for the light style index 6. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style6rgbGen,real,rgbGen for Style 6,_style6rgbGen,rgbGen value for the light style index 6. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style7alphaGen,real,AlphaGen for Style 7,_style7alphaGen,AlphaGen value for the light style index 7. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style7rgbGen,real,rgbGen for Style 7,_style7rgbGen,rgbGen value for the light style index 7. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style8alphaGen,real,AlphaGen for Style 8,_style8alphaGen,AlphaGen value for the light style index 8. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style8rgbGen,real,rgbGen for Style 8,_style8rgbGen,rgbGen value for the light style index 8. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style9alphaGen,real,AlphaGen for Style 9,_style9alphaGen,AlphaGen value for the light style index 9. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style9rgbGen,real,rgbGen for Style 9,_style9rgbGen,rgbGen value for the light style index 9. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style10alphaGen,real,AlphaGen for Style 10,_style10alphaGen,AlphaGen value for the light style index 10. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style10rgbGen,real,rgbGen for Style 10,_style10rgbGen,rgbGen value for the light style index 10. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style11alphaGen,real,AlphaGen for Style 11,_style11alphaGen,AlphaGen value for the light style index 11. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style11rgbGen,real,rgbGen for Style 11,_style11rgbGen,rgbGen value for the light style index 11. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style12alphaGen,real,AlphaGen for Style 12,_style12alphaGen,AlphaGen value for the light style index 12. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style12rgbGen,real,rgbGen for Style 12,_style12rgbGen,rgbGen value for the light style index 12. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style13alphaGen,real,AlphaGen for Style 13,_style13alphaGen,AlphaGen value for the light style index 13. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style13rgbGen,real,rgbGen for Style 13,_style13rgbGen,rgbGen value for the light style index 13. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style14alphaGen,real,AlphaGen for Style 14,_style14alphaGen,AlphaGen value for the light style index 14. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style14rgbGen,real,rgbGen for Style 14,_style14rgbGen,rgbGen value for the light style index 14. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style15alphaGen,real,AlphaGen for Style 15,_style15alphaGen,AlphaGen value for the light style index 15. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style15rgbGen,real,rgbGen for Style 15,_style15rgbGen,rgbGen value for the light style index 15. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style16alphaGen,real,AlphaGen for Style 16,_style16alphaGen,AlphaGen value for the light style index 16. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style16rgbGen,real,rgbGen for Style 16,_style16rgbGen,rgbGen value for the light style index 16. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style17alphaGen,real,AlphaGen for Style 17,_style17alphaGen,AlphaGen value for the light style index 17. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style17rgbGen,real,rgbGen for Style 17,_style17rgbGen,rgbGen value for the light style index 17. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style18alphaGen,real,AlphaGen for Style 18,_style18alphaGen,AlphaGen value for the light style index 18. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style18rgbGen,real,rgbGen for Style 18,_style18rgbGen,rgbGen value for the light style index 18. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style19alphaGen,real,AlphaGen for Style 19,_style19alphaGen,AlphaGen value for the light style index 19. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style19rgbGen,real,rgbGen for Style 19,_style19rgbGen,rgbGen value for the light style index 19. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style20alphaGen,real,AlphaGen for Style 20,_style20alphaGen,AlphaGen value for the light style index 20. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style20rgbGen,real,rgbGen for Style 20,_style20rgbGen,rgbGen value for the light style index 20. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style21alphaGen,real,AlphaGen for Style 21,_style21alphaGen,AlphaGen value for the light style index 21. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style21rgbGen,real,rgbGen for Style 21,_style21rgbGen,rgbGen value for the light style index 21. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style22alphaGen,real,AlphaGen for Style 22,_style22alphaGen,AlphaGen value for the light style index 22. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style22rgbGen,real,rgbGen for Style 22,_style22rgbGen,rgbGen value for the light style index 22. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style23alphaGen,real,AlphaGen for Style 23,_style23alphaGen,AlphaGen value for the light style index 23. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style23rgbGen,real,rgbGen for Style 23,_style23rgbGen,rgbGen value for the light style index 23. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style24alphaGen,real,AlphaGen for Style 24,_style24alphaGen,AlphaGen value for the light style index 24. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style24rgbGen,real,rgbGen for Style 24,_style24rgbGen,rgbGen value for the light style index 24. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style25alphaGen,real,AlphaGen for Style 25,_style25alphaGen,AlphaGen value for the light style index 25. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style25rgbGen,real,rgbGen for Style 25,_style25rgbGen,rgbGen value for the light style index 25. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style26alphaGen,real,AlphaGen for Style 26,_style26alphaGen,AlphaGen value for the light style index 26. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style26rgbGen,real,rgbGen for Style 26,_style26rgbGen,rgbGen value for the light style index 26. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style27alphaGen,real,AlphaGen for Style 27,_style27alphaGen,AlphaGen value for the light style index 27. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style27rgbGen,real,rgbGen for Style 27,_style27rgbGen,rgbGen value for the light style index 27. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style28alphaGen,real,AlphaGen for Style 28,_style28alphaGen,AlphaGen value for the light style index 28. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style28rgbGen,real,rgbGen for Style 28,_style28rgbGen,rgbGen value for the light style index 28. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style29alphaGen,real,AlphaGen for Style 29,_style29alphaGen,AlphaGen value for the light style index 29. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style29rgbGen,real,rgbGen for Style 29,_style29rgbGen,rgbGen value for the light style index 29. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style30alphaGen,real,AlphaGen for Style 30,_style30alphaGen,AlphaGen value for the light style index 30. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style30rgbGen,real,rgbGen for Style 30,_style30rgbGen,rgbGen value for the light style index 30. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style31alphaGen,real,AlphaGen for Style 31,_style31alphaGen,AlphaGen value for the light style index 31. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
-_style31rgbGen,real,rgbGen for Style 31,_style31rgbGen,rgbGen value for the light style index 31. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key1__remap,array,Shader Remaps,_remap,Remapping of shaders/textures on the model. (See notes)
+q3map2key1__samples,integer,Light Samples,_samples,Random jitters distributed over the solid arc. (~16)
+q3map2key1__sun,boolean,Directional,_sun,"If set to 1 on a spotlight, it makes an infinite sun light."
+q3map2key1__targetname,targetname,Target Name,_targetname,The model attached to the entity.
+q3map2key1_angles_q3map2,angles,Pitch Yaw Roll,angles,"Individual control of pitch, yaw and roll."
+q3map2key1_fade,real,Linear Fade,fade,Light attenuation fade for linear lights.
+q3map2key1_modelscale,real,Uniform Scale,modelscale,Value determining the uniform scale of the model.
+q3map2key1_modelscale_vec,real3,Scale X Y Z,modelscale_vec,"Individual control of width, height and breadth scale of the model."
+q3map2key1_scale_q3map2,real,Intensity Scale,scale,"Light attenuation scale. Affects the \""light\"" and \""_light\"" values."
+q3map2key1_style,integer,Lightmap Style,style,Worldspawn light style. Values are set in the range [1;31].
+q3map2key1_target_q3map2,target,Target,target,Attaches the misc_model to a func_entity with this targetname value.
+q3map2key3__style01alphaGen,real,AlphaGen for Style 1,_style1alphaGen,AlphaGen value for the light style index 1. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style01rgbGen,real,rgbGen for Style 1,_style1rgbGen,rgbGen value for the light style index 1. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style02alphaGen,real,AlphaGen for Style 2,_style2alphaGen,AlphaGen value for the light style index 2. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style02rgbGen,real,rgbGen for Style 2,_style2rgbGen,rgbGen value for the light style index 2. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style03alphaGen,real,AlphaGen for Style 3,_style3alphaGen,AlphaGen value for the light style index 3. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style03rgbGen,real,rgbGen for Style 3,_style3rgbGen,rgbGen value for the light style index 3. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style04alphaGen,real,AlphaGen for Style 4,_style4alphaGen,AlphaGen value for the light style index 4. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style04rgbGen,real,rgbGen for Style 4,_style4rgbGen,rgbGen value for the light style index 4. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style05alphaGen,real,AlphaGen for Style 5,_style5alphaGen,AlphaGen value for the light style index 5. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style05rgbGen,real,rgbGen for Style 5,_style5rgbGen,rgbGen value for the light style index 5. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style06alphaGen,real,AlphaGen for Style 6,_style6alphaGen,AlphaGen value for the light style index 6. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style06rgbGen,real,rgbGen for Style 6,_style6rgbGen,rgbGen value for the light style index 6. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style07alphaGen,real,AlphaGen for Style 7,_style7alphaGen,AlphaGen value for the light style index 7. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style07rgbGen,real,rgbGen for Style 7,_style7rgbGen,rgbGen value for the light style index 7. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style08alphaGen,real,AlphaGen for Style 8,_style8alphaGen,AlphaGen value for the light style index 8. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style08rgbGen,real,rgbGen for Style 8,_style8rgbGen,rgbGen value for the light style index 8. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style09alphaGen,real,AlphaGen for Style 9,_style9alphaGen,AlphaGen value for the light style index 9. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style09rgbGen,real,rgbGen for Style 9,_style9rgbGen,rgbGen value for the light style index 9. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style10alphaGen,real,AlphaGen for Style 10,_style10alphaGen,AlphaGen value for the light style index 10. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style10rgbGen,real,rgbGen for Style 10,_style10rgbGen,rgbGen value for the light style index 10. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style11alphaGen,real,AlphaGen for Style 11,_style11alphaGen,AlphaGen value for the light style index 11. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style11rgbGen,real,rgbGen for Style 11,_style11rgbGen,rgbGen value for the light style index 11. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style12alphaGen,real,AlphaGen for Style 12,_style12alphaGen,AlphaGen value for the light style index 12. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style12rgbGen,real,rgbGen for Style 12,_style12rgbGen,rgbGen value for the light style index 12. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style13alphaGen,real,AlphaGen for Style 13,_style13alphaGen,AlphaGen value for the light style index 13. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style13rgbGen,real,rgbGen for Style 13,_style13rgbGen,rgbGen value for the light style index 13. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style14alphaGen,real,AlphaGen for Style 14,_style14alphaGen,AlphaGen value for the light style index 14. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style14rgbGen,real,rgbGen for Style 14,_style14rgbGen,rgbGen value for the light style index 14. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style15alphaGen,real,AlphaGen for Style 15,_style15alphaGen,AlphaGen value for the light style index 15. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style15rgbGen,real,rgbGen for Style 15,_style15rgbGen,rgbGen value for the light style index 15. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style16alphaGen,real,AlphaGen for Style 16,_style16alphaGen,AlphaGen value for the light style index 16. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style16rgbGen,real,rgbGen for Style 16,_style16rgbGen,rgbGen value for the light style index 16. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style17alphaGen,real,AlphaGen for Style 17,_style17alphaGen,AlphaGen value for the light style index 17. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style17rgbGen,real,rgbGen for Style 17,_style17rgbGen,rgbGen value for the light style index 17. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style18alphaGen,real,AlphaGen for Style 18,_style18alphaGen,AlphaGen value for the light style index 18. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style18rgbGen,real,rgbGen for Style 18,_style18rgbGen,rgbGen value for the light style index 18. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style19alphaGen,real,AlphaGen for Style 19,_style19alphaGen,AlphaGen value for the light style index 19. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style19rgbGen,real,rgbGen for Style 19,_style19rgbGen,rgbGen value for the light style index 19. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style20alphaGen,real,AlphaGen for Style 20,_style20alphaGen,AlphaGen value for the light style index 20. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style20rgbGen,real,rgbGen for Style 20,_style20rgbGen,rgbGen value for the light style index 20. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style21alphaGen,real,AlphaGen for Style 21,_style21alphaGen,AlphaGen value for the light style index 21. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style21rgbGen,real,rgbGen for Style 21,_style21rgbGen,rgbGen value for the light style index 21. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style22alphaGen,real,AlphaGen for Style 22,_style22alphaGen,AlphaGen value for the light style index 22. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style22rgbGen,real,rgbGen for Style 22,_style22rgbGen,rgbGen value for the light style index 22. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style23alphaGen,real,AlphaGen for Style 23,_style23alphaGen,AlphaGen value for the light style index 23. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style23rgbGen,real,rgbGen for Style 23,_style23rgbGen,rgbGen value for the light style index 23. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style24alphaGen,real,AlphaGen for Style 24,_style24alphaGen,AlphaGen value for the light style index 24. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style24rgbGen,real,rgbGen for Style 24,_style24rgbGen,rgbGen value for the light style index 24. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style25alphaGen,real,AlphaGen for Style 25,_style25alphaGen,AlphaGen value for the light style index 25. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style25rgbGen,real,rgbGen for Style 25,_style25rgbGen,rgbGen value for the light style index 25. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style26alphaGen,real,AlphaGen for Style 26,_style26alphaGen,AlphaGen value for the light style index 26. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style26rgbGen,real,rgbGen for Style 26,_style26rgbGen,rgbGen value for the light style index 26. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style27alphaGen,real,AlphaGen for Style 27,_style27alphaGen,AlphaGen value for the light style index 27. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style27rgbGen,real,rgbGen for Style 27,_style27rgbGen,rgbGen value for the light style index 27. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style28alphaGen,real,AlphaGen for Style 28,_style28alphaGen,AlphaGen value for the light style index 28. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style28rgbGen,real,rgbGen for Style 28,_style28rgbGen,rgbGen value for the light style index 28. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style29alphaGen,real,AlphaGen for Style 29,_style29alphaGen,AlphaGen value for the light style index 29. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style29rgbGen,real,rgbGen for Style 29,_style29rgbGen,rgbGen value for the light style index 29. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style30alphaGen,real,AlphaGen for Style 30,_style30alphaGen,AlphaGen value for the light style index 30. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style30rgbGen,real,rgbGen for Style 30,_style30rgbGen,rgbGen value for the light style index 30. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style31alphaGen,real,AlphaGen for Style 31,_style31alphaGen,AlphaGen value for the light style index 31. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
+q3map2key3__style31rgbGen,real,rgbGen for Style 31,_style31rgbGen,rgbGen value for the light style index 31. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
