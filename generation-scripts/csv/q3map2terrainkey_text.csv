@@ -1,4 +1,0 @@
-key,type,fullname,basekey,text
-"_indexmap;alphamap",texture,Terrain Blending Map,"_indexmap;alphamap",Path of the art file used to guide the mapping of textures on the terrain surface.
-"_layers;layers",integer,Terrain Layers,"_layers;layers",Number of unique root shaders that will be used on the terrain surface.
-"_shader;shader",texture,Terrain MetaShader,"_shader;shader",Metashader used to assign textures to the terrain entity.

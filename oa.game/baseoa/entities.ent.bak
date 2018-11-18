@@ -1298,7 +1298,6 @@ Generic placeholder for inserting MD3 models in game. Requires compilation of ma
 -------- NOTES --------
 This is a premade mesh model, created in a program like Kinetix's 3d Studio Max. It is a static (non-animating) model.  Shaders can give it the appearance of motion, but no animation.  The models should be stored in a directory with the pathname: models/mapobjects. The process by which models are made is not a part of this document. Currently, models only have rotation on the Z axis.
 Models do not "clip" against players or weapon hits. They are entirely non-solid. If clipping is important, The user will need to build clip brushes that are roughly the size and shape of the models. 
-
 </point>
 
 <point name="misc_portal_camera" color="1 .5 .25" box="-8 -8 -8 8 8 8">

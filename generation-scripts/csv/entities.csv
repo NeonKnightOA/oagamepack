@@ -1,6 +1,8 @@
 item,quaked,model,description
-_decal,/*QUAKED _decal (0 1.0 0) ?,,Compiler-only entity. Specifies a decal for projection.
-_skybox,/*QUAKED _skybox (0.77 0.88 1.0) (-4 -4 -4) (4 4 4),,"Compiler-only entity. Specifies the origin of a skybox in a contained area of the map, far from the actual level."
+_decal,/*QUAKED _decal (0 1.0 0) ?,,"Compiler-only entity. Specifies a decal for projection.
+A decal is created by grouping one or more bezier patches and targetting it into an info_null entity. Axis and distance of projection are determined by the distance between the center of the _decal entity and the target. "
+_skybox,/*QUAKED _skybox (0.77 0.88 1.0) (-4 -4 -4) (4 4 4),,"Compiler-only entity. Specifies the origin of a skybox in a contained area of the map, far from the actual level.
+A skybox casts shadows on normal parts of the map and allows the use of cloud layers and other effects. After compiling, the skybox will replace any sky shaders present in the map, except, of course, those in the skybox itself. "
 ammo_belt,/*QUAKED ammo_belt (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/chaingunam.md3,Chaingun ammo.
 ammo_bfg,/*QUAKED ammo_bfg (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/bfgam.md3,BFG ammo.
 ammo_bullets,/*QUAKED ammo_bullets (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/machinegunam.md3,Machinegun ammo.
@@ -13,11 +15,16 @@ ammo_rockets,/*QUAKED ammo_rockets (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,
 ammo_shells,/*QUAKED ammo_shells (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/shotgunam.md3,Shotgun ammo.
 ammo_slugs,/*QUAKED ammo_slugs (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED,models/powerups/ammo/railgunam.md3,Railgun ammo.
 domination_point,/*QUAKED domination_point (1 0 .5) (-16 -16 -16) (16 16 16),models/dpoints/a_white.md3,Domination Control Point.
-func_bobbing,/*QUAKED func_bobbing (0 .5 .8) ? X_AXIS Y_AXIS,,Brush entity which bobs on the Z axis.
-func_button,/*QUAKED func_button (0 .5 .8) ?,,"Pushable button, usually used to trigger other entities or just open doors."
-func_door,/*QUAKED func_door (0 .5 .8) ? START_OPEN x CRUSHER,,"Movable brush usually used as a door, hence the name."
-func_group,/*QUAKED func_group (0 0 0) ?,,Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.
-func_pendulum,/*QUAKED func_pendulum (0 .5 .8) ?,,A swinging pendulum. Pendulums always swing north / south on unrotated models.  Pendulum frequency is a physical constant based on the length of the beam and gravity.
+func_bobbing,/*QUAKED func_bobbing (0 .5 .8) ? X_AXIS Y_AXIS,,"Brush entity which bobs on the Z axis.
+By default, a func_bobbing entity bobs on the Z axis (up-down) and displaces in both directions equal to the dimension of the brush group. "
+func_button,/*QUAKED func_button (0 .5 .8) ?,,"Pushable button, usually used to trigger other entities or just open doors.
+When a button is touched, it moves some distance in the direction of it's angle, triggers all of it's targets, waits some time, then returns to it's original position where it can be triggered again. "
+func_door,/*QUAKED func_door (0 .5 .8) ? START_OPEN x CRUSHER,,"Movable brush usually used as a door, hence the name.
+By default, a door activates upon proximity of a player or when damage is inflicted to it. In order to team doors up, separate func_door entities must be connected by sharing the same 'team' key. "
+func_group,/*QUAKED func_group (0 0 0) ?,,"Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.
+Entity which groups several brushes and patches together for convenience. "
+func_pendulum,/*QUAKED func_pendulum (0 .5 .8) ?,,"A swinging pendulum. Pendulums always swing north / south on unrotated models.  Pendulum frequency is a physical constant based on the length of the beam and gravity.
+The origin is the point where the rotation axis goes through. The speed of swinging is not adjustable. "
 func_plat,/*QUAKED func_plat (0 .5 .8) ?,,Activable platforms. Plats are always drawn in the extended position so they will light correctly.
 func_rotating,/*QUAKED func_rotating (0 .5 .8) ? START_ON - X_AXIS Y_AXIS,,"A rotating entity, used for decorations or moving platforms. The center of that brush will be
 the point around which it is rotated. It will rotate around the Z axis by default.  You can
