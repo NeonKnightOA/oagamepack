@@ -29,4 +29,4 @@ target_model_note,"This entity can have a model attached to it. For this, the en
 targetShaderName_note,"Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example."
 !!!!misc_model_note,"misc_models are models whose only animation comes from shader entities and can only rotate on the Z axis. Models are entirely non-solid, because of this they don't clip against weapon fire or other players, so appropriate clip brushes matching the size and shape of the models must be drawn.
 
-In order to remap a model, use ''*;<texturepath>\'' in order to remap the whole model under a single texture/shader, or ''<texturepath1>;<texturepath2>'' in order to remap a specific texture/shader."
+In order to remap a model, use ''*;[texturepath]\'' in order to remap the whole model under a single texture/shader, or ''[texturepath1];[texturepath2]'' in order to remap a specific texture/shader."
