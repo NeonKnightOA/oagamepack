@@ -64,9 +64,9 @@ spawnflag_texts = readCsvToDicts("csv/spawnflag_text.csv","key")
 
 def printKeys(item_name):
     for item in key_texts:
-        if (item_name in keys.keys()):
+        if (item_name in sorted(keys.keys())):
             keyLine = keys[item_name]
-            if (item in keyLine.keys()):
+            if (item in sorted(keyLine.keys())):
                 hasKey = keyLine[item]
                 #The hasKey == hasKey us used to check for NaN. Blank fields are NaNs in Pandas
                 if (hasKey and hasKey == hasKey):
@@ -96,18 +96,18 @@ def printKeys(item_name):
 
 def printNotes(item_name):
     for item in note_texts:
-        if (item_name in notes.keys()):
+        if item_name in sorted(notes.keys()):
             keyLine = notes[item_name]
-            if (item in keyLine.keys()):
+            if item in sorted(keyLine.keys()):
                 hasKey = keyLine[item]
                 if (hasKey and hasKey == hasKey):
                     print(note_texts[item]["text"])
 
 def printNonSuspendedSpawnflags(item_name):
     for item in spawnflag_texts:
-        if (item_name in spawnflags.keys()):
+        if item_name in sorted(spawnflags.keys()):
             keyLine = spawnflags[item_name]
-            if (item in keyLine.keys()):
+            if item in sorted(keyLine.keys()):
                 hasKey = keyLine[item]
                 flagRow = spawnflag_texts[item]
                 if (hasKey and hasKey == hasKey):
@@ -122,7 +122,7 @@ def printSpawnflags(item_name):
 
 
 print("<classes>")
-for item in entities:
+for item in sorted(entities):
     row = entities[item]
     quaked = row["quaked"]
     model = ""

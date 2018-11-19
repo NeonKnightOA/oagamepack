@@ -61,7 +61,7 @@ def printKeys(item_name):
     for item in sorted(key_texts):
         if (item_name in keys.keys()):
             keyLine = keys[item_name]
-            if (item in keyLine.keys()):
+            if item in sorted(keyLine.keys()):
                 hasKey = keyLine[item]
                 #The hasKey == hasKey us used to check for NaN. Blank fields are NaNs in Pandas
                 if (hasKey and hasKey == hasKey):
@@ -92,7 +92,7 @@ def printNotes(item_name):
     for item in sorted(note_texts):
         if (item_name in notes.keys()):
             keyLine = notes[item_name]
-            if (item in keyLine.keys()):
+            if item in sorted(keyLine.keys()):
                 hasKey = keyLine[item]
                 if (hasKey and hasKey == hasKey):
                     print(str(note_texts[item]["text"]))
