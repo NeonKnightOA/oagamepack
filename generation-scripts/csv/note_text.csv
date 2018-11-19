@@ -1,18 +1,11 @@
-key,text,,,,,,,,,,,,,,,,,,,,,
-!!vq3compat,"This entity may not work with mods designed for the game OA is inspired from.
-",,,,,,,,,,,,,,,,,,,,,
-!!!spawnpoint_note,"Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-",,,,,,,,,,,,,,,,,,,,,
-!broken,"This item is broken in some older versions of OA and the game it's inspired from. It may not work.
-",,,,,,,,,,,,,,,,,,,,,
-origin,"This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
-",,,,,,,,,,,,,,,,,,,,,
-origin_brush,"This entity can only work with an origin brush as part of this entity. The brush itself must be a square of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
-",,,,,,,,,,,,,,,,,,,,,
-light_note,"Lights pointed at a target will be spotlights.
-",,,,,,,,,,,,,,,,,,,,,
-target_note,"Targeting the trigger will toggle its on / off state.
-",,,,,,,,,,,,,,,,,,,,,
+key,text
+!!vq3compat,"This entity may not work with mods designed for the game OA is inspired from."
+!!!spawnpoint_note,"Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint."
+!broken,"This item is broken in some older versions of OA and the game it's inspired from. It may not work."
+origin,"This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves."
+origin_brush,"This entity can only work with an origin brush as part of this entity. The brush itself must be a square of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves."
+light_note,"Lights pointed at a target will be spotlights."
+target_note,"Targeting the trigger will toggle its on / off state."
 gametype_note,"Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -25,25 +18,15 @@ gametype_note,"Values for the 'gametype' and '!gametype' keys need to be separat
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
-- pos: Possession
-",,,,,,,,,,,,,,,,,,,,,
-!!!!gametype_objective_note,"Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
-",,,,,,,,,,,,,,,,,,,,,
+- pos: Possession"
+!!!!gametype_objective_note,"Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps."
 team_item_group_note,"Items can be grouped in teams. The first selected item in the team acts as the 'master', and as such it's the first item to spawn in the game; items will start cycling after it's picked up. For this, the selected items must have the 'team' key set with the same value. The respawn time of this team is determined by the 'wait' key, so if it's set to 30, the respawn time of the team is of 30 game seconds. Additionally, setting the 'random' key will add a variation in the respawn time of the team. So the team's respawn time formula is, therefore:
-Mindelay - wait - random < wait < maxdelay - wait + random
-",,,,,,,,,,,,,,,,,,,,,
-respawn_count_note,"Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-",,,,,,,,,,,,,,,,,,,,,
-crush_note,"This entity kills players when blocked.
-",,,,,,,,,,,,,,,,,,,,,
-omit_texture_note,"The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
-",,,,,,,,,,,,,,,,,,,,,
-target_model_note,"This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
-",,,,,,,,,,,,,,,,,,,,,
-targetShaderName_note,"Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-",,,,,,,,,,,,,,,,,,,,,
+Mindelay - wait - random < wait < maxdelay - wait + random"
+respawn_count_note,"Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered."
+crush_note,"This entity kills players when blocked."
+omit_texture_note,"The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work."
+target_model_note,"This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity."
+targetShaderName_note,"Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example."
 !!!!misc_model_note,"misc_models are models whose only animation comes from shader entities and can only rotate on the Z axis. Models are entirely non-solid, because of this they don't clip against weapon fire or other players, so appropriate clip brushes matching the size and shape of the models must be drawn.
 
-In order to remap a model, use \""*;<texturepath>\",in,order,to,remap,the,whole,model,under,a,single,texture/shader,,or,"\""<texturepath1>;<texturepath2>\""",in,order,to,remap,a,specific,texture/shader.
-"
-",,,,,,,,,,,,,,,,,,,,,,
+In order to remap a model, use ''*;<texturepath>\'' in order to remap the whole model under a single texture/shader, or ''<texturepath1>;<texturepath2>'' in order to remap a specific texture/shader."

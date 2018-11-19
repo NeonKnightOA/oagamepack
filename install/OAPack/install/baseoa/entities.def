@@ -25,7 +25,7 @@ Chaingun ammo.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -35,7 +35,6 @@ Chaingun ammo.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -49,11 +48,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED ammo_bfg (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -67,7 +63,7 @@ BFG ammo.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -89,11 +85,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED ammo_bullets (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -107,7 +100,7 @@ Machinegun ammo.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -129,11 +122,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED ammo_cells (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -147,7 +137,7 @@ Plasma Gun ammo.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -169,11 +159,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED ammo_grenades (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -187,7 +174,7 @@ Grenade Launcher ammo.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -209,11 +196,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED ammo_lightning (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -227,7 +211,7 @@ Lightning Gun ammo.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -249,11 +233,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED ammo_mines (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -267,7 +248,7 @@ Prox Launcher ammo.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -277,7 +258,6 @@ Prox Launcher ammo.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -291,11 +271,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED ammo_nails (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -309,7 +286,7 @@ Nailgun ammo.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -319,7 +296,6 @@ Nailgun ammo.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -333,11 +309,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED ammo_rockets (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -351,7 +324,7 @@ Rocket Launcher ammo.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -373,11 +346,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED ammo_shells (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -391,7 +361,7 @@ Shotgun ammo.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -413,11 +383,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED ammo_slugs (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -431,7 +398,7 @@ Railgun ammo.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -453,11 +420,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED domination_point (1 0 .5) (-16 -16 -16) (16 16 16)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -475,9 +439,7 @@ Domination Control Point.
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
-
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -491,7 +453,6 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 */
 /*QUAKED func_bobbing (0 .5 .8) ? X_AXIS Y_AXIS
 Brush entity which bobs on the Z axis.
@@ -509,31 +470,27 @@ By default, a func_bobbing entity bobs on the Z axis (up-down) and displaces in 
 "phase" : Start offset of the oscillation cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset. Default: 0.0.
 "speed" : Seconds to complete a bob cycle. Default: 4.0.
 "_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
-* < -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
+* Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
 * 0: Casts shadows on entities. (Default)
 * 1: Casts shadows on the world. (Also default)
-* > 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
+* Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
 "_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
-* > 1: Receive shadows ONLY from entities with _cs or _castshadows.
+* Over 1: Receive shadows ONLY from entities with _cs or _castshadows.
 "_targetname" : The model attached to the entity.
 "_indexmap;alphamap" : Path of the art file used to guide the mapping of textures on the terrain surface.
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
 This entity kills players when blocked.
-
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
-
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
-
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
-
 */
 /*QUAKED func_button (0 .5 .8) ?
 Pushable button, usually used to trigger other entities or just open doors.
@@ -560,31 +517,27 @@ When a button is touched, it moves some distance in the direction of it's angle,
 "wait" : Seconds between triggerings.
 * -1 = never returns. Default: 1.0.
 "_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
-* < -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
+* Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
 * 0: Casts shadows on entities. (Default)
 * 1: Casts shadows on the world. (Also default)
-* > 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
+* Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
 "_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
-* > 1: Receive shadows ONLY from entities with _cs or _castshadows.
+* Over 1: Receive shadows ONLY from entities with _cs or _castshadows.
 "_targetname" : The model attached to the entity.
 "_indexmap;alphamap" : Path of the art file used to guide the mapping of textures on the terrain surface.
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
-
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
-
 */
 /*QUAKED func_door (0 .5 .8) ? START_OPEN x CRUSHER
 Movable brush usually used as a door, hence the name.
@@ -611,53 +564,49 @@ By default, a door activates upon proximity of a player or when damage is inflic
 "wait" : Seconds before the door returns to its default state.
 * -1 = returns immediately. Default: 2.0.
 "_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
-* < -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
+* Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
 * 0: Casts shadows on entities. (Default)
 * 1: Casts shadows on the world. (Also default)
-* > 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
+* Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
 "_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
-* > 1: Receive shadows ONLY from entities with _cs or _castshadows.
+* Over 1: Receive shadows ONLY from entities with _cs or _castshadows.
 "_targetname" : The model attached to the entity.
 "_indexmap;alphamap" : Path of the art file used to guide the mapping of textures on the terrain surface.
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
-
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
-
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
-
 */
 /*QUAKED func_group (0 0 0) ?
 Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.
 Entity which groups several brushes and patches together for convenience. 
 --------- KEYS --------
 "_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
-* < -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
+* Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
 * 0: Casts shadows on entities. (Default)
 * 1: Casts shadows on the world. (Also default)
-* > 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
+* Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
 "_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
-* > 1: Receive shadows ONLY from entities with _cs or _castshadows.
+* Over 1: Receive shadows ONLY from entities with _cs or _castshadows.
 "_indexmap;alphamap" : Path of the art file used to guide the mapping of textures on the terrain surface.
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
-
 */
 /*QUAKED func_pendulum (0 .5 .8) ?
 A swinging pendulum. Pendulums always swing north / south on unrotated models.  Pendulum frequency is a physical constant based on the length of the beam and gravity.
@@ -677,31 +626,27 @@ The origin is the point where the rotation axis goes through. The speed of swing
 "phase" : Start offset of the swinging cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset. Default: 0.0.
 "speed" : Number of degrees each way the pendulum swings. Default: 30.0.
 "_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
-* < -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
+* Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
 * 0: Casts shadows on entities. (Default)
 * 1: Casts shadows on the world. (Also default)
-* > 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
+* Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
 "_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
-* > 1: Receive shadows ONLY from entities with _cs or _castshadows.
+* Over 1: Receive shadows ONLY from entities with _cs or _castshadows.
 "_targetname" : The model attached to the entity.
 "_indexmap;alphamap" : Path of the art file used to guide the mapping of textures on the terrain surface.
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
 This entity kills players when blocked.
-
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
-
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
-
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
-
 */
 /*QUAKED func_plat (0 .5 .8) ?
 Activable platforms. Plats are always drawn in the extended position so they will light correctly.
@@ -720,29 +665,26 @@ Activable platforms. Plats are always drawn in the extended position so they wil
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
 "speed" : Speed of entity movement. Default: 150.0.
 "_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
-* < -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
+* Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
 * 0: Casts shadows on entities. (Default)
 * 1: Casts shadows on the world. (Also default)
-* > 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
+* Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
 "_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
-* > 1: Receive shadows ONLY from entities with _cs or _castshadows.
+* Over 1: Receive shadows ONLY from entities with _cs or _castshadows.
 "_targetname" : The model attached to the entity.
 "_indexmap;alphamap" : Path of the art file used to guide the mapping of textures on the terrain surface.
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
-
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
-
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
-
 */
 /*QUAKED func_rotating (0 .5 .8) ? START_ON - X_AXIS Y_AXIS
 A rotating entity, used for decorations or moving platforms. The center of that brush will be
@@ -758,29 +700,26 @@ check either the X_AXIS or Y_AXIS box to change that.
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
 "speed" : Determines how fast it moves. Default: 100.0.
 "_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
-* < -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
+* Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
 * 0: Casts shadows on entities. (Default)
 * 1: Casts shadows on the world. (Also default)
-* > 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
+* Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
 "_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
-* > 1: Receive shadows ONLY from entities with _cs or _castshadows.
+* Over 1: Receive shadows ONLY from entities with _cs or _castshadows.
 "_targetname" : The model attached to the entity.
 "_indexmap;alphamap" : Path of the art file used to guide the mapping of textures on the terrain surface.
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
-
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
-
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
-
 */
 /*QUAKED func_static (0 .5 .8) ?
 A bmodel that just sits there, doing nothing.  Can be used for conditional walls and models.
@@ -795,18 +734,18 @@ A bmodel that just sits there, doing nothing.  Can be used for conditional walls
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
 "_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
-* < -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
+* Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
 * 0: Casts shadows on entities. (Default)
 * 1: Casts shadows on the world. (Also default)
-* > 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
+* Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
 "_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
-* > 1: Receive shadows ONLY from entities with _cs or _castshadows.
+* Over 1: Receive shadows ONLY from entities with _cs or _castshadows.
 "_targetname" : The model attached to the entity.
 "_indexmap;alphamap" : Path of the art file used to guide the mapping of textures on the terrain surface.
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
@@ -825,13 +764,9 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
-
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
-
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
-
 */
 /*QUAKED func_timer (0.3 0.1 0.6) (-8 -8 -8) (8 8 8) START_ON
 Repeatedly fires its targets. Can be turned on or off by using another func or trigger.
@@ -849,13 +784,9 @@ Repeatedly fires its targets. Can be turned on or off by using another func or t
 "wait" : Base time between triggering all targets. Default: 1.0.
 --------- NOTES --------
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
-
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
-
 */
 /*QUAKED func_train (0 .5 .8) ? START_ON TOGGLE BLOCK_STOPS
 A train is a mover that moves between path_corner target points. The train spawns at the first target it is pointing at.
@@ -872,29 +803,26 @@ A train is a mover that moves between path_corner target points. The train spawn
 "speed" : Speed of entity movement. Default: 100.0.
 "target" : Next path_corner.
 "_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
-* < -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
+* Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
 * 0: Casts shadows on entities. (Default)
 * 1: Casts shadows on the world. (Also default)
-* > 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
+* Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
 "_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
-* > 1: Receive shadows ONLY from entities with _cs or _castshadows.
+* Over 1: Receive shadows ONLY from entities with _cs or _castshadows.
 "_targetname" : The model attached to the entity.
 "_indexmap;alphamap" : Path of the art file used to guide the mapping of textures on the terrain surface.
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
-
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
-
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
-
 */
 /*QUAKED holdable_invulnerability (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -907,7 +835,7 @@ Invulnerability holdable.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -917,7 +845,6 @@ Invulnerability holdable.
 * -1 = never respawns again. Default: 60.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -931,11 +858,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED holdable_kamikaze (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -948,7 +872,7 @@ Kamikaze holdable.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -958,7 +882,6 @@ Kamikaze holdable.
 * -1 = never respawns again. Default: 60.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -972,11 +895,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED holdable_medkit (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -989,7 +909,7 @@ Personal Medkit holdable.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1011,11 +931,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED holdable_portal (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1028,7 +945,7 @@ Portal holdable.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1038,9 +955,7 @@ Portal holdable.
 * -1 = never respawns again. Default: 60.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-
 This item is broken in some older versions of OA and the game it's inspired from. It may not work.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -1054,11 +969,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED holdable_teleporter (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1071,7 +983,7 @@ Teleporter holdable.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1093,11 +1005,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED info_camp (0 0.5 0) (-4 -4 -4) (4 4 4)
 Used as a positional target for calculations in the utilities (spotlights, etc), but removed during gameplay.
@@ -1138,9 +1047,7 @@ Spawn point used in Double Domination if no team specific spawn points exists. U
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-
 This entity may not work with mods designed for the game OA is inspired from.
-
 */
 /*QUAKED info_player_dd_blue (1 1 0) (-16 -16 -24) (16 16 32) INITIAL
 Spawn point used in Double Domination by the blue team. If your map has dedicated spawn rooms, use this.
@@ -1152,9 +1059,7 @@ Spawn point used in Double Domination by the blue team. If your map has dedicate
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-
 This entity may not work with mods designed for the game OA is inspired from.
-
 */
 /*QUAKED info_player_dd_red (1 1 0) (-16 -16 -24) (16 16 32) INITIAL
 Spawn point used in Double Domination by the red team. If your map has dedicated spawn rooms, use this.
@@ -1166,9 +1071,7 @@ Spawn point used in Double Domination by the red team. If your map has dedicated
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-
 This entity may not work with mods designed for the game OA is inspired from.
-
 */
 /*QUAKED info_player_deathmatch (1 0 1) (-16 -16 -24) (16 16 32) INITIAL
 Potential spawning position for Deathmatch games. The first time a player enters the game, they will be at an 'initial' spot. Targets will be fired when someone spawns in on them.
@@ -1183,7 +1086,6 @@ Potential spawning position for Deathmatch games. The first time a player enters
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-
 */
 /*QUAKED info_player_dom (1 1 0) (-16 -16 -24) (16 16 32)
 Spawn point used in Domination if no team specific spawn points exists. Usually placed in the middle of CTF maps. See info_player_dom_red and info_player_dom_blue for team specific versions.
@@ -1195,9 +1097,7 @@ Spawn point used in Domination if no team specific spawn points exists. Usually 
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-
 This entity may not work with mods designed for the game OA is inspired from.
-
 */
 /*QUAKED info_player_dom_blue (1 1 0) (-16 -16 -24) (16 16 32)
 Spawn point used in Domination by the blue team
@@ -1209,9 +1109,7 @@ Spawn point used in Domination by the blue team
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-
 This entity may not work with mods designed for the game OA is inspired from.
-
 */
 /*QUAKED info_player_dom_red (1 1 0) (-16 -16 -24) (16 16 32)
 Spawn point used in Domination by the red team
@@ -1223,9 +1121,7 @@ Spawn point used in Domination by the red team
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-
 This entity may not work with mods designed for the game OA is inspired from.
-
 */
 /*QUAKED info_player_intermission (1 0 1) (-16 -16 -24) (16 16 32)
 The intermission will be viewed from this point.  Target an info_notnull for the view direction.
@@ -1249,7 +1145,6 @@ Limited equivelant to info_player_deathmatch. Use that one instead.
 --------- KEYS --------
 --------- NOTES --------
 This item is broken in some older versions of OA and the game it's inspired from. It may not work.
-
 */
 /*QUAKED item_ammoregen (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1262,7 +1157,7 @@ Ammo Regen rune.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1272,7 +1167,6 @@ Ammo Regen rune.
 * -1 = never respawns again. Default: 0.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -1286,9 +1180,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_armor_body (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1301,7 +1193,7 @@ Body Armor.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1323,11 +1215,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_armor_combat (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1340,7 +1229,7 @@ Combat Armor.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1362,11 +1251,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_armor_shard (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1379,7 +1265,7 @@ Armor Shard.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1401,11 +1287,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_doubler (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1418,7 +1301,7 @@ Doubler rune.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1428,7 +1311,6 @@ Doubler rune.
 * -1 = never respawns again. Default: 0.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -1442,9 +1324,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_enviro (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1458,7 +1338,7 @@ Battle Suit powerup.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1480,11 +1360,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_flight (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1498,7 +1375,7 @@ Flight powerup.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1520,11 +1397,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_guard (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1537,7 +1411,7 @@ Guard rune.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1547,7 +1421,6 @@ Guard rune.
 * -1 = never respawns again. Default: 0.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -1561,9 +1434,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_haste (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1577,7 +1448,7 @@ Haste powerup.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1599,11 +1470,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_health (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1616,7 +1484,7 @@ Medium Health.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1638,11 +1506,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_health_large (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1655,7 +1520,7 @@ Large Health.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1677,11 +1542,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_health_mega (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1694,7 +1556,7 @@ Megahealth.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1716,11 +1578,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_health_small (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1733,7 +1592,7 @@ Small Health.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1755,11 +1614,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_invis (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1773,7 +1629,7 @@ Invisibility powerup.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1795,11 +1651,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_quad (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1813,7 +1666,7 @@ Quad Damage powerup.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1835,11 +1688,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_regen (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1853,7 +1703,7 @@ Regeneration powerup.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1875,11 +1725,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED item_scout (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1892,7 +1739,7 @@ Scout rune.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1902,7 +1749,6 @@ Scout rune.
 * -1 = never respawns again. Default: 0.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -1916,9 +1762,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED light (0 1 0) (-8 -8 -8) (8 8 8) LINEAR NOANGLE x x NOGRIDLIGHT
 Non-displayed light.
@@ -1934,11 +1778,10 @@ Non-displayed light.
 "_samples" : Random jitters distributed over the solid arc. (~16)
 "_sun" : If set to 1 on a spotlight, it makes an infinite sun light.
 "fade" : Light attenuation fade for linear lights.
-"scale" : Light attenuation scale. Affects the \"light\" and \"_light\" values.
+"scale" : Light attenuation scale. Affects the ''light'' and ''_light'' values.
 "style" : Worldspawn light style. Values are set in the range [1;31].
 --------- NOTES --------
 Lights pointed at a target will be spotlights.
-
 */
 /*QUAKED lightJunior (0 0.7 0.3) (-6 -6 -6) (6 6 6) LINEAR NO_ANGLE x x NO_GRID_LIGHT
 Non-displayed light. Only affects entities.
@@ -1949,28 +1792,27 @@ Non-displayed light. Only affects entities.
 "target" : The entity which is targetted at for projection.
 "_sun" : If set to 1 on a spotlight, it makes an infinite sun light.
 "fade" : Light attenuation fade for linear lights.
-"scale" : Light attenuation scale. Affects the \"light\" and \"_light\" values.
+"scale" : Light attenuation scale. Affects the ''light'' and ''_light'' values.
 --------- NOTES --------
 Lights pointed at a target will be spotlights.
-
 */
 /*QUAKED misc_model (1 0 0) (-16 -16 -16) (16 16 16)
 Displays a static model in the map.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
 "_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
-* < -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
+* Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
 * 0: Casts shadows on entities. (Default)
 * 1: Casts shadows on the world. (Also default)
-* > 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
+* Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
 "_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
-* > 1: Receive shadows ONLY from entities with _cs or _castshadows.
+* Over 1: Receive shadows ONLY from entities with _cs or _castshadows.
 "_remap" : Remapping of shaders/textures on the model. (See notes)
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "modelscale" : Value determining the uniform scale of the model. Default: 1.0.
@@ -1979,7 +1821,7 @@ Displays a static model in the map.
 --------- NOTES --------
 misc_models are models whose only animation comes from shader entities and can only rotate on the Z axis. Models are entirely non-solid, because of this they don't clip against weapon fire or other players, so appropriate clip brushes matching the size and shape of the models must be drawn.
 
-In order to remap a model, use \"*;<texturepath>\
+In order to remap a model, use ''*;<texturepath>\'' in order to remap the whole model under a single texture/shader, or ''<texturepath1>;<texturepath2>'' in order to remap a specific texture/shader.
 */
 /*QUAKED misc_portal_camera (0 0 1) (-8 -8 -8) (8 8 8) SLOW_ROTATE FAST_ROTATE NO_SWING
 The target for a misc_portal_director.  You can set either angles or target another entity to determine the direction of view.
@@ -2062,7 +1904,7 @@ Fires at either the target or the current direction.
 */
 /*QUAKED target_delay (1 0 0) (-8 -8 -8) (8 8 8)
 --------- KEYS --------
-"delay" : Similar to \"wait\". Not even the devs know why this key exists lol! Default: ~1.
+"delay" : Similar to ''wait''. Not even the devs know why this key exists lol! Default: ~1.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
@@ -2074,7 +1916,6 @@ Fires at either the target or the current direction.
 "wait" : Seconds to pause before firing targets. Default: ~1.
 --------- NOTES --------
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED target_give (1 0 0) (-8 -8 -8) (8 8 8)
 Gives the activator all the items pointed to.
@@ -2088,7 +1929,6 @@ Gives the activator all the items pointed to.
 "targetname" : Name of the entity that points to this entity.
 --------- NOTES --------
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED target_kill (.5 .5 .5) (-8 -8 -8) (8 8 8)
 Kills the activator.
@@ -2104,7 +1944,6 @@ When triggered, fires a laser.  You can either set a target or a direction.
 --------- KEYS --------
 --------- NOTES --------
 This item is broken in some older versions of OA and the game it's inspired from. It may not work.
-
 */
 /*QUAKED target_location (0 0.5 0) (-8 -8 -8) (8 8 8)
 Closest target_location in sight used for the location, if none in site, closest in distance.
@@ -2169,7 +2008,6 @@ This doesn't perform any actions except fire its targets. The activator can be f
 "targetname" : Name of the entity that points to this entity.
 --------- NOTES --------
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED target_remove_powerups (1 0 0) (-8 -8 -8) (8 8 8)
 Takes away all the activators powerups. Used to drop powerups into death pits.
@@ -2218,7 +2056,6 @@ Blue Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Be
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2232,7 +2069,6 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 */
 /*QUAKED team_CTF_blueplayer (0 0 1) (-16 -16 -24) (16 16 32)
 Initial spawnpoint for Blue Team players.
@@ -2242,7 +2078,6 @@ Initial spawnpoint for Blue Team players.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2256,7 +2091,6 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 */
 /*QUAKED team_CTF_bluespawn (0 0 1) (-16 -16 -24) (16 16 32)
 Potential, post-initial spawnpoint for Blue Team players.
@@ -2266,7 +2100,6 @@ Potential, post-initial spawnpoint for Blue Team players.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2280,7 +2113,6 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 */
 /*QUAKED team_CTF_neutralflag (0 0 1) (-16 -16 -16) (16 16 16)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2293,7 +2125,6 @@ Neutral Flag. Used as a key entity in One Flag CTF and Possession games.
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2307,7 +2138,6 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 */
 /*QUAKED team_CTF_redflag (1 0 0) (-16 -16 -16) (16 16 16)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2320,7 +2150,6 @@ Red Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Bec
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2334,7 +2163,6 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 */
 /*QUAKED team_CTF_redplayer (1 0 0) (-16 -16 -24) (16 16 32)
 Initial spawnpoint for Red Team players.
@@ -2344,7 +2172,6 @@ Initial spawnpoint for Red Team players.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2358,7 +2185,6 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 */
 /*QUAKED team_CTF_redspawn (1 0 0) (-16 -16 -24) (16 16 32)
 Potential, post-initial spawnpoint for Red Team players.
@@ -2368,7 +2194,6 @@ Potential, post-initial spawnpoint for Red Team players.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2382,7 +2207,6 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 */
 /*QUAKED team_blueobelisk (0 0 1) (-16 -16 0) (16 16 88)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2394,9 +2218,7 @@ Blue Team Obelisk. Used as a key entity for Harvester and Overload games.
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 --------- NOTES --------
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
-
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2410,7 +2232,6 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 */
 /*QUAKED team_neutralobelisk (0 0 1) (-16 -16 0) (16 16 88)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2422,9 +2243,7 @@ Neutral Obelisk. Used as a key entity for Harvester games.
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 --------- NOTES --------
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
-
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2438,7 +2257,6 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 */
 /*QUAKED team_redobelisk (1 0 0) (-16 -16 0) (16 16 8)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2450,9 +2268,7 @@ Red Team Obelisk. Used as a key entity for Harvester and Overload games.
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 --------- NOTES --------
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
-
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2466,7 +2282,6 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 */
 /*QUAKED trigger_always (.5 .5 .5) (-8 -8 -8) (8 8 8)
 This trigger will always fire.  It is activated by the world.
@@ -2479,7 +2294,6 @@ This trigger will always fire.  It is activated by the world.
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 --------- NOTES --------
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED trigger_hurt (.5 .5 .5) ? START_OFF x SILENT NO_PROTECTION SLOW
 Any entity that touches this will be hurt. It does dmg points of damage each server frame.
@@ -2490,7 +2304,6 @@ Any entity that touches this will be hurt. It does dmg points of damage each ser
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 --------- NOTES --------
 Targeting the trigger will toggle its on / off state.
-
 */
 /*QUAKED trigger_multiple (.5 .5 .5) ?
 Variable sized repeatable trigger.  Must be targeted at one or more entities.
@@ -2498,14 +2311,13 @@ Variable sized repeatable trigger.  Must be targeted at one or more entities.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "target" : All entities with a matching targetname will be used.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "wait" : Base time between triggering all targets. Default: 0.2.
 --------- NOTES --------
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED trigger_push (.5 .5 .5) ?
 Must point at a target_position, which will be the apex of the leap. This will be client side predicted, unlike target_push.
@@ -2538,7 +2350,7 @@ BFG.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -2560,11 +2372,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED weapon_chaingun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2578,7 +2387,7 @@ Chaingun.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -2588,7 +2397,6 @@ Chaingun.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2602,11 +2410,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED weapon_gauntlet (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2619,7 +2424,7 @@ Gauntlet.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -2641,9 +2446,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED weapon_grapplinghook (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2656,7 +2459,7 @@ Grappling Hook.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -2678,9 +2481,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED weapon_grenadelauncher (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2694,7 +2495,7 @@ Grenade Launcher.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -2716,11 +2517,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED weapon_lightning (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2734,7 +2532,7 @@ Lightning Gun.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -2756,11 +2554,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED weapon_machinegun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2774,7 +2569,7 @@ Machinegun.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -2796,9 +2591,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED weapon_nailgun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2812,7 +2605,7 @@ Nailgun.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -2822,7 +2615,6 @@ Nailgun.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2836,11 +2628,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED weapon_plasmagun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2854,7 +2643,7 @@ Plasma Gun.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -2876,11 +2665,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED weapon_prox_launcher (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2894,7 +2680,7 @@ Prox Launcher.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -2904,7 +2690,6 @@ Prox Launcher.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2918,11 +2703,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED weapon_railgun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2936,7 +2718,7 @@ Railgun.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -2958,11 +2740,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED weapon_rocketlauncher (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2976,7 +2755,7 @@ Rocket Launcher.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -2998,11 +2777,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
-
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED weapon_shotgun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -3016,7 +2792,7 @@ Shotgun.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Variation of time between respawns. The value is both added and subtracted from \"wait\". Default: 0.0.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -3026,9 +2802,7 @@ Shotgun.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
-
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
-
 */
 /*QUAKED worldspawn (0 0 0) ?
 The main entity of the map. Every map should have exactly one worldspawn.
@@ -3040,25 +2814,25 @@ The main entity of the map. Every map should have exactly one worldspawn.
 "gridsize" : Size of the lightgrid created by q3map2. The values represent the units in the X Y Z points. Large powers of 2 help reduce the BSP size and compile time on very large maps. Default: 128 128 256.
 "message" : Name of the map. Displayed on the loading screen.
 "_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
-* < -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
+* Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
 * 0: Casts shadows on entities. (Default)
 * 1: Casts shadows on the world. (Also default)
-* > 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
+* Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_farplanedist" : Amount of units the vis phase can see during compilation. In combination with level-wide fog, it can help reduce tris count on large, open maps.
 "_foghull" : If set, the level will use the fog properties of this shader in order to render a level-wide fog.
 "_keeplights" : Keeps lights in the BSP, preventing q3map2 from stripping them in the light phase.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the world. Func_ entities can override this value. Default: 1.0.
 "_mingridlight" : Minimum value of dynamic entity lighting, level-wide.
-"_minlight" : Minimum value of world-wide lighting, level-wide, which uses \"_color\" to add a color to the ambience. Unlike _ambient and ambient, it does not add values to the other light entities.
+"_minlight" : Minimum value of world-wide lighting, level-wide, which uses ''_color'' to add a color to the ambience. Unlike _ambient and ambient, it does not add values to the other light entities.
 "_minvertexlight" : Minimum value of vertex lighting, level-wide.
 "_noshadersun" : Ignores the sky properties of the sky shaders, and ONLY uses entity sun lights.
 "_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
-* > 1: Receive shadows ONLY from entities with _cs or _castshadows.
+* Over 1: Receive shadows ONLY from entities with _cs or _castshadows.
 "_indexmap;alphamap" : Path of the art file used to guide the mapping of textures on the terrain surface.
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
