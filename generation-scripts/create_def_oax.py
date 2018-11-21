@@ -22,7 +22,6 @@
 
 import pandas as pd
 import sys
-import re
 import os.path
 
 def readCsvToDictsAppend(result,filename,keyname):
@@ -42,12 +41,8 @@ def readCsvToDicts(filename,keyname):
 def fatal(errorMsg):
     print(errorMsg)
     exit(1)
-
-
-print("<?xml version=\"1.0\"?>")
-
-entities = readCsvToDicts("csv/entities.csv","item")
-entities_oax = readCsvToDicts("csv/entities_extra.csv", "item")
+    
+entities = readCsvToDicts("csv/entities_extra.csv", "item")
 keys = readCsvToDicts("csv/keys.csv","name")
 key_texts = readCsvToDicts("csv/key_text.csv","key")
 notes = readCsvToDicts("csv/note.csv","name")
@@ -57,17 +52,17 @@ spawnflags = readCsvToDicts("csv/spawnflags.csv","item")
 spawnflag_texts = readCsvToDicts("csv/spawnflag_text.csv","key")
 
 def printKeys(item_name):
-    for item in key_texts:
-        if (item_name in sorted(keys.keys())):
+    for item in sorted(key_texts):
+        if (item_name in keys.keys()):
             keyLine = keys[item_name]
-            if (item in sorted(keyLine.keys())):
+            if item in sorted(keyLine.keys()):
                 hasKey = keyLine[item]
                 #The hasKey == hasKey us used to check for NaN. Blank fields are NaNs in Pandas
                 if (hasKey and hasKey == hasKey):
                     defaultText = ""
                     basename = item
                     basekey = key_texts[item]["basekey"]
-                    if (isinstance(basekey, str) and len(basekey)>0):
+                    if (isTrue(basekey)):
                         basename = basekey
                     name = basename
                     fullname = key_texts[item]["fullname"]
@@ -76,82 +71,51 @@ def printKeys(item_name):
                     try:
                         defaultTextActual = keyLine[item+"_default"]
                         if key_texts[item]["type"] == "integer":
-                            defaultText = ". Default: "+str(int(defaultTextActual))+"."
+                            defaultText = " Default: "+str(int(defaultTextActual))+"."
                         else:
-                            defaultText = ". Default: "+str(defaultTextActual)+"."
-                        if not (defaultTextActual and defaultTextActual == defaultTextActual):
-                            defaultText = ""
+                            defaultText = " Default: "+str(defaultTextActual)+"."
                     except:
                         defaultText = ""
                     text = key_texts[item]["text"]
-                    if not (text and text == text):
-                        text = "No text"
-                    print("<"+str(key_texts[item]["type"])+" key=\""+str(basename)+"\" name=\""+str(name)+"\">"+text+str(defaultText)+"</"+str(key_texts[item]["type"])+">")
+                    if (text and text == text):
+                        print("\""+basename+"\" : "+str(key_texts[item]["text"])+defaultText)
+                    else:
+                        print("\""+basename+"\" : No text"+defaultText)
 
 def printNotes(item_name):
-    for item in note_texts:
-        if item_name in sorted(notes.keys()):
+    for item in sorted(note_texts):
+        if (item_name in notes.keys()):
             keyLine = notes[item_name]
             if item in sorted(keyLine.keys()):
                 hasKey = keyLine[item]
                 if (hasKey and hasKey == hasKey):
-                    print(note_texts[item]["text"])
+                    print(str(note_texts[item]["text"]))
+                    
 
-def printNonSuspendedSpawnflags(item_name):
-    for item in spawnflag_texts:
-        if item_name in sorted(spawnflags.keys()):
-            keyLine = spawnflags[item_name]
-            if item in sorted(keyLine.keys()):
-                hasKey = keyLine[item]
-                flagRow = spawnflag_texts[item]
-                if (hasKey and hasKey == hasKey):
-                    print("<flag key=\""+str(flagRow["key"])+"\" name=\""+str(flagRow["fullname"])+"\" bit=\""+str(flagRow["bit"])+"\">"+str(flagRow["text"])+"</flag>")
-
-
-def printSpawnflags(item_name):
-    if (item == "SUSPENDED" and "suspended" in entities[item_name]["quaked"]):
-        flagRow = spawnflag_texts["SUSPENDED"]
-        print("<flag key=\""+str(flagRow["key"])+"\" name=\""+str(flagRow["fullname"])+"\" bit=\""+str(flagRow["bit"])+"\">"+str(flagRow["text"])+"</flag>")
-    printNonSuspendedSpawnflags(item_name)
-
-
-print("<classes>")
+def isTrue(some_value):
+    # True is represented by the string "true". Note that pandas uses NaN for blank strings
+    if (isinstance(some_value, str) and len(some_value)>0):
+        return True
+    return False
+    
 for item in sorted(entities):
     row = entities[item]
-    quaked = row["quaked"]
-    model = ""
-    box1= ""
-    box2= ""
-    p = re.compile('\((.+?)\)')
-    parans = p.findall(quaked)
-    try:
-        color = parans[0]
-    except AttributeError:
-        fatal("Failed it find color in: "+quaked)
-    if (len(parans) > 1):
-        box1 = parans[1]
-    if (len(parans) > 2):
-        box2 = parans[2]
+    print(row["quaked"])
     if isinstance(row["model"],str):
         model = row["model"]
-    xmlType = "point"
-    if not (box1 or box2):
-        xmlType = "group"
-    print("  <"+xmlType+" name=\"" + item + "\" color=\""+color+"\"", end ="")
-    if (box1 and box2):
-        print(" box=\""+box1+" "+box2+"\"", end = "")
-    print(" model=\""+model+"\">")
+        print("--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------")
+        print("model=\""+model+"\"")
     if isinstance(row["description"],str):
         print(row["description"])
-    print("-------- KEYS --------")
+    print("--------- KEYS --------")
     printKeys(item)
-    # print("-------- Q3MAP2 KEYS --------")
+    # print("--------- Q3MAP2 KEYS --------")
     # printQ3Map2Keys(item)
-    # print("-------- Q3MAP2 TERRAIN KEYS --------")
-    # printQ3Map2Terrain(item)
-    print("-------- SPAWNFLAGS --------")
-    printSpawnflags(item)
-    print("-------- NOTES --------")
+    # print("--------- Q3MAP2 TERRAIN KEYS --------")
+    # printQ3Map2TerrainKeys(item)
+    # print("--------- SPAWNFLAGS --------")
+    # printSpawnflags(item)
+    print("--------- NOTES --------")
     printNotes(item)
-    print("  </"+xmlType+">")
-print("</classes>")
+    print("*/")
+    

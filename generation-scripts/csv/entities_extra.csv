@@ -1,0 +1,4 @@
+item,quaked,model,description
+info_player_dom,"/*QUAKED info_player_dom (1 1 0) (-16 -16 -24) (16 16 32)",,"Spawn point used in Domination if no team specific spawn points exists. Usually placed in the middle of CTF maps. See info_player_dom_red and info_player_dom_blue for team specific versions."
+info_player_dom_blue,"/*QUAKED info_player_dom_blue (1 1 0) (-16 -16 -24) (16 16 32)",,"Spawn point used in Domination by the blue team"
+info_player_dom_red,"/*QUAKED info_player_dom_red (1 1 0) (-16 -16 -24) (16 16 32)",,"Spawn point used in Domination by the red team"

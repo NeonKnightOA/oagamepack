@@ -46,8 +46,7 @@ def fatal(errorMsg):
 
 print("<?xml version=\"1.0\"?>")
 
-entities = readCsvToDicts("csv/entities.csv","item")
-entities_oax = readCsvToDicts("csv/entities_extra.csv", "item")
+entities = readCsvToDicts("csv/entities_extra.csv", "item")
 keys = readCsvToDicts("csv/keys.csv","name")
 key_texts = readCsvToDicts("csv/key_text.csv","key")
 notes = readCsvToDicts("csv/note.csv","name")
