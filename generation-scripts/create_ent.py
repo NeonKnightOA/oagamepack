@@ -65,9 +65,9 @@ spawnflag_texts = readCsvToDicts("csv/spawnflag_text.csv","key")
 def printKeys(item_name):
     for key_text_key in sorted(key_texts.keys()):
         item = key_texts[key_text_key]
-        if (item_name in sorted(keys.keys())):
+        if item_name in sorted(keys.keys()):
             keyLine = keys[item_name]
-            if (item in sorted(keyLine.keys())):
+            if item in sorted(keyLine.keys()):
                 hasKey = keyLine[item]
                 #The hasKey == hasKey us used to check for NaN. Blank fields are NaNs in Pandas
                 if (hasKey and hasKey == hasKey):
