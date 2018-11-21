@@ -23,7 +23,6 @@
 import pandas as pd
 import sys
 import re
-import os.path
 
 def readCsvToDictsAppend(result,filename,keyname):
     reader = pd.read_csv(filename, encoding = "ISO-8859-1")
@@ -44,10 +43,17 @@ def fatal(errorMsg):
     exit(1)
 
 
+if len(sys.argv) < 2:
+    print('Must be called like: \n'+sys.argv[0]+' ENTITIES_CSV_FILE')
+    exit(1)
+
+entitiesCsvFilename = sys.argv[1]
+
 print("<?xml version=\"1.0\"?>")
 
-entities = readCsvToDicts("csv/entities.csv","item")
-entities_oax = readCsvToDicts("csv/entities_extra.csv", "item")
+entities = readCsvToDicts(entitiesCsvFilename,"item")
+for i in range (2,len(sys.argv)):
+    readCsvToDictsAppend(entities,sys.argv[i],"item")
 keys = readCsvToDicts("csv/keys.csv","name")
 key_texts = readCsvToDicts("csv/key_text.csv","key")
 notes = readCsvToDicts("csv/note.csv","name")

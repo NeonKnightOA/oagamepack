@@ -42,9 +42,15 @@ def fatal(errorMsg):
     print(errorMsg)
     exit(1)
     
-entities = readCsvToDicts("csv/entities.csv","item")
-if (os.path.isfile("csv/entities_extra.csv")):
-    entities = readCsvToDictsAppend(entities, "csv/entities_extra.csv", "item")
+if len(sys.argv) < 2:
+    print('Must be called like: \n'+sys.argv[0]+' ENTITIES_CSV_FILE')
+    exit(1)
+
+entitiesCsvFilename = sys.argv[1]
+    
+entities = readCsvToDicts(entitiesCsvFilename,"item")
+for i in range (2,len(sys.argv)):
+    readCsvToDictsAppend(entities,sys.argv[i],"item")
 keys = readCsvToDicts("csv/keys.csv","name")
 key_texts = readCsvToDicts("csv/key_text.csv","key")
 # q3map2keys = readCsvToDicts("csv/q3map2keys.csv","name")
