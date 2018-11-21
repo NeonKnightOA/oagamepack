@@ -63,7 +63,8 @@ spawnflags = readCsvToDicts("csv/spawnflags.csv","item")
 spawnflag_texts = readCsvToDicts("csv/spawnflag_text.csv","key")
 
 def printKeys(item_name):
-    for item in key_texts:
+    for key_text_key in sorted(key_texts.keys()):
+        item = key_texts[key_text_key]
         if (item_name in sorted(keys.keys())):
             keyLine = keys[item_name]
             if (item in sorted(keyLine.keys())):
