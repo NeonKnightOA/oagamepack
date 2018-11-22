@@ -11,6 +11,7 @@ The gamepacks contain, in addition to the required stuff:
 * OA 0.8.8/SVN r951 world sounds
 * OA 0.8.8/SVN r951 shaders, some of them modified.
 * Custom textures made for the editor.
+* Full common.shader support, complete with the missing shaders, which now enables mappers to do OA terrains. Yay!
 * Fully generated entities.ent and entities.def for both XML and regular versions of the NetRadiant editors.
 
 ## Sources

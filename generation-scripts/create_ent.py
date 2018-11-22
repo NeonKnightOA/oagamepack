@@ -58,7 +58,6 @@ keys = readCsvToDicts("csv/keys.csv","name")
 key_texts = readCsvToDicts("csv/key_text.csv","key")
 notes = readCsvToDicts("csv/note.csv","name")
 note_texts = readCsvToDicts("csv/note_text.csv", "key")
-# There are no spawnflags.csv at the moment. We only have suspended and it is part if the QUAKED line
 spawnflags = readCsvToDicts("csv/spawnflags.csv","item")
 spawnflag_texts = readCsvToDicts("csv/spawnflag_text.csv","key")
 
@@ -103,7 +102,7 @@ def printNotes(item_name):
                 if (hasKey and hasKey == hasKey):
                     print(note_texts[item]["text"])
 
-def printNonSuspendedSpawnflags(item_name):
+def printSpawnflags(item_name):
     for item in spawnflag_texts:
         if item_name in sorted(spawnflags.keys()):
             keyLine = spawnflags[item_name]
@@ -112,14 +111,6 @@ def printNonSuspendedSpawnflags(item_name):
                 flagRow = spawnflag_texts[item]
                 if (hasKey and hasKey == hasKey):
                     print("<flag key=\""+str(flagRow["key"])+"\" name=\""+str(flagRow["fullname"])+"\" bit=\""+str(flagRow["bit"])+"\">"+str(flagRow["text"])+"</flag>")
-
-
-def printSpawnflags(item_name):
-    if (item == "SUSPENDED" and "suspended" in entities[item_name]["quaked"]):
-        flagRow = spawnflag_texts["SUSPENDED"]
-        print("<flag key=\""+str(flagRow["key"])+"\" name=\""+str(flagRow["fullname"])+"\" bit=\""+str(flagRow["bit"])+"\">"+str(flagRow["text"])+"</flag>")
-    printNonSuspendedSpawnflags(item_name)
-
 
 print("<classes>")
 for item in sorted(entities):
@@ -151,10 +142,6 @@ for item in sorted(entities):
         print(row["description"])
     print("-------- KEYS --------")
     printKeys(item)
-    # print("-------- Q3MAP2 KEYS --------")
-    # printQ3Map2Keys(item)
-    # print("-------- Q3MAP2 TERRAIN KEYS --------")
-    # printQ3Map2Terrain(item)
     print("-------- SPAWNFLAGS --------")
     printSpawnflags(item)
     print("-------- NOTES --------")
