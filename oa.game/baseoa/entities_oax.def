@@ -7,8 +7,8 @@ Spawn point used in Domination if no team specific spawn points exists. Usually 
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
-Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 This entity may not work with mods designed for the game OA is inspired from.
+Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 */
 /*QUAKED info_player_dom_blue (1 1 0) (-16 -16 -24) (16 16 32)
 Spawn point used in Domination by the blue team
@@ -19,8 +19,8 @@ Spawn point used in Domination by the blue team
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
-Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 This entity may not work with mods designed for the game OA is inspired from.
+Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 */
 /*QUAKED info_player_dom_red (1 1 0) (-16 -16 -24) (16 16 32)
 Spawn point used in Domination by the red team
@@ -31,6 +31,6 @@ Spawn point used in Domination by the red team
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
-Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 This entity may not work with mods designed for the game OA is inspired from.
+Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 */

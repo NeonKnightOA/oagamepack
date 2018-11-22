@@ -438,7 +438,6 @@ Domination Control Point.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
-Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
@@ -453,6 +452,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
+Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
 /*QUAKED func_bobbing (0 .5 .8) ? X_AXIS Y_AXIS
 Brush entity which bobs on the Z axis.
@@ -487,9 +487,9 @@ By default, a func_bobbing entity bobs on the Z axis (up-down) and displaces in 
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
+This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
 This entity kills players when blocked.
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
-This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
 */
 /*QUAKED func_button (0 .5 .8) ?
@@ -534,10 +534,10 @@ When a button is touched, it moves some distance in the direction of it's angle,
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
-The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
-Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
+The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
+Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED func_door (0 .5 .8) ? START_OPEN x CRUSHER
 Movable brush usually used as a door, hence the name.
@@ -581,8 +581,8 @@ By default, a door activates upon proximity of a player or when damage is inflic
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
-The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
+The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
 */
 /*QUAKED func_group (0 0 0) ?
@@ -643,9 +643,9 @@ The origin is the point where the rotation axis goes through. The speed of swing
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
+This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
 This entity kills players when blocked.
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
-This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
 */
 /*QUAKED func_plat (0 .5 .8) ?
@@ -682,8 +682,8 @@ Activable platforms. Plats are always drawn in the extended position so they wil
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
-The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
+The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
 */
 /*QUAKED func_rotating (0 .5 .8) ? START_ON - X_AXIS Y_AXIS
@@ -717,8 +717,8 @@ check either the X_AXIS or Y_AXIS box to change that.
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
-The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
+The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
 */
 /*QUAKED func_static (0 .5 .8) ?
@@ -751,6 +751,7 @@ A bmodel that just sits there, doing nothing.  Can be used for conditional walls
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
+This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -765,7 +766,6 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
-This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
 */
 /*QUAKED func_timer (0.3 0.1 0.6) (-8 -8 -8) (8 8 8) START_ON
@@ -783,10 +783,10 @@ Repeatedly fires its targets. Can be turned on or off by using another func or t
 "targetname" : Name of the trigger that (de)activates the timer.
 "wait" : Base time between triggering all targets. Default: 1.0.
 --------- NOTES --------
-The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
-Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
+The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
+Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED func_train (0 .5 .8) ? START_ON TOGGLE BLOCK_STOPS
 A train is a mover that moves between path_corner target points. The train spawns at the first target it is pointing at.
@@ -820,8 +820,8 @@ A train is a mover that moves between path_corner target points. The train spawn
 "_layers;layers" : Number of unique root shaders that will be used on the terrain surface.
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
-The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
+The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
 */
 /*QUAKED holdable_invulnerability (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1046,8 +1046,8 @@ Spawn point used in Double Domination if no team specific spawn points exists. U
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
-Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 This entity may not work with mods designed for the game OA is inspired from.
+Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 */
 /*QUAKED info_player_dd_blue (1 1 0) (-16 -16 -24) (16 16 32) INITIAL
 Spawn point used in Double Domination by the blue team. If your map has dedicated spawn rooms, use this.
@@ -1058,8 +1058,8 @@ Spawn point used in Double Domination by the blue team. If your map has dedicate
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
-Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 This entity may not work with mods designed for the game OA is inspired from.
+Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 */
 /*QUAKED info_player_dd_red (1 1 0) (-16 -16 -24) (16 16 32) INITIAL
 Spawn point used in Double Domination by the red team. If your map has dedicated spawn rooms, use this.
@@ -1070,8 +1070,8 @@ Spawn point used in Double Domination by the red team. If your map has dedicated
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
-Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 This entity may not work with mods designed for the game OA is inspired from.
+Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 */
 /*QUAKED info_player_deathmatch (1 0 1) (-16 -16 -24) (16 16 32) INITIAL
 Potential spawning position for Deathmatch games. The first time a player enters the game, they will be at an 'initial' spot. Targets will be fired when someone spawns in on them.
@@ -2019,7 +2019,6 @@ Blue Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Be
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
-Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2033,6 +2032,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
+Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
 /*QUAKED team_CTF_blueplayer (0 0 1) (-16 -16 -24) (16 16 32)
 Initial spawnpoint for Blue Team players.
@@ -2088,7 +2088,6 @@ Neutral Flag. Used as a key entity in One Flag CTF and Possession games.
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
-Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2102,6 +2101,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
+Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
 /*QUAKED team_CTF_redflag (1 0 0) (-16 -16 -16) (16 16 16)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2113,7 +2113,6 @@ Red Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Bec
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
-Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
 - team: Team Deathmatch
@@ -2127,6 +2126,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
+Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
 /*QUAKED team_CTF_redplayer (1 0 0) (-16 -16 -24) (16 16 32)
 Initial spawnpoint for Red Team players.
@@ -2181,7 +2181,6 @@ Blue Team Obelisk. Used as a key entity for Harvester and Overload games.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 --------- NOTES --------
-Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
@@ -2196,6 +2195,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
+Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
 /*QUAKED team_neutralobelisk (0 0 1) (-16 -16 0) (16 16 88)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2206,7 +2206,6 @@ Neutral Obelisk. Used as a key entity for Harvester games.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 --------- NOTES --------
-Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
@@ -2221,6 +2220,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
+Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
 /*QUAKED team_redobelisk (1 0 0) (-16 -16 0) (16 16 8)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2231,7 +2231,6 @@ Red Team Obelisk. Used as a key entity for Harvester and Overload games.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 --------- NOTES --------
-Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
@@ -2246,6 +2245,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dd: Double Domination
 - dom: Single Domination
 - pos: Possession
+Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
 /*QUAKED trigger_always (.5 .5 .5) (-8 -8 -8) (8 8 8)
 This trigger will always fire.  It is activated by the world.
