@@ -22,7 +22,7 @@
 
 import pandas as pd
 import sys
-import os.path
+import collections
 
 def readCsvToDictsAppend(result,filename,keyname):
     reader = pd.read_csv(filename, encoding = "ISO-8859-1")
@@ -54,7 +54,8 @@ for i in range (2,len(sys.argv)):
 keys = readCsvToDicts("csv/keys.csv","name")
 key_texts = readCsvToDicts("csv/key_text.csv","key")
 notes = readCsvToDicts("csv/note.csv","name")
-note_texts = readCsvToDicts("csv/note_text.csv", "key")
+note_texts = collections.OrderedDict()
+readCsvToDictsAppend(note_texts, "csv/note_text.csv", "key")
 spawnflags = readCsvToDicts("csv/spawnflags.csv","item")
 spawnflag_texts = readCsvToDicts("csv/spawnflag_text.csv","key")
 
@@ -90,7 +91,7 @@ def printKeys(item_name):
                         print("\""+basename+"\" : No text"+defaultText)
 
 def printNotes(item_name):
-    for item in sorted(note_texts):
+    for item in note_texts.keys():
         if (item_name in notes.keys()):
             keyLine = notes[item_name]
             if item in sorted(keyLine.keys()):
