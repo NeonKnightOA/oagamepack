@@ -2,7 +2,8 @@ Here's a list of things that should be done in order to complete the pack, and t
 
 ## To-Do
 
-* Add the spawnflags to the .ent files.
+* QuArK support.
+* We would like to have OA3 assets included in the pack someday.
 
 ## Ideas
 
