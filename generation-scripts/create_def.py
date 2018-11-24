@@ -20,84 +20,47 @@
 #CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 #SOFTWARE.
 
-import pandas as pd
-import sys
-import collections
-
-def readCsvToDictsAppend(result,filename,keyname):
-    reader = pd.read_csv(filename, encoding = "ISO-8859-1")
-    readerDict = reader.to_dict('records')
-    for rowDict in readerDict:
-        key = rowDict[keyname]
-        if key in result:
-            sys.exit("fatal error, the file: "+filename+" has double key: "+key)
-        result[key] = rowDict
-    return result
-
-def readCsvToDicts(filename,keyname):
-    result = {}
-    return readCsvToDictsAppend(result,filename,keyname)
-
-def fatal(errorMsg):
-    print(errorMsg)
-    exit(1)
-    
-if len(sys.argv) < 2:
-    print('Must be called like: \n'+sys.argv[0]+' ENTITIES_CSV_FILE')
-    exit(1)
-
-entitiesCsvFilename = sys.argv[1]
-    
-entities = readCsvToDicts(entitiesCsvFilename,"item")
-for i in range (2,len(sys.argv)):
-    readCsvToDictsAppend(entities,sys.argv[i],"item")
-keys = readCsvToDicts("csv/keys.csv","name")
-key_texts = readCsvToDicts("csv/key_text.csv","key")
-notes = readCsvToDicts("csv/note.csv","name")
-note_texts = collections.OrderedDict()
-readCsvToDictsAppend(note_texts, "csv/note_text.csv", "key")
-spawnflags = readCsvToDicts("csv/spawnflags.csv","item")
-spawnflag_texts = readCsvToDicts("csv/spawnflag_text.csv","key")
+import create_common as common
 
 def printKeys(item_name):
-    for item in sorted(key_texts):
-        if item_name in keys.keys():
-            keyLine = keys[item_name]
+    for item in sorted(common.key_texts):
+        if item_name in common.keys.keys():
+            keyLine = common.keys[item_name]
             if item in keyLine.keys():
                 hasKey = keyLine[item]
                 #The hasKey == hasKey us used to check for NaN. Blank fields are NaNs in Pandas
                 if (hasKey and hasKey == hasKey):
                     defaultText = ""
                     basename = item
-                    basekey = key_texts[item]["basekey"]
+                    basekey = common.key_texts[item]["basekey"]
                     if (isTrue(basekey)):
                         basename = basekey
                     name = basename
-                    fullname = key_texts[item]["fullname"]
+                    fullname = common.key_texts[item]["fullname"]
                     if (isinstance(fullname, str) and len(fullname)>0):
                         name = fullname
                     try:
                         defaultTextActual = keyLine[item+"_default"]
-                        if key_texts[item]["type"] == "integer":
+                        if common.key_texts[item]["type"] == "integer":
                             defaultText = " Default: "+str(int(defaultTextActual))+"."
                         else:
                             defaultText = " Default: "+str(defaultTextActual)+"."
                     except:
                         defaultText = ""
-                    text = key_texts[item]["text"]
+                    text = common.key_texts[item]["text"]
                     if (text and text == text):
-                        print("\""+basename+"\" : "+str(key_texts[item]["text"])+defaultText)
+                        print("\""+basename+"\" : "+str(common.key_texts[item]["text"])+defaultText)
                     else:
                         print("\""+basename+"\" : No text"+defaultText)
 
 def printNotes(item_name):
-    for item in note_texts.keys():
-        if (item_name in notes.keys()):
-            keyLine = notes[item_name]
+    for item in common.note_texts.keys():
+        if (item_name in common.notes.keys()):
+            keyLine = common.notes[item_name]
             if item in sorted(keyLine.keys()):
                 hasKey = keyLine[item]
                 if (hasKey and hasKey == hasKey):
-                    print(str(note_texts[item]["text"]))
+                    print(str(common.note_texts[item]["text"]))
                     
 
 def isTrue(some_value):
@@ -106,8 +69,8 @@ def isTrue(some_value):
         return True
     return False
     
-for item in sorted(entities):
-    row = entities[item]
+for item in sorted(common.entities):
+    row = common.entities[item]
     print(row["quaked"])
     if isinstance(row["model"],str):
         model = row["model"]
