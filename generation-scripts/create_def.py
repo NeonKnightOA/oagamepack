@@ -33,11 +33,11 @@ def printKeys(item_name):
                     defaultText = ""
                     basename = item
                     basekey = common.KEY_TEXTS[item]["basekey"]
-                    if (isTrue(basekey)):
+                    if isTrue(basekey):
                         basename = basekey
                     name = basename
                     fullname = common.KEY_TEXTS[item]["fullname"]
-                    if (isinstance(fullname, str) and len(fullname)>0):
+                    if (isinstance(fullname, str) and fullname):
                         name = fullname
                     try:
                         defaultTextActual = keyLine[item+"_default"]
@@ -55,7 +55,7 @@ def printKeys(item_name):
 
 def printNotes(item_name):
     for item in common.NOTE_TEXTS.keys():
-        if (item_name in common.NOTES.keys()):
+        if item_name in common.NOTES.keys():
             keyLine = common.NOTES[item_name]
             if item in sorted(keyLine.keys()):
                 hasKey = keyLine[item]
@@ -65,22 +65,25 @@ def printNotes(item_name):
 
 def isTrue(some_value):
     # True is represented by the string "true". Note that pandas uses NaN for blank strings
-    if (isinstance(some_value, str) and len(some_value)>0):
+    if (isinstance(some_value, str) and some_value):
         return True
     return False
-    
-for item in sorted(common.ENTITIES):
-    row = common.ENTITIES[item]
-    print(row["quaked"])
-    if isinstance(row["model"],str):
-        model = row["model"]
-        print("--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------")
-        print("model=\""+model+"\"")
-    if isinstance(row["description"],str):
-        print(row["description"])
-    print("--------- KEYS --------")
-    printKeys(item)
-    print("--------- NOTES --------")
-    printNotes(item)
-    print("*/")
+
+def main():
+    for item in sorted(common.ENTITIES):
+        row = common.ENTITIES[item]
+        print(row["quaked"])
+        if isinstance(row["model"], str):
+            model = row["model"]
+            print("--------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------")
+            print("model=\""+model+"\"")
+        if isinstance(row["description"], str):
+            print(row["description"])
+        print("--------- KEYS --------")
+        printKeys(item)
+        print("--------- NOTES --------")
+        printNotes(item)
+        print("*/")
+        
+main()
     

@@ -35,11 +35,11 @@ def printKeys(item_name):
                     defaultText = ""
                     basename = item
                     basekey = common.KEY_TEXTS[item]["basekey"]
-                    if (isinstance(basekey, str) and len(basekey)>0):
+                    if (isinstance(basekey, str) and basekey):
                         basename = basekey
                     name = basename
                     fullname = common.KEY_TEXTS[item]["fullname"]
-                    if (isinstance(fullname, str) and len(fullname)>0):
+                    if (isinstance(fullname, str) and fullname):
                         name = fullname
                     try:
                         defaultTextActual = keyLine[item+"_default"]
@@ -54,7 +54,8 @@ def printKeys(item_name):
                     text = common.KEY_TEXTS[item]["text"]
                     if not (text and text == text):
                         text = "No text"
-                    print("<"+str(common.KEY_TEXTS[item]["type"])+" key=\""+str(basename)+"\" name=\""+str(name)+"\">"+
+                    print("<"+str(common.KEY_TEXTS[item]["type"])+
+                          " key=\""+str(basename)+"\" name=\""+str(name)+"\">"+
                           text+str(defaultText)+"</"+str(common.KEY_TEXTS[item]["type"])+">")
 
 def printNotes(item_name):
@@ -74,43 +75,47 @@ def printSpawnflags(item_name):
                 hasKey = keyLine[item]
                 flagRow = common.SPAWNFLAG_TEXTS[item]
                 if (hasKey and hasKey == hasKey):
-                    print("<flag key=\""+str(flagRow["key"])+"\" name=\""+str(flagRow["fullname"])+"\" bit=\""+str(flagRow["bit"])+"\">"+str(flagRow["text"])+"</flag>")
+                    print("<flag key=\""+str(flagRow["key"])+"\" name=\""+
+                          str(flagRow["fullname"])+"\" bit=\""+str(flagRow["bit"])+
+                          "\">"+str(flagRow["text"])+"</flag>")
 
-print("<?xml version=\"1.0\"?>")
+def main():
+    print("<?xml version=\"1.0\"?>")
+    print("<classes>")
+    for item in sorted(common.ENTITIES):
+        row = common.ENTITIES[item]
+        quaked = row["quaked"]
+        model = ""
+        box1 = ""
+        box2 = ""
+        p = re.compile('\((.+?)\)')
+        parans = p.findall(quaked)
+        try:
+            color = parans[0]
+        except AttributeError:
+            common.fatal("Failed it find color in: "+quaked)
+        if len(parans) > 1:
+            box1 = parans[1]
+        if len(parans) > 2:
+            box2 = parans[2]
+        if isinstance(row["model"], str):
+            model = row["model"]
+        xmlType = "point"
+        if not (box1 or box2):
+            xmlType = "group"
+        print("  <"+xmlType+" name=\"" + item + "\" color=\""+color+"\"", end="")
+        if (box1 and box2):
+            print(" box=\""+box1+" "+box2+"\"", end="")
+        print(" model=\""+model+"\">")
+        if isinstance(row["description"], str):
+            print(row["description"])
+        print("-------- KEYS --------")
+        printKeys(item)
+        print("-------- SPAWNFLAGS --------")
+        printSpawnflags(item)
+        print("-------- NOTES --------")
+        printNotes(item)
+        print("  </"+xmlType+">")
+    print("</classes>")
 
-print("<classes>")
-for item in sorted(common.ENTITIES):
-    row = common.ENTITIES[item]
-    quaked = row["quaked"]
-    model = ""
-    box1= ""
-    box2= ""
-    p = re.compile('\((.+?)\)')
-    parans = p.findall(quaked)
-    try:
-        color = parans[0]
-    except AttributeError:
-        common.fatal("Failed it find color in: "+quaked)
-    if (len(parans) > 1):
-        box1 = parans[1]
-    if (len(parans) > 2):
-        box2 = parans[2]
-    if isinstance(row["model"],str):
-        model = row["model"]
-    xmlType = "point"
-    if not (box1 or box2):
-        xmlType = "group"
-    print("  <"+xmlType+" name=\"" + item + "\" color=\""+color+"\"", end ="")
-    if (box1 and box2):
-        print(" box=\""+box1+" "+box2+"\"", end = "")
-    print(" model=\""+model+"\">")
-    if isinstance(row["description"],str):
-        print(row["description"])
-    print("-------- KEYS --------")
-    printKeys(item)
-    print("-------- SPAWNFLAGS --------")
-    printSpawnflags(item)
-    print("-------- NOTES --------")
-    printNotes(item)
-    print("  </"+xmlType+">")
-print("</classes>")
+main()
