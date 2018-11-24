@@ -23,44 +23,44 @@
 import create_common as common
 
 def printKeys(item_name):
-    for item in sorted(common.key_texts):
-        if item_name in common.keys.keys():
-            keyLine = common.keys[item_name]
+    for item in sorted(common.KEY_TEXTS):
+        if item_name in common.KEYS.keys():
+            keyLine = common.KEYS[item_name]
             if item in keyLine.keys():
                 hasKey = keyLine[item]
                 #The hasKey == hasKey us used to check for NaN. Blank fields are NaNs in Pandas
                 if (hasKey and hasKey == hasKey):
                     defaultText = ""
                     basename = item
-                    basekey = common.key_texts[item]["basekey"]
+                    basekey = common.KEY_TEXTS[item]["basekey"]
                     if (isTrue(basekey)):
                         basename = basekey
                     name = basename
-                    fullname = common.key_texts[item]["fullname"]
+                    fullname = common.KEY_TEXTS[item]["fullname"]
                     if (isinstance(fullname, str) and len(fullname)>0):
                         name = fullname
                     try:
                         defaultTextActual = keyLine[item+"_default"]
-                        if common.key_texts[item]["type"] == "integer":
+                        if common.KEY_TEXTS[item]["type"] == "integer":
                             defaultText = " Default: "+str(int(defaultTextActual))+"."
                         else:
                             defaultText = " Default: "+str(defaultTextActual)+"."
                     except:
                         defaultText = ""
-                    text = common.key_texts[item]["text"]
+                    text = common.KEY_TEXTS[item]["text"]
                     if (text and text == text):
-                        print("\""+basename+"\" : "+str(common.key_texts[item]["text"])+defaultText)
+                        print("\""+basename+"\" : "+str(common.KEY_TEXTS[item]["text"])+defaultText)
                     else:
                         print("\""+basename+"\" : No text"+defaultText)
 
 def printNotes(item_name):
-    for item in common.note_texts.keys():
-        if (item_name in common.notes.keys()):
-            keyLine = common.notes[item_name]
+    for item in common.NOTE_TEXTS.keys():
+        if (item_name in common.NOTES.keys()):
+            keyLine = common.NOTES[item_name]
             if item in sorted(keyLine.keys()):
                 hasKey = keyLine[item]
                 if (hasKey and hasKey == hasKey):
-                    print(str(common.note_texts[item]["text"]))
+                    print(str(common.NOTE_TEXTS[item]["text"]))
                     
 
 def isTrue(some_value):
@@ -69,8 +69,8 @@ def isTrue(some_value):
         return True
     return False
     
-for item in sorted(common.entities):
-    row = common.entities[item]
+for item in sorted(common.ENTITIES):
+    row = common.ENTITIES[item]
     print(row["quaked"])
     if isinstance(row["model"],str):
         model = row["model"]

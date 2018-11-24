@@ -52,16 +52,16 @@ def fatal(error_msg):
 if len(sys.argv) < 2:
     fatal('Must be called like: \n'+sys.argv[0]+' ENTITIES_CSV_FILE')
 
-entitiesCsvFilename = sys.argv[1]
+ENTITIESCSVFILENAME = sys.argv[1]
 
 
-entities = read_csv_to_dicts(entitiesCsvFilename, "item")
+ENTITIES = read_csv_to_dicts(ENTITIESCSVFILENAME, "item")
 for i in range(2, len(sys.argv)):
-    read_csv_to_dicts_append(entities, sys.argv[i], "item")
-keys = read_csv_to_dicts("csv/keys.csv", "name")
-key_texts = read_csv_to_dicts("csv/key_text.csv", "key")
-notes = read_csv_to_dicts("csv/note.csv", "name")
-note_texts = collections.OrderedDict()
-read_csv_to_dicts_append(note_texts, "csv/note_text.csv", "key")
-spawnflags = read_csv_to_dicts("csv/spawnflags.csv", "item")
-spawnflag_texts = read_csv_to_dicts("csv/spawnflag_text.csv", "key")
+    read_csv_to_dicts_append(ENTITIES, sys.argv[i], "item")
+KEYS = read_csv_to_dicts("csv/keys.csv", "name")
+KEY_TEXTS = read_csv_to_dicts("csv/key_text.csv", "key")
+NOTES = read_csv_to_dicts("csv/note.csv", "name")
+NOTE_TEXTS = collections.OrderedDict()
+read_csv_to_dicts_append(NOTE_TEXTS, "csv/note_text.csv", "key")
+SPAWNFLAGS = read_csv_to_dicts("csv/spawnflags.csv", "item")
+SPAWNFLAG_TEXTS = read_csv_to_dicts("csv/spawnflag_text.csv", "key")
