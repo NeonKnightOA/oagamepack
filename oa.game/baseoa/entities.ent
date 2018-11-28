@@ -2097,7 +2097,7 @@ The activator will be teleported away.
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </point>
-  <point name="team_CTF_blueflag" color="0 0 1" box="-16 -16 -24 16 16 88" model="models/flags/b_flag.md3">
+  <point name="team_CTF_blueflag" color="0 0 1" box="-16 -16 -24 16 16 64" model="models/flags/b_flag.md3">
 Blue Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the B point in Double Domination games.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
@@ -2121,7 +2121,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
   </point>
-  <point name="team_CTF_blueplayer" color="0.25 0.25 1" box="-16 -16 -24 16 16 88" model="">
+  <point name="team_CTF_blueplayer" color="0.25 0.25 1" box="-16 -16 -24 16 16 32" model="">
 Initial spawnpoint for Blue Team players.
 -------- KEYS --------
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
@@ -2144,7 +2144,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
   </point>
-  <point name="team_CTF_bluespawn" color="0.5 0.5 1" box="-16 -16 -24 16 16 88" model="">
+  <point name="team_CTF_bluespawn" color="0.5 0.5 1" box="-16 -16 -24 16 16 32" model="">
 Potential, post-initial spawnpoint for Blue Team players.
 -------- KEYS --------
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
@@ -2167,7 +2167,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
   </point>
-  <point name="team_CTF_neutralflag" color="1 1 1" box="-16 -16 -24 16 16 88" model="models/flags/n_flag.md3">
+  <point name="team_CTF_neutralflag" color="1 1 1" box="-16 -16 -24 16 16 64" model="models/flags/n_flag.md3">
 Neutral Flag. Used as a key entity in One Flag CTF and Possession games.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
@@ -2191,7 +2191,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
   </point>
-  <point name="team_CTF_redflag" color="1 0 0" box="-16 -16 -24 16 16 88" model="models/flags/r_flag.md3">
+  <point name="team_CTF_redflag" color="1 0 0" box="-16 -16 -24 16 16 64" model="models/flags/r_flag.md3">
 Red Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the A point in Double Domination games.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
@@ -2215,7 +2215,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
   </point>
-  <point name="team_CTF_redplayer" color="1 0.25 0.25" box="-16 -16 -24 16 16 88" model="">
+  <point name="team_CTF_redplayer" color="1 0.25 0.25" box="-16 -16 -24 16 16 32" model="">
 Initial spawnpoint for Red Team players.
 -------- KEYS --------
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
@@ -2238,7 +2238,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
   </point>
-  <point name="team_CTF_redspawn" color="1 0.5 0.5" box="-16 -16 -24 16 16 88" model="">
+  <point name="team_CTF_redspawn" color="1 0.5 0.5" box="-16 -16 -24 16 16 32" model="">
 Potential, post-initial spawnpoint for Red Team players.
 -------- KEYS --------
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
@@ -2261,7 +2261,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
   </point>
-  <point name="team_blueobelisk" color="0 0 1" box="-16 -16 -24 16 16 88" model="models/powerups/overload_base.md3">
+  <point name="team_blueobelisk" color="0 0 1" box="-16 -16 -24 16 16 64" model="models/powerups/overload_base.md3">
 Blue Team Obelisk. Used as a key entity for Harvester and Overload games.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
@@ -2285,7 +2285,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
   </point>
-  <point name="team_neutralobelisk" color="1 1 1" box="-16 -16 -24 16 16 88" model="models/powerups/obelisk/obelisk.md3">
+  <point name="team_neutralobelisk" color="1 1 1" box="-16 -16 -24 16 16 64" model="models/powerups/obelisk/obelisk.md3">
 Neutral Obelisk. Used as a key entity for Harvester games.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
@@ -2309,7 +2309,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
   </point>
-  <point name="team_redobelisk" color="1 0 0" box="-16 -16 -24 16 16 88" model="models/powerups/overload_base.md3">
+  <point name="team_redobelisk" color="1 0 0" box="-16 -16 -24 16 16 64" model="models/powerups/overload_base.md3">
 Red Team Obelisk. Used as a key entity for Harvester and Overload games.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>

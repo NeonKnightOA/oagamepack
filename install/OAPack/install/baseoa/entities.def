@@ -2009,7 +2009,7 @@ The activator will be teleported away.
 "targetname" : Name of the entity that points to this entity.
 --------- NOTES --------
 */
-/*QUAKED team_CTF_blueflag (0 0 1) (-16 -16 -24) (16 16 88)
+/*QUAKED team_CTF_blueflag (0 0 1) (-16 -16 -24) (16 16 64)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/flags/b_flag.md3"
 Blue Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the B point in Double Domination games.
@@ -2034,7 +2034,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
-/*QUAKED team_CTF_blueplayer (0.25 0.25 1) (-16 -16 -24) (16 16 88)
+/*QUAKED team_CTF_blueplayer (0.25 0.25 1) (-16 -16 -24) (16 16 32)
 Initial spawnpoint for Blue Team players.
 --------- KEYS --------
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
@@ -2056,7 +2056,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
 */
-/*QUAKED team_CTF_bluespawn (0.5 0.5 1) (-16 -16 -24) (16 16 88)
+/*QUAKED team_CTF_bluespawn (0.5 0.5 1) (-16 -16 -24) (16 16 32)
 Potential, post-initial spawnpoint for Blue Team players.
 --------- KEYS --------
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
@@ -2078,7 +2078,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
 */
-/*QUAKED team_CTF_neutralflag (1 1 1) (-16 -16 -24) (16 16 88)
+/*QUAKED team_CTF_neutralflag (1 1 1) (-16 -16 -24) (16 16 64)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/flags/n_flag.md3"
 Neutral Flag. Used as a key entity in One Flag CTF and Possession games.
@@ -2103,7 +2103,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
-/*QUAKED team_CTF_redflag (1 0 0) (-16 -16 -24) (16 16 88)
+/*QUAKED team_CTF_redflag (1 0 0) (-16 -16 -24) (16 16 64)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/flags/r_flag.md3"
 Red Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the A point in Double Domination games.
@@ -2128,7 +2128,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
-/*QUAKED team_CTF_redplayer (1 0.25 0.25) (-16 -16 -24) (16 16 88)
+/*QUAKED team_CTF_redplayer (1 0.25 0.25) (-16 -16 -24) (16 16 32)
 Initial spawnpoint for Red Team players.
 --------- KEYS --------
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
@@ -2150,7 +2150,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
 */
-/*QUAKED team_CTF_redspawn (1 0.5 0.5) (-16 -16 -24) (16 16 88)
+/*QUAKED team_CTF_redspawn (1 0.5 0.5) (-16 -16 -24) (16 16 32)
 Potential, post-initial spawnpoint for Red Team players.
 --------- KEYS --------
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
@@ -2172,7 +2172,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
 */
-/*QUAKED team_blueobelisk (0 0 1) (-16 -16 -24) (16 16 88)
+/*QUAKED team_blueobelisk (0 0 1) (-16 -16 -24) (16 16 64)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/overload_base.md3"
 Blue Team Obelisk. Used as a key entity for Harvester and Overload games.
@@ -2197,7 +2197,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
-/*QUAKED team_neutralobelisk (1 1 1) (-16 -16 -24) (16 16 88)
+/*QUAKED team_neutralobelisk (1 1 1) (-16 -16 -24) (16 16 64)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/obelisk/obelisk.md3"
 Neutral Obelisk. Used as a key entity for Harvester games.
@@ -2222,7 +2222,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
-/*QUAKED team_redobelisk (1 0 0) (-16 -16 -24) (16 16 88)
+/*QUAKED team_redobelisk (1 0 0) (-16 -16 -24) (16 16 64)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/overload_base.md3"
 Red Team Obelisk. Used as a key entity for Harvester and Overload games.
