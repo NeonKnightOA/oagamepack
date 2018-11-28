@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <classes>
-  <point name="info_player_dom" color="1 1 0" box="-16 -16 -24 16 16 32" model="">
+  <point name="info_player_dom" color="0.75 0.75 0.75" box="-16 -16 -24 16 16 32" model="">
 Spawn point used in Domination if no team specific spawn points exists. Usually placed in the middle of CTF maps. See info_player_dom_red and info_player_dom_blue for team specific versions.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
@@ -13,7 +13,7 @@ Spawn point used in Domination if no team specific spawn points exists. Usually 
 This entity may not work with mods designed for the game OA is inspired from.
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
   </point>
-  <point name="info_player_dom_blue" color="1 1 0" box="-16 -16 -24 16 16 32" model="">
+  <point name="info_player_dom_blue" color="0.75 0.75 1" box="-16 -16 -24 16 16 32" model="">
 Spawn point used in Domination by the blue team
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
@@ -26,7 +26,7 @@ Spawn point used in Domination by the blue team
 This entity may not work with mods designed for the game OA is inspired from.
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
   </point>
-  <point name="info_player_dom_red" color="1 1 0" box="-16 -16 -24 16 16 32" model="">
+  <point name="info_player_dom_red" color="1 0.75 0.75" box="-16 -16 -24 16 16 32" model="">
 Spawn point used in Domination by the red team
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>

@@ -585,7 +585,7 @@ This entity requires an origin. It can either be a square brush of 16x16x16 or 3
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
 */
-/*QUAKED func_group (0 0 0) ?
+/*QUAKED func_group (0 .5 .8) ?
 Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.
 Entity which groups several brushes and patches together for convenience. 
 --------- KEYS --------
@@ -768,7 +768,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
 */
-/*QUAKED func_timer (0.3 0.1 0.6) (-8 -8 -8) (8 8 8) START_ON
+/*QUAKED func_timer (0 .5 .8) (-8 -8 -8) (8 8 8) START_ON
 Repeatedly fires its targets. Can be turned on or off by using another func or trigger.
 --------- KEYS --------
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
@@ -824,7 +824,7 @@ This entity requires an origin. It can either be a square brush of 16x16x16 or 3
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
 */
-/*QUAKED holdable_invulnerability (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED holdable_invulnerability (0.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/holdable/invulnerability.md3"
 Invulnerability holdable.
@@ -861,7 +861,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED holdable_kamikaze (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED holdable_kamikaze (0.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/kamikazi.md3"
 Kamikaze holdable.
@@ -898,7 +898,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED holdable_medkit (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED holdable_medkit (0.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/holdable/teleporter.md3"
 Personal Medkit holdable.
@@ -934,7 +934,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED holdable_portal (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED holdable_portal (0.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/holdable/porter.md3"
 Portal holdable.
@@ -972,7 +972,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED holdable_teleporter (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED holdable_teleporter (.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/holdable/teleporter.md3"
 Teleporter holdable.
@@ -1008,14 +1008,14 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED info_camp (0 0.5 0) (-4 -4 -4) (4 4 4)
+/*QUAKED info_camp (0 0.5 0) (-8 -8 -8) (8 8 8)
 Used as a positional target for calculations in the utilities (spotlights, etc), but removed during gameplay.
 --------- KEYS --------
 "range" : Game units the camping bot can move from its camping location.
 "weight" : Priority level the camping bot uses to determine if they want to camp there.
 --------- NOTES --------
 */
-/*QUAKED info_notnull (0 0.5 0) (-4 -4 -4) (4 4 4)
+/*QUAKED info_notnull (0 0.5 0) (-8 -8 -8) (8 8 8)
 Used as a positional target for in-game calculation, like jumppad targets.
 --------- KEYS --------
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
@@ -1026,7 +1026,7 @@ Used as a positional target for in-game calculation, like jumppad targets.
 "targetname" : Name of the entity that points to this entity.
 --------- NOTES --------
 */
-/*QUAKED info_null (0 0.5 0) (-4 -4 -4) (4 4 4)
+/*QUAKED info_null (0 0.5 0) (-8 -8 -8) (8 8 8)
 Used as a positional target for calculations in the utilities (spotlights, etc), but removed during gameplay.
 --------- KEYS --------
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
@@ -1037,7 +1037,7 @@ Used as a positional target for calculations in the utilities (spotlights, etc),
 "targetname" : Name of the entity that points to this entity.
 --------- NOTES --------
 */
-/*QUAKED info_player_dd (1 1 0) (-16 -16 -24) (16 16 32) INITIAL
+/*QUAKED info_player_dd (1 1 1) (-16 -16 -24) (16 16 32) INITIAL
 Spawn point used in Double Domination if no team specific spawn points exists. Usually placed in the middle of CTF maps. See info_player_dd_red and info_player_dd_blue for team specific versions.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
@@ -1049,7 +1049,7 @@ Spawn point used in Double Domination if no team specific spawn points exists. U
 This entity may not work with mods designed for the game OA is inspired from.
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 */
-/*QUAKED info_player_dd_blue (1 1 0) (-16 -16 -24) (16 16 32) INITIAL
+/*QUAKED info_player_dd_blue (0.5 0.5 1) (-16 -16 -24) (16 16 32) INITIAL
 Spawn point used in Double Domination by the blue team. If your map has dedicated spawn rooms, use this.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
@@ -1061,7 +1061,7 @@ Spawn point used in Double Domination by the blue team. If your map has dedicate
 This entity may not work with mods designed for the game OA is inspired from.
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 */
-/*QUAKED info_player_dd_red (1 1 0) (-16 -16 -24) (16 16 32) INITIAL
+/*QUAKED info_player_dd_red (1 0.5 0.5) (-16 -16 -24) (16 16 32) INITIAL
 Spawn point used in Double Domination by the red team. If your map has dedicated spawn rooms, use this.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
@@ -1073,7 +1073,7 @@ Spawn point used in Double Domination by the red team. If your map has dedicated
 This entity may not work with mods designed for the game OA is inspired from.
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 */
-/*QUAKED info_player_deathmatch (1 0 1) (-16 -16 -24) (16 16 32) INITIAL
+/*QUAKED info_player_deathmatch (0.5 0.5 0.5) (-16 -16 -24) (16 16 32) INITIAL
 Potential spawning position for Deathmatch games. The first time a player enters the game, they will be at an 'initial' spot. Targets will be fired when someone spawns in on them.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
@@ -1087,14 +1087,14 @@ Potential spawning position for Deathmatch games. The first time a player enters
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 */
-/*QUAKED info_player_intermission (1 0 1) (-16 -16 -24) (16 16 32)
+/*QUAKED info_player_intermission (1 0 1) (-16 -16 -16) (16 16 16)
 The intermission will be viewed from this point.  Target an info_notnull for the view direction.
 --------- KEYS --------
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 */
-/*QUAKED info_player_start (1 0 0) (-16 -16 -24) (16 16 32)
+/*QUAKED info_player_start (0.25 0.25 0.25) (-16 -16 -24) (16 16 32)
 Limited equivelant to info_player_deathmatch. Use that one instead.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
@@ -1105,7 +1105,7 @@ Limited equivelant to info_player_deathmatch. Use that one instead.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 */
-/*QUAKED info_spectator_start (1 0 0) (-16 -16 -24) (16 16 32)
+/*QUAKED info_spectator_start (0 1 1) (-16 -16 -24) (16 16 32)
 --------- KEYS --------
 --------- NOTES --------
 This item is broken in some older versions of OA and the game it's inspired from. It may not work.
@@ -1146,7 +1146,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_armor_body (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED item_armor_body (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/armor/armor_red.md3"
 Body Armor.
@@ -1182,7 +1182,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_armor_combat (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED item_armor_combat (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/armor/armor_yel.md3"
 Combat Armor.
@@ -1218,7 +1218,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_armor_shard (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED item_armor_shard (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/armor/shard.md3"
 Armor Shard.
@@ -1254,7 +1254,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_doubler (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM
+/*QUAKED item_doubler (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/doubler.md3"
 Doubler rune.
@@ -1290,7 +1290,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_enviro (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED item_enviro (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/instant/enviro.md3"
 Battle Suit powerup.
@@ -1327,7 +1327,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_flight (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED item_flight (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/instant/flight.md3"
 Flight powerup.
@@ -1364,7 +1364,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_guard (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM
+/*QUAKED item_guard (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/guard.md3"
 Guard rune.
@@ -1400,7 +1400,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_haste (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED item_haste (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/instant/haste.md3"
 Haste powerup.
@@ -1437,7 +1437,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_health (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED item_health (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/health/medium_cross.md3"
 Medium Health.
@@ -1473,7 +1473,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_health_large (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED item_health_large (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/health/large_cross.md3"
 Large Health.
@@ -1509,7 +1509,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_health_mega (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED item_health_mega (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/health/mega_cross.md3"
 Megahealth.
@@ -1545,7 +1545,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_health_small (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED item_health_small (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/health/small_cross.md3"
 Small Health.
@@ -1581,7 +1581,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_invis (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED item_invis (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/instant/invis.md3"
 Invisibility powerup.
@@ -1618,7 +1618,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_quad (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED item_quad (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/instant/quad.md3"
 Quad Damage powerup.
@@ -1655,7 +1655,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_regen (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
+/*QUAKED item_regen (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/instant/regen.md3"
 Regeneration powerup.
@@ -1692,7 +1692,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED item_scout (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM
+/*QUAKED item_scout (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/scout.md3"
 Scout rune.
@@ -2009,7 +2009,7 @@ The activator will be teleported away.
 "targetname" : Name of the entity that points to this entity.
 --------- NOTES --------
 */
-/*QUAKED team_CTF_blueflag (0 0 1) (-16 -16 -16) (16 16 16)
+/*QUAKED team_CTF_blueflag (0 0 1) (-16 -16 -24) (16 16 88)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/flags/b_flag.md3"
 Blue Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the B point in Double Domination games.
@@ -2034,7 +2034,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
-/*QUAKED team_CTF_blueplayer (0 0 1) (-16 -16 -24) (16 16 32)
+/*QUAKED team_CTF_blueplayer (0.25 0.25 1) (-16 -16 -24) (16 16 88)
 Initial spawnpoint for Blue Team players.
 --------- KEYS --------
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
@@ -2056,7 +2056,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
 */
-/*QUAKED team_CTF_bluespawn (0 0 1) (-16 -16 -24) (16 16 32)
+/*QUAKED team_CTF_bluespawn (0.5 0.5 1) (-16 -16 -24) (16 16 88)
 Potential, post-initial spawnpoint for Blue Team players.
 --------- KEYS --------
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
@@ -2078,7 +2078,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
 */
-/*QUAKED team_CTF_neutralflag (0 0 1) (-16 -16 -16) (16 16 16)
+/*QUAKED team_CTF_neutralflag (1 1 1) (-16 -16 -24) (16 16 88)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/flags/n_flag.md3"
 Neutral Flag. Used as a key entity in One Flag CTF and Possession games.
@@ -2103,7 +2103,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
-/*QUAKED team_CTF_redflag (1 0 0) (-16 -16 -16) (16 16 16)
+/*QUAKED team_CTF_redflag (1 0 0) (-16 -16 -24) (16 16 88)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/flags/r_flag.md3"
 Red Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the A point in Double Domination games.
@@ -2128,7 +2128,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
-/*QUAKED team_CTF_redplayer (1 0 0) (-16 -16 -24) (16 16 32)
+/*QUAKED team_CTF_redplayer (1 0.25 0.25) (-16 -16 -24) (16 16 88)
 Initial spawnpoint for Red Team players.
 --------- KEYS --------
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
@@ -2150,7 +2150,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
 */
-/*QUAKED team_CTF_redspawn (1 0 0) (-16 -16 -24) (16 16 32)
+/*QUAKED team_CTF_redspawn (1 0.5 0.5) (-16 -16 -24) (16 16 88)
 Potential, post-initial spawnpoint for Red Team players.
 --------- KEYS --------
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
@@ -2172,7 +2172,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - dom: Single Domination
 - pos: Possession
 */
-/*QUAKED team_blueobelisk (0 0 1) (-16 -16 0) (16 16 88)
+/*QUAKED team_blueobelisk (0 0 1) (-16 -16 -24) (16 16 88)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/overload_base.md3"
 Blue Team Obelisk. Used as a key entity for Harvester and Overload games.
@@ -2197,7 +2197,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
-/*QUAKED team_neutralobelisk (0 0 1) (-16 -16 0) (16 16 88)
+/*QUAKED team_neutralobelisk (1 1 1) (-16 -16 -24) (16 16 88)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/obelisk/obelisk.md3"
 Neutral Obelisk. Used as a key entity for Harvester games.
@@ -2222,7 +2222,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 - pos: Possession
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
-/*QUAKED team_redobelisk (1 0 0) (-16 -16 0) (16 16 8)
+/*QUAKED team_redobelisk (1 0 0) (-16 -16 -24) (16 16 88)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
 model="models/powerups/overload_base.md3"
 Red Team Obelisk. Used as a key entity for Harvester and Overload games.
