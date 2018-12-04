@@ -7,11 +7,11 @@ This repo hosts the GPLv2 gamepack for OpenArena. The intention is to create a f
 There are two gamepacks: one for OA 0.8.8 and another for the latest SVN revision. In the future, an OA3 pack will also be included.
 
 The gamepacks contain, in addition to the required stuff:
-* OA 0.8.8/SVN r951 mapmodels
-* OA 0.8.8/SVN r951 world sounds
-* OA 0.8.8/SVN r951 shaders, some of them modified.
+* OA 0.8.8 mapmodels
+* OA 0.8.8 world sounds
+* OA 0.8.8 shaders, some of them modified.
 * Custom textures made for the editor.
-* Full common.shader support, complete with the missing shaders, which now enables mappers to do OA terrains. Yay!
+* Full common.shader support, complete with the missing shaders, which now enables OA mappers to do terrains. Yay!
 * Fully generated entities.ent and entities.def for both XML and regular versions of the NetRadiant editors.
 
 ## Sources
