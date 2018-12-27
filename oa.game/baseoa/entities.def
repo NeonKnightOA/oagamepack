@@ -37,13 +37,14 @@ Chaingun ammo.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -74,13 +75,14 @@ BFG ammo.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -111,13 +113,14 @@ Machinegun ammo.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -148,13 +151,14 @@ Plasma Gun ammo.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -185,13 +189,14 @@ Grenade Launcher ammo.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -222,13 +227,14 @@ Lightning Gun ammo.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -260,13 +266,14 @@ Prox Launcher ammo.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -298,13 +305,14 @@ Nailgun ammo.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -335,13 +343,14 @@ Rocket Launcher ammo.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -372,13 +381,14 @@ Shotgun ammo.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -409,13 +419,14 @@ Railgun ammo.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -441,13 +452,14 @@ Domination Control Point.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -559,6 +571,7 @@ By default, a door activates upon proximity of a player or when damage is inflic
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
 "speed" : Speed of entity movement. Default: 100.0.
+"state_targetname" : Set this to elimination_active in order to create a round-dependant door (See Notes).
 "targetname" : If set, the door needs to be operated by a func_button or trigger.
 "team" : Separate func_door entities within this team will operate together.
 "wait" : Seconds before the door returns to its default state.
@@ -584,6 +597,7 @@ By default, a door activates upon proximity of a player or when damage is inflic
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
+The key ''state_targetname'' is used to create warmup-locked doors in round-based gametypes. Before a round begins, these doors are closed, but once a round starts, the doors are opened. The doors return to their closed state after a round is finished.
 */
 /*QUAKED func_group (0 .5 .8) ?
 Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.
@@ -687,9 +701,7 @@ The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' 
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
 */
 /*QUAKED func_rotating (0 .5 .8) ? START_ON - X_AXIS Y_AXIS
-A rotating entity, used for decorations or moving platforms. The center of that brush will be
-the point around which it is rotated. It will rotate around the Z axis by default.  You can
-check either the X_AXIS or Y_AXIS box to change that.
+A rotating entity, used for decorations or moving platforms. The center of that brush will be the point around which it is rotated. It will rotate around the Z axis by default.  You can check either the X_AXIS or Y_AXIS box to change that.
 --------- KEYS --------
 "color" : constantLight color of the md3 model included with the entity. It doesn't affect entity brushes. Default: 1 1 1.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
@@ -754,13 +766,14 @@ A bmodel that just sits there, doing nothing.  Can be used for conditional walls
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -847,13 +860,14 @@ Invulnerability holdable.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -884,13 +898,14 @@ Kamikaze holdable.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -920,13 +935,14 @@ Personal Medkit holdable.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -958,13 +974,14 @@ This entity may not work with mods designed for the game OA is inspired from.
 This item is broken in some older versions of OA and the game it's inspired from. It may not work.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -994,13 +1011,14 @@ Teleporter holdable.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1133,13 +1151,14 @@ Ammo Regen rune.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1168,13 +1187,14 @@ Body Armor.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1204,13 +1224,14 @@ Combat Armor.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1240,13 +1261,14 @@ Armor Shard.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1277,13 +1299,14 @@ Doubler rune.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1313,13 +1336,14 @@ Battle Suit powerup.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1350,13 +1374,14 @@ Flight powerup.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1387,13 +1412,14 @@ Guard rune.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1423,13 +1449,14 @@ Haste powerup.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1459,13 +1486,14 @@ Medium Health.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1495,13 +1523,14 @@ Large Health.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1531,13 +1560,14 @@ Megahealth.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1567,13 +1597,14 @@ Small Health.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1604,13 +1635,14 @@ Invisibility powerup.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1641,13 +1673,14 @@ Quad Damage powerup.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1678,13 +1711,14 @@ Regeneration powerup.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1715,13 +1749,14 @@ Scout rune.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -1784,8 +1819,7 @@ Displays a static model in the map.
 "target" : Attaches the misc_model to a func_entity with this targetname value.
 --------- NOTES --------
 misc_models are models whose only animation comes from shader entities and can only rotate on the Z axis. Models are entirely non-solid, because of this they don't clip against weapon fire or other players, so appropriate clip brushes matching the size and shape of the models must be drawn.
-
-In order to remap a model, use ''*;[texturepath]\'' in order to remap the whole model under a single texture/shader, or ''[texturepath1];[texturepath2]'' in order to remap a specific texture/shader.
+In order to remap a model, use ''*;[texturepath]'' in order to remap the whole model under a single texture/shader, or ''[texturepath1];[texturepath2]'' in order to remap a specific texture/shader.
 */
 /*QUAKED misc_portal_camera (0 0 1) (-8 -8 -8) (8 8 8) SLOW_ROTATE FAST_ROTATE NO_SWING
 The target for a misc_portal_director.  You can set either angles or target another entity to determine the direction of view.
@@ -2021,13 +2055,14 @@ Blue Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Be
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2044,13 +2079,14 @@ Initial spawnpoint for Blue Team players.
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2066,13 +2102,14 @@ Potential, post-initial spawnpoint for Blue Team players.
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2090,13 +2127,14 @@ Neutral Flag. Used as a key entity in One Flag CTF and Possession games.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2115,13 +2153,14 @@ Red Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Bec
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2138,13 +2177,14 @@ Initial spawnpoint for Red Team players.
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2160,13 +2200,14 @@ Potential, post-initial spawnpoint for Red Team players.
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2184,13 +2225,14 @@ Blue Team Obelisk. Used as a key entity for Harvester and Overload games.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2209,13 +2251,14 @@ Neutral Obelisk. Used as a key entity for Harvester games.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2234,13 +2277,14 @@ Red Team Obelisk. Used as a key entity for Harvester and Overload games.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2325,13 +2369,14 @@ BFG.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2363,13 +2408,14 @@ Chaingun.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2399,13 +2445,14 @@ Gauntlet.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2434,13 +2481,14 @@ Grappling Hook.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2470,13 +2518,14 @@ Grenade Launcher.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2507,13 +2556,14 @@ Lightning Gun.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2544,13 +2594,14 @@ Machinegun.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2581,13 +2632,14 @@ Nailgun.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2618,13 +2670,14 @@ Plasma Gun.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2656,13 +2709,14 @@ Prox Launcher.
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2693,13 +2747,14 @@ Railgun.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2730,13 +2785,14 @@ Rocket Launcher.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
 - ffa: Free For All
-- team: Team Deathmatch
 - tournament: Tournament
-- ctf: Capture the Flag
+- single: Single Player
+- team: Team Deathmatch
+- ctf: Capture the Flag and CTF Elimination
 - oneflag: One Flag CTF
 - obelisk: Overload
 - harvester: Harvester
-- elimination: Elimination and CTF Elimination
+- elimination: Elimination
 - lms: Last Man Standing
 - dd: Double Domination
 - dom: Single Domination
@@ -2774,6 +2830,10 @@ The main entity of the map. Every map should have exactly one worldspawn.
 "_ambient;ambient" : Constant value added to the overall lighting. Use not recommended, since ambient light has a tendency to flatten out variations in light and shade.
 "_blocksize" : Size of the blocks q3map2 vis uses in order to calculate what's drawn in the screen. Higher values than the default are recommended for very large maps with low structural brush count. The calculation is based on the formulas X=_blocksize*n; Y=_blocksize*n. Default: 1024.
 "_color" : Color of the ambient light. Default: 0 0 0.
+"enableBreath" : No text
+"enableDust" : No text
+"enableFS" : No text
+"enableQ" : No text
 "gravity" : Gravity of the level. Overrides the default value, is overriden by the game's set gravity value. Default: 800.0.
 "gridsize" : Size of the lightgrid created by q3map2. The values represent the units in the X Y Z points. Large powers of 2 help reduce the BSP size and compile time on very large maps. Default: 128 128 256.
 "message" : Name of the map. Displayed on the loading screen.
@@ -2863,4 +2923,5 @@ The main entity of the map. Every map should have exactly one worldspawn.
 "_style31alphaGen" : AlphaGen value for the light style index 31. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
 "_style31rgbGen" : rgbGen value for the light style index 31. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).
 --------- NOTES --------
+nan
 */
