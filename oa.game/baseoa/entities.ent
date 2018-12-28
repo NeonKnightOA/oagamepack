@@ -2926,10 +2926,10 @@ The main entity of the map. Every map should have exactly one worldspawn.
 <real key="_ambient;ambient" name="Ambient Intensity">Constant value added to the overall lighting. Use not recommended, since ambient light has a tendency to flatten out variations in light and shade.</real>
 <integer key="_blocksize" name="Block Size">Size of the blocks q3map2 vis uses in order to calculate what's drawn in the screen. Higher values than the default are recommended for very large maps with low structural brush count. The calculation is based on the formulas X=_blocksize*n; Y=_blocksize*n.. Default: 1024.</integer>
 <color key="_color" name="Ambient Color">Color of the ambient light.. Default: 0 0 0.</color>
-<integer key="enableBreath" name="Enable Breathing">No text</integer>
-<integer key="enableDust" name="Enable Dust">No text</integer>
-<integer key="enableFS" name="Enable FS">No text</integer>
-<integer key="enableQ" name="Enable Q1-Scale">No text</integer>
+<integer key="enableBreath" name="Enable Breathing">Enables a cough-like effect for the characters. Mostly used for ice maps.</integer>
+<integer key="enableDust" name="Enable Dust">Enables footstep-based dust from surfaces marked as such.</integer>
+<integer key="enableFS" name="Enable Fanservice">Enables summer effects for characters in the map, if available. (FS=fanservice)</integer>
+<integer key="enableQ" name="Enable Q1-Scale">Enables a Q1-like perspective. Mostly used for debugging.</integer>
 <real key="gravity" name="Gravity">Gravity of the level. Overrides the default value, is overriden by the game's set gravity value.. Default: 800.0.</real>
 <integer3 key="gridsize" name="Grid Size">Size of the lightgrid created by q3map2. The values represent the units in the X Y Z points. Large powers of 2 help reduce the BSP size and compile time on very large maps.. Default: 128 128 256.</integer3>
 <string key="message" name="Logon Message">Name of the map. Displayed on the loading screen.</string>

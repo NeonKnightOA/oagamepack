@@ -24,10 +24,10 @@
 "key_count_target_score","integer","Points Given","count","Number of points to add to the player's score."
 "key_delay","real","Delay","delay","Similar to ''wait''. Not even the devs know why this key exists lol!"
 "key_dmg","integer","Damage Inflicted","dmg","Damage to inflict when blocking the operation of the entity."
-"key_enableBreath","integer","Enable Breathing","enableBreath",
-"key_enableDust","integer","Enable Dust","enableDust",
-"key_enableFS","integer","Enable FS","enableFS",
-"key_enableQ","integer","Enable Q1-Scale","enableQ",
+"key_enableBreath","integer","Enable Breathing","enableBreath","Enables a cough-like effect for the characters. Mostly used for ice maps."
+"key_enableDust","integer","Enable Dust","enableDust","Enables footstep-based dust from surfaces marked as such."
+"key_enableFS","integer","Enable Fanservice","enableFS","Enables summer effects for characters in the map, if available. (FS=fanservice)"
+"key_enableQ","integer","Enable Q1-Scale","enableQ","Enables a Q1-like perspective. Mostly used for debugging."
 "key_gametype1","string","Supported Game Types","gametype","If set, the entity will ONLY appear in these gametypes. (See Notes)"
 "key_gametype2","string","Forbidden Game Types","!gametype","If set, the entity will NOT appear in these gametypes. (See Notes)"
 "key_gravity","real","Gravity","gravity","Gravity of the level. Overrides the default value, is overriden by the game's set gravity value."
