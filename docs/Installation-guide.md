@@ -88,6 +88,47 @@ RADIANT_MAJOR
 RADIANT_MINOR
 ```
 
+Therefore, the resulting overall structure must look, more or less, like this:
+
+```
+baseoa/*
+missionpack/*
+NetRadiant/
+	bitmaps/*
+	docs/*
+	games/*
+	gl/*
+	modules/*
+	oa.game/*
+	plugins/*
+	<several .game directories>/
+	.gtkrc-2.0.radiant
+	.gtkrc-2.0.win
+	global.xlink
+	q2map.x86_64
+	q3data.qdt
+	q3data.x86_64
+	q3map2.x86_64
+	qdata3.x86_64
+	quake3.exclude
+	radiant.x86_64
+	RADIANT_MAJOR
+	RADIANT_MINOR
+OpenArena.app/*
+OpenArena 0.8.8 r28.app/*
+libogg-0.dll
+libvorbis-0.dll
+libvorbisfile-3.dll
+oa_ded.exe
+oa_ded.i386
+oa_ded.x86_64
+openarena.exe
+openarena.i386
+openarena.x86_64
+openarena_deprecated.exe
+SDL.dll
+```
+
 Run the game and the editor for the first time so the proper files can be generated for edition.
 
 If you have problems with seeing certain shaders in the editor, copy the file **game folder/editor folder/oa.game/baseoa/scripts/default_shaderlist.txt** to **game folder/baseoa/scripts/**, overwriting it.
