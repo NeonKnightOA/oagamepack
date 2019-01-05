@@ -12,7 +12,7 @@ _**Last updated: Jan 5, 2019.** Links may become obsolete as new versions are re
 
 Go to [this location](https://github.com/Garux/netradiant-custom/releases) and download the stable version of NetRadiant that fits your OS:
 
-* [.deb (64-bit)](https://github.com/Garux/netradiant-custom/releases/download/20181213/netradiant-custom-ubuntu-18-04-x86_64.7z)
+* [Linux (64-bit)](https://github.com/Garux/netradiant-custom/releases/download/20181213/netradiant-custom-ubuntu-18-04-x86_64.7z)
 * [Windows (32-bit)](https://goo.gl/UyXRUJ)
 * [Windows (64-bit)](https://goo.gl/gBQSGC)
 
