@@ -16,7 +16,7 @@ Go to [this location](https://github.com/Garux/netradiant-custom/releases) and d
 * [Windows (32-bit)](https://goo.gl/UyXRUJ)
 * [Windows (64-bit)](https://goo.gl/gBQSGC)
 
-Once the download is finished, search for the folder where the binaries are located, and move **everything** from this position onto a temporary folder.
+Once the download is finished, create a temporary folder. Then, open the archive, search for the folder where the binaries are located (i.e. _radiant.exe_, _radiant.x86_64_), and move **everything** from this position onto a temporary folder.
 
 ## Source code
 
