@@ -789,7 +789,7 @@ Repeatedly fires its targets. Can be turned on or off by using another func or t
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
-"random" : Wait variance. The time between firing is located in the range [wait - random,wait + random]. Default: 0.0.
+"random" : Wait variance. The time between firing is located between the values (wait-random) and (wait+random), including these values. Default: 0.0.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "target" : Name of the entities to be triggered.
@@ -1778,7 +1778,7 @@ Non-displayed light.
 "_sun" : If set to 1 on a spotlight, it makes an infinite sun light.
 "fade" : Light attenuation fade for linear lights.
 "scale" : Light attenuation scale. Affects the ''light'' and ''_light'' values.
-"style" : Worldspawn light style. Values are set in the range [1;31].
+"style" : Worldspawn light style. Values are set between the values 1 and 31, including those two.
 --------- NOTES --------
 Lights pointed at a target will be spotlights.
 */
@@ -1819,7 +1819,7 @@ Displays a static model in the map.
 "target" : Attaches the misc_model to a func_entity with this targetname value.
 --------- NOTES --------
 misc_models are models whose only animation comes from shader entities and can only rotate on the Z axis. Models are entirely non-solid, because of this they don't clip against weapon fire or other players, so appropriate clip brushes matching the size and shape of the models must be drawn.
-In order to remap a model, use ''*;[texturepath]'' in order to remap the whole model under a single texture/shader, or ''[texturepath1];[texturepath2]'' in order to remap a specific texture/shader.
+In order to remap a model, use ''*;texturepath'' in order to remap the whole model under a single texture/shader, or ''texturepath1;texturepath2'' in order to remap a specific texture/shader.
 */
 /*QUAKED misc_portal_camera (0 0 1) (-8 -8 -8) (8 8 8) SLOW_ROTATE FAST_ROTATE NO_SWING
 The target for a misc_portal_director.  You can set either angles or target another entity to determine the direction of view.
