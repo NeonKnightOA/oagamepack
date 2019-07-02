@@ -1,3 +1,5 @@
+# NOTE: Due to overbloat required to support older editors, the repository had to be restarted from scratch with the bare essentials.
+
 # OpenArena Gamepack
 
 ## Overview
