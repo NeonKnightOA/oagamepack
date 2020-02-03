@@ -353,6 +353,7 @@ This entity requires an origin. It can either be a square brush of 16x16x16 or 3
 This entity kills players when blocked.
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
+The string '*falling1' in the 'noise' key will play character-specific sounds when the characters are falling into a pit. Sounds need to be formatted in mono, 32-bit PCM is not supported and OGG files will only work if the extension is omitted.
   </group>
   <group name="func_button" color="0 .5 .8" model="">
 Pushable button, usually used to trigger other entities or just open doors.
@@ -517,6 +518,7 @@ This entity requires an origin. It can either be a square brush of 16x16x16 or 3
 This entity kills players when blocked.
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
+The string '*falling1' in the 'noise' key will play character-specific sounds when the characters are falling into a pit. Sounds need to be formatted in mono, 32-bit PCM is not supported and OGG files will only work if the extension is omitted.
   </group>
   <group name="func_plat" color="0 .5 .8" model="">
 Activable platforms. Plats are always drawn in the extended position so they will light correctly.
@@ -593,6 +595,7 @@ A rotating entity, used for decorations or moving platforms. The center of that 
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
+The string '*falling1' in the 'noise' key will play character-specific sounds when the characters are falling into a pit. Sounds need to be formatted in mono, 32-bit PCM is not supported and OGG files will only work if the extension is omitted.
   </group>
   <group name="func_static" color="0 .5 .8" model="">
 A bmodel that just sits there, doing nothing.  Can be used for conditional walls and models.
@@ -1683,6 +1686,7 @@ Plays a sound. Do we really have to explain this? LOL!
 <flag key="LOOPED_OFF" name="Starts not looped" bit="1">The sound loops and starts turned off in the level. Multiple identical looping sounds will just increase volume without any speed cost. It's toggled by use functions.</flag>
 <flag key="LOOPED_ON" name="Starts looped" bit="0">The sound loops and starts turned on in the level. Multiple identical looping sounds will just increase volume without any speed cost. It's toggled by use functions.</flag>
 -------- NOTES --------
+The string '*falling1' in the 'noise' key will play character-specific sounds when the characters are falling into a pit. Sounds need to be formatted in mono, 32-bit PCM is not supported and OGG files will only work if the extension is omitted.
   </point>
   <point name="target_teleporter" color="1 0 0" box="-8 -8 -8 8 8 8" model="">
 The activator will be teleported away.
