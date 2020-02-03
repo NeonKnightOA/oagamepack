@@ -35,21 +35,8 @@ Chaingun ammo.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED ammo_bfg (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -73,21 +60,8 @@ BFG ammo.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED ammo_bullets (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -111,21 +85,8 @@ Machinegun ammo.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED ammo_cells (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -149,21 +110,8 @@ Plasma Gun ammo.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED ammo_grenades (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -187,21 +135,8 @@ Grenade Launcher ammo.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED ammo_lightning (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -225,21 +160,8 @@ Lightning Gun ammo.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED ammo_mines (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -264,21 +186,8 @@ Prox Launcher ammo.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED ammo_nails (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -303,21 +212,8 @@ Nailgun ammo.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED ammo_rockets (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -341,21 +237,8 @@ Rocket Launcher ammo.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED ammo_shells (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -379,21 +262,8 @@ Shotgun ammo.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED ammo_slugs (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -417,21 +287,8 @@ Railgun ammo.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED domination_point (1 0 .5) (-16 -16 -16) (16 16 16)
@@ -450,20 +307,7 @@ Domination Control Point.
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
 /*QUAKED func_bobbing (0 .5 .8) ? X_AXIS Y_AXIS
@@ -764,20 +608,7 @@ A bmodel that just sits there, doing nothing.  Can be used for conditional walls
 "_shader;shader" : Metashader used to assign textures to the terrain entity.
 --------- NOTES --------
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
 */
@@ -858,21 +689,8 @@ Invulnerability holdable.
 * -1 = never respawns again. Default: 60.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED holdable_kamikaze (0.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -896,21 +714,8 @@ Kamikaze holdable.
 * -1 = never respawns again. Default: 60.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED holdable_medkit (0.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -933,21 +738,8 @@ Personal Medkit holdable.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 60.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED holdable_portal (0.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -972,21 +764,8 @@ Portal holdable.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
 This item is broken in some older versions of OA and the game it's inspired from. It may not work.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED holdable_teleporter (.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1009,21 +788,8 @@ Teleporter holdable.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 60.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED info_camp (0 0.5 0) (-8 -8 -8) (8 8 8)
@@ -1149,20 +915,7 @@ Ammo Regen rune.
 * -1 = never respawns again. Default: 0.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_armor_body (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1185,21 +938,8 @@ Body Armor.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 25.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_armor_combat (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1222,21 +962,8 @@ Combat Armor.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 25.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_armor_shard (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1259,21 +986,8 @@ Armor Shard.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 25.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_botroam (1 0.5 0) (-8 -8 -8) (8 8 8) SUSPENDED
@@ -1284,20 +998,7 @@ Invisible entity that attracts bots into areas they may not be usually intereste
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "weight" : Priority level the nearby bot uses to determine if they want to go to that location.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 */
 /*QUAKED item_doubler (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -1320,20 +1021,7 @@ Doubler rune.
 * -1 = never respawns again. Default: 0.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_enviro (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1357,21 +1045,8 @@ Battle Suit powerup.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_flight (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1395,21 +1070,8 @@ Flight powerup.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_guard (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM
@@ -1433,20 +1095,7 @@ Guard rune.
 * -1 = never respawns again. Default: 0.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_haste (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1470,21 +1119,8 @@ Haste powerup.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_health (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1507,21 +1143,8 @@ Medium Health.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 35.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_health_large (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1544,21 +1167,8 @@ Large Health.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 35.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_health_mega (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1581,21 +1191,8 @@ Megahealth.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_health_small (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1618,21 +1215,8 @@ Small Health.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 35.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_invis (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1656,21 +1240,8 @@ Invisibility powerup.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_quad (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1694,21 +1265,8 @@ Quad Damage powerup.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_regen (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -1732,21 +1290,8 @@ Regeneration powerup.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED item_scout (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM
@@ -1770,20 +1315,7 @@ Scout rune.
 * -1 = never respawns again. Default: 0.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED light (0 1 0) (-8 -8 -8) (8 8 8) LINEAR NOANGLE x x NOGRIDLIGHT
@@ -2076,20 +1608,7 @@ Blue Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Be
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
 /*QUAKED team_CTF_blueplayer (0.25 0.25 1) (-16 -16 -24) (16 16 32)
@@ -2100,20 +1619,7 @@ Initial spawnpoint for Blue Team players.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 */
 /*QUAKED team_CTF_bluespawn (0.5 0.5 1) (-16 -16 -24) (16 16 32)
 Potential, post-initial spawnpoint for Blue Team players.
@@ -2123,20 +1629,7 @@ Potential, post-initial spawnpoint for Blue Team players.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 */
 /*QUAKED team_CTF_neutralflag (1 1 1) (-16 -16 -24) (16 16 64)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2148,20 +1641,7 @@ Neutral Flag. Used as a key entity in One Flag CTF and Possession games.
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
 /*QUAKED team_CTF_redflag (1 0 0) (-16 -16 -24) (16 16 64)
@@ -2174,20 +1654,7 @@ Red Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Bec
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
 /*QUAKED team_CTF_redplayer (1 0.25 0.25) (-16 -16 -24) (16 16 32)
@@ -2198,20 +1665,7 @@ Initial spawnpoint for Red Team players.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 */
 /*QUAKED team_CTF_redspawn (1 0.5 0.5) (-16 -16 -24) (16 16 32)
 Potential, post-initial spawnpoint for Red Team players.
@@ -2221,20 +1675,7 @@ Potential, post-initial spawnpoint for Red Team players.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 */
 /*QUAKED team_blueobelisk (0 0 1) (-16 -16 -24) (16 16 64)
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
@@ -2246,20 +1687,7 @@ Blue Team Obelisk. Used as a key entity for Harvester and Overload games.
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
 /*QUAKED team_neutralobelisk (1 1 1) (-16 -16 -24) (16 16 64)
@@ -2272,20 +1700,7 @@ Neutral Obelisk. Used as a key entity for Harvester games.
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
 /*QUAKED team_redobelisk (1 0 0) (-16 -16 -24) (16 16 64)
@@ -2298,20 +1713,7 @@ Red Team Obelisk. Used as a key entity for Harvester and Overload games.
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Be aware that key game objectives usually don't need the 'gametype' or '!gametype' keys set, unless a map can support a certain gametype or is planned to do so. For example, One Flag CTF and Harvester can be played on asymmetrical map designs due to the nature of the gametypes. This can't be said for Capture the Flag, which is played best on symmetrical maps.
 */
 /*QUAKED trigger_always (.5 .5 .5) (-8 -8 -8) (8 8 8)
@@ -2390,21 +1792,8 @@ BFG.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED weapon_chaingun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -2429,21 +1818,8 @@ Chaingun.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED weapon_gauntlet (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -2466,20 +1842,7 @@ Gauntlet.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED weapon_grapplinghook (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -2502,20 +1865,7 @@ Grappling Hook.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED weapon_grenadelauncher (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -2539,21 +1889,8 @@ Grenade Launcher.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED weapon_lightning (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -2577,21 +1914,8 @@ Lightning Gun.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED weapon_machinegun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -2615,20 +1939,7 @@ Machinegun.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED weapon_nailgun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -2653,21 +1964,8 @@ Nailgun.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED weapon_plasmagun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -2691,21 +1989,8 @@ Plasma Gun.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED weapon_prox_launcher (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -2730,21 +2015,8 @@ Prox Launcher.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED weapon_railgun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -2768,21 +2040,8 @@ Railgun.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED weapon_rocketlauncher (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -2806,21 +2065,8 @@ Rocket Launcher.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
-Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following for each gametype:
-- ffa: Free For All
-- tournament: Tournament
-- single: Single Player
-- team: Team Deathmatch
-- ctf: Capture the Flag and CTF Elimination
-- oneflag: One Flag CTF
-- obelisk: Overload
-- harvester: Harvester
-- elimination: Elimination
-- lms: Last Man Standing
-- dd: Double Domination
-- dom: Single Domination
-- pos: Possession
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED weapon_shotgun (.3 .3 1) (-16 -16 -16) (16 16 16) SUSPENDED
@@ -2844,7 +2090,7 @@ Shotgun.
 "wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
-Unless a specific kind of gameplay requires it or you plan to team up items, DON'T set the 'wait' or 'count' keys. You don't want to mess with your players' timing of the items or what the players expect from the items they pick up. If you want to limit an entity to make it viable on your map, rethink the layout of your map so the entity doesn't end overpowered.
+Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
 /*QUAKED worldspawn (0 0 0) ?
