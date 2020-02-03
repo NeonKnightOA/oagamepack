@@ -49,6 +49,7 @@ The origin is the point where the rotation axis goes through. The speed of swing
 "item_armor_body","/*QUAKED item_armor_body (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED","models/powerups/armor/armor_red.md3","Body Armor."
 "item_armor_combat","/*QUAKED item_armor_combat (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED","models/powerups/armor/armor_yel.md3","Combat Armor."
 "item_armor_shard","/*QUAKED item_armor_shard (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED","models/powerups/armor/shard.md3","Armor Shard."
+"item_botroam","/*QUAKED item_botroam (1 0.5 0) (-8 -8 -8) (8 8 8) SUSPENDED","","Invisible entity that attracts bots into areas they may not be usually interested. They'll try to reach it and touch it like it was a pickup. Has no effect on human players."
 "item_doubler","/*QUAKED item_doubler (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED RED_TEAM BLUE_TEAM","models/powerups/doubler.md3","Doubler rune."
 "item_enviro","/*QUAKED item_enviro (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED","models/powerups/instant/enviro.md3","Battle Suit powerup."
 "item_flight","/*QUAKED item_flight (0.3 0.3 1) (-16 -16 -16) (16 16 16) SUSPENDED","models/powerups/instant/flight.md3","Flight powerup."
