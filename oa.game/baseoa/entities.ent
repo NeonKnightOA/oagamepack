@@ -1676,6 +1676,7 @@ Plays a sound. Do we really have to explain this? LOL!
 <flag key="ACTIVATOR" name="Only activator hears" bit="3">If set, the sound will play on the player that activated the target. Can't be combined with looping.</flag>
 <flag key="GLOBAL" name="Distance doesn't attenuate" bit="2">If set, the sound will play full volume throughout the level. Can't be combined with looping.</flag>
 <flag key="LOOPED_OFF" name="Starts not looped" bit="1">The sound loops and starts turned off in the level. Multiple identical looping sounds will just increase volume without any speed cost. It's toggled by use functions.</flag>
+<flag key="LOOPED_ON" name="Starts looped" bit="0">The sound loops and starts turned on in the level. Multiple identical looping sounds will just increase volume without any speed cost. It's toggled by use functions.</flag>
 -------- NOTES --------
   </point>
   <point name="target_teleporter" color="1 0 0" box="-8 -8 -8 8 8 8" model="">
