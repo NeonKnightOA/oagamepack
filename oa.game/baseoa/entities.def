@@ -1583,10 +1583,15 @@ The activator is given this many points.
 /*QUAKED target_speaker (1 0 0) (-8 -8 -8) (8 8 8) LOOPED_ON LOOPED_OFF GLOBAL ACTIVATOR
 Plays a sound. Do we really have to explain this? LOL!
 --------- KEYS --------
+"noise" : Wav file to play. Recommended use is for looping sounds.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
+"random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
+"state_targetname" : Set this to elimination_active in order to create a round-dependant door (See Notes).
 "targetname" : Name of the entity that points to this entity.
+"wait" : Seconds between auto triggerings.
+* 0 = doesn't auto trigger. Default: 0.0.
 --------- NOTES --------
 */
 /*QUAKED target_teleporter (1 0 0) (-8 -8 -8) (8 8 8)

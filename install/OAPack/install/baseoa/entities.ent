@@ -1668,10 +1668,15 @@ The activator is given this many points.
   <point name="target_speaker" color="1 0 0" box="-8 -8 -8 8 8 8" model="">
 Plays a sound. Do we really have to explain this? LOL!
 -------- KEYS --------
+<sound key="noise" name="Sound File">Wav file to play. Recommended use is for looping sounds.</sound>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
+<real key="random" name="Respawn Delay Variance">Variation of time between respawns. The value is both added and subtracted from ''wait''.</real>
+<string key="state_targetname" name="State Target Name">Set this to elimination_active in order to create a round-dependant door (See Notes).</string>
 <targetname key="targetname" name="Target Name">Name of the entity that points to this entity.</targetname>
+<real key="wait" name="Repeat Time">Seconds between auto triggerings.
+* 0 = doesn't auto trigger.</real>
 -------- SPAWNFLAGS --------
 <flag key="ACTIVATOR" name="Only activator hears" bit="3">If set, the sound will play on the player that activated the target. Can't be combined with looping.</flag>
 <flag key="GLOBAL" name="Distance doesn't attenuate" bit="2">If set, the sound will play full volume throughout the level. Can't be combined with looping.</flag>
