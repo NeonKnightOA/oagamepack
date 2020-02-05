@@ -1835,10 +1835,11 @@ Any entity that touches this will be hurt. It does dmg points of damage each ser
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 -------- SPAWNFLAGS --------
-<flag key="NO_PROTECTION" name="Ignore powerup protection" bit="2">Player is hurt regardless of powerup protection.</flag>
-<flag key="SILENT" name="Silent trigger" bit="1">Supresses playing the sizzling sound.</flag>
-<flag key="SLOW" name="Damage per second" bit="3">Damage rate changes to once per second instead of server frame.</flag>
+<flag key="NO_PROTECTION" name="Ignore powerup protection" bit="3">Player is hurt regardless of powerup protection.</flag>
+<flag key="SILENT" name="Silent trigger" bit="2">Supresses playing the sizzling sound.</flag>
+<flag key="SLOW" name="Damage per second" bit="4">Damage rate changes to once per second instead of server frame.</flag>
 <flag key="START_OFF" name="Starts off" bit="0">Requires toggling for damage infliction.</flag>
+<flag key="X" name="X" bit="1">nan</flag>
 -------- NOTES --------
 Targeting the trigger will toggle its on / off state.
   </group>
