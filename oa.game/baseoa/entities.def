@@ -396,7 +396,7 @@ The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' 
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED func_door (0 .5 .8) ? START_OPEN x CRUSHER
+/*QUAKED func_door (0 .5 .8) ? START_OPEN UNUSED CRUSHER
 Movable brush usually used as a door, hence the name.
 By default, a door activates upon proximity of a player or when damage is inflicted to it. In order to team doors up, separate func_door entities must be connected by sharing the same 'team' key. 
 --------- KEYS --------
@@ -546,7 +546,7 @@ This entity requires an origin. It can either be a square brush of 16x16x16 or 3
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
 This entity can have a model attached to it. For this, the entity must have a 'targetname' key set, and the model must target this entity.
 */
-/*QUAKED func_rotating (0 .5 .8) ? START_ON - X_AXIS Y_AXIS
+/*QUAKED func_rotating (0 .5 .8) ? START_ON UNUSED X_AXIS Y_AXIS
 A rotating entity, used for decorations or moving platforms. The center of that brush will be the point around which it is rotated. It will rotate around the Z axis by default.  You can check either the X_AXIS or Y_AXIS box to change that.
 --------- KEYS --------
 "color" : constantLight color of the md3 model included with the entity. It doesn't affect entity brushes. Default: 1 1 1.
@@ -1321,7 +1321,7 @@ This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED light (0 1 0) (-8 -8 -8) (8 8 8) LINEAR NOANGLE x x NOGRIDLIGHT
+/*QUAKED light (0 1 0) (-8 -8 -8) (8 8 8) LINEAR NOANGLE UNUSED UNUSED NOGRIDLIGHT
 Non-displayed light.
 --------- KEYS --------
 "_color" : Color of the light entity. Default: 1.0 1.0 1.0.
@@ -1340,7 +1340,7 @@ Non-displayed light.
 --------- NOTES --------
 Lights pointed at a target will be spotlights.
 */
-/*QUAKED lightJunior (0 0.7 0.3) (-6 -6 -6) (6 6 6) LINEAR NO_ANGLE x x NO_GRID_LIGHT
+/*QUAKED lightJunior (0 0.7 0.3) (-6 -6 -6) (6 6 6) LINEAR NO_ANGLE UNUSED UNUSED NO_GRID_LIGHT
 Non-displayed light. Only affects entities.
 --------- KEYS --------
 "_color" : Color of the light entity. Default: 1.0 1.0 1.0.
@@ -1737,7 +1737,7 @@ This trigger will always fire.  It is activated by the world.
 --------- NOTES --------
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
 */
-/*QUAKED trigger_hurt (.5 .5 .5) ? START_OFF x SILENT NO_PROTECTION SLOW
+/*QUAKED trigger_hurt (.5 .5 .5) ? START_OFF UNUSED SILENT NO_PROTECTION SLOW
 Any entity that touches this will be hurt. It does dmg points of damage each server frame.
 --------- KEYS --------
 "dmg" : Damage to inflict when blocking the operation of the entity. Default: 5.
