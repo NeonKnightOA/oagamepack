@@ -448,6 +448,7 @@ By default, a door activates upon proximity of a player or when damage is inflic
 -------- SPAWNFLAGS --------
 <flag key="CRUSHER" name="Crusher" bit="2">Door crushes player upon closing instead of reversing direction.</flag>
 <flag key="START_OPEN" name="Start open" bit="0">The door to moves to its destination when spawned, and operate in reverse.  It is used to temporarily or permanently close off an area when triggered (not useful for touch or takedamage doors).</flag>
+<flag key="UNUSED_1" name="Unused" bit="1">Flag without any effect. Can be safely ignored.</flag>
 -------- NOTES --------
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
@@ -589,6 +590,7 @@ A rotating entity, used for decorations or moving platforms. The center of that 
 <texture key="_shader;shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
 -------- SPAWNFLAGS --------
 <flag key="START_ON" name="Start on" bit="0">Timer starts with the game and fires its targets continuously.</flag>
+<flag key="UNUSED_1" name="Unused" bit="1">Flag without any effect. Can be safely ignored.</flag>
 <flag key="X_AXIS_FUNC_ROTATING" name="X Axis" bit="2">Entity rotates alongside the X axis.</flag>
 <flag key="Y_AXIS_FUNC_ROTATING" name="Y Axis" bit="3">Entity rotates alongside the Y axis.</flag>
 -------- NOTES --------
@@ -1386,6 +1388,8 @@ Non-displayed light.
 <flag key="LINEAR" name="Linear falloff" bit="0">Uses a linear falloff instead of a more realistic one based on inverse square.</flag>
 <flag key="NO_ANGLE" name="No angle attenuation" bit="1">Ignores angle attenuation.</flag>
 <flag key="NO_GRID_LIGHT" name="Not dynamic" bit="4">Doesn't count as a dynamic light.</flag>
+<flag key="UNUSED_2" name="Unused" bit="2">Flag without any effect. Can be safely ignored.</flag>
+<flag key="UNUSED_3" name="Unused" bit="3">Flag without any effect. Can be safely ignored.</flag>
 -------- NOTES --------
 Lights pointed at a target will be spotlights.
   </point>
@@ -1403,6 +1407,8 @@ Non-displayed light. Only affects entities.
 <flag key="LINEAR" name="Linear falloff" bit="0">Uses a linear falloff instead of a more realistic one based on inverse square.</flag>
 <flag key="NO_ANGLE" name="No angle attenuation" bit="1">Ignores angle attenuation.</flag>
 <flag key="NO_GRID_LIGHTJUNIOR" name="Not dynamic" bit="4">Doesn't count as a dynamic light, disabling it entirely.</flag>
+<flag key="UNUSED_2" name="Unused" bit="2">Flag without any effect. Can be safely ignored.</flag>
+<flag key="UNUSED_3" name="Unused" bit="3">Flag without any effect. Can be safely ignored.</flag>
 -------- NOTES --------
 Lights pointed at a target will be spotlights.
   </point>
@@ -1839,7 +1845,7 @@ Any entity that touches this will be hurt. It does dmg points of damage each ser
 <flag key="SILENT" name="Silent trigger" bit="2">Supresses playing the sizzling sound.</flag>
 <flag key="SLOW" name="Damage per second" bit="4">Damage rate changes to once per second instead of server frame.</flag>
 <flag key="START_OFF" name="Starts off" bit="0">Requires toggling for damage infliction.</flag>
-<flag key="X" name="X" bit="1">nan</flag>
+<flag key="UNUSED_1" name="Unused" bit="1">Flag without any effect. Can be safely ignored.</flag>
 -------- NOTES --------
 Targeting the trigger will toggle its on / off state.
   </group>
