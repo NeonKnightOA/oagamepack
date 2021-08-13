@@ -93,7 +93,7 @@ def main():
         try:
             color = parans[0]
         except AttributeError:
-            common.fatal("Failed it find color in: "+quaked)
+            common.fatal("Failed to find color in: "+quaked)
         if len(parans) > 1:
             box1 = parans[1]
         if len(parans) > 2:
