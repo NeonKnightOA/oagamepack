@@ -2221,6 +2221,7 @@ The main entity of the map. Every map should have exactly one worldspawn.
 <real key="gravity" name="Gravity">Gravity of the level. Overrides the default value, is overriden by the game's set gravity value.. Default: 800.0.</real>
 <integer3 key="gridsize" name="Grid Size">Size of the lightgrid created by q3map2. The values represent the units in the X Y Z points. Large powers of 2 help reduce the BSP size and compile time on very large maps.. Default: 128 128 256.</integer3>
 <string key="message" name="Logon Message">Name of the map. Displayed on the loading screen.</string>
+<sound key="music" name="Music File">Route of the music to play in background.</sound>
 <integer key="_castshadows;_cs" name="Shadow Caster Level">Per-entity control over shadow casting. The values it can take are:
 * Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
