@@ -32,7 +32,7 @@ The origin is the point where the rotation axis goes through. The speed of swing
 "func_train","/*QUAKED func_train (0 .5 .8) ? START_ON TOGGLE BLOCK_STOPS","","A train is a mover that moves between path_corner target points. The train spawns at the first target it is pointing at."
 "holdable_invulnerability","/*QUAKED holdable_invulnerability (0.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED","models/powerups/holdable/invulnerability.md3","Invulnerability holdable."
 "holdable_kamikaze","/*QUAKED holdable_kamikaze (0.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED","models/powerups/kamikazi.md3","Kamikaze holdable."
-"holdable_medkit","/*QUAKED holdable_medkit (0.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED","models/powerups/holdable/teleporter.md3","Personal Medkit holdable."
+"holdable_medkit","/*QUAKED holdable_medkit (0.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED","models/powerups/holdable/medkit.md3","Personal Medkit holdable."
 "holdable_portal","/*QUAKED holdable_portal (0.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED","models/powerups/holdable/porter.md3","Portal holdable."
 "holdable_teleporter","/*QUAKED holdable_teleporter (.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED","models/powerups/holdable/teleporter.md3","Teleporter holdable."
 "info_camp","/*QUAKED info_camp (0 0.5 0) (-8 -8 -8) (8 8 8)","","Used as a positional target for calculations in the utilities (spotlights, etc), but removed during gameplay."

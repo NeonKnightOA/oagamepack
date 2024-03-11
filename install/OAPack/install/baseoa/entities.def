@@ -723,7 +723,7 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 */
 /*QUAKED holdable_medkit (0.7 0 1) (-16 -16 -16) (16 16 16) SUSPENDED
 --------- MODEL FOR RADIANT ONLY - DO NOT SET THIS AS A KEY --------
-model="models/powerups/holdable/teleporter.md3"
+model="models/powerups/holdable/medkit.md3"
 Personal Medkit holdable.
 --------- KEYS --------
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)

@@ -747,7 +747,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
 Upon activation of the targets, all shaders/textures in the map with the shader/texture mentioned in targetShaderName will change to the shader/texture mentioned in targetShaderNewName. This is useful for on/off switches, for example.
   </point>
-  <point name="holdable_medkit" color="0.7 0 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/teleporter.md3">
+  <point name="holdable_medkit" color="0.7 0 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/medkit.md3">
 Personal Medkit holdable.
 -------- KEYS --------
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
