@@ -10,8 +10,12 @@
 	<build name="Single: bsp">
 		<command>[q3map2] -meta "[MapFile]"</command>
 	</build>
-	<build name="Single: bsp +noOb">
-		<command>[q3map2] -meta -noob "[MapFile]"</command>
+	<build name="Single: only entities">
+		<command>[q3map2] -onlyents "[MapFile]"</command>
+	</build>
+	<build name="Single: only entities + botplay">
+		<command>[q3map2] -onlyents "[MapFile]"</command>
+		<command>[mbspc] -forcesidesvisible -optimize -bsp2aas &quot;[BspFile]&quot;</command>
 	</build>
 	<build name="Single: vis">
 		<command>[q3map2] -vis -saveprt "[MapFile]"</command>
@@ -22,11 +26,6 @@
 	<separator />
 	<build name="[test] quick and very crude">
 		<command>[q3map2] -meta -samplesize 64 "[MapFile]"</command>
-		<command>[q3map2] -vis -fast -saveprt "[MapFile]"</command>
-		<command>[q3map2] -light -fast -nogrid "[MapFile]"</command>
-	</build>
-	<build name="[test] quick and very crude +noOb">
-		<command>[q3map2] -meta -noob -samplesize 64 "[MapFile]"</command>
 		<command>[q3map2] -vis -fast -saveprt "[MapFile]"</command>
 		<command>[q3map2] -light -fast -nogrid "[MapFile]"</command>
 	</build>
@@ -43,16 +42,6 @@
 		<command>[q3map2] -light -fast -patchshadows -samples 2 -filter -bounce 8 "[MapFile]"</command>
 	</build>
 	<build name="(Final) +flares">
-		<command>[q3map2] -flares -meta -noob "[MapFile]"</command>
-		<command>[q3map2] -vis "[MapFile]"</command>
-		<command>[q3map2] -light -fast -patchshadows -samples 2 -filter -bounce 8 "[MapFile]"</command>
-	</build>
-	<build name="(Final) +noOb">
-		<command>[q3map2] -meta -noob "[MapFile]"</command>
-		<command>[q3map2] -vis "[MapFile]"</command>
-		<command>[q3map2] -light -fast -patchshadows -samples 2 -filter -bounce 8 "[MapFile]"</command>
-	</build>
-	<build name="(Final) +noOb +flares">
 		<command>[q3map2] -flares -meta -noob "[MapFile]"</command>
 		<command>[q3map2] -vis "[MapFile]"</command>
 		<command>[q3map2] -light -fast -patchshadows -samples 2 -filter -bounce 8 "[MapFile]"</command>
