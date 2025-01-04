@@ -44,9 +44,9 @@ def printKeys(item_name):
                     try:
                         defaultTextActual = keyLine[item+"_default"]
                         if common.KEY_TEXTS[item]["type"] == "integer":
-                            defaultText = ". Default: "+str(int(defaultTextActual))+"."
+                            defaultText = " Default: "+str(int(defaultTextActual))+"."
                         else:
-                            defaultText = ". Default: "+str(defaultTextActual)+"."
+                            defaultText = " Default: "+str(defaultTextActual)+"."
                         if not (defaultTextActual and defaultTextActual == defaultTextActual):
                             defaultText = ""
                     except:
