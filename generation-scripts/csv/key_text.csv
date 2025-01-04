@@ -105,11 +105,11 @@
 "q3map2key2__layers","integer","Terrain Layers","_layers;layers","Number of unique root shaders that will be used on the terrain surface."
 "q3map2key2__shader","texture","Terrain MetaShader","_shader;shader","Metashader used to assign textures to the terrain entity."
 "q3map2key1__anglescale","real","Lightmap Angle Scale","_anglescale","Light attenuation scaling. Lower values lessens angle attenuation, while higher values give sharper, more faceted lighting."
-"q3map2key1__castshadows","integer","Shadow Caster Level","_castshadows","Per-entity control over shadow casting. By default, the world casts shadows (_castshadows 1), while entities don't (_castshadows 0). The values it can take are:
-* 0- (-1/-2/-3...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* 0: doesn't cast shadows on the world or on entities.
-* 1: casts shadows on the world.
-* 1+ (2,3,4...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world."
+"q3map2key1__castshadows","integer","Shadow Caster Level","_castshadows","Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
+* Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world."
 "q3map2key1__celshader","texture","Cel Shader","_celshader","Cel shader used for this geometry."
 "q3map2key1__deviance","real","Light Deviation","_deviance","Distance in world units for spotlights and targetted lights. Also the degree for sunlights. (Recommended values between 0.5 and 3)"
 "q3map2key1__farplanedist","real","Far Clip Distance","_farplanedist","Amount of units the vis phase can see during compilation. In combination with level-wide fog, it can help reduce tris count on large, open maps."
@@ -123,11 +123,11 @@
 "q3map2key1__minlight","real","Min Lightmap Intensity","_minlight","Minimum value of world-wide lighting, level-wide, which uses ''_color'' to add a color to the ambience. Unlike _ambient and ambient, it does not add values to the other light entities."
 "q3map2key1__minvertexlight","real","Min Vertex Intensity","_minvertexlight","Minimum value of vertex lighting, level-wide."
 "q3map2key1__noshadersun","boolean","Ignore Shader Sun","_noshadersun","Ignores the sky properties of the sky shaders, and ONLY uses entity sun lights."
-"q3map2key1__receiveshadows","integer","Shadow Reception Level","_receiveshadows","Per-entity control over shadow reception. By default, both brushes and entities cast shadows on the world. The values it can take are:
-* 0- (-1/-2/-3): receive shadows ONLY from keyed entities (but NOT from the world).
-* 0: doesn't receive shadows.
-* 1: receive shadows from the world.
-* 1+ (2/3/4...): receive shadows from keyed entities AND the world."
+"q3map2key1__receiveshadows","integer","Shadow Reception Level","_receiveshadows","Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
+* Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world."
 "q3map2key1__remap","array","Shader Remaps","_remap","Remapping of shaders/textures on the model. (See notes)"
 "q3map2key1__samples","integer","Light Samples","_samples","Random jitters distributed over the solid arc. (~16)"
 "q3map2key1__sun","boolean","Directional","_sun","If set to 1 on a spotlight, it makes an infinite sun light."

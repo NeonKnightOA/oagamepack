@@ -328,18 +328,18 @@ By default, a func_bobbing entity bobs on the Z axis (up-down) and displaces in 
 <real3 key="origin" name="World Origin">Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.</real3>
 <real key="phase" name="Bob Cycle Phase">Start offset of the oscillation cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset.</real>
 <real key="speed" name="Bob Cycle Time">Seconds to complete a bob cycle. Default: 4.0.</real>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, the world casts shadows (_castshadows 1), while entities don't (_castshadows 0). The values it can take are:
-* 0- (-1/-2/-3...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* 0: doesn't cast shadows on the world or on entities.
-* 1: casts shadows on the world.
-* 1+ (2,3,4...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
+* Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, both brushes and entities cast shadows on the world. The values it can take are:
-* 0- (-1/-2/-3): receive shadows ONLY from keyed entities (but NOT from the world).
-* 0: doesn't receive shadows.
-* 1: receive shadows from the world.
-* 1+ (2/3/4...): receive shadows from keyed entities AND the world.</integer>
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
+* Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
 <integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
@@ -378,18 +378,18 @@ When a button is touched, it moves some distance in the direction of it's angle,
 <string key="targetShaderNewName" name="Target Shader New Name">Shader to be swapped in for triggerable shader entities. (See Notes)</string>
 <real key="wait" name="Return Delay">Seconds between triggerings.
 * -1 = never returns. Default: 1.0.</real>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, the world casts shadows (_castshadows 1), while entities don't (_castshadows 0). The values it can take are:
-* 0- (-1/-2/-3...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* 0: doesn't cast shadows on the world or on entities.
-* 1: casts shadows on the world.
-* 1+ (2,3,4...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
+* Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, both brushes and entities cast shadows on the world. The values it can take are:
-* 0- (-1/-2/-3): receive shadows ONLY from keyed entities (but NOT from the world).
-* 0: doesn't receive shadows.
-* 1: receive shadows from the world.
-* 1+ (2/3/4...): receive shadows from keyed entities AND the world.</integer>
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
+* Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
 <integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
@@ -426,18 +426,18 @@ By default, a door activates upon proximity of a player or when damage is inflic
 <string key="team" name="Team Name">Separate func_door entities within this team will operate together.</string>
 <real key="wait" name="Return Delay">Seconds before the door returns to its default state.
 * -1 = returns immediately. Default: 2.0.</real>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, the world casts shadows (_castshadows 1), while entities don't (_castshadows 0). The values it can take are:
-* 0- (-1/-2/-3...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* 0: doesn't cast shadows on the world or on entities.
-* 1: casts shadows on the world.
-* 1+ (2,3,4...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
+* Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, both brushes and entities cast shadows on the world. The values it can take are:
-* 0- (-1/-2/-3): receive shadows ONLY from keyed entities (but NOT from the world).
-* 0: doesn't receive shadows.
-* 1: receive shadows from the world.
-* 1+ (2/3/4...): receive shadows from keyed entities AND the world.</integer>
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
+* Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
 <integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
@@ -456,18 +456,18 @@ The key ''state_targetname'' is used to create warmup-locked doors in round-base
 Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.
 Entity which groups several brushes and patches together for convenience. 
 -------- KEYS --------
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, the world casts shadows (_castshadows 1), while entities don't (_castshadows 0). The values it can take are:
-* 0- (-1/-2/-3...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* 0: doesn't cast shadows on the world or on entities.
-* 1: casts shadows on the world.
-* 1+ (2,3,4...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
+* Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, both brushes and entities cast shadows on the world. The values it can take are:
-* 0- (-1/-2/-3): receive shadows ONLY from keyed entities (but NOT from the world).
-* 0: doesn't receive shadows.
-* 1: receive shadows from the world.
-* 1+ (2/3/4...): receive shadows from keyed entities AND the world.</integer>
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
+* Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
 <integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
 <texture key="_shader;shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
@@ -492,18 +492,18 @@ The origin is the point where the rotation axis goes through. The speed of swing
 <real3 key="origin" name="World Origin">Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.</real3>
 <real key="phase" name="Swing Phase">Start offset of the swinging cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset.</real>
 <real key="speed" name="Max Swing Angle">Number of degrees each way the pendulum swings. Default: 30.0.</real>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, the world casts shadows (_castshadows 1), while entities don't (_castshadows 0). The values it can take are:
-* 0- (-1/-2/-3...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* 0: doesn't cast shadows on the world or on entities.
-* 1: casts shadows on the world.
-* 1+ (2,3,4...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
+* Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, both brushes and entities cast shadows on the world. The values it can take are:
-* 0- (-1/-2/-3): receive shadows ONLY from keyed entities (but NOT from the world).
-* 0: doesn't receive shadows.
-* 1: receive shadows from the world.
-* 1+ (2/3/4...): receive shadows from keyed entities AND the world.</integer>
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
+* Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
 <integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
@@ -532,18 +532,18 @@ Activable platforms. Plats are always drawn in the extended position so they wil
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 <real3 key="origin" name="World Origin">Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.</real3>
 <real key="speed" name="Move Speed">Speed of entity movement. Default: 150.0.</real>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, the world casts shadows (_castshadows 1), while entities don't (_castshadows 0). The values it can take are:
-* 0- (-1/-2/-3...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* 0: doesn't cast shadows on the world or on entities.
-* 1: casts shadows on the world.
-* 1+ (2,3,4...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
+* Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, both brushes and entities cast shadows on the world. The values it can take are:
-* 0- (-1/-2/-3): receive shadows ONLY from keyed entities (but NOT from the world).
-* 0: doesn't receive shadows.
-* 1: receive shadows from the world.
-* 1+ (2/3/4...): receive shadows from keyed entities AND the world.</integer>
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
+* Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
 <integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
@@ -565,18 +565,18 @@ A rotating entity, used for decorations or moving platforms. The center of that 
 <sound key="noise" name="Sound File">Wav file to play. Recommended use is for looping sounds.</sound>
 <real3 key="origin" name="World Origin">Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.</real3>
 <real key="speed" name="Rotation Speed">Determines how fast it moves. Default: 100.0.</real>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, the world casts shadows (_castshadows 1), while entities don't (_castshadows 0). The values it can take are:
-* 0- (-1/-2/-3...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* 0: doesn't cast shadows on the world or on entities.
-* 1: casts shadows on the world.
-* 1+ (2,3,4...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
+* Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, both brushes and entities cast shadows on the world. The values it can take are:
-* 0- (-1/-2/-3): receive shadows ONLY from keyed entities (but NOT from the world).
-* 0: doesn't receive shadows.
-* 1: receive shadows from the world.
-* 1+ (2/3/4...): receive shadows from keyed entities AND the world.</integer>
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
+* Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
 <integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
@@ -604,18 +604,18 @@ A bmodel that just sits there, doing nothing.  Can be used for conditional walls
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 <real3 key="origin" name="World Origin">Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.</real3>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, the world casts shadows (_castshadows 1), while entities don't (_castshadows 0). The values it can take are:
-* 0- (-1/-2/-3...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* 0: doesn't cast shadows on the world or on entities.
-* 1: casts shadows on the world.
-* 1+ (2,3,4...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
+* Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, both brushes and entities cast shadows on the world. The values it can take are:
-* 0- (-1/-2/-3): receive shadows ONLY from keyed entities (but NOT from the world).
-* 0: doesn't receive shadows.
-* 1: receive shadows from the world.
-* 1+ (2/3/4...): receive shadows from keyed entities AND the world.</integer>
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
+* Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
 <integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
@@ -663,18 +663,18 @@ A train is a mover that moves between path_corner target points. The train spawn
 <real3 key="origin" name="World Origin">Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.</real3>
 <real key="speed" name="Move Speed">Speed of entity movement. Default: 100.0.</real>
 <target key="target" name="Target">Next path_corner.</target>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, the world casts shadows (_castshadows 1), while entities don't (_castshadows 0). The values it can take are:
-* 0- (-1/-2/-3...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* 0: doesn't cast shadows on the world or on entities.
-* 1: casts shadows on the world.
-* 1+ (2,3,4...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
+* Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, both brushes and entities cast shadows on the world. The values it can take are:
-* 0- (-1/-2/-3): receive shadows ONLY from keyed entities (but NOT from the world).
-* 0: doesn't receive shadows.
-* 1: receive shadows from the world.
-* 1+ (2/3/4...): receive shadows from keyed entities AND the world.</integer>
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
+* Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
 <integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
@@ -1407,18 +1407,18 @@ Lights pointed at a target will be spotlights.
 Displays a static model in the map.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, the world casts shadows (_castshadows 1), while entities don't (_castshadows 0). The values it can take are:
-* 0- (-1/-2/-3...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* 0: doesn't cast shadows on the world or on entities.
-* 1: casts shadows on the world.
-* 1+ (2,3,4...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
+* Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, both brushes and entities cast shadows on the world. The values it can take are:
-* 0- (-1/-2/-3): receive shadows ONLY from keyed entities (but NOT from the world).
-* 0: doesn't receive shadows.
-* 1: receive shadows from the world.
-* 1+ (2/3/4...): receive shadows from keyed entities AND the world.</integer>
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
+* Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <array key="_remap" name="Shader Remaps">Remapping of shaders/textures on the model. (See notes)</array>
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <real key="modelscale" name="Uniform Scale">Value determining the uniform scale of the model. Default: 1.0.</real>
@@ -2212,11 +2212,11 @@ The main entity of the map. Every map should have exactly one worldspawn.
 <integer3 key="gridsize" name="Grid Size">Size of the lightgrid created by q3map2. The values represent the units in the X Y Z points. Large powers of 2 help reduce the BSP size and compile time on very large maps. Default: 128 128 256.</integer3>
 <string key="message" name="Logon Message">Name of the map. Displayed on the loading screen.</string>
 <sound key="music" name="Music File">Route of the music to play in background.</sound>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, the world casts shadows (_castshadows 1), while entities don't (_castshadows 0). The values it can take are:
-* 0- (-1/-2/-3...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* 0: doesn't cast shadows on the world or on entities.
-* 1: casts shadows on the world.
-* 1+ (2,3,4...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
+* Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_farplanedist" name="Far Clip Distance">Amount of units the vis phase can see during compilation. In combination with level-wide fog, it can help reduce tris count on large, open maps.</real>
 <texture key="_foghull" name="Fog Hull Shader">If set, the level will use the fog properties of this shader in order to render a level-wide fog.</texture>
@@ -2226,11 +2226,11 @@ The main entity of the map. Every map should have exactly one worldspawn.
 <real key="_minlight" name="Min Lightmap Intensity">Minimum value of world-wide lighting, level-wide, which uses ''_color'' to add a color to the ambience. Unlike _ambient and ambient, it does not add values to the other light entities.</real>
 <real key="_minvertexlight" name="Min Vertex Intensity">Minimum value of vertex lighting, level-wide.</real>
 <boolean key="_noshadersun" name="Ignore Shader Sun">Ignores the sky properties of the sky shaders, and ONLY uses entity sun lights.</boolean>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, both brushes and entities cast shadows on the world. The values it can take are:
-* 0- (-1/-2/-3): receive shadows ONLY from keyed entities (but NOT from the world).
-* 0: doesn't receive shadows.
-* 1: receive shadows from the world.
-* 1+ (2/3/4...): receive shadows from keyed entities AND the world.</integer>
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
+* Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
 <integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
 <texture key="_shader;shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
