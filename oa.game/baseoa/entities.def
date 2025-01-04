@@ -325,15 +325,15 @@ By default, a func_bobbing entity bobs on the Z axis (up-down) and displaces in 
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
 "phase" : Start offset of the oscillation cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset. Default: 0.0.
 "speed" : Seconds to complete a bob cycle. Default: 4.0.
-"_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
+"_castshadows" : Per-entity control over shadow casting. The values it can take are:
 * Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
-* 0: Casts shadows on entities. (Default)
-* 1: Casts shadows on the world. (Also default)
+* 0: Casts shadows on entities.
+* 1: Casts shadows on the world.
 * Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
+"_receiveshadows" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
@@ -373,15 +373,15 @@ When a button is touched, it moves some distance in the direction of it's angle,
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
 "wait" : Seconds between triggerings.
 * -1 = never returns. Default: 1.0.
-"_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
+"_castshadows" : Per-entity control over shadow casting. The values it can take are:
 * Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
-* 0: Casts shadows on entities. (Default)
-* 1: Casts shadows on the world. (Also default)
+* 0: Casts shadows on entities.
+* 1: Casts shadows on the world.
 * Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
+"_receiveshadows" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
@@ -421,15 +421,15 @@ By default, a door activates upon proximity of a player or when damage is inflic
 "team" : Separate func_door entities within this team will operate together.
 "wait" : Seconds before the door returns to its default state.
 * -1 = returns immediately. Default: 2.0.
-"_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
+"_castshadows" : Per-entity control over shadow casting. The values it can take are:
 * Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
-* 0: Casts shadows on entities. (Default)
-* 1: Casts shadows on the world. (Also default)
+* 0: Casts shadows on entities.
+* 1: Casts shadows on the world.
 * Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
+"_receiveshadows" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
@@ -448,15 +448,15 @@ The key ''state_targetname'' is used to create warmup-locked doors in round-base
 Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.
 Entity which groups several brushes and patches together for convenience. 
 --------- KEYS --------
-"_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
+"_castshadows" : Per-entity control over shadow casting. The values it can take are:
 * Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
-* 0: Casts shadows on entities. (Default)
-* 1: Casts shadows on the world. (Also default)
+* 0: Casts shadows on entities.
+* 1: Casts shadows on the world.
 * Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
+"_receiveshadows" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
@@ -484,15 +484,15 @@ The origin is the point where the rotation axis goes through. The speed of swing
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
 "phase" : Start offset of the swinging cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset. Default: 0.0.
 "speed" : Number of degrees each way the pendulum swings. Default: 30.0.
-"_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
+"_castshadows" : Per-entity control over shadow casting. The values it can take are:
 * Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
-* 0: Casts shadows on entities. (Default)
-* 1: Casts shadows on the world. (Also default)
+* 0: Casts shadows on entities.
+* 1: Casts shadows on the world.
 * Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
+"_receiveshadows" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
@@ -524,15 +524,15 @@ Activable platforms. Plats are always drawn in the extended position so they wil
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
 "speed" : Speed of entity movement. Default: 150.0.
-"_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
+"_castshadows" : Per-entity control over shadow casting. The values it can take are:
 * Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
-* 0: Casts shadows on entities. (Default)
-* 1: Casts shadows on the world. (Also default)
+* 0: Casts shadows on entities.
+* 1: Casts shadows on the world.
 * Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
+"_receiveshadows" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
@@ -557,15 +557,15 @@ A rotating entity, used for decorations or moving platforms. The center of that 
 "noise" : Wav file to play. Recommended use is for looping sounds.
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
 "speed" : Determines how fast it moves. Default: 100.0.
-"_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
+"_castshadows" : Per-entity control over shadow casting. The values it can take are:
 * Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
-* 0: Casts shadows on entities. (Default)
-* 1: Casts shadows on the world. (Also default)
+* 0: Casts shadows on entities.
+* 1: Casts shadows on the world.
 * Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
+"_receiveshadows" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
@@ -592,15 +592,15 @@ A bmodel that just sits there, doing nothing.  Can be used for conditional walls
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
-"_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
+"_castshadows" : Per-entity control over shadow casting. The values it can take are:
 * Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
-* 0: Casts shadows on entities. (Default)
-* 1: Casts shadows on the world. (Also default)
+* 0: Casts shadows on entities.
+* 1: Casts shadows on the world.
 * Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
+"_receiveshadows" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
@@ -649,15 +649,15 @@ A train is a mover that moves between path_corner target points. The train spawn
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
 "speed" : Speed of entity movement. Default: 100.0.
 "target" : Next path_corner.
-"_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
+"_castshadows" : Per-entity control over shadow casting. The values it can take are:
 * Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
-* 0: Casts shadows on entities. (Default)
-* 1: Casts shadows on the world. (Also default)
+* 0: Casts shadows on entities.
+* 1: Casts shadows on the world.
 * Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
+"_receiveshadows" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
@@ -1357,15 +1357,15 @@ Lights pointed at a target will be spotlights.
 Displays a static model in the map.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
-"_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
+"_castshadows" : Per-entity control over shadow casting. The values it can take are:
 * Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
-* 0: Casts shadows on entities. (Default)
-* 1: Casts shadows on the world. (Also default)
+* 0: Casts shadows on entities.
+* 1: Casts shadows on the world.
 * Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
+"_receiveshadows" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
@@ -2116,11 +2116,11 @@ The main entity of the map. Every map should have exactly one worldspawn.
 "gridsize" : Size of the lightgrid created by q3map2. The values represent the units in the X Y Z points. Large powers of 2 help reduce the BSP size and compile time on very large maps. Default: 128 128 256.
 "message" : Name of the map. Displayed on the loading screen.
 "music" : Route of the music to play in background.
-"_castshadows;_cs" : Per-entity control over shadow casting. The values it can take are:
+"_castshadows" : Per-entity control over shadow casting. The values it can take are:
 * Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
-* 0: Casts shadows on entities. (Default)
-* 1: Casts shadows on the world. (Also default)
+* 0: Casts shadows on entities.
+* 1: Casts shadows on the world.
 * Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world.
 "_celshader" : Cel shader used for this geometry.
 "_farplanedist" : Amount of units the vis phase can see during compilation. In combination with level-wide fog, it can help reduce tris count on large, open maps.
@@ -2131,7 +2131,7 @@ The main entity of the map. Every map should have exactly one worldspawn.
 "_minlight" : Minimum value of world-wide lighting, level-wide, which uses ''_color'' to add a color to the ambience. Unlike _ambient and ambient, it does not add values to the other light entities.
 "_minvertexlight" : Minimum value of vertex lighting, level-wide.
 "_noshadersun" : Ignores the sky properties of the sky shaders, and ONLY uses entity sun lights.
-"_receiveshadows;_rs" : Per-entity control over shadow reception. The values it can take are:
+"_receiveshadows" : Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.

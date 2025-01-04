@@ -105,11 +105,11 @@
 "q3map2key2__layers","integer","Terrain Layers","_layers;layers","Number of unique root shaders that will be used on the terrain surface."
 "q3map2key2__shader","texture","Terrain MetaShader","_shader;shader","Metashader used to assign textures to the terrain entity."
 "q3map2key1__anglescale","real","Lightmap Angle Scale","_anglescale","Light attenuation scaling. Lower values lessens angle attenuation, while higher values give sharper, more faceted lighting."
-"q3map2key1__castshadows","integer","Shadow Caster Level","_castshadows;_cs","Per-entity control over shadow casting. The values it can take are:
+"q3map2key1__castshadows","integer","Shadow Caster Level","_castshadows","Per-entity control over shadow casting. The values it can take are:
 * Under -1: Cast shadows on entities with _rs or _receiveshadows but NOT in the world.
 * -1: Doesn't cast shadows on the world.
-* 0: Casts shadows on entities. (Default)
-* 1: Casts shadows on the world. (Also default)
+* 0: Casts shadows on entities.
+* 1: Casts shadows on the world.
 * Over 1: Casts shadows on entities with _rs or _receiveshadows AND in the world."
 "q3map2key1__celshader","texture","Cel Shader","_celshader","Cel shader used for this geometry."
 "q3map2key1__deviance","real","Light Deviation","_deviance","Distance in world units for spotlights and targetted lights. Also the degree for sunlights. (Recommended values between 0.5 and 3)"
@@ -124,7 +124,7 @@
 "q3map2key1__minlight","real","Min Lightmap Intensity","_minlight","Minimum value of world-wide lighting, level-wide, which uses ''_color'' to add a color to the ambience. Unlike _ambient and ambient, it does not add values to the other light entities."
 "q3map2key1__minvertexlight","real","Min Vertex Intensity","_minvertexlight","Minimum value of vertex lighting, level-wide."
 "q3map2key1__noshadersun","boolean","Ignore Shader Sun","_noshadersun","Ignores the sky properties of the sky shaders, and ONLY uses entity sun lights."
-"q3map2key1__receiveshadows","integer","Shadow Reception Level","_receiveshadows;_rs","Per-entity control over shadow reception. The values it can take are:
+"q3map2key1__receiveshadows","integer","Shadow Reception Level","_receiveshadows","Per-entity control over shadow reception. The values it can take are:
 * 0: Doesn't receive shadows.
 * Range (0,1): Receive shadows from both entities with _cs or _castshadows and world.
 * 1: Receive shadows on everything (world shadows). This is the default value.
