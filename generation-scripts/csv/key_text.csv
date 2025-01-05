@@ -1,5 +1,5 @@
 "key","type","fullname","basekey","text"
-"key__ambient","real","Ambient Intensity","_ambient;ambient","Constant value added to the overall lighting. Use not recommended, since ambient light has a tendency to flatten out variations in light and shade."
+"key__ambient","real","Ambient Intensity","_ambient","Constant value added to the overall lighting. Use not recommended, since ambient light has a tendency to flatten out variations in light and shade."
 "key__blocksize","integer","Block Size","_blocksize","Size of the blocks q3map2 vis uses in order to calculate what's drawn in the screen. Higher values than the default are recommended for very large maps with low structural brush count. The calculation is based on the formulas X=_blocksize*n; Y=_blocksize*n."
 "key__color","color","Light Color","_color","Color of the light entity."
 "key__color_worldspawn","color","Ambient Color","_color","Color of the ambient light."
@@ -36,7 +36,7 @@
 "key_height","real","Vertical Travel","height","Total height of movement, defaults to model height."
 "key_height_func_bobbing","real","Vertical Travel","height","Amount of travel of the oscillation movement."
 "key_light","real","Model Light Intensity","light","constantLight radius of the model included with the entity. It doesn't affect entity brushes."
-"key_light_light","real","Light Intensity","light;_light","Intensity of the light. Lower values equals to a dimmer light, higher values equal to an intenser light."
+"key_light_light","real","Light Intensity","_light","Intensity of the light. Lower values equals to a dimmer light, higher values equal to an intenser light."
 "key_lip","real","Lip","lip","Protrusion above rest position after the end of the movement."
 "key_message","string","Message to Display","message","Text to display."
 "key_message_domination_point","string","Point Name","message","Gives the point a name which is displayed in-game. (MAX length: 19 chars)"
@@ -101,9 +101,9 @@
 * 0 = doesn't auto trigger."
 "key_weight_info_camp","real","Weight","weight","Priority level the camping bot uses to determine if they want to camp there."
 "key_weight_item_botroam","real","Weight","weight","Priority level the nearby bot uses to determine if they want to go to that location."
-"q3map2key2__indexmap","texture","Terrain Blending Map","_indexmap;alphamap","Path of the art file used to guide the mapping of textures on the terrain surface."
-"q3map2key2__layers","integer","Terrain Layers","_layers;layers","Number of unique root shaders that will be used on the terrain surface."
-"q3map2key2__shader","texture","Terrain MetaShader","_shader;shader","Metashader used to assign textures to the terrain entity."
+"q3map2key2__indexmap","texture","Terrain Blending Map","_indexmap","Path of the art file used to guide the mapping of textures on the terrain surface."
+"q3map2key2__layers","integer","Terrain Layers","_layers","Number of unique root shaders that will be used on the terrain surface."
+"q3map2key2__shader","texture","Terrain MetaShader","_shader","Metashader used to assign textures to the terrain entity."
 "q3map2key1__anglescale","real","Lightmap Angle Scale","_anglescale","Light attenuation scaling. Lower values lessens angle attenuation, while higher values give sharper, more faceted lighting."
 "q3map2key1__castshadows","integer","Shadow Caster Level","_castshadows","Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
 * Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.

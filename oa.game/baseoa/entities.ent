@@ -341,9 +341,9 @@ By default, a func_bobbing entity bobs on the Z axis (up-down) and displaces in 
 * _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
-<texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
-<integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
-<texture key="_shader;shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
+<texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
+<integer key="_layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
+<texture key="_shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
 -------- SPAWNFLAGS --------
 <flag key="X_AXIS_FUNC_BOBBING" name="X Axis" bit="0">Entity bobs alongside the X axis.</flag>
 <flag key="Y_AXIS_FUNC_BOBBING" name="Y Axis" bit="1">Entity bobs alongside the Y axis.</flag>
@@ -391,9 +391,9 @@ When a button is touched, it moves some distance in the direction of it's angle,
 * _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
-<texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
-<integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
-<texture key="_shader;shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
+<texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
+<integer key="_layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
+<texture key="_shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
@@ -439,9 +439,9 @@ By default, a door activates upon proximity of a player or when damage is inflic
 * _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
-<texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
-<integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
-<texture key="_shader;shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
+<texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
+<integer key="_layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
+<texture key="_shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
 -------- SPAWNFLAGS --------
 <flag key="CRUSHER" name="Crusher" bit="2">Door crushes player upon closing instead of reversing direction.</flag>
 <flag key="START_OPEN" name="Start open" bit="0">The door to moves to its destination when spawned, and operate in reverse.  It is used to temporarily or permanently close off an area when triggered (not useful for touch or takedamage doors).</flag>
@@ -468,9 +468,9 @@ Entity which groups several brushes and patches together for convenience.
 * _receiveshadows 0: doesn't receive shadows.
 * _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
-<texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
-<integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
-<texture key="_shader;shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
+<texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
+<integer key="_layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
+<texture key="_shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
 The route of the '_celshader' and 'shader'/'_shader' keys MUST omit 'textures/' at the beginning, otherwise it won't work.
@@ -505,9 +505,9 @@ The origin is the point where the rotation axis goes through. The speed of swing
 * _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
-<texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
-<integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
-<texture key="_shader;shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
+<texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
+<integer key="_layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
+<texture key="_shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
@@ -545,9 +545,9 @@ Activable platforms. Plats are always drawn in the extended position so they wil
 * _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
-<texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
-<integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
-<texture key="_shader;shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
+<texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
+<integer key="_layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
+<texture key="_shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
@@ -578,9 +578,9 @@ A rotating entity, used for decorations or moving platforms. The center of that 
 * _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
-<texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
-<integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
-<texture key="_shader;shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
+<texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
+<integer key="_layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
+<texture key="_shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
 -------- SPAWNFLAGS --------
 <flag key="START_ON" name="Start on" bit="0">Timer starts with the game and fires its targets continuously.</flag>
 <flag key="UNUSED_1" name="Unused" bit="1">Flag without any effect. Can be safely ignored.</flag>
@@ -617,9 +617,9 @@ A bmodel that just sits there, doing nothing.  Can be used for conditional walls
 * _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
-<texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
-<integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
-<texture key="_shader;shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
+<texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
+<integer key="_layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
+<texture key="_shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
 This entity requires an origin. It can either be a square brush of 16x16x16 or 32x32x32 with the common/origin texture in all of its faces as part of the entity, or a pair of coordinates set in the 'origin' key. This origin is also tied to the 'noise' key, as otherwise the sound won't follow the entity as it moves.
@@ -676,9 +676,9 @@ A train is a mover that moves between path_corner target points. The train spawn
 * _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
-<texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
-<integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
-<texture key="_shader;shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
+<texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
+<integer key="_layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
+<texture key="_shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
 -------- SPAWNFLAGS --------
 <flag key="BLOCK_STOPS" name="Block stops" bit="2">nan</flag>
 <flag key="START_ON" name="Start on" bit="0">Timer starts with the game and fires its targets continuously.</flag>
@@ -1363,7 +1363,7 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 Non-displayed light.
 -------- KEYS --------
 <color key="_color" name="Light Color">Color of the light entity. Default: 1.0 1.0 1.0.</color>
-<real key="light;_light" name="Light Intensity">Intensity of the light. Lower values equals to a dimmer light, higher values equal to an intenser light. Default: 300.0.</real>
+<real key="_light" name="Light Intensity">Intensity of the light. Lower values equals to a dimmer light, higher values equal to an intenser light. Default: 300.0.</real>
 <real key="radius" name="Spotlight Radius">Radius of a spotlight at the target point. Default: 64.0.</real>
 <target key="target" name="Target">The entity which is targetted at for projection.</target>
 <real key="_anglescale" name="Lightmap Angle Scale">Light attenuation scaling. Lower values lessens angle attenuation, while higher values give sharper, more faceted lighting. Default: 1.0.</real>
@@ -1388,7 +1388,7 @@ Lights pointed at a target will be spotlights.
 Non-displayed light. Only affects entities.
 -------- KEYS --------
 <color key="_color" name="Light Color">Color of the light entity. Default: 1.0 1.0 1.0.</color>
-<real key="light;_light" name="Light Intensity">Intensity of the light. Lower values equals to a dimmer light, higher values equal to an intenser light. Default: 300.0.</real>
+<real key="_light" name="Light Intensity">Intensity of the light. Lower values equals to a dimmer light, higher values equal to an intenser light. Default: 300.0.</real>
 <real key="radius" name="Spotlight Radius">Radius of a spotlight at the target point. Default: 64.0.</real>
 <target key="target" name="Target">The entity which is targetted at for projection.</target>
 <boolean key="_sun" name="Directional">If set to 1 on a spotlight, it makes an infinite sun light.</boolean>
@@ -2201,7 +2201,7 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <group name="worldspawn" color="0 0 0" model="">
 The main entity of the map. Every map should have exactly one worldspawn.
 -------- KEYS --------
-<real key="_ambient;ambient" name="Ambient Intensity">Constant value added to the overall lighting. Use not recommended, since ambient light has a tendency to flatten out variations in light and shade.</real>
+<real key="_ambient" name="Ambient Intensity">Constant value added to the overall lighting. Use not recommended, since ambient light has a tendency to flatten out variations in light and shade.</real>
 <integer key="_blocksize" name="Block Size">Size of the blocks q3map2 vis uses in order to calculate what's drawn in the screen. Higher values than the default are recommended for very large maps with low structural brush count. The calculation is based on the formulas X=_blocksize*n; Y=_blocksize*n. Default: 1024.</integer>
 <color key="_color" name="Ambient Color">Color of the ambient light. Default: 0 0 0.</color>
 <integer key="enableBreath" name="Enable Breathing">Enables a cough-like effect for the characters. Mostly used for ice maps.</integer>
@@ -2231,9 +2231,9 @@ The main entity of the map. Every map should have exactly one worldspawn.
 * _receiveshadows 0: doesn't receive shadows.
 * _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
-<texture key="_indexmap;alphamap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
-<integer key="_layers;layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
-<texture key="_shader;shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
+<texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
+<integer key="_layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
+<texture key="_shader" name="Terrain MetaShader">Metashader used to assign textures to the terrain entity.</texture>
 <real key="_style1alphaGen" name="AlphaGen for Style 1">AlphaGen value for the light style index 1. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).</real>
 <real key="_style1rgbGen" name="rgbGen for Style 1">rgbGen value for the light style index 1. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).</real>
 <real key="_style2alphaGen" name="AlphaGen for Style 2">AlphaGen value for the light style index 2. Values takes standard shader waveform functions (e.g. wave sin 0.5 0.3 0.25 1.5).</real>
