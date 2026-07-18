@@ -4,8 +4,10 @@ Spawn point used in Domination if no team specific spawn points exists. Usually 
 "angle" : Determines a facing angle. Default: 0.0.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notbot" : Prevents bots from using this spot as a spawnpoint.
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -17,8 +19,10 @@ Spawn point used in Domination by the blue team
 "angle" : Determines a facing angle. Default: 0.0.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notbot" : Prevents bots from using this spot as a spawnpoint.
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -30,8 +34,10 @@ Spawn point used in Domination by the red team
 "angle" : Determines a facing angle. Default: 0.0.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notbot" : Prevents bots from using this spot as a spawnpoint.
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.

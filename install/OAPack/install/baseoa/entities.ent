@@ -12,7 +12,7 @@ A decal is created by grouping one or more bezier patches and targetting it into
 Compiler-only entity. Specifies the origin of a skybox in a contained area of the map, far from the actual level.
 A skybox casts shadows on normal parts of the map and allows the use of cloud layers and other effects. After compiling, the skybox will replace any sky shaders present in the map, except, of course, those in the skybox itself. 
 -------- KEYS --------
-<real key="scale" name="Scale">Scaling factor. Recommended values sit between 50 and 300. Default: 64.0.</real>
+<real key="_scale" name="Scale">Scaling factor. Recommended values sit between 50 and 300. Default: 64.0.</real>
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 -------- SPAWNFLAGS --------
@@ -890,8 +890,10 @@ Spawn point used in Double Domination if no team specific spawn points exists. U
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint.</boolean>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
+<boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -904,8 +906,10 @@ Spawn point used in Double Domination by the blue team. If your map has dedicate
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint.</boolean>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
+<boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -918,8 +922,10 @@ Spawn point used in Double Domination by the red team. If your map has dedicated
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint.</boolean>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
+<boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -934,6 +940,7 @@ Potential spawning position for Deathmatch games. The first time a player enters
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint.</boolean>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
@@ -958,6 +965,7 @@ Limited equivelant to info_player_deathmatch. Use that one instead.
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint.</boolean>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
@@ -969,6 +977,11 @@ Limited equivelant to info_player_deathmatch. Use that one instead.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
+<boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint.</boolean>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
+<boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
+<boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
+<boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
 This item is broken in some older versions of OA and the game it's inspired from. It may not work.
@@ -1790,6 +1803,9 @@ Blue Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Be
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
+<boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
+<boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -1803,6 +1819,9 @@ Initial spawnpoint for Blue Team players.
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
+<boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
+<boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -1816,6 +1835,9 @@ Potential, post-initial spawnpoint for Blue Team players.
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
+<boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
+<boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -1829,6 +1851,9 @@ Neutral Flag. Used as a key entity in One Flag CTF and Possession games.
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
+<boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
+<boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -1842,6 +1867,9 @@ Red Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Bec
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
+<boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
+<boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -1855,6 +1883,9 @@ Initial spawnpoint for Red Team players.
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
+<boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
+<boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -1868,6 +1899,9 @@ Potential, post-initial spawnpoint for Red Team players.
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
+<boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
+<boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
@@ -1881,6 +1915,9 @@ Blue Team Obelisk. Used as a key entity for Harvester and Overload games.
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
+<boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
+<boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -1894,6 +1931,9 @@ Neutral Obelisk. Used as a key entity for Harvester games.
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
+<boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
+<boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -1907,6 +1947,9 @@ Red Team Obelisk. Used as a key entity for Harvester and Overload games.
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
+<boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
+<boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
+<boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.

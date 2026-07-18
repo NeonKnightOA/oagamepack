@@ -861,8 +861,10 @@ Spawn point used in Double Domination if no team specific spawn points exists. U
 "angle" : Determines a facing angle. Default: 0.0.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notbot" : Prevents bots from using this spot as a spawnpoint.
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -874,8 +876,10 @@ Spawn point used in Double Domination by the blue team. If your map has dedicate
 "angle" : Determines a facing angle. Default: 0.0.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notbot" : Prevents bots from using this spot as a spawnpoint.
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -887,8 +891,10 @@ Spawn point used in Double Domination by the red team. If your map has dedicated
 "angle" : Determines a facing angle. Default: 0.0.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notbot" : Prevents bots from using this spot as a spawnpoint.
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -902,6 +908,7 @@ Potential spawning position for Deathmatch games. The first time a player enters
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : Prevents bots from using this spot as a spawnpoint.
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
@@ -923,6 +930,7 @@ Limited equivelant to info_player_deathmatch. Use that one instead.
 "angle" : Determines a facing angle. Default: 0.0.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notbot" : Prevents bots from using this spot as a spawnpoint.
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
@@ -933,6 +941,11 @@ Limited equivelant to info_player_deathmatch. Use that one instead.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
+"notbot" : Prevents bots from using this spot as a spawnpoint.
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
+"nothumans" : Prevents humans from using this spot as a spawnpoint.
+"notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 --------- NOTES --------
 This item is broken in some older versions of OA and the game it's inspired from. It may not work.
 */
@@ -1695,6 +1708,9 @@ Blue Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Be
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
+"notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1707,6 +1723,9 @@ Initial spawnpoint for Blue Team players.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
+"notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
@@ -1719,6 +1738,9 @@ Potential, post-initial spawnpoint for Blue Team players.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
+"notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
@@ -1733,6 +1755,9 @@ Neutral Flag. Used as a key entity in One Flag CTF and Possession games.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
+"notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1747,6 +1772,9 @@ Red Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Bec
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
+"notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "target" : Picking up the item will trigger these targets.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1759,6 +1787,9 @@ Initial spawnpoint for Red Team players.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
+"notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
@@ -1771,6 +1802,9 @@ Potential, post-initial spawnpoint for Red Team players.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
+"notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
 Maps must have at least 8 of this kind of spawnpoint without either 'gametype' or '!gametype' in order to prevent friendly telefragging. Bigger maps may require up to 16 of this spawnpoint.
@@ -1785,6 +1819,9 @@ Blue Team Obelisk. Used as a key entity for Harvester and Overload games.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
+"notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1799,6 +1836,9 @@ Neutral Obelisk. Used as a key entity for Harvester games.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
+"notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1813,6 +1853,9 @@ Red Team Obelisk. Used as a key entity for Harvester and Overload games.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
+"notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
+"notsingle" : If set to 1, this entity won't spawn in single-player mode.
+"notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
