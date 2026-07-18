@@ -12,6 +12,7 @@ A decal is created by grouping one or more bezier patches and targetting it into
 Compiler-only entity. Specifies the origin of a skybox in a contained area of the map, far from the actual level.
 A skybox casts shadows on normal parts of the map and allows the use of cloud layers and other effects. After compiling, the skybox will replace any sky shaders present in the map, except, of course, those in the skybox itself. 
 -------- KEYS --------
+<real key="scale" name="Scale">Scaling factor. Recommended values sit between 50 and 300. Default: 64.0.</real>
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 -------- SPAWNFLAGS --------
@@ -20,6 +21,8 @@ A skybox casts shadows on normal parts of the map and allows the use of cloud la
   <point name="ammo_belt" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/chaingunam.md3">
 Chaingun ammo.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 100.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -33,7 +36,7 @@ Chaingun ammo.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -46,6 +49,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="ammo_bfg" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/bfgam.md3">
 BFG ammo.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 15.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -59,7 +64,7 @@ BFG ammo.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -71,6 +76,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="ammo_bullets" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/machinegunam.md3">
 Machinegun ammo.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 50.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -84,7 +91,7 @@ Machinegun ammo.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -96,6 +103,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="ammo_cells" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/plasmaam.md3">
 Plasma Gun ammo.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 30.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -109,7 +118,7 @@ Plasma Gun ammo.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -121,6 +130,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="ammo_grenades" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/grenadeam.md3">
 Grenade Launcher ammo.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 5.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -134,7 +145,7 @@ Grenade Launcher ammo.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -146,6 +157,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="ammo_lightning" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/lightningam.md3">
 Lightning Gun ammo.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 60.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -159,7 +172,7 @@ Lightning Gun ammo.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -171,6 +184,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="ammo_mines" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/proxmineam.md3">
 Prox Launcher ammo.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -184,7 +199,7 @@ Prox Launcher ammo.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -197,6 +212,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="ammo_nails" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/nailgunam.md3">
 Nailgun ammo.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -210,7 +227,7 @@ Nailgun ammo.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -223,6 +240,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="ammo_rockets" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/rocketam.md3">
 Rocket Launcher ammo.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 5.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -236,7 +255,7 @@ Rocket Launcher ammo.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -248,6 +267,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="ammo_shells" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/shotgunam.md3">
 Shotgun ammo.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -261,7 +282,7 @@ Shotgun ammo.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -273,6 +294,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="ammo_slugs" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/railgunam.md3">
 Railgun ammo.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -286,7 +309,7 @@ Railgun ammo.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -299,6 +322,7 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 Domination Control Point.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <string key="message" name="Point Name">Gives the point a name which is displayed in-game. (MAX length: 19 chars)</string>
@@ -328,17 +352,17 @@ By default, a func_bobbing entity bobs on the Z axis (up-down) and displaces in 
 <real3 key="origin" name="World Origin">Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.</real3>
 <real key="phase" name="Bob Cycle Phase">Start offset of the oscillation cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset.</real>
 <real key="speed" name="Bob Cycle Time">Seconds to complete a bob cycle. Default: 4.0.</real>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
@@ -358,8 +382,8 @@ The string '*falling1' in the 'noise' key will play character-specific sounds wh
 Pushable button, usually used to trigger other entities or just open doors.
 When a button is touched, it moves some distance in the direction of it's angle, triggers all of it's targets, waits some time, then returns to it's original position where it can be triggered again. 
 -------- KEYS --------
-<direction key="angle" name="Direction">Determines the movement direction. Among the values it can take:
-* -1: the entity moves up.
+<direction key="angle" name="Direction">Determines the movement direction. Among the values it can take:
+* -1: the entity moves up.
 * -2: the entity moves down.</direction>
 <color key="color" name="Model Light Color">constantLight color of the md3 model included with the entity. It doesn't affect entity brushes. Default: 1 1 1.</color>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
@@ -376,19 +400,19 @@ When a button is touched, it moves some distance in the direction of it's angle,
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
 <string key="targetShaderName" name="Target Shader Name">Shader to be swapped out for triggerable shader entities. (See Notes)</string>
 <string key="targetShaderNewName" name="Target Shader New Name">Shader to be swapped in for triggerable shader entities. (See Notes)</string>
-<real key="wait" name="Return Delay">Seconds between triggerings.
+<real key="wait" name="Return Delay">Seconds between triggerings.
 * -1 = never returns. Default: 1.0.</real>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
@@ -405,8 +429,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 Movable brush usually used as a door, hence the name.
 By default, a door activates upon proximity of a player or when damage is inflicted to it. In order to team doors up, separate func_door entities must be connected by sharing the same 'team' key. 
 -------- KEYS --------
-<direction key="angle" name="Direction">Determines the movement direction. Among the values it can take:
-* -1: the entity moves up.
+<direction key="angle" name="Direction">Determines the movement direction. Among the values it can take:
+* -1: the entity moves up.
 * -2: the entity moves down.</direction>
 <color key="color" name="Model Light Color">constantLight color of the md3 model included with the entity. It doesn't affect entity brushes. Default: 1 1 1.</color>
 <integer key="dmg" name="Damage Inflicted">Damage to inflict when blocking the operation of the entity. Default: 4.</integer>
@@ -424,19 +448,19 @@ By default, a door activates upon proximity of a player or when damage is inflic
 <string key="state_targetname" name="State Target Name">Set this to elimination_active in order to create a round-dependant door (See Notes).</string>
 <targetname key="targetname" name="Target Name">If set, the door needs to be operated by a func_button or trigger.</targetname>
 <string key="team" name="Team Name">Separate func_door entities within this team will operate together.</string>
-<real key="wait" name="Return Delay">Seconds before the door returns to its default state.
+<real key="wait" name="Return Delay">Seconds before the door returns to its default state.
 * -1 = returns immediately. Default: 2.0.</real>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
@@ -456,17 +480,17 @@ The key ''state_targetname'' is used to create warmup-locked doors in round-base
 Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.
 Entity which groups several brushes and patches together for convenience. 
 -------- KEYS --------
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
 <integer key="_layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>
@@ -492,17 +516,17 @@ The origin is the point where the rotation axis goes through. The speed of swing
 <real3 key="origin" name="World Origin">Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.</real3>
 <real key="phase" name="Swing Phase">Start offset of the swinging cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset.</real>
 <real key="speed" name="Max Swing Angle">Number of degrees each way the pendulum swings. Default: 30.0.</real>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
@@ -532,17 +556,17 @@ Activable platforms. Plats are always drawn in the extended position so they wil
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 <real3 key="origin" name="World Origin">Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.</real3>
 <real key="speed" name="Move Speed">Speed of entity movement. Default: 150.0.</real>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
@@ -565,17 +589,17 @@ A rotating entity, used for decorations or moving platforms. The center of that 
 <sound key="noise" name="Sound File">Wav file to play. Recommended use is for looping sounds.</sound>
 <real3 key="origin" name="World Origin">Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.</real3>
 <real key="speed" name="Rotation Speed">Determines how fast it moves. Default: 100.0.</real>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
@@ -604,17 +628,17 @@ A bmodel that just sits there, doing nothing.  Can be used for conditional walls
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
 <real3 key="origin" name="World Origin">Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.</real3>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
@@ -663,17 +687,17 @@ A train is a mover that moves between path_corner target points. The train spawn
 <real3 key="origin" name="World Origin">Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.</real3>
 <real key="speed" name="Move Speed">Speed of entity movement. Default: 100.0.</real>
 <target key="target" name="Target">Next path_corner.</target>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <targetname key="_targetname" name="Target Name">The model attached to the entity.</targetname>
 <texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
@@ -691,6 +715,8 @@ This entity can have a model attached to it. For this, the entity must have a 't
   <point name="holdable_invulnerability" color="0.7 0 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/invulnerability.md3">
 Invulnerability holdable.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -703,7 +729,7 @@ Invulnerability holdable.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 60.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -716,6 +742,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="holdable_kamikaze" color="0.7 0 1" box="-16 -16 -16 16 16 16" model="models/powerups/kamikazi.md3">
 Kamikaze holdable.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -728,7 +756,7 @@ Kamikaze holdable.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 60.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -741,6 +769,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="holdable_medkit" color="0.7 0 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/medkit.md3">
 Personal Medkit holdable.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -753,7 +783,7 @@ Personal Medkit holdable.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 60.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -765,6 +795,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="holdable_portal" color="0.7 0 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/porter.md3">
 Portal holdable.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -777,7 +809,7 @@ Portal holdable.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 60.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -791,6 +823,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="holdable_teleporter" color=".7 0 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/teleporter.md3">
 Teleporter holdable.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -803,7 +837,7 @@ Teleporter holdable.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 60.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -815,6 +849,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="info_camp" color="0 0.5 0" box="-8 -8 -8 8 8 8" model="">
 Used as a positional target for calculations in the utilities (spotlights, etc), but removed during gameplay.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <real key="range" name="Range">Game units the camping bot can move from its camping location.</real>
 <real key="weight" name="Weight">Priority level the camping bot uses to determine if they want to camp there.</real>
 -------- SPAWNFLAGS --------
@@ -823,6 +859,8 @@ Used as a positional target for calculations in the utilities (spotlights, etc),
   <point name="info_notnull" color="0 0.5 0" box="-8 -8 -8 8 8 8" model="">
 Used as a positional target for in-game calculation, like jumppad targets.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -835,6 +873,8 @@ Used as a positional target for in-game calculation, like jumppad targets.
   <point name="info_null" color="0 0.5 0" box="-8 -8 -8 8 8 8" model="">
 Used as a positional target for calculations in the utilities (spotlights, etc), but removed during gameplay.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
@@ -848,6 +888,7 @@ Used as a positional target for calculations in the utilities (spotlights, etc),
 Spawn point used in Double Domination if no team specific spawn points exists. Usually placed in the middle of CTF maps. See info_player_dd_red and info_player_dd_blue for team specific versions.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint.</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
@@ -861,6 +902,7 @@ Maps must have at least 8 of this kind of spawnpoint without either 'gametype' o
 Spawn point used in Double Domination by the blue team. If your map has dedicated spawn rooms, use this.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint.</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
@@ -874,6 +916,7 @@ Maps must have at least 8 of this kind of spawnpoint without either 'gametype' o
 Spawn point used in Double Domination by the red team. If your map has dedicated spawn rooms, use this.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint.</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
@@ -887,6 +930,7 @@ Maps must have at least 8 of this kind of spawnpoint without either 'gametype' o
 Potential spawning position for Deathmatch games. The first time a player enters the game, they will be at an 'initial' spot. Targets will be fired when someone spawns in on them.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint.</boolean>
@@ -902,6 +946,7 @@ Maps must have at least 8 of this kind of spawnpoint without either 'gametype' o
   <point name="info_player_intermission" color="1 0 1" box="-16 -16 -16 16 16 16" model="">
 The intermission will be viewed from this point.  Target an info_notnull for the view direction.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
 -------- SPAWNFLAGS --------
@@ -911,6 +956,7 @@ The intermission will be viewed from this point.  Target an info_notnull for the
 Limited equivelant to info_player_deathmatch. Use that one instead.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <boolean key="notbot" name="No Bots">Prevents bots from using this spot as a spawnpoint.</boolean>
 <boolean key="nothumans" name="Not Humans">Prevents humans from using this spot as a spawnpoint.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
@@ -921,6 +967,8 @@ Limited equivelant to info_player_deathmatch. Use that one instead.
   </point>
   <point name="info_spectator_start" color="0 1 1" box="-16 -16 -24 16 16 32" model="">
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
 This item is broken in some older versions of OA and the game it's inspired from. It may not work.
@@ -928,6 +976,8 @@ This item is broken in some older versions of OA and the game it's inspired from
   <point name="item_ammoregen" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo.md3">
 Ammo Regen rune.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -940,7 +990,7 @@ Ammo Regen rune.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again.</real>
 -------- SPAWNFLAGS --------
 <flag key="BLUE_TEAM_ITEM" name="Blue Team Only" bit="2">Only Blue Team members can pick up this rune.</flag>
@@ -954,6 +1004,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_armor_body" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/armor/armor_red.md3">
 Body Armor.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -966,7 +1018,7 @@ Body Armor.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 25.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -978,6 +1030,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_armor_combat" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/armor/armor_yel.md3">
 Combat Armor.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -990,7 +1044,7 @@ Combat Armor.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 25.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1002,6 +1056,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_armor_shard" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/armor/shard.md3">
 Armor Shard.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1014,7 +1070,7 @@ Armor Shard.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 25.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1026,6 +1082,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_botroam" color="1 0.5 0" box="-8 -8 -8 8 8 8" model="">
 Invisible entity that attracts bots into areas they may not be usually interested. They'll try to reach it and touch it like it was a pickup. Has no effect on human players.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
@@ -1038,6 +1096,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
   <point name="item_doubler" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/doubler.md3">
 Doubler rune.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1050,7 +1110,7 @@ Doubler rune.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again.</real>
 -------- SPAWNFLAGS --------
 <flag key="BLUE_TEAM_ITEM" name="Blue Team Only" bit="2">Only Blue Team members can pick up this rune.</flag>
@@ -1064,6 +1124,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_enviro" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/instant/enviro.md3">
 Battle Suit powerup.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <real key="count" name="Powerup Duration">Amount of game seconds of duration of this powerup. Default: 30.0.</real>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -1077,7 +1139,7 @@ Battle Suit powerup.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1089,6 +1151,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_flight" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/instant/flight.md3">
 Flight powerup.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <real key="count" name="Powerup Duration">Amount of game seconds of duration of this powerup. Default: 60.0.</real>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -1102,7 +1166,7 @@ Flight powerup.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1114,6 +1178,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_guard" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/guard.md3">
 Guard rune.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1126,7 +1192,7 @@ Guard rune.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again.</real>
 -------- SPAWNFLAGS --------
 <flag key="BLUE_TEAM_ITEM" name="Blue Team Only" bit="2">Only Blue Team members can pick up this rune.</flag>
@@ -1140,6 +1206,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_haste" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/instant/haste.md3">
 Haste powerup.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <real key="count" name="Powerup Duration">Amount of game seconds of duration of this powerup. Default: 30.0.</real>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -1153,7 +1221,7 @@ Haste powerup.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1165,6 +1233,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_health" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/health/medium_cross.md3">
 Medium Health.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1177,7 +1247,7 @@ Medium Health.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 35.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1189,6 +1259,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_health_large" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/health/large_cross.md3">
 Large Health.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1201,7 +1273,7 @@ Large Health.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 35.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1213,6 +1285,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_health_mega" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/health/mega_cross.md3">
 Megahealth.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1225,7 +1299,7 @@ Megahealth.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1237,6 +1311,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_health_small" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/health/small_cross.md3">
 Small Health.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1249,7 +1325,7 @@ Small Health.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 35.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1261,6 +1337,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_invis" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/instant/invis.md3">
 Invisibility powerup.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <real key="count" name="Powerup Duration">Amount of game seconds of duration of this powerup. Default: 30.0.</real>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -1274,7 +1352,7 @@ Invisibility powerup.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1286,6 +1364,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_quad" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/instant/quad.md3">
 Quad Damage powerup.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <real key="count" name="Powerup Duration">Amount of game seconds of duration of this powerup. Default: 30.0.</real>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -1299,7 +1379,7 @@ Quad Damage powerup.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1311,6 +1391,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_regen" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/instant/regen.md3">
 Regeneration powerup.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <real key="count" name="Powerup Duration">Amount of game seconds of duration of this powerup. Default: 30.0.</real>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -1324,7 +1406,7 @@ Regeneration powerup.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1336,6 +1418,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="item_scout" color="0.3 0.3 1" box="-16 -16 -16 16 16 16" model="models/powerups/scout.md3">
 Scout rune.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1348,7 +1432,7 @@ Scout rune.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again.</real>
 -------- SPAWNFLAGS --------
 <flag key="BLUE_TEAM_ITEM" name="Blue Team Only" bit="2">Only Blue Team members can pick up this rune.</flag>
@@ -1407,17 +1491,18 @@ Lights pointed at a target will be spotlights.
 Displays a static model in the map.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_lightmapscale" name="Lightmap Scale">Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.</real>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <array key="_remap" name="Shader Remaps">Remapping of shaders/textures on the model. (See notes)</array>
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
@@ -1462,6 +1547,7 @@ This must be within 64 world units of the surface!
 Point teleporters at these.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
 <boolean key="notteam" name="Hidden for Teamplay">If set to 1, this entity won't spawn in team-based gamemodes.</boolean>
@@ -1485,6 +1571,7 @@ Train path corners.
   <point name="shooter_grenade" color="1 0 0" box="-16 -16 -16 16 16 16" model="">
 Fires at either the target or the current direction.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
@@ -1498,6 +1585,7 @@ Fires at either the target or the current direction.
   <point name="shooter_plasma" color="1 0 0" box="-16 -16 -16 16 16 16" model="">
 Fires at either the target or the current direction.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
@@ -1511,6 +1599,7 @@ Fires at either the target or the current direction.
   <point name="shooter_rocket" color="1 0 0" box="-16 -16 -16 16 16 16" model="">
 Fires at either the target or the current direction.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
 <angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <boolean key="notfree" name="Hidden for FFA">If set to 1, this entity won't spawn in free-for-all gamemodes.</boolean>
 <boolean key="notsingle" name="Hidden for SP">If set to 1, this entity won't spawn in single-player mode.</boolean>
@@ -1571,14 +1660,14 @@ This item is broken in some older versions of OA and the game it's inspired from
   <point name="target_location" color="0 0.5 0" box="-8 -8 -8 8 8 8" model="">
 Closest target_location in sight used for the location, if none in site, closest in distance.
 -------- KEYS --------
-<integer key="count" name="Text Color">If set between 0-7, the location will be displayed with one of eight colors:
-* 0: white
-* 1: red
-* 2: green
-* 3: yellow
-* 4: blue
-* 5: cyan
-* 6: magenta
+<integer key="count" name="Text Color">If set between 0-7, the location will be displayed with one of eight colors:
+* 0: white
+* 1: red
+* 2: green
+* 3: yellow
+* 4: blue
+* 5: cyan
+* 6: magenta
 * 7: white</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -1674,7 +1763,7 @@ Plays a sound. Do we really have to explain this? LOL!
 <real key="random" name="Respawn Delay Variance">Variation of time between respawns. The value is both added and subtracted from ''wait''.</real>
 <string key="state_targetname" name="State Target Name">Set this to elimination_active in order to create a round-dependant door (See Notes).</string>
 <targetname key="targetname" name="Target Name">Name of the entity that points to this entity.</targetname>
-<real key="wait" name="Repeat Time">Seconds between auto triggerings.
+<real key="wait" name="Repeat Time">Seconds between auto triggerings.
 * 0 = doesn't auto trigger.</real>
 -------- SPAWNFLAGS --------
 <flag key="ACTIVATOR" name="Only activator hears" bit="3">If set, the sound will play on the player that activated the target. Can't be combined with looping.</flag>
@@ -1698,6 +1787,7 @@ The activator will be teleported away.
 Blue Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the B point in Double Domination games.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
@@ -1709,6 +1799,8 @@ Be aware that key game objectives usually don't need the 'gametype' or '!gametyp
   <point name="team_CTF_blueplayer" color="0.25 0.25 1" box="-16 -16 -24 16 16 32" model="">
 Initial spawnpoint for Blue Team players.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
@@ -1720,6 +1812,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
   <point name="team_CTF_bluespawn" color="0.5 0.5 1" box="-16 -16 -24 16 16 32" model="">
 Potential, post-initial spawnpoint for Blue Team players.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
@@ -1732,6 +1826,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Neutral Flag. Used as a key entity in One Flag CTF and Possession games.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
@@ -1744,6 +1839,7 @@ Be aware that key game objectives usually don't need the 'gametype' or '!gametyp
 Red Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the A point in Double Domination games.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
@@ -1755,6 +1851,8 @@ Be aware that key game objectives usually don't need the 'gametype' or '!gametyp
   <point name="team_CTF_redplayer" color="1 0.25 0.25" box="-16 -16 -24 16 16 32" model="">
 Initial spawnpoint for Red Team players.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
@@ -1766,6 +1864,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
   <point name="team_CTF_redspawn" color="1 0.5 0.5" box="-16 -16 -24 16 16 32" model="">
 Potential, post-initial spawnpoint for Red Team players.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <target key="target" name="Target">All entities with a matching targetname will be used.</target>
@@ -1778,6 +1878,7 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 Blue Team Obelisk. Used as a key entity for Harvester and Overload games.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 -------- SPAWNFLAGS --------
@@ -1790,6 +1891,7 @@ Be aware that key game objectives usually don't need the 'gametype' or '!gametyp
 Neutral Obelisk. Used as a key entity for Harvester games.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 -------- SPAWNFLAGS --------
@@ -1802,6 +1904,7 @@ Be aware that key game objectives usually don't need the 'gametype' or '!gametyp
 Red Team Obelisk. Used as a key entity for Harvester and Overload games.
 -------- KEYS --------
 <angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 -------- SPAWNFLAGS --------
@@ -1879,6 +1982,8 @@ Allows client side prediction of teleportation events. Must point at a target_po
   <point name="weapon_bfg" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/bfg/bfg.md3">
 BFG.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 20.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -1892,7 +1997,7 @@ BFG.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1904,6 +2009,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="weapon_chaingun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons/vulcan/vulcan.md3">
 Chaingun.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 5.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -1917,7 +2024,7 @@ Chaingun.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1930,6 +2037,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="weapon_gauntlet" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/gauntlet/gauntlet.md3">
 Gauntlet.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1942,7 +2051,7 @@ Gauntlet.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1953,6 +2062,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="weapon_grapplinghook" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/grapple/grapple.md3">
 Grappling Hook.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
 <boolean key="notbot" name="Invisible To Bots">If set to 1, a bot will never attempt to pick up this item.</boolean>
@@ -1965,7 +2076,7 @@ Grappling Hook.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -1976,6 +2087,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="weapon_grenadelauncher" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/grenadel/grenadel.md3">
 Grenade Launcher.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -1989,7 +2102,7 @@ Grenade Launcher.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -2001,6 +2114,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="weapon_lightning" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/lightning/lightning.md3">
 Lightning Gun.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 100.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -2014,7 +2129,7 @@ Lightning Gun.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -2026,6 +2141,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="weapon_machinegun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/machinegun/machinegun.md3">
 Machinegun.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 100.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -2039,7 +2156,7 @@ Machinegun.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -2050,6 +2167,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="weapon_nailgun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons/nailgun/nailgun.md3">
 Nailgun.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -2063,7 +2182,7 @@ Nailgun.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -2076,6 +2195,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="weapon_plasmagun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/plasma/plasma.md3">
 Plasma Gun.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 50.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -2089,7 +2210,7 @@ Plasma Gun.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -2101,6 +2222,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="weapon_prox_launcher" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons/proxmine/proxmine.md3">
 Prox Launcher.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -2114,7 +2237,7 @@ Prox Launcher.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -2127,6 +2250,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="weapon_railgun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/railgun/railgun.md3">
 Railgun.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -2140,7 +2265,7 @@ Railgun.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -2152,6 +2277,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="weapon_rocketlauncher" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/rocketl/rocketl.md3">
 Rocket Launcher.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -2165,7 +2292,7 @@ Rocket Launcher.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -2177,6 +2304,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
   <point name="weapon_shotgun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/shotgun/shotgun.md3">
 Shotgun.
 -------- KEYS --------
+<angle key="angle" name="Yaw Angle">Determines a facing angle.</angle>
+<angles key="angles" name="Pitch Yaw Roll">Individual control of pitch, yaw and roll. Default: 0 0 0.</angles>
 <integer key="count" name="Ammo Given">Amount of ammo given to the player on pickup. Default: 10.</integer>
 <string key="gametype" name="Supported Game Types">If set, the entity will ONLY appear in these gametypes. (See Notes)</string>
 <string key="!gametype" name="Forbidden Game Types">If set, the entity will NOT appear in these gametypes. (See Notes)</string>
@@ -2190,7 +2319,7 @@ Shotgun.
 <target key="target" name="Target">Picking up the item will trigger these targets.</target>
 <targetname key="targetname" name="Target Name">A target_give entity can point at this item so its given to the player.</targetname>
 <string key="team" name="Team Name">If set, the entity is teamed up with items in this team. (See Notes)</string>
-<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
+<real key="wait" name="Respawn Delay">Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.</real>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Don't drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
@@ -2212,10 +2341,10 @@ The main entity of the map. Every map should have exactly one worldspawn.
 <integer3 key="gridsize" name="Grid Size">Size of the lightgrid created by q3map2. The values represent the units in the X Y Z points. Large powers of 2 help reduce the BSP size and compile time on very large maps. Default: 128 128 256.</integer3>
 <string key="message" name="Logon Message">Name of the map. Displayed on the loading screen.</string>
 <sound key="music" name="Music File">Route of the music to play in background.</sound>
-<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+<integer key="_castshadows" name="Shadow Caster Level">Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.</integer>
 <texture key="_celshader" name="Cel Shader">Cel shader used for this geometry.</texture>
 <real key="_farplanedist" name="Far Clip Distance">Amount of units the vis phase can see during compilation. In combination with level-wide fog, it can help reduce tris count on large, open maps.</real>
@@ -2226,10 +2355,10 @@ The main entity of the map. Every map should have exactly one worldspawn.
 <real key="_minlight" name="Min Lightmap Intensity">Minimum value of world-wide lighting, level-wide, which uses ''_color'' to add a color to the ambience. Unlike _ambient and ambient, it does not add values to the other light entities.</real>
 <real key="_minvertexlight" name="Min Vertex Intensity">Minimum value of vertex lighting, level-wide.</real>
 <boolean key="_noshadersun" name="Ignore Shader Sun">Ignores the sky properties of the sky shaders, and ONLY uses entity sun lights.</boolean>
-<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+<integer key="_receiveshadows" name="Shadow Reception Level">Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.</integer>
 <texture key="_indexmap" name="Terrain Blending Map">Path of the art file used to guide the mapping of textures on the terrain surface.</texture>
 <integer key="_layers" name="Terrain Layers">Number of unique root shaders that will be used on the terrain surface.</integer>

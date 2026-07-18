@@ -2,6 +2,7 @@
 Spawn point used in Domination if no team specific spawn points exists. Usually placed in the middle of CTF maps. See info_player_dom_red and info_player_dom_blue for team specific versions.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notbot" : Prevents bots from using this spot as a spawnpoint.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
@@ -14,6 +15,7 @@ Maps must have at least 8 of this kind of spawnpoint without either 'gametype' o
 Spawn point used in Domination by the blue team
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notbot" : Prevents bots from using this spot as a spawnpoint.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
@@ -26,6 +28,7 @@ Maps must have at least 8 of this kind of spawnpoint without either 'gametype' o
 Spawn point used in Domination by the red team
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notbot" : Prevents bots from using this spot as a spawnpoint.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.

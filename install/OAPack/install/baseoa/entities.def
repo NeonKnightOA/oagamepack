@@ -9,6 +9,7 @@ A decal is created by grouping one or more bezier patches and targetting it into
 Compiler-only entity. Specifies the origin of a skybox in a contained area of the map, far from the actual level.
 A skybox casts shadows on normal parts of the map and allows the use of cloud layers and other effects. After compiling, the skybox will replace any sky shaders present in the map, except, of course, those in the skybox itself. 
 --------- KEYS --------
+"scale" : Scaling factor. Recommended values sit between 50 and 300. Default: 64.0.
 "angle" : Determines a facing angle. Default: 0.0.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 --------- NOTES --------
@@ -18,6 +19,8 @@ A skybox casts shadows on normal parts of the map and allows the use of cloud la
 model="models/powerups/ammo/chaingunam.md3"
 Chaingun ammo.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 100.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -31,7 +34,7 @@ Chaingun ammo.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -44,6 +47,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/ammo/bfgam.md3"
 BFG ammo.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 15.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -57,7 +62,7 @@ BFG ammo.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -69,6 +74,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/ammo/machinegunam.md3"
 Machinegun ammo.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 50.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -82,7 +89,7 @@ Machinegun ammo.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -94,6 +101,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/ammo/plasmaam.md3"
 Plasma Gun ammo.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 30.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -107,7 +116,7 @@ Plasma Gun ammo.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -119,6 +128,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/ammo/grenadeam.md3"
 Grenade Launcher ammo.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 5.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -132,7 +143,7 @@ Grenade Launcher ammo.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -144,6 +155,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/ammo/lightningam.md3"
 Lightning Gun ammo.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 60.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -157,7 +170,7 @@ Lightning Gun ammo.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -169,6 +182,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/ammo/proxmineam.md3"
 Prox Launcher ammo.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 10.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -182,7 +197,7 @@ Prox Launcher ammo.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -195,6 +210,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/ammo/nailgunam.md3"
 Nailgun ammo.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 10.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -208,7 +225,7 @@ Nailgun ammo.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -221,6 +238,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/ammo/rocketam.md3"
 Rocket Launcher ammo.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 5.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -234,7 +253,7 @@ Rocket Launcher ammo.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -246,6 +265,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/ammo/shotgunam.md3"
 Shotgun ammo.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 10.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -259,7 +280,7 @@ Shotgun ammo.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -271,6 +292,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/ammo/railgunam.md3"
 Railgun ammo.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 10.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -284,7 +307,7 @@ Railgun ammo.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -297,6 +320,7 @@ model="models/dpoints/a_white.md3"
 Domination Control Point.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "message" : Gives the point a name which is displayed in-game. (MAX length: 19 chars)
@@ -325,17 +349,17 @@ By default, a func_bobbing entity bobs on the Z axis (up-down) and displaces in 
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
 "phase" : Start offset of the oscillation cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset. Default: 0.0.
 "speed" : Seconds to complete a bob cycle. Default: 4.0.
-"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.
 "_targetname" : The model attached to the entity.
 "_indexmap" : Path of the art file used to guide the mapping of textures on the terrain surface.
@@ -352,8 +376,8 @@ The string '*falling1' in the 'noise' key will play character-specific sounds wh
 Pushable button, usually used to trigger other entities or just open doors.
 When a button is touched, it moves some distance in the direction of it's angle, triggers all of it's targets, waits some time, then returns to it's original position where it can be triggered again. 
 --------- KEYS --------
-"angle" : Determines the movement direction. Among the values it can take:
-* -1: the entity moves up.
+"angle" : Determines the movement direction. Among the values it can take:
+* -1: the entity moves up.
 * -2: the entity moves down.
 "color" : constantLight color of the md3 model included with the entity. It doesn't affect entity brushes. Default: 1 1 1.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
@@ -370,19 +394,19 @@ When a button is touched, it moves some distance in the direction of it's angle,
 "target" : All entities with a matching targetname will be used.
 "targetShaderName" : Shader to be swapped out for triggerable shader entities. (See Notes)
 "targetShaderNewName" : Shader to be swapped in for triggerable shader entities. (See Notes)
-"wait" : Seconds between triggerings.
+"wait" : Seconds between triggerings.
 * -1 = never returns. Default: 1.0.
-"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.
 "_targetname" : The model attached to the entity.
 "_indexmap" : Path of the art file used to guide the mapping of textures on the terrain surface.
@@ -398,8 +422,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 Movable brush usually used as a door, hence the name.
 By default, a door activates upon proximity of a player or when damage is inflicted to it. In order to team doors up, separate func_door entities must be connected by sharing the same 'team' key. 
 --------- KEYS --------
-"angle" : Determines the movement direction. Among the values it can take:
-* -1: the entity moves up.
+"angle" : Determines the movement direction. Among the values it can take:
+* -1: the entity moves up.
 * -2: the entity moves down.
 "color" : constantLight color of the md3 model included with the entity. It doesn't affect entity brushes. Default: 1 1 1.
 "dmg" : Damage to inflict when blocking the operation of the entity. Default: 4.
@@ -417,19 +441,19 @@ By default, a door activates upon proximity of a player or when damage is inflic
 "state_targetname" : Set this to elimination_active in order to create a round-dependant door (See Notes).
 "targetname" : If set, the door needs to be operated by a func_button or trigger.
 "team" : Separate func_door entities within this team will operate together.
-"wait" : Seconds before the door returns to its default state.
+"wait" : Seconds before the door returns to its default state.
 * -1 = returns immediately. Default: 2.0.
-"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.
 "_targetname" : The model attached to the entity.
 "_indexmap" : Path of the art file used to guide the mapping of textures on the terrain surface.
@@ -445,17 +469,17 @@ The key ''state_targetname'' is used to create warmup-locked doors in round-base
 Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.
 Entity which groups several brushes and patches together for convenience. 
 --------- KEYS --------
-"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.
 "_indexmap" : Path of the art file used to guide the mapping of textures on the terrain surface.
 "_layers" : Number of unique root shaders that will be used on the terrain surface.
@@ -480,17 +504,17 @@ The origin is the point where the rotation axis goes through. The speed of swing
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
 "phase" : Start offset of the swinging cycle. Values are located in the range (0,1); any integer value different to 1 equals to no offset. Default: 0.0.
 "speed" : Number of degrees each way the pendulum swings. Default: 30.0.
-"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.
 "_targetname" : The model attached to the entity.
 "_indexmap" : Path of the art file used to guide the mapping of textures on the terrain surface.
@@ -519,17 +543,17 @@ Activable platforms. Plats are always drawn in the extended position so they wil
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
 "speed" : Speed of entity movement. Default: 150.0.
-"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.
 "_targetname" : The model attached to the entity.
 "_indexmap" : Path of the art file used to guide the mapping of textures on the terrain surface.
@@ -551,17 +575,17 @@ A rotating entity, used for decorations or moving platforms. The center of that 
 "noise" : Wav file to play. Recommended use is for looping sounds.
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
 "speed" : Determines how fast it moves. Default: 100.0.
-"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.
 "_targetname" : The model attached to the entity.
 "_indexmap" : Path of the art file used to guide the mapping of textures on the terrain surface.
@@ -585,17 +609,17 @@ A bmodel that just sits there, doing nothing.  Can be used for conditional walls
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
-"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.
 "_targetname" : The model attached to the entity.
 "_indexmap" : Path of the art file used to guide the mapping of textures on the terrain surface.
@@ -641,17 +665,17 @@ A train is a mover that moves between path_corner target points. The train spawn
 "origin" : Alternate method of setting the entity's origin point. Use it if you don't use an origin brush in the entity. (See notes) Default: 0 0 0.
 "speed" : Speed of entity movement. Default: 100.0.
 "target" : Next path_corner.
-"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.
 "_targetname" : The model attached to the entity.
 "_indexmap" : Path of the art file used to guide the mapping of textures on the terrain surface.
@@ -667,6 +691,8 @@ This entity can have a model attached to it. For this, the entity must have a 't
 model="models/powerups/holdable/invulnerability.md3"
 Invulnerability holdable.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -679,7 +705,7 @@ Invulnerability holdable.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 60.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -692,6 +718,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/kamikazi.md3"
 Kamikaze holdable.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -704,7 +732,7 @@ Kamikaze holdable.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 60.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -717,6 +745,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/holdable/medkit.md3"
 Personal Medkit holdable.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -729,7 +759,7 @@ Personal Medkit holdable.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 60.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -741,6 +771,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/holdable/porter.md3"
 Portal holdable.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -753,7 +785,7 @@ Portal holdable.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 60.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -767,6 +799,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/holdable/teleporter.md3"
 Teleporter holdable.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -779,7 +813,7 @@ Teleporter holdable.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 60.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -789,6 +823,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 /*QUAKED info_camp (0 0.5 0) (-8 -8 -8) (8 8 8)
 Used as a positional target for calculations in the utilities (spotlights, etc), but removed during gameplay.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "range" : Game units the camping bot can move from its camping location.
 "weight" : Priority level the camping bot uses to determine if they want to camp there.
 --------- NOTES --------
@@ -796,6 +832,8 @@ Used as a positional target for calculations in the utilities (spotlights, etc),
 /*QUAKED info_notnull (0 0.5 0) (-8 -8 -8) (8 8 8)
 Used as a positional target for in-game calculation, like jumppad targets.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
@@ -807,6 +845,8 @@ Used as a positional target for in-game calculation, like jumppad targets.
 /*QUAKED info_null (0 0.5 0) (-8 -8 -8) (8 8 8)
 Used as a positional target for calculations in the utilities (spotlights, etc), but removed during gameplay.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
@@ -819,6 +859,7 @@ Used as a positional target for calculations in the utilities (spotlights, etc),
 Spawn point used in Double Domination if no team specific spawn points exists. Usually placed in the middle of CTF maps. See info_player_dd_red and info_player_dd_blue for team specific versions.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notbot" : Prevents bots from using this spot as a spawnpoint.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
@@ -831,6 +872,7 @@ Maps must have at least 8 of this kind of spawnpoint without either 'gametype' o
 Spawn point used in Double Domination by the blue team. If your map has dedicated spawn rooms, use this.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notbot" : Prevents bots from using this spot as a spawnpoint.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
@@ -843,6 +885,7 @@ Maps must have at least 8 of this kind of spawnpoint without either 'gametype' o
 Spawn point used in Double Domination by the red team. If your map has dedicated spawn rooms, use this.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notbot" : Prevents bots from using this spot as a spawnpoint.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
@@ -855,6 +898,7 @@ Maps must have at least 8 of this kind of spawnpoint without either 'gametype' o
 Potential spawning position for Deathmatch games. The first time a player enters the game, they will be at an 'initial' spot. Targets will be fired when someone spawns in on them.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : Prevents bots from using this spot as a spawnpoint.
@@ -868,6 +912,7 @@ Maps must have at least 8 of this kind of spawnpoint without either 'gametype' o
 /*QUAKED info_player_intermission (1 0 1) (-16 -16 -16) (16 16 16)
 The intermission will be viewed from this point.  Target an info_notnull for the view direction.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "target" : All entities with a matching targetname will be used.
 --------- NOTES --------
@@ -876,6 +921,7 @@ The intermission will be viewed from this point.  Target an info_notnull for the
 Limited equivelant to info_player_deathmatch. Use that one instead.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notbot" : Prevents bots from using this spot as a spawnpoint.
 "nothumans" : Prevents humans from using this spot as a spawnpoint.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
@@ -885,6 +931,8 @@ Limited equivelant to info_player_deathmatch. Use that one instead.
 */
 /*QUAKED info_spectator_start (0 1 1) (-16 -16 -24) (16 16 32)
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 --------- NOTES --------
 This item is broken in some older versions of OA and the game it's inspired from. It may not work.
 */
@@ -893,6 +941,8 @@ This item is broken in some older versions of OA and the game it's inspired from
 model="models/powerups/ammo.md3"
 Ammo Regen rune.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -905,7 +955,7 @@ Ammo Regen rune.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 0.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -917,6 +967,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/armor/armor_red.md3"
 Body Armor.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -929,7 +981,7 @@ Body Armor.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 25.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -941,6 +993,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/armor/armor_yel.md3"
 Combat Armor.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -953,7 +1007,7 @@ Combat Armor.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 25.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -965,6 +1019,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/armor/shard.md3"
 Armor Shard.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -977,7 +1033,7 @@ Armor Shard.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 25.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -987,6 +1043,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 /*QUAKED item_botroam (1 0.5 0) (-8 -8 -8) (8 8 8) SUSPENDED
 Invisible entity that attracts bots into areas they may not be usually interested. They'll try to reach it and touch it like it was a pickup. Has no effect on human players.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
@@ -999,6 +1057,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 model="models/powerups/doubler.md3"
 Doubler rune.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -1011,7 +1071,7 @@ Doubler rune.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 0.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -1023,6 +1083,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/instant/enviro.md3"
 Battle Suit powerup.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of game seconds of duration of this powerup. Default: 30.0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -1036,7 +1098,7 @@ Battle Suit powerup.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1048,6 +1110,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/instant/flight.md3"
 Flight powerup.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of game seconds of duration of this powerup. Default: 60.0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -1061,7 +1125,7 @@ Flight powerup.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1073,6 +1137,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/guard.md3"
 Guard rune.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -1085,7 +1151,7 @@ Guard rune.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 0.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -1097,6 +1163,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/instant/haste.md3"
 Haste powerup.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of game seconds of duration of this powerup. Default: 30.0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -1110,7 +1178,7 @@ Haste powerup.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1122,6 +1190,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/health/medium_cross.md3"
 Medium Health.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -1134,7 +1204,7 @@ Medium Health.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 35.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1146,6 +1216,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/health/large_cross.md3"
 Large Health.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -1158,7 +1230,7 @@ Large Health.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 35.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1170,6 +1242,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/health/mega_cross.md3"
 Megahealth.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -1182,7 +1256,7 @@ Megahealth.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 40.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1194,6 +1268,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/health/small_cross.md3"
 Small Health.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -1206,7 +1282,7 @@ Small Health.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 35.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1218,6 +1294,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/instant/invis.md3"
 Invisibility powerup.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of game seconds of duration of this powerup. Default: 30.0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -1231,7 +1309,7 @@ Invisibility powerup.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1243,6 +1321,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/instant/quad.md3"
 Quad Damage powerup.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of game seconds of duration of this powerup. Default: 30.0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -1256,7 +1336,7 @@ Quad Damage powerup.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1268,6 +1348,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/instant/regen.md3"
 Regeneration powerup.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of game seconds of duration of this powerup. Default: 30.0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -1281,7 +1363,7 @@ Regeneration powerup.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 120.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1293,6 +1375,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/powerups/scout.md3"
 Scout rune.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -1305,7 +1389,7 @@ Scout rune.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 0.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -1348,17 +1432,18 @@ Lights pointed at a target will be spotlights.
 Displays a static model in the map.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
-"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
+"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.
 "_celshader" : Cel shader used for this geometry.
 "_lightmapscale" : Scales the resolution of lightmaps on brushes and patches in the entity. Default: 1.0.
-"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.
 "_remap" : Remapping of shaders/textures on the model. (See notes)
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
@@ -1394,6 +1479,7 @@ This must be within 64 world units of the surface!
 Point teleporters at these.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
 "notteam" : If set to 1, this entity won't spawn in team-based gamemodes.
@@ -1415,6 +1501,7 @@ Train path corners.
 /*QUAKED shooter_grenade (1 0 0) (-16 -16 -16) (16 16 16)
 Fires at either the target or the current direction.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
@@ -1427,6 +1514,7 @@ Fires at either the target or the current direction.
 /*QUAKED shooter_plasma (1 0 0) (-16 -16 -16) (16 16 16)
 Fires at either the target or the current direction.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
@@ -1439,6 +1527,7 @@ Fires at either the target or the current direction.
 /*QUAKED shooter_rocket (1 0 0) (-16 -16 -16) (16 16 16)
 Fires at either the target or the current direction.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
 "angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "notfree" : If set to 1, this entity won't spawn in free-for-all gamemodes.
 "notsingle" : If set to 1, this entity won't spawn in single-player mode.
@@ -1494,14 +1583,14 @@ This item is broken in some older versions of OA and the game it's inspired from
 /*QUAKED target_location (0 0.5 0) (-8 -8 -8) (8 8 8)
 Closest target_location in sight used for the location, if none in site, closest in distance.
 --------- KEYS --------
-"count" : If set between 0-7, the location will be displayed with one of eight colors:
-* 0: white
-* 1: red
-* 2: green
-* 3: yellow
-* 4: blue
-* 5: cyan
-* 6: magenta
+"count" : If set between 0-7, the location will be displayed with one of eight colors:
+* 0: white
+* 1: red
+* 2: green
+* 3: yellow
+* 4: blue
+* 5: cyan
+* 6: magenta
 * 7: white Default: 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -1583,7 +1672,7 @@ Plays a sound. Do we really have to explain this? LOL!
 "random" : Variation of time between respawns. The value is both added and subtracted from ''wait''. Default: 0.0.
 "state_targetname" : Set this to elimination_active in order to create a round-dependant door (See Notes).
 "targetname" : Name of the entity that points to this entity.
-"wait" : Seconds between auto triggerings.
+"wait" : Seconds between auto triggerings.
 * 0 = doesn't auto trigger. Default: 0.0.
 --------- NOTES --------
 The string '*falling1' in the 'noise' key will play character-specific sounds when the characters are falling into a pit. Sounds need to be formatted in mono, 32-bit PCM is not supported and OGG files will only work if the extension is omitted.
@@ -1603,6 +1692,7 @@ model="models/flags/b_flag.md3"
 Blue Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the B point in Double Domination games.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1613,6 +1703,8 @@ Be aware that key game objectives usually don't need the 'gametype' or '!gametyp
 /*QUAKED team_CTF_blueplayer (0.25 0.25 1) (-16 -16 -24) (16 16 32)
 Initial spawnpoint for Blue Team players.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "target" : All entities with a matching targetname will be used.
@@ -1623,6 +1715,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 /*QUAKED team_CTF_bluespawn (0.5 0.5 1) (-16 -16 -24) (16 16 32)
 Potential, post-initial spawnpoint for Blue Team players.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "target" : All entities with a matching targetname will be used.
@@ -1636,6 +1730,7 @@ model="models/flags/n_flag.md3"
 Neutral Flag. Used as a key entity in One Flag CTF and Possession games.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1649,6 +1744,7 @@ model="models/flags/r_flag.md3"
 Red Team Flag. Used as such for CTF, One Flag CTF and CTF Elimination games. Becomes the A point in Double Domination games.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "target" : Picking up the item will trigger these targets.
@@ -1659,6 +1755,8 @@ Be aware that key game objectives usually don't need the 'gametype' or '!gametyp
 /*QUAKED team_CTF_redplayer (1 0.25 0.25) (-16 -16 -24) (16 16 32)
 Initial spawnpoint for Red Team players.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "target" : All entities with a matching targetname will be used.
@@ -1669,6 +1767,8 @@ Values for the 'gametype' and '!gametype' keys need to be separated by spaces. T
 /*QUAKED team_CTF_redspawn (1 0.5 0.5) (-16 -16 -24) (16 16 32)
 Potential, post-initial spawnpoint for Red Team players.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "target" : All entities with a matching targetname will be used.
@@ -1682,6 +1782,7 @@ model="models/powerups/overload_base.md3"
 Blue Team Obelisk. Used as a key entity for Harvester and Overload games.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 --------- NOTES --------
@@ -1695,6 +1796,7 @@ model="models/powerups/obelisk/obelisk.md3"
 Neutral Obelisk. Used as a key entity for Harvester games.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 --------- NOTES --------
@@ -1708,6 +1810,7 @@ model="models/powerups/overload_base.md3"
 Red Team Obelisk. Used as a key entity for Harvester and Overload games.
 --------- KEYS --------
 "angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 --------- NOTES --------
@@ -1775,6 +1878,8 @@ Allows client side prediction of teleportation events. Must point at a target_po
 model="models/weapons2/bfg/bfg.md3"
 BFG.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 20.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -1788,7 +1893,7 @@ BFG.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1800,6 +1905,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/weapons/vulcan/vulcan.md3"
 Chaingun.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 5.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -1813,7 +1920,7 @@ Chaingun.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -1826,6 +1933,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/weapons2/gauntlet/gauntlet.md3"
 Gauntlet.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -1838,7 +1947,7 @@ Gauntlet.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1849,6 +1958,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/weapons2/grapple/grapple.md3"
 Grappling Hook.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
 "notbot" : If set to 1, a bot will never attempt to pick up this item.
@@ -1861,7 +1972,7 @@ Grappling Hook.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1872,6 +1983,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/weapons2/grenadel/grenadel.md3"
 Grenade Launcher.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 10.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -1885,7 +1998,7 @@ Grenade Launcher.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1897,6 +2010,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/weapons2/lightning/lightning.md3"
 Lightning Gun.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 100.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -1910,7 +2025,7 @@ Lightning Gun.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1922,6 +2037,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/weapons2/machinegun/machinegun.md3"
 Machinegun.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 100.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -1935,7 +2052,7 @@ Machinegun.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1946,6 +2063,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/weapons/nailgun/nailgun.md3"
 Nailgun.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 10.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -1959,7 +2078,7 @@ Nailgun.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -1972,6 +2091,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/weapons2/plasma/plasma.md3"
 Plasma Gun.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 50.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -1985,7 +2106,7 @@ Plasma Gun.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -1997,6 +2118,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/weapons/proxmine/proxmine.md3"
 Prox Launcher.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 10.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -2010,7 +2133,7 @@ Prox Launcher.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 This entity may not work with mods designed for the game OA is inspired from.
@@ -2023,6 +2146,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/weapons2/railgun/railgun.md3"
 Railgun.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 10.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -2036,7 +2161,7 @@ Railgun.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -2048,6 +2173,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/weapons2/rocketl/rocketl.md3"
 Rocket Launcher.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 10.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -2061,7 +2188,7 @@ Rocket Launcher.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 Values for the 'gametype' and '!gametype' keys need to be separated by spaces. The valid values are the following: ffa tournament single team ctf oneflag obelisk harvester elimination lms dd dom pos
@@ -2073,6 +2200,8 @@ Upon activation of the targets, all shaders/textures in the map with the shader/
 model="models/weapons2/shotgun/shotgun.md3"
 Shotgun.
 --------- KEYS --------
+"angle" : Determines a facing angle. Default: 0.0.
+"angles" : Individual control of pitch, yaw and roll. Default: 0 0 0.
 "count" : Amount of ammo given to the player on pickup. Default: 10.
 "gametype" : If set, the entity will ONLY appear in these gametypes. (See Notes)
 "!gametype" : If set, the entity will NOT appear in these gametypes. (See Notes)
@@ -2086,7 +2215,7 @@ Shotgun.
 "target" : Picking up the item will trigger these targets.
 "targetname" : A target_give entity can point at this item so its given to the player.
 "team" : If set, the entity is teamed up with items in this team. (See Notes)
-"wait" : Seconds before the item respawns again.
+"wait" : Seconds before the item respawns again.
 * -1 = never respawns again. Default: 5.0.
 --------- NOTES --------
 Unless you're designing a map with a specific kind of gameplay in mind, it's advisable to NOT set the 'wait' or 'count' keys. Doing so will mess with what players know about item timings and effects. If you want to limit an entity to make it viable on your map, you should rethink the layout of your map in order for the entity to stop being game-breaking.
@@ -2106,10 +2235,10 @@ The main entity of the map. Every map should have exactly one worldspawn.
 "gridsize" : Size of the lightgrid created by q3map2. The values represent the units in the X Y Z points. Large powers of 2 help reduce the BSP size and compile time on very large maps. Default: 128 128 256.
 "message" : Name of the map. Displayed on the loading screen.
 "music" : Route of the music to play in background.
-"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
-* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
-* _castshadows 0: doesn't cast shadows on the world or on entities.
-* _castshadows 1: casts shadows on the world.
+"_castshadows" : Per-entity control over shadow casting. By default, worldspawn and func_group entities (the world) cast shadows (_castshadows 1), while other entities don't (_castshadows 0). The values it can take are:
+* Under 0 (_castshadows -1/_castshadows -2/_castshadows -3/...): casts shadows ONLY on entities that are marked with _receiveshadows AND match the same value.
+* _castshadows 0: doesn't cast shadows on the world or on entities.
+* _castshadows 1: casts shadows on the world.
 * Over 1 (_castshadows 2/_castshadows 3/_castshadows 4/...): casts shadows on entities that are marked with _receiveshadows AND match the same value AND also casts shadows on the world.
 "_celshader" : Cel shader used for this geometry.
 "_farplanedist" : Amount of units the vis phase can see during compilation. In combination with level-wide fog, it can help reduce tris count on large, open maps.
@@ -2120,10 +2249,10 @@ The main entity of the map. Every map should have exactly one worldspawn.
 "_minlight" : Minimum value of world-wide lighting, level-wide, which uses ''_color'' to add a color to the ambience. Unlike _ambient and ambient, it does not add values to the other light entities.
 "_minvertexlight" : Minimum value of vertex lighting, level-wide.
 "_noshadersun" : Ignores the sky properties of the sky shaders, and ONLY uses entity sun lights.
-"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
-* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
-* _receiveshadows 0: doesn't receive shadows.
-* _receiveshadows 1: receive shadows from the world.
+"_receiveshadows" : Per-entity control over shadow reception. By default, worldspawn and func_group entities (the world) and other entities receive shadows on the world (1). The values it can take are:
+* Under 0 (_receiveshadows -1/_receiveshadows -2/_receiveshadows -3/...): receive shadows ONLY from entities that are marked with _castshadows AND match the same value.
+* _receiveshadows 0: doesn't receive shadows.
+* _receiveshadows 1: receive shadows from the world.
 * Over 1 (_receiveshadows 2/_receiveshadows 3/_receiveshadows 4/...): receive shadows from from entities that are marked with _castshadows AND match the same value AND also receive shadows from the world.
 "_indexmap" : Path of the art file used to guide the mapping of textures on the terrain surface.
 "_layers" : Number of unique root shaders that will be used on the terrain surface.
